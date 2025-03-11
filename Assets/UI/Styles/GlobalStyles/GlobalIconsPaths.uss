@@ -1,0 +1,8 @@
+:root {
+    --switch-on-icon: resource("UI/Switch_ON");
+    --switch-off-icon: resource("UI/Switch_OFF");
+}
+
+.tmp{
+    
+}

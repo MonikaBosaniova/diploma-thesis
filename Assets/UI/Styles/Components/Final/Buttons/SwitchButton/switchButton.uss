@@ -1,0 +1,31 @@
+.switchButton {
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    width: 42px;
+    height: 82px;
+    flex-shrink: 0;
+    position: absolute;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.switchButton:hover {
+    background-color: rgba(255, 255, 255, 0.31);
+}
+
+.switchButton:active {
+}
+
+.switchButton > Toggle {
+    background-image: var(--switch-off-icon);
+    width: 40px;
+    height: 80px;
+}
+
+.switchButton > Toggle:checked {
+    background-image: var(--switch-on-icon);
+}

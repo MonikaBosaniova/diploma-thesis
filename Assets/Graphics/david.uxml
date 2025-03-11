@@ -1,0 +1,27 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgb(214, 199, 148); height: 2px;">
+        <engine:VisualElement name="left" style="flex-grow: 1; background-color: rgb(110, 110, 110); position: absolute; top: 200px; left: 100px; width: 100px; height: 200px;" />
+        <engine:VisualElement name="right1" style="flex-grow: 1; background-color: rgb(110, 110, 110); position: absolute; top: 100px; left: 500px; width: 100px; height: 200px;" />
+        <engine:VisualElement name="right2" style="flex-grow: 1; background-color: rgb(110, 110, 110); position: absolute; top: 400px; left: 500px; width: 100px; height: 200px;" />
+        <engine:VisualElement name="connection" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0.16); position: absolute; top: 306px; left: 202px; width: 295px; height: 155px; align-content: auto; align-items: auto; justify-content: flex-start; flex-shrink: 0;">
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: 0; left: 0; width: 50%; height: 4px; flex-shrink: 0;" />
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: auto; left: auto; width: 50%; height: 4px; flex-shrink: 0; right: 0; bottom: 0; background-image: none;" />
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: 0; left: 50%; width: 4px; height: 100%; flex-shrink: 0; right: 50%; bottom: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="connection" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0.16); position: absolute; top: 212px; left: 201px; width: 296px; height: 91px; align-content: auto; align-items: auto; justify-content: flex-start; flex-shrink: 0;">
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: 0; left: auto; width: 50%; height: 4px; flex-shrink: 0; right: 0; text-shadow: 0 0 0 rgba(0, 0, 0, 0); border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0;" />
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: auto; left: 0; width: 50%; height: 4px; flex-shrink: 0; right: auto; bottom: 0; background-image: none;" />
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: 0; left: 50%; width: 4px; height: 100%; flex-shrink: 0; right: 50%; bottom: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="connection" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0.16); position: absolute; top: 533px; left: 115px; width: 385px; height: 4px; align-content: auto; align-items: auto; justify-content: flex-start; flex-shrink: 0;">
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: 0; left: auto; width: 50%; height: 4px; flex-shrink: 0; right: 0;" />
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: auto; left: 0; width: 50%; height: 4px; flex-shrink: 0; right: auto; bottom: 0; background-image: none;" />
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: 0; left: 50%; width: 4px; height: 100%; flex-shrink: 0; right: 50%; bottom: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="connection" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0.16); position: absolute; top: 140px; left: 98px; width: 400px; height: 4px; align-content: auto; align-items: auto; justify-content: flex-start; flex-shrink: 0;">
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: 0; left: auto; width: 50%; height: 4px; flex-shrink: 0; right: 0;" />
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: auto; left: 0; width: 50%; height: 4px; flex-shrink: 0; right: auto; bottom: 0; background-image: none;" />
+            <engine:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(255, 0, 0); position: absolute; top: 0; left: 50%; width: 4px; height: 100%; flex-shrink: 0; right: 50%; bottom: 0;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

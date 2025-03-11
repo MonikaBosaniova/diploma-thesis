@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/Components/Final/Buttons/SwitchButton/switchButton.uss?fileID=7433441132597879392&amp;guid=5b6139ab0c2b64a40959aebb03c88568&amp;type=3#switchButton" />
+    <Style src="project://database/Assets/UI/Styles/Components/Templates/Buttons/emptyToggle.uss?fileID=7433441132597879392&amp;guid=6fa2c32141ba5c34db50e60d0e43905f&amp;type=3#emptyToggle" />
+    <ui:VisualElement class="switchButton">
+        <ui:Toggle class="emptyToggle" />
+    </ui:VisualElement>
+</ui:UXML>

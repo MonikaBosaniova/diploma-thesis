@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="switchButton" src="project://database/Assets/switchButton.uxml?fileID=9197481963319205126&amp;guid=7a4a110cf0ff55c42ae051f77b447240&amp;type=3#switchButton" />
+    <engine:Template name="GateTemplate" src="project://database/Assets/UI/Styles/Components/Templates/Gates/GateTemplate.uxml?fileID=9197481963319205126&amp;guid=4c3fd583715d60b4b835551b88abdfc1&amp;type=3#GateTemplate" />
+    <engine:VisualElement style="flex-grow: 1; background-color: rgb(1, 6, 36);">
+        <engine:VisualElement name="Lines" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Graphics/LinesRenderTexture.renderTexture?fileID=8400000&amp;guid=e57e689a8e3543945bc51800462b26a1&amp;type=2#LinesRenderTexture&quot;);" />
+        <engine:Instance template="switchButton" style="position: absolute;" />
+        <engine:Instance template="GateTemplate" style="position: absolute; top: 104px; left: 187px;" />
+    </engine:VisualElement>
+</engine:UXML>

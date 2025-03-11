@@ -1,0 +1,7 @@
+@import url("/Assets/UI Toolkit/UnityDefaultRuntimeTheme.tss");
+
+@import url("/Assets/UI/Styles/GlobalStyles/GlobalIconsPaths.uss");
+
+
+
+VisualElement {}

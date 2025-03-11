@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Graphics/test.uss?fileID=7433441132597879392&amp;guid=9f593ceb6ae61a546ba203adfd690948&amp;type=3#test" />
+    <ui:VisualElement class="svg" style="flex-grow: 1; color: rgb(117, 216, 255);" />
+</ui:UXML>

@@ -1,0 +1,4 @@
+.svg {
+    background-image: url("project://database/Assets/Graphics/volume-off.svg?fileID=7388822144124034973&guid=792e5b16275857b46a7fb6124887592f&type=3#volume-off");
+    -unity-background-scale-mode: scale-to-fit;
+}
