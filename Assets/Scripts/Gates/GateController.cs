@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
@@ -5,8 +6,10 @@ using UnityEngine.Rendering;
 
 namespace Gates
 {
-    public class GateController : NodeController 
+    public class GateController : NodeController
     {
+        public TMP_Text TextField;
+        public LineRenderer LineRenderer;
         public GateTypes gateType;
         public NodeController firstInput;
         public NodeController secondInput;
@@ -52,6 +55,7 @@ namespace Gates
                     Debug.LogWarning("No gate type selected.");
                     break;
             }
+            TextField.text = gateType.ToString();
             inputValue1 = firstInput.Value;
             inputValue2 = secondInput.Value;
             Value = _gate.Evaluate(inputValue1, inputValue2);

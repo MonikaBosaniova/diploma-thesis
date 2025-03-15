@@ -43,5 +43,9 @@ namespace Gates
                 FalseModel.SetActive(true);
             }
         }
+
+        protected void CreateLines(GameObject from, GameObject to)
+        {
+        }
     }
 }
