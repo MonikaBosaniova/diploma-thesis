@@ -47,5 +47,28 @@ namespace Gates
         protected void CreateLines(GameObject from, GameObject to)
         {
         }
+
+        protected void SetLineValue(bool value, LineRenderer line)
+        {
+            // A simple 2 color gradient with a fixed alpha of 1.0f.
+            float alpha = 1.0f;
+            Gradient gradient = new Gradient();
+            if (value)
+            {
+                gradient.SetKeys(
+                    new GradientColorKey[] { new GradientColorKey(Color.yellow, 0.0f), new GradientColorKey(Color.yellow, 1.0f) },
+                    new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.0f), new GradientAlphaKey(alpha, 1.0f) }
+                );
+                
+            }
+            else
+            {
+                gradient.SetKeys(
+                    new GradientColorKey[] { new GradientColorKey(Color.gray, 0.0f), new GradientColorKey(Color.white, 1.0f) },
+                    new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.0f), new GradientAlphaKey(alpha, 1.0f) }
+                );
+            }
+            line.colorGradient = gradient;
+        }
     }
 }

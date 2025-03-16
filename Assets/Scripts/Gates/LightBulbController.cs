@@ -7,14 +7,15 @@ namespace Gates
 {
     public class LightBulbController : NodeController 
     {
-        public LineRenderer lineRenderer;
         public NodeController firstInput;
+        public LineRenderer firstLine;
         
         void Start()
         {
             Initialize();
             firstInput.OnValueChanged += newValue => { 
                 Value = newValue;
+                SetLineValue(newValue, firstLine);
             };
 
         }
@@ -22,6 +23,7 @@ namespace Gates
         private void Initialize()
         {
             Value = firstInput.Value;
+            SetLineValue(Value, firstLine);
         }
     }
 }

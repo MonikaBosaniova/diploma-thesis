@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4153673104336665483}
   - component: {fileID: 2183853461706627284}
   m_Layer: 0
-  m_Name: Line
+  m_Name: LineCurved
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
