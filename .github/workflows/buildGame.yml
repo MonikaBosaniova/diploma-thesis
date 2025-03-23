@@ -1,0 +1,217 @@
+######## ⚠️ STEPS TO SETUP IN NEW REPOSITORY ⚠️ ########
+# 0️⃣ Make the repository public (you get free unlimited CPU time for GitHub actions)
+# 1️⃣ Create Github secrets as mentioned below: https://github.com/{username}/{repo}/settings/secrets/actions
+#   - UNITY_EMAIL
+#   - UNITY_PASSWORD
+#   - UNITY_LICENSE             How to get it: https://game.ci/docs/github/activation/
+#   - ITCH_IO_CREDENTIALS       Where to get it: https://itch.io/user/settings/api-keys       (not needed if itch deploy is off)
+# 2️⃣ Go to https://github.com/{username}/{repo}/settings/actions
+#    - Set Workflow permissions to "Read and write permissions"
+#    - Check "Allow GitHub Actions to create and approve pull requests"
+#    - Save
+# 3️⃣ Copy this file into repo as: .github/workflows/buildGame.yml 
+# 4️⃣ Check all red dots 🔴 in this file to configure it properly to your needs
+# 5️⃣ If you want a webpage with WebGL, you need to set up GitHub Pages AFTER first run
+#    - Go here: https://github.com/{username}/{repo}/settings/pages
+#    - Set "Deploy from a branch"
+#    - Set in Branch "gh-pages" & "/(root)", Save
+#    - In Unity: Project settings -> Player -> WebGL icon (third) -> Publishing settings -> Decompression Fallback -> TRUE
+
+# This setup will give you:
+# - Artifact (zip file) of your build (this one can be uploaded to Itch.io manually) that you find in Actions where you select the last run, and on the bottom will be artifacts
+# - Web page with your game: https://{username}.github.io/{repo}/ 
+# - GitHub release with latest artifacts
+# - Itchio auto-deploy
+
+#  Full documentation: https://game.ci/docs/github/getting-started
+
+name: Build Unity project in GitHub actions
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    tags:
+      - "*" # If you put a version into the tag, it will create a new release in GitHub (e.g. "v1.0")
+  pull_request:
+    branches:
+      - master
+      - main
+
+jobs:
+  buildForAllSupportedPlatforms:
+    name: Build for ${{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.versionSave.outputs.version }}
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform: # 🔴 Choose which platforms you want to build for
+          # - iOS # Build an iOS player
+          # - StandaloneWindows # Build a Windows standalone
+          - StandaloneWindows64 # Build a Windows 64-bit standalone
+          # - StandaloneLinux64 # Build a Linux 64-bit standalone
+          - Android # Build an Android .apk standalone app
+          - WebGL # WebGL
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: false # Do not use LFS as it is not free on GitHub
+
+      - name: Restore platform-specific cache
+        if: matrix.targetPlatform == 'WebGL' || matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'StandaloneWindows64'
+        uses: actions/cache@v4
+        with:
+          path: Library
+          key: Library-${{ matrix.targetPlatform }}
+          restore-keys: Library-
+
+      - name: Restore fallback cache
+        if: matrix.targetPlatform != 'WebGL' && matrix.targetPlatform != 'Android' && matrix.targetPlatform != 'StandaloneWindows64'
+        uses: actions/cache/restore@v4
+        with:
+          path: Library
+          key: Library-StandaloneWindows64
+          restore-keys: |
+            Library-WebGL
+            Library-
+
+      - name: Free disk space
+        if: matrix.targetPlatform == 'Android'
+        uses: jlumbroso/free-disk-space@v1.3.1
+        with: # In case the Android build fails due to out of disk space, enable these
+          haskell: true #         free ~ 5.2 GiB in   1s
+          docker-images: true #   free ~ 3.2 GiB in   1s
+          dotnet: true #          free ~ 1.6 GiB in   1s
+          android: true #         free ~ 8.7 GiB in   5s
+          large-packages: false # free ~ 4,7 GiB in 100s
+          swap-storage: false #   free ~ 4.0 GiB in   1s
+
+      - uses: game-ci/unity-builder@v4
+        id: myBuildStep
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          buildName: ${{ github.event.repository.name }}
+          versioning: Semantic
+          targetPlatform: ${{ matrix.targetPlatform }}
+
+      - name: Get disk space usage
+        run: df -ah /
+
+      - name: Remove DoNotShip folder
+        run: |
+          sudo find ./build/${{ matrix.targetPlatform }} -maxdepth 1 -type d -name "*DoNotShip*" -exec rm -rf {} +
+          sudo find ./build/${{ matrix.targetPlatform }} -maxdepth 1 -type d -name "*ButDontShipItWithYourGame*" -exec rm -rf {} +
+
+      - name: Write version into package.json for badges to work
+        if: matrix.targetPlatform == 'WebGL'
+        run: echo '{ "version":"${{ steps.myBuildStep.outputs.buildVersion }}" }' | sudo tee ./build/WebGL/${{ github.event.repository.name }}/package.json
+
+      - name: Save version for next job
+        id: versionSave
+        run: echo "version=${{ steps.myBuildStep.outputs.buildVersion }}" | cut -d. -f1,2 >> "$GITHUB_OUTPUT"
+
+      - name: Deploy to GitHub Pages
+        if: matrix.targetPlatform == 'WebGL'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build/WebGL/${{ github.event.repository.name }}
+          commit-message: Deploy
+          single-commit: true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}-${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}
+
+  createRelease:
+    if: true # 🔴 Enable / disable GITHUB RELEASE
+    name: Create GitHub Release
+    needs: buildForAllSupportedPlatforms
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: ./artifacts
+
+      - name: Check if release exists
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh release view "${{ needs.buildForAllSupportedPlatforms.outputs.version }}" > /dev/null 2>&1; then
+            echo "release_exists=true" >> $GITHUB_ENV
+          else
+            echo "release_exists=false" >> $GITHUB_ENV
+          fi
+
+      - uses: actions/create-release@v1
+        if: env.release_exists == 'false'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.buildForAllSupportedPlatforms.outputs.version }}
+          release_name: Release ${{ needs.buildForAllSupportedPlatforms.outputs.version }}
+          body: This is an automated release that contains all builds.
+          draft: false
+          prerelease: false
+
+      - name: Upload release variants
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd ./artifacts
+          for file in ./*; do
+            if [ -d "$file" ]; then
+              file_count=$(find "$file" -maxdepth 3 -type f | wc -l)
+              if [ "$file_count" -eq 1 ]; then
+                single_file=$(find "$file" -maxdepth 3 -type f)
+                echo "Uploading single file $single_file"
+                gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$single_file" --clobber
+              elif [ "$file_count" -gt 1 ]; then
+                zip_file="${file}.zip"
+                echo "Zipping directory $file to $zip_file"
+                zip -r -q "$zip_file" "$file"
+                echo "Uploading zip file $zip_file"
+                gh release upload "${{needs.buildForAllSupportedPlatforms.outputs.version}}" "$zip_file" --clobber
+              fi
+            fi
+          done
+
+  deploy:
+    if: false # 🔴 Enable / disable ITCH deploy
+    name: Butler Push to Itch
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform: # 🔴 Select platforms to deploy to Itch (must be also in `targetPlatforms`)
+          # - { platform: StandaloneOSX, itchChannel: "osx" } # Build a macOS standalone (Intel 64-bit)
+          # - { platform: StandaloneWindows, itchChannel: "win32" } # Build a Windows standalone
+          - { platform: StandaloneWindows64, itchChannel: "windows" } # Build a Windows 64-bit standalone
+          # - { platform: StandaloneLinux64, itchChannel: "linux" } # Build a Linux 64-bit standalone
+          # - { platform: Android, itchChannel: "android" } # Build an Android .apk standalone app
+          - { platform: WebGL, itchChannel: "html5" } # WebGL
+    needs: buildForAllSupportedPlatforms
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ github.event.repository.name }}-${{ matrix.targetPlatform.platform }}
+          path: build/${{ github.event.repository.name }}-${{ matrix.targetPlatform.platform }}
+      - name: Push ${{ matrix.targetPlatform.platform }} to Itch.io
+        uses: manleydev/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.ITCH_IO_CREDENTIALS }}
+          CHANNEL: ${{ matrix.targetPlatform.itchChannel }}
+          ITCH_GAME: ${{ github.event.repository.name }} # 🔴 Name of the game on Itch
+          ITCH_USER: ebrithilnogare # 🔴 Itch username
+          PACKAGE: build/${{ github.event.repository.name }}-${{ matrix.targetPlatform.platform }}
