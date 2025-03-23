@@ -1,7 +1,4 @@
-using Unity.VisualScripting;
-using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 namespace Gates
 {

@@ -1,9 +1,5 @@
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.AddressableAssets.Settings;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.Serialization;
 
 namespace Gates
 {
