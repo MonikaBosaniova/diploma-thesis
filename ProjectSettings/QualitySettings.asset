@@ -60,6 +60,8 @@ QualitySettings:
     excludedTargetPlatforms:
     - Standalone
     - Windows Store Apps
+    - WebGL
+    - Android
   - serializedVersion: 4
     name: PC
     pixelLightCount: 2
