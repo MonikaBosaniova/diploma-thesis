@@ -14,8 +14,10 @@ public class GameManager : MonoBehaviour
     protected event Action OnQuizCompleted;
 
     protected List<LevelController> Levels;
+    protected List<TutorialController> Tutorials;
 
     private int _currentLevelIndex;
+    private int _curentTutorialIndex;
 
     private void Start()
     {

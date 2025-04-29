@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.7);">
+        <engine:VisualElement style="flex-grow: 0; bottom: 0; height: 50px; position: absolute; width: 100%; background-color: rgb(0, 0, 0); justify-content: center;">
+            <engine:Label text="LOREM" name="DialogueText" style="color: rgb(255, 255, 255);" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
