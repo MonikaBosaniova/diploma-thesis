@@ -9,7 +9,7 @@ namespace UI
     /// <summary>
     /// A base class for the UI controllers
     /// </summary>
-    public abstract class UIControllerBase : UIControllerBaseContext
+    public abstract class UIControllerBase : MonoBehaviour
     {
         #region [SerializeField] public bool IsPrepared {get; protected set;}
 
@@ -46,5 +46,7 @@ namespace UI
         {
             gameObject.SetActive(true);
         }
+
+        public abstract void Initialize();
     }
 }

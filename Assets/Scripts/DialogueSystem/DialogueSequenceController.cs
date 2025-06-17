@@ -11,6 +11,6 @@ public class DialogueSequenceController : MonoBehaviour
     private void OnEnable()
     {
         
-        throw new NotImplementedException();
+        //throw new NotImplementedException();
     }
 }

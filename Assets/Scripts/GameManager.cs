@@ -6,18 +6,23 @@ public class GameManager : MonoBehaviour
 {
     protected event Action OnGameStarted;
     protected event Action OnGameEnded;
-    protected event Action OnIntroductionStarted;
-    protected event Action OnIntroductionEnded;
+    protected event Action OnTutorialStarted;
+    protected event Action OnTutorialEnded;
     protected event Action OnMiniGameStarted;
     protected event Action OnMiniGameEnded;
     protected event Action OnQuizStarted;
     protected event Action OnQuizCompleted;
 
-    protected List<LevelController> Levels;
+    [SerializeField] private GameObject TutorialParent;
+    [SerializeField] private GameObject LevelsParent;
+    
+    [SerializeField] private bool skipTutorial;
+
     protected List<TutorialController> Tutorials;
+    protected List<LevelController> Levels;
 
     private int _currentLevelIndex;
-    private int _curentTutorialIndex;
+    private int _currentTutorialIndex;
 
     private void Start()
     {
@@ -27,6 +32,11 @@ public class GameManager : MonoBehaviour
     protected virtual void Initialization()
     {
         _currentLevelIndex = 0;
+        if (!skipTutorial)
+        {
+            InvokeOnTutorialStarted();
+            //Tutorials = FindObjectsByType<LevelController>()
+        }
     }
 
     protected void ContinueToNextLevel()
@@ -43,6 +53,23 @@ public class GameManager : MonoBehaviour
             if (_currentLevelIndex + 1 >= Levels.Count) return;
             transform.GetChild(_currentLevelIndex + 1).gameObject.SetActive(true);
             _currentLevelIndex++;
+        }
+    }
+    
+    protected void ContinueToNextTutorial()
+    {
+        if (_currentTutorialIndex == Tutorials.Count - 1)
+        {
+            transform.GetChild(_currentTutorialIndex).gameObject.SetActive(false);
+            _currentTutorialIndex = 0;
+            InvokeOnTutorialEnded();
+        }
+        else
+        {
+            transform.GetChild(_currentTutorialIndex).gameObject.SetActive(false);
+            if (_currentTutorialIndex + 1 >= Tutorials.Count) return;
+            transform.GetChild(_currentTutorialIndex + 1).gameObject.SetActive(true);
+            _currentTutorialIndex++;
         }
     }
 
@@ -82,16 +109,16 @@ public class GameManager : MonoBehaviour
         OnQuizCompleted?.Invoke();
     }
     
-    protected void InvokeOnIntroductionStarted()
+    protected void InvokeOnTutorialStarted()
     {
         Debug.Log("OnIntroductionStarted");
-        OnIntroductionStarted?.Invoke();
+        OnTutorialStarted?.Invoke();
     } 
     
-    protected void OInvokeOnIntroductionEnded()
+    protected void InvokeOnTutorialEnded()
     {
         Debug.Log("OnIntroductionEnded");
-        OnIntroductionEnded?.Invoke();
+        OnTutorialEnded?.Invoke();
     }
 
 }

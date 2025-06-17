@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 namespace UI
 {
-    public abstract class UIControllerBaseContext : MonoBehaviour
+    public abstract class UIControllerBaseContext : UIControllerBase
     {
         #region Runtime
 
@@ -31,25 +32,16 @@ namespace UI
 
         #endregion
 
-        //#region [ShowInInspector] private UIDocumentLocalization _UIDocumentLocalization;
-
-        ///// <summary>
-        ///// The UIDocumentLocalization
-        ///// </summary>
-        //[Tooltip("The UIDocumentLocalization")]
-        //[ShowInInspector]
-        //[ReadOnly]
-        //[TabGroup("Runtime")]
-        //[FormerlySerializedAs("_UIDocumentLocalization")]
-        //private UIDocumentLocalization _UIDocumentLocalization;
-
-        //#endregion
-
         #endregion
         
         private List<StyleSheet> _StyleSheets = new();
         
-
+        public override IEnumerator Setup()
+        {
+            gameObject.SetActive(true);
+            yield return new WaitUntil(() => IsPrepared);
+        }
+        
         /// <summary>
         /// Adds a stylesheet to the UI document
         /// </summary>
@@ -87,18 +79,26 @@ namespace UI
         /// <summary>
         /// Binds the UI elements
         /// </summary>
-        protected abstract void Bind();
-
-        protected virtual void Awake()
+        protected virtual void Bind()
         {
+            
+        }
+        
+        public override void Initialize()
+        {
+            IsPrepared = false;
             _UIDocument = GetComponent<UIDocument>();
-
+            Initialize(_UIDocument.rootVisualElement);
         }
 
-        private void Initiliaze(VisualElement root)
+        private void Initialize(VisualElement root)
         {
+            IsPrepared = true;
             _Root = root;
             SetupStyleSheets();
+            //SetupLocalization(root);
+            // if(AllLocalizedLabelsInUIDocument.Count > 0)
+            //     RefreshAllLabelsDependedOnLocale();
             Bind();
         }
 
