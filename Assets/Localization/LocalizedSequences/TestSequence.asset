@@ -13,22 +13,26 @@ MonoBehaviour:
   m_Name: TestSequence
   m_EditorClassIdentifier: 
   dialogueLines:
-  - m_TableReference:
-      m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
-    m_TableEntryReference:
-      m_KeyId: 15689658368
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
-    m_TableEntryReference:
-      m_KeyId: 55834391986982912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  - text:
+      m_TableReference:
+        m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+      m_TableEntryReference:
+        m_KeyId: 15689658368
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    avatar: 1
+  - text:
+      m_TableReference:
+        m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+      m_TableEntryReference:
+        m_KeyId: 55834391986982912
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    avatar: 2
   references:
     version: 2
     RefIds: []

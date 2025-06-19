@@ -1,124 +1,84 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace GameStateMachine
 {
-    protected event Action OnGameStarted;
-    protected event Action OnGameEnded;
-    protected event Action OnTutorialStarted;
-    protected event Action OnTutorialEnded;
-    protected event Action OnMiniGameStarted;
-    protected event Action OnMiniGameEnded;
-    protected event Action OnQuizStarted;
-    protected event Action OnQuizCompleted;
-
-    [SerializeField] private GameObject TutorialParent;
-    [SerializeField] private GameObject LevelsParent;
+    public class GameManager : MonoBehaviour
+    {
     
-    [SerializeField] private bool skipTutorial;
+        private GameState currentState;
+        [SerializeField] private bool skipTutorial = false;
+        [SerializeField] protected GameObject TutorialParent;
+        [SerializeField] protected GameObject LevelsParent;
 
-    protected List<TutorialController> Tutorials;
-    protected List<LevelController> Levels;
+        protected List<LevelController> Tutorials;
+        protected List<LevelController> Levels;
 
-    private int _currentLevelIndex;
-    private int _currentTutorialIndex;
+        private int _currentLevelIndex;
+        private int _currentTutorialIndex;
+        
 
-    private void Start()
-    {
-        Initialization();
-    }
-
-    protected virtual void Initialization()
-    {
-        _currentLevelIndex = 0;
-        if (!skipTutorial)
+        private void Start()
         {
-            InvokeOnTutorialStarted();
-            //Tutorials = FindObjectsByType<LevelController>()
+            Initialization();
         }
-    }
-
-    protected void ContinueToNextLevel()
-    {
-        if (_currentLevelIndex == Levels.Count - 1)
+        
+        void Update()
         {
-            transform.GetChild(_currentLevelIndex).gameObject.SetActive(false);
+            currentState?.Update();
+        }
+        
+        public void ChangeState(GameState newState)
+        {
+            currentState?.Exit();
+            currentState = newState;
+            currentState.Enter();
+        }
+        
+        protected virtual void Initialization()
+        {
             _currentLevelIndex = 0;
-            InvokeOnMiniGameEnded();
+            if (!skipTutorial)
+            {
+                //InvokeOnTutorialStarted();
+                //Tutorials = FindObjectsByType<LevelController>()
+            }
         }
-        else
-        {
-            transform.GetChild(_currentLevelIndex).gameObject.SetActive(false);
-            if (_currentLevelIndex + 1 >= Levels.Count) return;
-            transform.GetChild(_currentLevelIndex + 1).gameObject.SetActive(true);
-            _currentLevelIndex++;
-        }
-    }
-    
-    protected void ContinueToNextTutorial()
-    {
-        if (_currentTutorialIndex == Tutorials.Count - 1)
-        {
-            transform.GetChild(_currentTutorialIndex).gameObject.SetActive(false);
-            _currentTutorialIndex = 0;
-            InvokeOnTutorialEnded();
-        }
-        else
-        {
-            transform.GetChild(_currentTutorialIndex).gameObject.SetActive(false);
-            if (_currentTutorialIndex + 1 >= Tutorials.Count) return;
-            transform.GetChild(_currentTutorialIndex + 1).gameObject.SetActive(true);
-            _currentTutorialIndex++;
-        }
-    }
 
-    protected void InvokeOnGameStarted()
-    {
-        Debug.Log("OnGameStarted");
-        OnGameStarted?.Invoke();
-    }    
+        protected void ContinueToNextLevel()
+        {
+            if (_currentLevelIndex == Levels.Count - 1)
+            {
+                transform.GetChild(_currentLevelIndex).gameObject.SetActive(false);
+                _currentLevelIndex = 0;
+                //InvokeOnMiniGameEnded();
+            }
+            else
+            {
+                transform.GetChild(_currentLevelIndex).gameObject.SetActive(false);
+                if (_currentLevelIndex + 1 >= Levels.Count) return;
+                transform.GetChild(_currentLevelIndex + 1).gameObject.SetActive(true);
+                _currentLevelIndex++;
+            }
+        }
     
-    protected void InvokeOnGameEnded()
-    {
-        Debug.Log("OnGameEnded");
-        OnGameEnded?.Invoke();
-    }     
-    
-    protected void InvokeOnMiniGameStarted()
-    {
-        Debug.Log("OnMiniGameStarted");
-        OnMiniGameStarted?.Invoke();
-    }     
-    
-    protected void InvokeOnMiniGameEnded()
-    {
-        Debug.Log("OnMiniGameEnded");
-        OnMiniGameEnded?.Invoke();
-    }     
-    
-    protected void InvokeOnQuizStarted()
-    {
-        Debug.Log("OnQuizStarted");
-        OnQuizStarted?.Invoke();
-    }     
-    
-    protected void InvokeOnQuizCompleted()
-    {
-        Debug.Log("OnQuizCompleted");
-        OnQuizCompleted?.Invoke();
-    }
-    
-    protected void InvokeOnTutorialStarted()
-    {
-        Debug.Log("OnIntroductionStarted");
-        OnTutorialStarted?.Invoke();
-    } 
-    
-    protected void InvokeOnTutorialEnded()
-    {
-        Debug.Log("OnIntroductionEnded");
-        OnTutorialEnded?.Invoke();
-    }
+        protected void ContinueToNextTutorial()
+        {
+            if (_currentTutorialIndex == Tutorials.Count - 1)
+            {
+                transform.GetChild(_currentTutorialIndex).gameObject.SetActive(false);
+                _currentTutorialIndex = 0;
+                //InvokeOnTutorialEnded();
+            }
+            else
+            {
+                transform.GetChild(_currentTutorialIndex).gameObject.SetActive(false);
+                if (_currentTutorialIndex + 1 >= Tutorials.Count) return;
+                transform.GetChild(_currentTutorialIndex + 1).gameObject.SetActive(true);
+                _currentTutorialIndex++;
+            }
+        }
 
+    }
 }
+

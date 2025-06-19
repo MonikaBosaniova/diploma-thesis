@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using GameStateMachine;
 
 namespace Gates
 {
@@ -8,7 +9,8 @@ namespace Gates
         protected override void Initialization()
         {
             base.Initialization();
-            Levels = new List<LevelController>(gameObject.GetComponentsInChildren<GateLevelController>().ToList());
+            Tutorials = new List<LevelController>(TutorialParent.GetComponents<GateLevelController>().ToList());
+            Levels = new List<LevelController>(LevelsParent.GetComponents<GateLevelController>().ToList());
             foreach (var gateLevel in Levels.Cast<GateLevelController>())
             {
                 gateLevel.OnLevelEnded += ContinueToNextLevel;
@@ -16,6 +18,5 @@ namespace Gates
             }
             Levels.ElementAt(0).gameObject.SetActive(true);
         }
-        
     }
 }
