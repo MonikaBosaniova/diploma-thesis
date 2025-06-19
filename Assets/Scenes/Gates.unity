@@ -570,9 +570,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96006ab55041b2942a1566dca12305f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TutorialParent: {fileID: 1415162210}
-  LevelsParent: {fileID: 1313237317}
   skipTutorial: 0
+  TutorialParent: {fileID: 1415162210}
+  MinigameParent: {fileID: 1313237317}
 --- !u!1001 &264598826
 PrefabInstance:
   m_ObjectHideFlags: 0
