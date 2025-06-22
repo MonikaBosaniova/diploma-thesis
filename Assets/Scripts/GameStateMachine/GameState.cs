@@ -8,15 +8,15 @@ namespace GameStateMachine
         internal GameObject stateObject;
         internal Action OnStateComplete;
         
-        public GameState(GameObject obj)
+        public virtual void Init(GameObject obj)
         {
             stateObject = obj;
         }
 
         public virtual void Enter()
         {
-            stateObject.SetActive(true);
             Debug.Log("Entered: " + stateObject.name);
+            stateObject.SetActive(true);
             PrintChildren(stateObject);
         }
         

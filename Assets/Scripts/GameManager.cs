@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace GameStateMachine
 {
@@ -8,8 +9,8 @@ namespace GameStateMachine
     {
         protected GameState CurrentState;
         [SerializeField] private bool skipTutorial = false;
-        [SerializeField] protected GameObject TutorialParent;
-        [SerializeField] protected GameObject MinigameParent;
+        [SerializeField] protected GameObject tutorialParent;
+        [SerializeField] protected GameObject minigameParent;
         
         private void Start()
         {
@@ -25,8 +26,10 @@ namespace GameStateMachine
         
         protected virtual void Initialization()
         {
-            GameState tutorialState = new TutorialState(TutorialParent);
-            GameState minigameState = new MinigameState(MinigameParent);
+            GameState tutorialState = tutorialParent.AddComponent<TutorialState>();
+            tutorialState.Init(tutorialParent);
+            GameState minigameState = minigameParent.AddComponent<MinigameState>();
+            minigameState.Init(minigameParent);
             
             tutorialState.OnStateComplete += () => ChangeState(minigameState);
             ChangeState(skipTutorial ? minigameState : tutorialState);

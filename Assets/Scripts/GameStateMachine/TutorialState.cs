@@ -12,46 +12,45 @@ namespace GameStateMachine
         protected GameObject TutorialsParent;
         private int _currentTutorialIndex;
         
-        public TutorialState(GameObject obj) : base(obj)
+        public override void Init(GameObject o)
         {
-            TutorialsParent = obj;
-            Tutorials = new List<LevelController>(TutorialsParent.GetComponents<LevelController>().ToList());
+            TutorialsParent = o;
+            stateObject = o;
+            Tutorials = TutorialsParent.GetComponentsInChildren<LevelController>().ToList();
+            Debug.Log(Tutorials.Count + " Tutorials loaded");
         }
-
+        
         public override void Enter()
         {
             base.Enter();
             foreach (var tutorialStep in Tutorials)
             {
                 tutorialStep.OnLevelEnded += ContinueToNextTutorial;
-                tutorialStep.gameObject.SetActive(false);
             }
-            Tutorials.ElementAt(0).gameObject.SetActive(true);
+            Tutorials.ElementAt(0).Init();
         }
 
         public override void Exit()
         {
-            //throw new System.NotImplementedException();
         }
 
         public override void Update()
         {
-            //throw new System.NotImplementedException();
         }
 
         protected void ContinueToNextTutorial()
         {
             if (_currentTutorialIndex == Tutorials.Count - 1)
             {
-                transform.GetChild(_currentTutorialIndex).gameObject.SetActive(false);
+                Tutorials.ElementAt(_currentTutorialIndex).Close();
                 _currentTutorialIndex = 0;
                 OnStateComplete?.Invoke();
             }
             else
             {
-                transform.GetChild(_currentTutorialIndex).gameObject.SetActive(false);
+                Tutorials.ElementAt(_currentTutorialIndex).Close();
                 if (_currentTutorialIndex + 1 >= Tutorials.Count) return;
-                transform.GetChild(_currentTutorialIndex + 1).gameObject.SetActive(true);
+                Tutorials.ElementAt(_currentTutorialIndex + 1).Init();
                 _currentTutorialIndex++;
             }
         }
