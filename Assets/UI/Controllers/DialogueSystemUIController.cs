@@ -12,15 +12,24 @@ namespace UI
         public DialogueSequence dialogueSequence;
         public AvatarVisualization avatarVisualizationConfig;
 
-        private void OnEnable()
-        {
-            base.Initialize();
-        }
+        // private void OnEnable()
+        // {
+        //     
+        // }
 
         public void ShowDialogue(DialogueSequence ds)
         {
-            dialogueSequence = ds;
             gameObject.SetActive(true);
+            dialogueSequence = ds;
+            base.Initialize();
+        }
+
+        public void HideDialogue()
+        {
+            dialogueSequence = null;
+            DialogueLabel.text = "";
+            _currentIndex = 0;
+            gameObject.SetActive(false);
         }
 
         protected override void Bind()
@@ -35,7 +44,8 @@ namespace UI
         {
             if (_currentIndex >= dialogueSequence.dialogueLines.Count)
             {
-                DialogueLabel.text = "End of dialogue.";
+                //DialogueLabel.text = "End of dialogue.";
+                HideDialogue();
                 return;
             }
             

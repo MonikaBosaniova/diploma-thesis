@@ -1141,7 +1141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40104dc62ba274a44a0cac36418d270f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueSequence: {fileID: 11400000, guid: e7773d08cdb55584b9744aa890a1e200, type: 2}
+  dialogueSequence: {fileID: 11400000, guid: 177b0ec59fb752945bdbc3e82f862cd7, type: 2}
 --- !u!1 &547340538
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,7 +4606,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1815986197
 Transform:
   m_ObjectHideFlags: 0
@@ -4635,6 +4635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684045040131a9c419e8e0b81f728f99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DialogWindowUI: {fileID: 1927327832}
 --- !u!1001 &1826054405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5020,7 +5021,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1927327830
 Transform:
   m_ObjectHideFlags: 0

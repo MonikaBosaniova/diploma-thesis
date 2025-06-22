@@ -1,4 +1,5 @@
 using System;
+using DialogueSystem;
 using UnityEngine;
 
 public class LevelController : MonoBehaviour
@@ -9,7 +10,12 @@ public class LevelController : MonoBehaviour
 
     public virtual void Init()
     {
-        
+        DialogueSequenceController ds = transform.GetComponent<DialogueSequenceController>();
+        if (ds != null)
+        {
+            UIManager.Instance.ShowDialogWindowUI(ds.dialogueSequence);
+            Debug.Log("Show DIALOGUE");
+        }
     }
 
     public virtual void Close()
