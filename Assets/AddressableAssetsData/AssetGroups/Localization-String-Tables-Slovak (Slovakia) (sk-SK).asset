@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Slovak (Slovakia) (sk-SK)
   m_GUID: 1584f23c45ab28a4280e03a3292c31b5
   m_SerializeEntries:
+  - m_GUID: 52765d29c9d0c3346bd34a047288e05f
+    m_Address: Quiz_sk-SK
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-sk-SK
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 98869d9d8554dc2478d51cee179c98e1
     m_Address: GlobalGameLocalization_sk-SK
     m_ReadOnly: 1

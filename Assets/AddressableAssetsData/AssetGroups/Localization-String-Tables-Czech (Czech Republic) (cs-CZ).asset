@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-Czech (Czech Republic) (cs-CZ)
   m_GUID: 4c0c38a6a873252439dbe0fad2ae29d0
   m_SerializeEntries:
+  - m_GUID: 21f987dcee5899d449c2255d7d612b79
+    m_Address: Quiz_cs-CZ
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-cs-CZ
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 38c13d71fd7d04a4fa42316dd761e494
     m_Address: GlobalGameLocalization_cs-CZ
     m_ReadOnly: 1

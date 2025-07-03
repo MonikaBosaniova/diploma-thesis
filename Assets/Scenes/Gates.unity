@@ -524,6 +524,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3755226786957400231, guid: 39b120d43e3524f4190188f5a8295e2b, type: 3}
   m_PrefabInstance: {fileID: 223198692}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &255719259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 255719260}
+  m_Layer: 0
+  m_Name: Quiz
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &255719260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255719259}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 262643145}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &262643144
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +587,7 @@ Transform:
   m_Children:
   - {fileID: 1415162211}
   - {fileID: 1313237318}
+  - {fileID: 255719260}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &262643146
@@ -573,6 +605,7 @@ MonoBehaviour:
   skipTutorial: 0
   tutorialParent: {fileID: 1415162210}
   minigameParent: {fileID: 1313237317}
+  quizParent: {fileID: 0}
 --- !u!1001 &264598826
 PrefabInstance:
   m_ObjectHideFlags: 0

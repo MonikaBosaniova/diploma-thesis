@@ -15,6 +15,12 @@ MonoBehaviour:
   m_GroupName: Localization-String-Tables-English (United States) (en-US)
   m_GUID: 75dd30fcd548b794dbba2f563bfa9bd5
   m_SerializeEntries:
+  - m_GUID: 61a939cd8b2a7744294e8bf3aeadcd61
+    m_Address: Quiz_en-US
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en-US
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ccc37a3414c48f64091b7413cb1f657a
     m_Address: GlobalGameLocalization_en-US
     m_ReadOnly: 1

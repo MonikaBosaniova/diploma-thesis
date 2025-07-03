@@ -11,6 +11,7 @@ namespace GameStateMachine
         [SerializeField] private bool skipTutorial = false;
         [SerializeField] protected GameObject tutorialParent;
         [SerializeField] protected GameObject minigameParent;
+        [SerializeField] protected GameObject quizParent;
         
         private void Start()
         {

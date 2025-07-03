@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Quiz_sk-SK
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: sk-SK
+  m_SharedData: {fileID: 11400000, guid: 031cd969291c2774f93441ceaa8558fb, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 92088193024
+    m_Localized: "SK\tQ1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 177085763584
+    m_Localized: "SK\tA0"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331964633088
+    m_Localized: "SK\tA1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 354802618368
+    m_Localized: "SK\tA2"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

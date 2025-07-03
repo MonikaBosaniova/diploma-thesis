@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Localization-Assets-Shared
   m_GUID: ae08987de8085b74a8fdbcc4d19b4384
   m_SerializeEntries:
+  - m_GUID: 031cd969291c2774f93441ceaa8558fb
+    m_Address: Assets/Localization/Quiz Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7ee384e42b7e80f459a5b7389591d149
     m_Address: Assets/Localization/GlobalGameLocalization Shared Data.asset
     m_ReadOnly: 1
