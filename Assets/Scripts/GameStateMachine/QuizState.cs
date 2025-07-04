@@ -8,26 +8,26 @@ namespace GameStateMachine
 {
     public class QuizState : GameState
     {
-        protected List<LevelController> Tutorials;
-        protected GameObject TutorialsParent;
+        
+        protected QuizData QuizData;
+        protected GameObject QuizParent;
         private int _currentTutorialIndex;
         
         public override void Init(GameObject o)
         {
-            TutorialsParent = o;
+            QuizParent = o;
             stateObject = o;
-            Tutorials = TutorialsParent.GetComponentsInChildren<LevelController>().ToList();
-            Debug.Log(Tutorials.Count + " Tutorials loaded");
+            QuizData = QuizParent.GetComponent<QuizController>().quizData;
         }
         
         public override void Enter()
         {
             base.Enter();
-            foreach (var tutorialStep in Tutorials)
+            foreach (var tutorialStep in QuizData.quizQuestions)
             {
-                tutorialStep.OnLevelEnded += ContinueToNextTutorial;
+                //tutorialStep.OnLevelEnded += ContinueToNextQuiz;
             }
-            Tutorials.ElementAt(0).Init();
+            //Tutorials.ElementAt(0).Init();
         }
 
         public override void Exit()
@@ -38,21 +38,21 @@ namespace GameStateMachine
         {
         }
 
-        protected void ContinueToNextTutorial()
+        protected void ContinueToNextQuiz()
         {
-            if (_currentTutorialIndex == Tutorials.Count - 1)
-            {
-                Tutorials.ElementAt(_currentTutorialIndex).Close();
-                _currentTutorialIndex = 0;
-                OnStateComplete?.Invoke();
-            }
-            else
-            {
-                Tutorials.ElementAt(_currentTutorialIndex).Close();
-                if (_currentTutorialIndex + 1 >= Tutorials.Count) return;
-                Tutorials.ElementAt(_currentTutorialIndex + 1).Init();
-                _currentTutorialIndex++;
-            }
+            // if (_currentTutorialIndex == Tutorials.Count - 1)
+            // {
+            //     Tutorials.ElementAt(_currentTutorialIndex).Close();
+            //     _currentTutorialIndex = 0;
+            //     OnStateComplete?.Invoke();
+            // }
+            // else
+            // {
+            //     Tutorials.ElementAt(_currentTutorialIndex).Close();
+            //     if (_currentTutorialIndex + 1 >= Tutorials.Count) return;
+            //     Tutorials.ElementAt(_currentTutorialIndex + 1).Init();
+            //     _currentTutorialIndex++;
+            // }
         }
     }
 }

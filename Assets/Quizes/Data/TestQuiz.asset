@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b25a52910ac1d6449512aa6e6e79de4, type: 3}
   m_Name: TestQuiz
   m_EditorClassIdentifier: 
+  AnswerTemplate: {fileID: 9197481963319205126, guid: 84d0a223c16e8e94ab0560fa90c427be, type: 3}
   quizQuestions:
   - question:
       m_TableReference:

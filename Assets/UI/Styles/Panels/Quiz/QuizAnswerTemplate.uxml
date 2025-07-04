@@ -1,0 +1,4 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/Panels/Quiz/QuizStyle.uss?fileID=7433441132597879392&amp;guid=1b715b0e49026534eada70e755eefa7d&amp;type=3#QuizStyle" />
+    <engine:Button text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget volutpat sem. Donec quam sapien, pulvinar at fringilla in, iaculis et dolor." class="defaultAnswerBox" />
+</engine:UXML>

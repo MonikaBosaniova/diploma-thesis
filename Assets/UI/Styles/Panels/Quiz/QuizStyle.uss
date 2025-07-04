@@ -1,0 +1,30 @@
+.questionBox {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -unity-slice-scale: 0.5px;
+    flex-grow: 1;
+}
+
+.quizLabels {
+    flex-grow: 1;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.defaultAnswerBox {
+    background-image: resource('UI/Default9Sliced');
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-slice-scale: 0.5px;
+    white-space: normal;
+    height: 50px;
+}
+
+.defaultAnswerBox:hover {
+    -unity-background-image-tint-color: rgb(209, 209, 209);
+}
