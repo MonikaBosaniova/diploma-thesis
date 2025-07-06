@@ -32,7 +32,11 @@ namespace GameStateMachine
             GameState minigameState = minigameParent.AddComponent<MinigameState>();
             minigameState.Init(minigameParent);
             
+            GameState quizState = quizParent.AddComponent<QuizState>();
+            quizState.Init(quizParent);
+            
             tutorialState.OnStateComplete += () => ChangeState(minigameState);
+            minigameState.OnStateComplete += () => ChangeState(quizState);
             ChangeState(skipTutorial ? minigameState : tutorialState);
         }
     }

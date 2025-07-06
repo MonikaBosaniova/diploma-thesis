@@ -534,13 +534,14 @@ GameObject:
   m_Component:
   - component: {fileID: 255719260}
   - component: {fileID: 255719261}
+  - component: {fileID: 255719262}
   m_Layer: 0
   m_Name: Quiz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &255719260
 Transform:
   m_ObjectHideFlags: 0
@@ -575,6 +576,20 @@ MonoBehaviour:
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920
   m_WorldSpaceHeight: 1080
+--- !u!114 &255719262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255719259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93e6ebe8111c804087fbfd5ff2dba15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <IsPrepared>k__BackingField: 0
+  quizData: {fileID: 11400000, guid: 4cbba8517551bd645a83df679c4098e1, type: 2}
 --- !u!1 &262643144
 GameObject:
   m_ObjectHideFlags: 0

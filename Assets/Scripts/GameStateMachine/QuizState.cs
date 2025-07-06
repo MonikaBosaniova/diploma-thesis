@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Gates;
+using UI;
 using UnityEngine;
 
 namespace GameStateMachine
@@ -17,17 +18,13 @@ namespace GameStateMachine
         {
             QuizParent = o;
             stateObject = o;
-            QuizData = QuizParent.GetComponent<QuizController>().quizData;
+            QuizData = QuizParent.GetComponent<QuizUIController>().quizData;
         }
         
         public override void Enter()
         {
             base.Enter();
-            foreach (var tutorialStep in QuizData.quizQuestions)
-            {
-                //tutorialStep.OnLevelEnded += ContinueToNextQuiz;
-            }
-            //Tutorials.ElementAt(0).Init();
+            QuizParent.GetComponent<QuizUIController>().ShowQuiz(QuizData);
         }
 
         public override void Exit()

@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
-using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 [CreateAssetMenu(fileName = "QuizData", menuName = "Scriptable Objects/QuizData")]
