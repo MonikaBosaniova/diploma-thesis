@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using DialogueSystem;
 using Unity.VisualScripting;
@@ -39,11 +40,11 @@ namespace UI
             //DialogueContainer.RegisterCallback<ClickEvent>(NextLine);
         }
 
-        private void ShowResult(int i)
+        private void ShowResult(bool isCorrect, int hierarchyIndexOfButton)
         {
-            Debug.Log(AnswersParent.childCount + " children..." + i);
-            var answerButton = AnswersParent.ElementAt(i).Q<Button>();
-            if (_currentQuizQuestion.indexOfCorrectAnswer == i)
+            Debug.Log(AnswersParent.childCount + " children...");
+            var answerButton = AnswersParent.ElementAt(hierarchyIndexOfButton).Q<Button>();
+            if (isCorrect)
             {
                 answerButton.style.unityBackgroundImageTintColor = Color.green;
                 CorrectAnswerWasClicked(answerButton);
@@ -84,15 +85,21 @@ namespace UI
             localizedStringQuestion.StringChanged += (value) => Question.text = value;
             localizedStringQuestion.RefreshString(); 
             
+            List<LocalizedString> randomizedAnswers = _currentQuizQuestion.answers.OrderBy(x => Guid.NewGuid()).ToList();
+            
             //Create new answer buttons
             for (int i = 0; i < _currentQuizQuestion.answers.Count; i++)
             {
                 var answer = quizData.AnswerTemplate.Instantiate();
                 AnswersParent.Add(answer);
-                var localizedString = _currentQuizQuestion.answers.ElementAt(i);
+                var localizedString = randomizedAnswers.ElementAt(i);
                 var answerButton = answer.Q<Button>();
                 var index = i;
-                answerButton.clicked += () => ShowResult(index);
+                
+                if(randomizedAnswers.ElementAt(i) == _currentQuizQuestion.answers.ElementAt(0))
+                    answerButton.clicked += () => ShowResult(true, index);
+                else
+                    answerButton.clicked += () => ShowResult(false, index);
                 
                 localizedString.StringChanged += (value) => answerButton.text = value;
                 localizedString.RefreshString();

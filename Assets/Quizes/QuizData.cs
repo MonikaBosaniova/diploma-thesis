@@ -15,6 +15,5 @@ public struct QuizQuestion
 {
     public LocalizedString question;
     public List<LocalizedString> answers;
-    public int indexOfCorrectAnswer;
     public int value;
 }
