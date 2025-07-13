@@ -14,6 +14,7 @@ public class QuizData : ScriptableObject
 public struct QuizQuestion
 {
     public LocalizedString question;
+    [Header("First answer is the correct one.")]
     public List<LocalizedString> answers;
     public int value;
 }
