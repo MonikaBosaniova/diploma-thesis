@@ -18,7 +18,7 @@ MonoBehaviour:
       m_TableReference:
         m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
       m_TableEntryReference:
-        m_KeyId: 92088193024
+        m_KeyId: 3763166435758080
         m_Key: 
       m_FallbackState: 0
       m_WaitForCompletion: 0
@@ -48,7 +48,76 @@ MonoBehaviour:
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-    indexOfCorrectAnswer: 1
+    value: 1
+  - question:
+      m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 92088193024
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    answers:
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 331964633088
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 177085763584
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 354802618368
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    value: 1
+  - question:
+      m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 3763615255646208
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    answers:
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 354802618368
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 177085763584
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 331964633088
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
     value: 1
   references:
     version: 2

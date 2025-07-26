@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using DialogueSystem;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.UIElements;
@@ -40,7 +38,7 @@ namespace UI
             //DialogueContainer.RegisterCallback<ClickEvent>(NextLine);
         }
 
-        private void ShowResult(bool isCorrect, int hierarchyIndexOfButton)
+        private void ShowResultOfQuestion(bool isCorrect, int hierarchyIndexOfButton)
         {
             Debug.Log(AnswersParent.childCount + " children...");
             var answerButton = AnswersParent.ElementAt(hierarchyIndexOfButton).Q<Button>();
@@ -54,7 +52,11 @@ namespace UI
                 answerButton.style.unityBackgroundImageTintColor = Color.red;
                 IncorrectAnswerWasClicked(answerButton);
             }
-            NextQuiz();
+            
+            //TODO
+            //show results prettier
+            
+            NextQuizQuestion();
         }
 
         private void CorrectAnswerWasClicked(Button answerButton)
@@ -65,7 +67,8 @@ namespace UI
 
         private void IncorrectAnswerWasClicked(Button answerButton)
         {
-            throw new NotImplementedException();
+            //TODO
+            //show wrong answer prettier
         }
 
         private void ShowAndBindCurrentQuizQuestion()
@@ -82,7 +85,7 @@ namespace UI
             //Map current question
             _currentQuizQuestion = quizData.quizQuestions.ElementAt(_indexOfQuizQuestion);
             var localizedStringQuestion = _currentQuizQuestion.question;
-            localizedStringQuestion.StringChanged += (value) => Question.text = value;
+            localizedStringQuestion.StringChanged += UpdateText;//(te(value) => Question.text = value);
             localizedStringQuestion.RefreshString(); 
             
             List<LocalizedString> randomizedAnswers = _currentQuizQuestion.answers.OrderBy(x => Guid.NewGuid()).ToList();
@@ -97,24 +100,38 @@ namespace UI
                 var index = i;
                 
                 if(randomizedAnswers.ElementAt(i) == _currentQuizQuestion.answers.ElementAt(0))
-                    answerButton.clicked += () => ShowResult(true, index);
+                    answerButton.clicked += () => ShowResultOfQuestion(true, index);
                 else
-                    answerButton.clicked += () => ShowResult(false, index);
+                    answerButton.clicked += () => ShowResultOfQuestion(false, index);
                 
                 localizedString.StringChanged += (value) => answerButton.text = value;
                 localizedString.RefreshString();
             }
         }
         
-        private void NextQuiz()
+        private void NextQuizQuestion()
         {
             Debug.Log("Quiz next");
-            // var previousLine = dialogueSequence.dialogueLines.ElementAt(_currentIndex).text;
-            // previousLine.StringChanged -= UpdateText;
-            //
-            // _currentIndex++;
-            // //ShowCurrentLine();
+            var previousLine = quizData.quizQuestions.ElementAt(_indexOfQuizQuestion).question;//dialogueSequence.dialogueLines.ElementAt(_currentIndex).text;
+            previousLine.StringChanged -= UpdateText;
+            
+            _indexOfQuizQuestion++;
+            if(_indexOfQuizQuestion != quizData.quizQuestions.Count)
+                ShowAndBindCurrentQuizQuestion();
+            else
+            {
+                ShowResultOfQuiz();
+            }
         }
+
+        private void ShowResultOfQuiz()
+        {
+            throw new NotImplementedException();
+        }
+
+        void UpdateText(string value)  
+        {  
+            Question.text = value;
+        }  
     }
 }
-

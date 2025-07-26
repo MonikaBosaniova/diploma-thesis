@@ -15,8 +15,16 @@ MonoBehaviour:
   m_TableCollectionName: Quiz
   m_TableCollectionNameGuidString: 031cd969291c2774f93441ceaa8558fb
   m_Entries:
+  - m_Id: 3763166435758080
+    m_Key: Q0
+    m_Metadata:
+      m_Items: []
   - m_Id: 92088193024
     m_Key: Q1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3763615255646208
+    m_Key: Q2
     m_Metadata:
       m_Items: []
   - m_Id: 177085763584
