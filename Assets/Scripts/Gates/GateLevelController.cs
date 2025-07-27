@@ -38,6 +38,9 @@ namespace Gates
 
         private void OnDisable()
         {
+            if(_allLightBulbs == null)
+                return;
+            
             foreach (var lightBulb in _allLightBulbs)
             {
                 lightBulb.OnValueChanged -= CheckFinishState;

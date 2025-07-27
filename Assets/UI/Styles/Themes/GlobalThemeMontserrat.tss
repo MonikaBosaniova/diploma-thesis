@@ -4,4 +4,6 @@
 
 
 
-VisualElement {}
+Label{
+    -unity-font-definition: resource("UI/Fonts/Montserrat/Montserrat-VariableFont_wght SDF");
+}

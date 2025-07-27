@@ -1,0 +1,9 @@
+@import url("/Assets/UI Toolkit/UnityDefaultRuntimeTheme.tss");
+
+@import url("/Assets/UI/Styles/GlobalStyles/GlobalIconsPaths.uss");
+
+
+
+Label{
+    -unity-font-definition: resource("UI/Fonts/VT323/VT323-Regular SDF");
+}

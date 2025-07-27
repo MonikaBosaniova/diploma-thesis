@@ -28,3 +28,13 @@
 .defaultAnswerBox:hover {
     -unity-background-image-tint-color: rgb(209, 209, 209);
 }
+
+.gameResults {
+    background-image: resource('UI/Default9Sliced');
+    width: 80%;
+    height: 60%;
+    align-self: center;
+}
+
+.gameResultsButton {
+}
