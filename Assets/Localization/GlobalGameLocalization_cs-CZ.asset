@@ -26,6 +26,18 @@ MonoBehaviour:
     m_Localized: CZ None
     m_Metadata:
       m_Items: []
+  - m_Id: 92127792197685248
+    m_Localized: CZ Quiz results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92128937733410816
+    m_Localized: CZ Game results
+    m_Metadata:
+      m_Items: []
+  - m_Id: 92129047615787008
+    m_Localized: CZ Minigame results
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

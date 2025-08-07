@@ -35,8 +35,10 @@ namespace UI
             Debug.Log("Quiz bind");
             _indexOfQuizQuestion = 0;
             ShowAndBindCurrentQuizQuestion();
+            Close.clicked += ReturnToMenu;
             //DialogueContainer.RegisterCallback<ClickEvent>(NextLine);
         }
+
 
         private void ShowResultOfQuestion(bool isCorrect, int hierarchyIndexOfButton)
         {
@@ -57,6 +59,11 @@ namespace UI
             //show results prettier
             
             NextQuizQuestion();
+        }
+        private void ReturnToMenu()
+        {
+            //TODO return
+            ResultBoard.style.display = DisplayStyle.None;
         }
 
         private void CorrectAnswerWasClicked(Button answerButton)
@@ -126,7 +133,11 @@ namespace UI
 
         private void ShowResultOfQuiz()
         {
-            throw new NotImplementedException();
+            QuizParent.style.display = DisplayStyle.None;
+            AnswersParent.Clear();
+            
+            ResultBoard.style.display = DisplayStyle.Flex;
+            QuizResults.text = score + " / " + quizData.quizQuestions.Count;
         }
 
         void UpdateText(string value)  
