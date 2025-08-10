@@ -1,0 +1,83 @@
+.leftMenuButton {
+    width: 32px;
+    height: 32px;
+}
+
+.leftMenuSlidingWindow {
+}
+
+.tabLeftMenu {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.tabLeftMenu > #unity-tab-view__header-container {
+    flex-direction: column;
+}
+
+.tabLeftMenu #unity-tab-view__content-container {
+    flex-grow: 1;
+    align-items: stretch;
+    flex-shrink: 0;
+}
+
+.tabLeftMenu #unity-tab__header {
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    align-content: auto;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    margin-bottom: 5px;
+    background-color: rgb(221, 151, 64);
+}
+
+.tabLeftMenu #unity-tab__header-underline {
+}
+
+.tabLeftMenu #unity-tab__header-image {
+    height: 24px;
+    width: 24px;
+    align-content: center;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.tab {
+    background-color: rgb(221, 151, 64);
+    position: relative;
+    flex-grow: 1;
+    align-items: stretch;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    flex-shrink: 0;
+    translate: -250% 0;
+}
+
+.tab > #unity-tab__content-container {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.transitionClose {
+    transition-property: translate;
+    transition-duration: 0.33s;
+    transition-timing-function: ease-in;
+    translate: -250% 0;
+}
+
+.transitionOpen {
+    transition-property: translate;
+    transition-duration: 0.33s;
+    transition-timing-function: ease-in;
+    translate: 0 0;
+}
+
+.closeTab {
+    background-color: red;
+}

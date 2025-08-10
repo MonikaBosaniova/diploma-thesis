@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace UI
@@ -64,6 +65,7 @@ namespace UI
         {
             //TODO return
             ResultBoard.style.display = DisplayStyle.None;
+            SceneManager.LoadScene(0);
         }
 
         private void CorrectAnswerWasClicked(Button answerButton)

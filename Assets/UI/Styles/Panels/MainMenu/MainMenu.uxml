@@ -1,0 +1,41 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/Panels/MainMenu/LeftPanelMenu.uss?fileID=7433441132597879392&amp;guid=0bfeb6e67ed97f84b804ec17abdc851b&amp;type=3#LeftPanelMenu" />
+    <engine:VisualElement picking-mode="Ignore" style="flex-grow: 1;">
+        <engine:VisualElement picking-mode="Ignore" class="leftMenuButtonMenu" style="flex-grow: 1; flex-direction: column;">
+            <engine:TabView reorderable="false" class="tabLeftMenu" style="flex-direction: row; flex-grow: 1; width: 15%;">
+                <engine:Tab name="Close" icon-image="project://database/Assets/Resources/UI/Icons/close.png?fileID=2800000&amp;guid=63ce799098ef9c943b4d01d1b87f5b05&amp;type=3#close" class="tab" />
+                <engine:Tab enabled="true" name="Play" icon-image="project://database/Assets/Resources/UI/Icons/play.png?fileID=2800000&amp;guid=b8243fc00cc2bf24a94165c9f0928510&amp;type=3#play" class="tab" style="flex-grow: 1;">
+                    <engine:VisualElement>
+                        <engine:VisualElement style="flex-direction: row; align-items: center;">
+                            <engine:VisualElement style="background-image: resource(&apos;UI/Icons/skilltree&apos;); width: 24px; height: 24px;" />
+                            <engine:Label text="Levels">
+                                <Bindings>
+                                    <UnityEngine.Localization.LocalizedString property="text" table="GUID:7ee384e42b7e80f459a5b7389591d149" entry="Id(93159239264129024)" />
+                                </Bindings>
+                            </engine:Label>
+                        </engine:VisualElement>
+                        <engine:Button text="Gates" name="Gates" style="align-self: flex-start;">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:7ee384e42b7e80f459a5b7389591d149" entry="Id(93158983956844544)" />
+                            </Bindings>
+                        </engine:Button>
+                    </engine:VisualElement>
+                </engine:Tab>
+                <engine:Tab name="Quiz" icon-image="project://database/Assets/Resources/UI/Icons/quiz.png?fileID=2800000&amp;guid=0bfe6757dd8d87c4cb4b899dfdd55d21&amp;type=3#quiz" class="tab">
+                    <engine:Label text="Quiz">
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:7ee384e42b7e80f459a5b7389591d149" entry="Id(93186492266074112)" />
+                        </Bindings>
+                    </engine:Label>
+                </engine:Tab>
+                <engine:Tab name="Settings" icon-image="project://database/Assets/Resources/UI/Icons/settings.png?fileID=2800000&amp;guid=0c70a57eb4218f24dbcfe8085b191198&amp;type=3#settings" class="tab">
+                    <engine:Label>
+                        <Bindings>
+                            <UnityEngine.Localization.LocalizedString property="text" table="GUID:7ee384e42b7e80f459a5b7389591d149" entry="Id(93109837128421376)" />
+                        </Bindings>
+                    </engine:Label>
+                </engine:Tab>
+            </engine:TabView>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

@@ -35,6 +35,26 @@ MonoBehaviour:
     m_Key: Minigame results
     m_Metadata:
       m_Items: []
+  - m_Id: 93109690059345920
+    m_Key: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93109837128421376
+    m_Key: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93158983956844544
+    m_Key: Gates
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93159239264129024
+    m_Key: Levels
+    m_Metadata:
+      m_Items: []
+  - m_Id: 93186492266074112
+    m_Key: Quiz
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
