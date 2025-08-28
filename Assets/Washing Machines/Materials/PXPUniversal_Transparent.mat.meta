@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fbd18256ff47ac64aac64f8ef9c4037d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314619
+  packageName: Functional Washing Machines
+  packageVersion: 1.0.0
+  assetPath: Assets/Washing Machines/Materials/PXPUniversal_Transparent.mat
+  uploadId: 744231

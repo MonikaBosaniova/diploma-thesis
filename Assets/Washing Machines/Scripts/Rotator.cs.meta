@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5113d41d4e41ce24099a29e32908231a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 314619
+  packageName: Functional Washing Machines
+  packageVersion: 1.0.0
+  assetPath: Assets/Washing Machines/Scripts/Rotator.cs
+  uploadId: 744231
