@@ -1,16 +1,20 @@
-using System;
 using UnityEngine;
+using DG.Tweening;
 
 public class UIStateManager : MonoBehaviour
 {
     [SerializeField] private UIStates CurrentUIState;
+    [SerializeField] private RectTransform skillTree;
 
     private GameObject menuStateParent;
     private GameObject skillTreeParent;
+    
+    private float skillTreeHiddenPositionX;
     private void Start()
     {
         menuStateParent = transform.GetChild(0).gameObject;
         skillTreeParent = transform.GetChild(1).gameObject;
+        skillTreeHiddenPositionX = skillTree.anchoredPosition.x;
         UpdateState(UIStates.Menu);
     }
 
@@ -36,12 +40,13 @@ public class UIStateManager : MonoBehaviour
 
     public void ChangeToMenu()
     {
-        UpdateState(UIStates.Menu);
+        skillTree.DOAnchorPosX(skillTreeHiddenPositionX, .33f).OnComplete(() =>UpdateState(UIStates.Menu));
     }
     
     public void ChangeToSkillTree()
     {
         UpdateState(UIStates.SkillTree);
+        skillTree.DOAnchorPosX(0, .33f);
     }
 
 }
