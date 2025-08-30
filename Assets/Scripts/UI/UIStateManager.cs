@@ -5,16 +5,19 @@ public class UIStateManager : MonoBehaviour
 {
     [SerializeField] private UIStates CurrentUIState;
     [SerializeField] private RectTransform skillTree;
+    [SerializeField] private Transform frontPCPanel;
 
     private GameObject menuStateParent;
     private GameObject skillTreeParent;
     
     private float skillTreeHiddenPositionX;
+    private float frontPanelStartPositionY;
     private void Start()
     {
         menuStateParent = transform.GetChild(0).gameObject;
         skillTreeParent = transform.GetChild(1).gameObject;
         skillTreeHiddenPositionX = skillTree.anchoredPosition.x;
+        frontPanelStartPositionY = frontPCPanel.localPosition.y;
         UpdateState(UIStates.Menu);
     }
 
@@ -40,6 +43,7 @@ public class UIStateManager : MonoBehaviour
 
     public void ChangeToMenu()
     {
+        frontPCPanel.DOLocalMoveY(frontPanelStartPositionY, .8f);
         skillTree.DOAnchorPosX(skillTreeHiddenPositionX, .33f).OnComplete(() =>UpdateState(UIStates.Menu));
     }
     
@@ -47,6 +51,7 @@ public class UIStateManager : MonoBehaviour
     {
         UpdateState(UIStates.SkillTree);
         skillTree.DOAnchorPosX(0, .33f);
+        frontPCPanel.DOLocalMoveY(2f, .8f);
     }
 
 }

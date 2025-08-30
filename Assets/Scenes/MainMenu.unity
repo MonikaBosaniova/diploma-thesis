@@ -334,6 +334,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96753719}
   m_CullTransparentMesh: 1
+--- !u!1 &124983699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4859751722542110904, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &221173790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7544058349496707723, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &250512315 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7624165247479211509, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &267090387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -626,6 +641,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359239360}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &364249490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 678996936339419565, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &399004615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,6 +1893,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028339439}
   m_CullTransparentMesh: 1
+--- !u!1 &1042785803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5915223281018806603, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1086163876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 180519963428097856, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1102750853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2174,6 +2204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentUIState: 0
   skillTree: {fileID: 1183484705}
+  frontPCPanel: {fileID: 250512315}
 --- !u!1 &1183484704
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,6 +2242,11 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: 0}
   m_SizeDelta: {x: 500, y: 0}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!1 &1264688243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8580552615621760066, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1288408743
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,6 +2280,16 @@ Transform:
   - {fileID: 433602951}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1350367873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1619592454056342031, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1355474590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4237118222440158760, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1365218644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2420,6 +2466,11 @@ Transform:
   - {fileID: 702879296}
   m_Father: {fileID: 399004616}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1542157877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5479423502317135787, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1566558328
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2619,6 +2670,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1180698480859997512, guid: 67767e18a4a5ae24fb3283f125a12ad2, type: 3}
   m_PrefabInstance: {fileID: 1691337471}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1791309061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 708598682517023653, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1896356466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2900151331402046395, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2007743872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7250674608007994094, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+  m_PrefabInstance: {fileID: 2068640273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2050786745 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4133749718763332898, guid: 7bb52cc09c8c76e43a75786dccaf3fa4, type: 3}
@@ -2679,13 +2745,49 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8580552615621760066, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2068640278}
   m_SourcePrefab: {fileID: 100100000, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
 --- !u!4 &2068640274 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8962145155115077368, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
   m_PrefabInstance: {fileID: 2068640273}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2068640278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264688243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0464aeb23efc4d24a83ceb85e54b024c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MotherBoard: {fileID: 2007743872}
+  PowerUnit: {fileID: 124983699}
+  CPU: {fileID: 1542157877}
+  RAM: {fileID: 1791309061}
+  HDD: {fileID: 221173790}
+  CoolingUnit: {fileID: 1896356466}
+  VentilatorsOff: {fileID: 1042785803}
+  VentilatorsOn: {fileID: 1350367873}
+  FrontVentilators: {fileID: 364249490}
+  GPU: {fileID: 1355474590}
+  Cables: {fileID: 1086163876}
+  isMotherBoard: 1
+  isPowerUnit: 1
+  isCPU: 1
+  isRAM: 1
+  isHDD: 1
+  isCoolingUnit: 1
+  isVentilatorsOff: 0
+  isVentilatorsOn: 1
+  isGPU: 1
+  isCables: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
