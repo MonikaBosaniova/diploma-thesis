@@ -232,7 +232,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 487}
+  m_AnchoredPosition: {x: 0, y: 440.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96753721
@@ -2698,10 +2698,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1392016663}
     m_Modifications:
+    - target: {fileID: 4221361191705384106, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221361191705384106, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
+    - target: {fileID: 4221361191705384106, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: 5b1dfaf6199bce142bfa9f0592a64a57, type: 3}
     - target: {fileID: 8580552615621760066, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
       propertyPath: m_Name
       value: MyPC
       objectReference: {fileID: 0}
+    - target: {fileID: 8930083346088951468, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930083346088951468, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
+    - target: {fileID: 8930083346088951468, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
     - target: {fileID: 8962145155115077368, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.212
