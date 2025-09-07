@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PCProgressVisualsController : MonoBehaviour
 {
+    [SerializeField] private GameObject Case;
     [SerializeField] private GameObject MotherBoard;
     [SerializeField] private GameObject PowerUnit;
     [SerializeField] private GameObject CPU;
@@ -13,8 +14,9 @@ public class PCProgressVisualsController : MonoBehaviour
     [SerializeField] private GameObject FrontVentilators;
     [SerializeField] private GameObject GPU;
     [SerializeField] private GameObject Cables;
-    
-    [Header("DEBUG SAVED PROGRESS")]
+
+    [Header("DEBUG SAVED PROGRESS")] 
+    [SerializeField] private bool isCase = false;
     [SerializeField] private bool isMotherBoard = false;
     [SerializeField] private bool isPowerUnit = false;
     [SerializeField] private bool isCPU = false;
@@ -28,6 +30,7 @@ public class PCProgressVisualsController : MonoBehaviour
 
     private void Start()
     {
+        ShowCase(isCase);
         ShowMotherBoard(isMotherBoard);
         ShowPowerUnit(isPowerUnit);
         ShowCPU(isCPU);
@@ -64,6 +67,12 @@ public class PCProgressVisualsController : MonoBehaviour
     }
     
     #region SHOW methods
+    
+    public void ShowCase(bool active)
+    {
+        SetGameObjectActive(Case, active);
+        SetGameObjectActive(FrontVentilators, active);
+    }
     
     public void ShowMotherBoard(bool active)
     {
