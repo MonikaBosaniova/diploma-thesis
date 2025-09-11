@@ -4,7 +4,7 @@ using UnityEngine;
 public class GameManagerSingleton : MonoBehaviour
 {
     public static GameManagerSingleton Instance { get; private set; }
-    [SerializeField] List<SkillTreeLevelController> _skillTreeLevelController;
+    public int CompleteLevelsCount;
 
     private void Awake()
     {

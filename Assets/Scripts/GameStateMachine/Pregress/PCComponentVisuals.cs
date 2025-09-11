@@ -4,7 +4,7 @@ using UnityEngine;
 public class PCComponentVisuals : MonoBehaviour
 {
     [Header("Initial State")]
-    [SerializeField] private bool _isVisible = true;
+    [SerializeField] private bool _isVisible = false;
     [SerializeField] private bool _isHologram = false;
     [SerializeField] private bool _isOutlined = false;
 
@@ -19,13 +19,13 @@ public class PCComponentVisuals : MonoBehaviour
     [Tooltip("Use sharedMaterials to avoid runtime instancing. (Most games can leave this OFF.)")]
     [SerializeField] private bool _useSharedMaterials = false;
 
-    Renderer _renderer;
+    MeshRenderer _renderer;
     Outline _outline;
     Material _capturedDefault;
 
     void Awake()
     {
-        _renderer = GetComponent<Renderer>();
+        _renderer = GetComponent<MeshRenderer>();
         if (_renderer == null)
         {
             Debug.LogError($"{nameof(PCComponentVisuals)}: No Renderer found on {name}.");
@@ -54,9 +54,9 @@ public class PCComponentVisuals : MonoBehaviour
 
     void Start()
     {
-        SetComponentVisibility(_isVisible);
-        SetComponentHolographic(_isHologram);
-        SetComponentOutline(_isOutlined);
+        // SetComponentVisibility(_isVisible);
+        // SetComponentHolographic(_isHologram);
+        // SetComponentOutline(_isOutlined);
     }
 
     public void SetComponentVisibility(bool isVisible)
