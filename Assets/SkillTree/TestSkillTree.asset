@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9833ef8135d3fa549aefe8dc8f874116, type: 3}
-  m_Name: SkillTree
+  m_Name: TestSkillTree
   m_EditorClassIdentifier: 
   _version: 1.0.0
   _nodes:
-  - {fileID: 11400000, guid: 922000787a82a914a88b3a8c08c8657f, type: 2}
+  - {fileID: 11400000, guid: f78ab415333711b4cb294216e26f1da0, type: 2}
+  - {fileID: 11400000, guid: 174752c63598e7a42b0e661e40f4d9fd, type: 2}
+  - {fileID: 11400000, guid: 05edea79d66af9441b75a0adac840f70, type: 2}
+  - {fileID: 11400000, guid: 9ae29f04b8cf5dc4fa5e3cdb50e7fb4c, type: 2}

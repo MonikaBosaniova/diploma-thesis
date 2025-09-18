@@ -22,10 +22,10 @@ public class SkillNodeBtn : MonoBehaviour
         _playButton.onClick.AddListener(() => {
             if (ProgressService.I.IsUnlocked(_node.Id))
             {
-                ProgressService.I.RecordLevelResult(_node.Id, 3, 4);
+                SceneManager.LoadScene(_node.SceneName);
+                //ProgressService.I.RecordLevelResult(_node.Id, 3, 4);
             }
-                //TODO CHANGE TO SCENE
-                //SceneManager.LoadScene(_node.SceneName);
+            
         });
     }
 
