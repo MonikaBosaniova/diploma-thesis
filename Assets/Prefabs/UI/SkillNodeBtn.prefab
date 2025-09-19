@@ -140,6 +140,7 @@ MonoBehaviour:
   _playButton: {fileID: 8050267848816533766}
   _lockedOverlay: {fileID: 7514119253082055965}
   _text: {fileID: 4763495309335061948}
+  _levelStarsController: {fileID: 2912723148156900262}
 --- !u!1 &5342278948393772042
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43af84dc91f2cf94aa1455c8c6c88f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _starsCount: 0
 --- !u!1 &7135603437009478130
 GameObject:
   m_ObjectHideFlags: 0

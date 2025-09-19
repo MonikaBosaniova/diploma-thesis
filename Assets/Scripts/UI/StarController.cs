@@ -23,7 +23,7 @@ public class StarController : MonoBehaviour
     }
     #endif
 
-    internal void ShowAlreadyCollectedStar()
+    public void ShowAlreadyCollectedStar()
     {
         _collectedStar.transform.localScale = new Vector3(1, 1, 1);
     }

@@ -1,22 +1,32 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class LevelStarsController : MonoBehaviour
 {
-    [SerializeField] private int _starsCount;
     private StarController[] _stars;
     
     public void Start()
     {
         _stars = gameObject.GetComponentsInChildren<StarController>();
-        ShowProgressStars();
+        //ShowProgressStars();
     }
 
-    public void ShowProgressStars()
+    public void ShowProgressStars(int starsCount, bool useTweening)
     {
-        foreach (var star in _stars)
+        for (int i = 0; i < starsCount; i++)
         {
-            star.ShowAlreadyCollectedStar();
+            if (useTweening)
+            {
+                var i1 = i;
+                DOVirtual.DelayedCall(0.5f*i1, () => _stars[i1].OnStarCollected());
+            }
+            else
+            {
+                _stars[i].ShowAlreadyCollectedStar();
+            }
+                
         }
+        
     }
     
 }
