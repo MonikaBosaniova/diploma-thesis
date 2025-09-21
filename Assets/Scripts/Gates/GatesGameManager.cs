@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using GameStateMachine;
+using UnityEngine;
 
 namespace Gates
 {
@@ -9,6 +10,7 @@ namespace Gates
         protected override void Initialization()
         {
             base.Initialization();
+            //Debug.Log("GatesGameManager initialized");
             //= new List<LevelController>(TutorialParent.GetComponents<GateLevelController>().ToList());
             //Levels = new List<LevelController>(LevelsParent.GetComponents<GateLevelController>().ToList());
             // foreach (var gateLevel in Levels.Cast<GateLevelController>())

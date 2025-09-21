@@ -18,13 +18,13 @@ public class SkillNodeBtn : MonoBehaviour
     void Start()
     {
         _progressVisualsController = FindFirstObjectByType<PCProgressVisualsController>();
-        Refresh(false);
+        Refresh(ProgressService.I.CurrentNodeProgressChanged && (ProgressService.I.GetCurrentNodeID() == _node.Id));
         ProgressService.I.OnProgressChanged += HandleChange;
         _playButton.onClick.AddListener(() => {
             if (ProgressService.I.IsUnlocked(_node.Id))
             {
-                //SceneManager.LoadScene(_node.SceneName);
-                ProgressService.I.RecordLevelResult(_node.Id, 3, 4);
+                ProgressService.I.SetCurrentNodeID(_node.Id);
+                SceneManager.LoadScene(_node.SceneName);
             }
             
         });
@@ -34,7 +34,7 @@ public class SkillNodeBtn : MonoBehaviour
 
     private void HandleChange(string nodeId, SkillProgress p)
     {
-        if (nodeId == _node.Id || _node.PrerequisiteIds.Contains(nodeId)) Refresh(true);
+        if (nodeId == _node.Id || _node.PrerequisiteIds.Contains(nodeId)) Refresh(ProgressService.I.CurrentNodeProgressChanged);
     }
 
     private void Refresh(bool useTweening)
@@ -42,11 +42,12 @@ public class SkillNodeBtn : MonoBehaviour
         bool unlocked = ProgressService.I.IsUnlocked(_node.Id);
         bool done = ProgressService.I.Get(_node.Id).completed;
         int collectedStars = ProgressService.I.Get(_node.Id).bestStars;
+        int newCollectedStars = ProgressService.I.NewStars;
         _lockedOverlay.SetActive(!unlocked);
         _playButton.interactable = unlocked;
         _text.text = _node.DisplayName;
         _progressVisualsController.ComponentVisibility(_node._component, unlocked, !done, false);
-        _levelStarsController.ShowProgressStars(collectedStars, useTweening);
+        _levelStarsController.ShowProgressStars(collectedStars, newCollectedStars, useTweening);
         // if (unlocked && !done)
         // {
         //    //TODO

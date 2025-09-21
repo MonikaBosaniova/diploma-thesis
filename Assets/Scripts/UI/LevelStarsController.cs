@@ -8,14 +8,13 @@ public class LevelStarsController : MonoBehaviour
     public void Start()
     {
         _stars = gameObject.GetComponentsInChildren<StarController>();
-        //ShowProgressStars();
     }
 
-    public void ShowProgressStars(int starsCount, bool useTweening)
+    public void ShowProgressStars(int starsCount, int newStars, bool useTweening)
     {
         for (int i = 0; i < starsCount; i++)
         {
-            if (useTweening)
+            if (useTweening && i >= (starsCount - newStars))
             {
                 var i1 = i;
                 DOVirtual.DelayedCall(0.5f*i1, () => _stars[i1].OnStarCollected());
@@ -27,6 +26,7 @@ public class LevelStarsController : MonoBehaviour
                 
         }
         
+        ProgressService.I.NewStars = 0;
     }
     
 }

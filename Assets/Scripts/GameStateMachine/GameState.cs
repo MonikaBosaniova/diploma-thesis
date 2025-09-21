@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace GameStateMachine
 {
@@ -7,31 +8,44 @@ namespace GameStateMachine
     {
         internal GameObject stateObject;
         internal Action OnStateComplete;
+        internal GameManager manager;
+        internal const float SuccessRateForStar = 0.8f;
         
         public virtual void Init(GameObject obj)
         {
             stateObject = obj;
+            manager = FindAnyObjectByType<GameManager>();
         }
 
         public virtual void Enter()
         {
-            Debug.Log("Entered: " + stateObject.name);
             stateObject.SetActive(true);
-            PrintChildren(stateObject);
         }
         
         public virtual void Exit()
         {
+            SaveProgress();
             stateObject.SetActive(false);
-            Debug.Log("Exited: " + stateObject.name);
         }
         
         protected void PrintChildren(GameObject parent)
         {
             foreach (Transform child in parent.transform)
             {
-                Debug.Log("Child: " + child.name);
+                //Debug.Log("Child: " + child.name);
             }
+        }
+        
+        protected void SaveProgress()
+        {
+            Debug.Log("SAVING: " + manager.stars);
+            ProgressService.I.RecordLevelResult(manager.nodeID, manager.stars, manager.time);
+        }
+
+        protected void GoToSkillTree()
+        {
+            ProgressService.I.OpenSkillTree = true;
+            SceneManager.LoadScene(0);
         }
         
         public abstract void Update();

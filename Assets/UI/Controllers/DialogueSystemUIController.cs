@@ -34,7 +34,7 @@ namespace UI
 
         protected override void Bind()
         {
-            Debug.Log("DialogueUI bind");
+            //Debug.Log("DialogueUI bind");
             _currentIndex = 0;
             ShowCurrentLine();
             DialogueContainer.RegisterCallback<ClickEvent>(NextLine);

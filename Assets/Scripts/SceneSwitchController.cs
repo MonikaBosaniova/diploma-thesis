@@ -20,6 +20,12 @@ public class SceneSwitchController : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void LoadToSkillTree()
+    {
+        ProgressService.I.OpenSkillTree = true;
+        SceneManager.LoadScene(0);
+    }
+
     public void LoadSceneByIndex(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);

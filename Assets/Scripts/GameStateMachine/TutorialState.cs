@@ -14,10 +14,10 @@ namespace GameStateMachine
         
         public override void Init(GameObject o)
         {
+            base.Init(o);
             TutorialsParent = o;
             stateObject = o;
             Tutorials = TutorialsParent.GetComponentsInChildren<LevelController>().ToList();
-            Debug.Log(Tutorials.Count + " Tutorials loaded");
         }
         
         public override void Enter()
@@ -32,6 +32,8 @@ namespace GameStateMachine
 
         public override void Exit()
         {
+            manager.AddStar();
+            base.Exit();
         }
 
         public override void Update()

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 246e950c-2c4c-45f9-8cee-d7bd705c0c46
   _displayName: 
-  _sceneName: 
+  _sceneName: Gates
   _component: 0
   _prerequisiteIds: []

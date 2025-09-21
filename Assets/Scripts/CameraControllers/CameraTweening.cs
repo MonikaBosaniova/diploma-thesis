@@ -20,6 +20,20 @@ public class CameraTweening : MonoBehaviour
         defaultRotation = camera.transform.eulerAngles;
     }
 
+    private void Start()
+    {
+        if (ProgressService.I.OpenSkillTree)
+        {
+            SpawnCameraToSkillTree();
+        }
+    }
+
+    private void SpawnCameraToSkillTree()
+    {
+        camera.transform.position = skillTreePosition;
+        camera.transform.eulerAngles = skillTreeRotation;
+    }
+
     public void MoveCameraToSkillTree()
     {
         camera.transform.DOMove(skillTreePosition, 1.5f);

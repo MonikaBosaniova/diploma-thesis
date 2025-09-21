@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using GameStateMachine;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,7 @@ namespace UI
     public class QuizUIController : QuizUIControllerContext
     {
         public QuizData quizData;
+        public float _successRate = 0;
         private QuizQuestion _currentQuizQuestion;
         private int _indexOfQuizQuestion = 0;
         private int score = 0;
@@ -33,7 +35,7 @@ namespace UI
 
         protected override void Bind()
         {
-            Debug.Log("Quiz bind");
+            //Debug.Log("Quiz bind");
             _indexOfQuizQuestion = 0;
             ShowAndBindCurrentQuizQuestion();
             Close.clicked += ReturnToMenu;
@@ -43,7 +45,7 @@ namespace UI
 
         private void ShowResultOfQuestion(bool isCorrect, int hierarchyIndexOfButton)
         {
-            Debug.Log(AnswersParent.childCount + " children...");
+            //Debug.Log(AnswersParent.childCount + " children...");
             var answerButton = AnswersParent.ElementAt(hierarchyIndexOfButton).Q<Button>();
             if (isCorrect)
             {
@@ -63,9 +65,8 @@ namespace UI
         }
         private void ReturnToMenu()
         {
-            //TODO return
-            ResultBoard.style.display = DisplayStyle.None;
-            SceneManager.LoadScene(0);
+            //ResultBoard.style.display = DisplayStyle.None;
+            FindAnyObjectByType<QuizState>().OnStateComplete?.Invoke();
         }
 
         private void CorrectAnswerWasClicked(Button answerButton)
@@ -120,7 +121,7 @@ namespace UI
         
         private void NextQuizQuestion()
         {
-            Debug.Log("Quiz next");
+            //Debug.Log("Quiz next");
             var previousLine = quizData.quizQuestions.ElementAt(_indexOfQuizQuestion).question;//dialogueSequence.dialogueLines.ElementAt(_currentIndex).text;
             previousLine.StringChanged -= UpdateText;
             
@@ -140,6 +141,7 @@ namespace UI
             
             ResultBoard.style.display = DisplayStyle.Flex;
             QuizResults.text = score + " / " + quizData.quizQuestions.Count;
+            _successRate = score / (float)quizData.quizQuestions.Count;
         }
 
         void UpdateText(string value)  

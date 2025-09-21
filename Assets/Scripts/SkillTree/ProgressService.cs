@@ -13,11 +13,16 @@ public class ProgressService : MonoBehaviour
     [SerializeField] private SkillTreeAsset _skillTree;
 
     public event Action<string, SkillProgress> OnProgressChanged; // nodeId, new progress
+    public bool CurrentNodeProgressChanged = false;
+    public bool OpenSkillTree = false;
+    public int NewStars = 0;
 
     private PlayerProgressData _data;
 
     private string SavePath =>
         Path.Combine(Application.persistentDataPath, "progress.json");
+
+    private string _currentNodeID;
 
     void Awake()
     {
@@ -69,12 +74,32 @@ public class ProgressService : MonoBehaviour
         p.attempts++;
         p.lastPlayedUnix = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
 
-        if (stars > p.bestStars) p.bestStars = Mathf.Clamp(stars, 0, 3);
+        if (stars > p.bestStars)
+        {
+            NewStars++;
+            p.bestStars = Mathf.Clamp(stars, 0, 3);
+            CurrentNodeProgressChanged = true;
+        }
+        else
+        {
+            NewStars = 0;
+            CurrentNodeProgressChanged = false;
+        }
         if (timeSec >= 0 && timeSec < p.bestTimeSec) p.bestTimeSec = timeSec;
         if (stars > 0) p.completed = true;
 
         Save();
         OnProgressChanged?.Invoke(nodeId, p);
+    }
+
+    public void SetCurrentNodeID(string nodeId)
+    {
+        _currentNodeID = nodeId;
+    }
+
+    public string GetCurrentNodeID()
+    {
+        return _currentNodeID;
     }
 
     public SkillTreeAsset Tree => _skillTree;

@@ -1470,6 +1470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillTree: {fileID: 11400000, guid: 09c1a48abc0de374d814169892bab5b6, type: 2}
+  CurrentNodeProgressChanged: 0
+  OpenSkillTree: 0
 --- !u!4 &485044800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 668086455877286115, guid: f149402989451fe4ab69bfd1ceb5124f, type: 3}
@@ -2945,14 +2947,14 @@ MonoBehaviour:
       - m_Target: {fileID: 1133147172}
         m_TargetAssemblyTypeName: UIStateManager, Assembly-CSharp
         m_MethodName: ChangeToSkillTree
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1028339442
 MonoBehaviour:

@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using Gates;
 using UI;
 using UnityEngine;
 
@@ -13,22 +9,30 @@ namespace GameStateMachine
         protected QuizData QuizData;
         protected GameObject QuizParent;
         private int _currentTutorialIndex;
+        private QuizUIController _quizUIController;
         
         public override void Init(GameObject o)
         {
+            base.Init(o);
             QuizParent = o;
             stateObject = o;
-            QuizData = QuizParent.GetComponent<QuizUIController>().quizData;
+            _quizUIController = QuizParent.GetComponent<QuizUIController>();
+            QuizData = _quizUIController.quizData;
         }
         
         public override void Enter()
         {
             base.Enter();
-            QuizParent.GetComponent<QuizUIController>().ShowQuiz(QuizData);
+            _quizUIController.ShowQuiz(QuizData);
         }
 
         public override void Exit()
         {
+            if (_quizUIController._successRate >= SuccessRateForStar)
+            {
+                manager.AddStar();
+            }
+            base.Exit();
         }
 
         public override void Update()

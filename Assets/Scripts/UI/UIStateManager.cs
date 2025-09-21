@@ -18,9 +18,16 @@ public class UIStateManager : MonoBehaviour
         skillTreeParent = transform.GetChild(1).gameObject;
         skillTreeHiddenPositionX = skillTree.anchoredPosition.x;
         frontPanelStartPositionY = frontPCPanel.localPosition.y;
-        UpdateState(UIStates.Menu);
+        if (ProgressService.I.OpenSkillTree)
+        {
+            ChangeToSkillTree(false);
+        }
+        else
+        {
+            ChangeToMenu();
+        }
     }
-
+    
     public void UpdateState(UIStates state)
     {
         CurrentUIState = state;
@@ -47,11 +54,19 @@ public class UIStateManager : MonoBehaviour
         skillTree.DOAnchorPosX(skillTreeHiddenPositionX, .33f).OnComplete(() =>UpdateState(UIStates.Menu));
     }
     
-    public void ChangeToSkillTree()
+    public void ChangeToSkillTree(bool tween = true)
     {
         UpdateState(UIStates.SkillTree);
-        skillTree.DOAnchorPosX(0, .33f);
-        frontPCPanel.DOLocalMoveY(2f, .8f);
+        if (tween)
+        {
+            skillTree.DOAnchorPosX(0, .33f);
+            frontPCPanel.DOLocalMoveY(2f, .8f);
+        }
+        else
+        {
+            skillTree.DOAnchorPosX(0, 0);
+            frontPCPanel.DOLocalMoveY(2f, 0);
+        }
     }
 
 }

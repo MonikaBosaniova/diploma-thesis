@@ -14,7 +14,7 @@ public class LevelController : MonoBehaviour
         if (ds != null)
         {
             UIManager.Instance.ShowDialogWindowUI(ds.dialogueSequence);
-            Debug.Log("Show DIALOGUE");
+            //Debug.Log("Show DIALOGUE");
         }
     }
 
@@ -26,14 +26,14 @@ public class LevelController : MonoBehaviour
     protected void InvokeOnLeveStarted()
     {
         IsCompleted = false;
-        Debug.Log("OnLeveStarted");
+        //Debug.Log("OnLeveStarted");
         OnLevelStarted?.Invoke();
     }  
     
     protected void InvokeOnLevelEnded()
     {
         IsCompleted = true;
-        Debug.Log("OnLevelEnded");
+        //Debug.Log("OnLevelEnded");
         OnLevelEnded?.Invoke();
     }
     
