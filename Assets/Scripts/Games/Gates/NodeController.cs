@@ -27,11 +27,13 @@ namespace Gates
         {
             Value = !Value;
             UpdateVisuals();
-            //Debug.Log("Switched to: " + Value);
+            Debug.Log("Switched to: " + Value);
         }
 
         private void UpdateVisuals()
         {
+            if (TrueModel == null && FalseModel == null)
+                return;
             if (Value)
             {
                 TrueModel.SetActive(true);
@@ -48,27 +50,10 @@ namespace Gates
         {
         }
 
-        protected void SetLineValue(bool value, LineRenderer line)
+        protected void SetLineValue(bool value, GameObject line)
         {
-            // A simple 2 color gradient with a fixed alpha of 1.0f.
-            float alpha = 1.0f;
-            Gradient gradient = new Gradient();
-            if (value)
-            {
-                gradient.SetKeys(
-                    new GradientColorKey[] { new GradientColorKey(Color.yellow, 0.0f), new GradientColorKey(Color.yellow, 1.0f) },
-                    new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.0f), new GradientAlphaKey(alpha, 1.0f) }
-                );
-                
-            }
-            else
-            {
-                gradient.SetKeys(
-                    new GradientColorKey[] { new GradientColorKey(Color.gray, 0.0f), new GradientColorKey(Color.white, 1.0f) },
-                    new GradientAlphaKey[] { new GradientAlphaKey(alpha, 0.0f), new GradientAlphaKey(alpha, 1.0f) }
-                );
-            }
-            line.colorGradient = gradient;
+            line.transform.GetChild(Convert.ToInt32(value)).gameObject.SetActive(true);
+            line.transform.GetChild(Convert.ToInt32(!value)).gameObject.SetActive(false);
         }
     }
 }

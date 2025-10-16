@@ -5,7 +5,7 @@ namespace Gates
     public class LightBulbController : NodeController 
     {
         public NodeController firstInput;
-        public LineRenderer firstLine;
+        public GameObject firstLine;
         
         void Start()
         {

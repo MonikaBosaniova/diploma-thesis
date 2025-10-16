@@ -5,16 +5,16 @@ namespace Gates
 {
     public class GateController : NodeController
     {
-        public TMP_Text textField;
         public GateTypes gateType;
         
         public NodeController firstInput;
         public NodeController secondInput;
-        public LineRenderer firstLine;
-        public LineRenderer secondLine;
-        public LineRenderer straightLine;
+        public GameObject firstLine;
+        public GameObject secondLine;
+        public GameObject straightLine;
         
         [Header("-----READ ONLY-----")]
+        public Transform allGates;
         public bool inputValue1;
         public bool inputValue2;
 
@@ -43,27 +43,29 @@ namespace Gates
             {
                 case GateTypes.NOT:
                     _gate = new NotGate();
-                    firstLine.enabled = false;
+                    firstLine.SetActive(false);;
                     firstLine = straightLine;
-                    secondLine.enabled = false;
+                    secondLine.SetActive(false);;
                     break;
                 case GateTypes.AND:
                     _gate = new AndGate();
-                    straightLine.enabled = false;
+                    straightLine.SetActive(false);;
                     break;
                 case GateTypes.OR:
                     _gate = new OrGate();
-                    straightLine.enabled = false;
+                    straightLine.SetActive(false);;
                     break;
                 case GateTypes.XOR:
                     _gate = new XorGate();
-                    straightLine.enabled = false;
+                    straightLine.SetActive(false);;
                     break;
                 case GateTypes.None:
                     Debug.LogWarning("No gate type selected.");
                     break;
             }
-            textField.text = gateType.ToString();
+
+            allGates = transform.GetChild(0);
+            allGates.GetChild((int)gateType).gameObject.SetActive(true);
             inputValue1 = firstInput.Value;
             inputValue2 = secondInput.Value;
             Value = _gate.Evaluate(inputValue1, inputValue2);

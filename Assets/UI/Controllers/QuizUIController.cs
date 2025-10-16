@@ -1,10 +1,10 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using GameStateMachine;
 using UnityEngine;
 using UnityEngine.Localization;
-using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace UI
@@ -61,7 +61,7 @@ namespace UI
             //TODO
             //show results prettier
             
-            NextQuizQuestion();
+            StartCoroutine(WaitToShowQuizAnswer());
         }
         private void ReturnToMenu()
         {
@@ -148,5 +148,11 @@ namespace UI
         {  
             Question.text = value;
         }  
+        
+        IEnumerator WaitToShowQuizAnswer()
+        {
+            yield return new WaitForSeconds(.33f);
+            NextQuizQuestion();
+        }
     }
 }
