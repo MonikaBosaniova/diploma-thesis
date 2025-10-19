@@ -11,7 +11,7 @@ namespace UI
         protected Label Score => _Root.Q<Label>("Score");
         protected VisualElement ResultBoard => _Root.Q<VisualElement>("Result");
         protected Label QuizResults => ResultBoard.Q<Label>("Quiz");
-        
         protected Button Close => _Root.Q<Button>("Close");
+        protected VisualElement ScreenBlocker => _Root.Q<VisualElement>("ScreenBlocker");
     }
 }

@@ -55,6 +55,10 @@ MonoBehaviour:
     m_Key: Quiz
     m_Metadata:
       m_Items: []
+  - m_Id: 118525458794532864
+    m_Key: Congratulation
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

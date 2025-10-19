@@ -11,7 +11,7 @@ public class LevelController : MonoBehaviour
     public virtual void Init()
     {
         DialogueSequenceController ds = transform.GetComponent<DialogueSequenceController>();
-        if (ds != null)
+        if (ds != null && ds.GetType() != typeof(EndDialogueSequenceController))
         {
             UIManager.Instance.ShowDialogWindowUI(ds.dialogueSequence);
             //Debug.Log("Show DIALOGUE");
@@ -30,10 +30,24 @@ public class LevelController : MonoBehaviour
         OnLevelStarted?.Invoke();
     }  
     
-    protected void InvokeOnLevelEnded()
+    protected void ShowEndDialogueSequence()
     {
         IsCompleted = true;
-        //Debug.Log("OnLevelEnded");
+        EndDialogueSequenceController es = transform.GetComponent<EndDialogueSequenceController>();
+        if (es != null)
+        {
+            UIManager.Instance.ShowDialogWindowUI(es.dialogueSequence);
+        }
+    }
+
+    protected void HideEndDialogueSequence()
+    {
+        IsCompleted = true;
+        EndDialogueSequenceController es = transform.GetComponent<EndDialogueSequenceController>();
+        if (es != null)
+        {
+            UIManager.Instance.HideDialogWindowUI();
+        }
         OnLevelEnded?.Invoke();
     }
     

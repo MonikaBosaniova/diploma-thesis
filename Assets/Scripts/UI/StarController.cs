@@ -30,6 +30,7 @@ public class StarController : MonoBehaviour
     
     public void OnStarCollected()
     {
+        Debug.Log("OnStarCollected TWEENING");
         _collectedStar.DORotate(new Vector3(0,0,360), .5f, RotateMode.FastBeyond360);
         _collectedStar.DOScaleX(1,.5f);
         _collectedStar.DOScaleY(1,.5f);

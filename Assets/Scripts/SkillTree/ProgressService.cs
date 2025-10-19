@@ -16,6 +16,7 @@ public class ProgressService : MonoBehaviour
     public bool CurrentNodeProgressChanged = false;
     public bool OpenSkillTree = false;
     public int NewStars = 0;
+    public string ChangedNodeId = "";
 
     private PlayerProgressData _data;
 
@@ -79,11 +80,11 @@ public class ProgressService : MonoBehaviour
             NewStars++;
             p.bestStars = Mathf.Clamp(stars, 0, 3);
             CurrentNodeProgressChanged = true;
+            ChangedNodeId =  nodeId;
         }
         else
         {
-            NewStars = 0;
-            CurrentNodeProgressChanged = false;
+
         }
         if (timeSec >= 0 && timeSec < p.bestTimeSec) p.bestTimeSec = timeSec;
         if (stars > 0) p.completed = true;

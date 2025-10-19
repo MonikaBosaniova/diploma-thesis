@@ -58,6 +58,10 @@ MonoBehaviour:
     m_Localized: Quiz
     m_Metadata:
       m_Items: []
+  - m_Id: 118525458794532864
+    m_Localized: Super!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

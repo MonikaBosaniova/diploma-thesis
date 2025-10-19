@@ -42,12 +42,21 @@ public class SkillNodeBtn : MonoBehaviour
         bool unlocked = ProgressService.I.IsUnlocked(_node.Id);
         bool done = ProgressService.I.Get(_node.Id).completed;
         int collectedStars = ProgressService.I.Get(_node.Id).bestStars;
-        int newCollectedStars = ProgressService.I.NewStars;
+        int newCollectedStars = 0;
+        if (ProgressService.I.ChangedNodeId == _node.Id)
+        {
+            Debug.Log("Changed NodeId: " + _node.Id);
+            newCollectedStars = ProgressService.I.NewStars;
+            ProgressService.I.NewStars = 0;
+            ProgressService.I.CurrentNodeProgressChanged = false;
+            ProgressService.I.ChangedNodeId = "";
+        }
         _lockedOverlay.SetActive(!unlocked);
         _playButton.interactable = unlocked;
         _text.text = _node.DisplayName;
         _progressVisualsController.ComponentVisibility(_node._component, unlocked, !done, false);
         _levelStarsController.ShowProgressStars(collectedStars, newCollectedStars, useTweening);
+        Debug.Log("showing: " + gameObject.name + " " + useTweening + " - " + newCollectedStars);
         // if (unlocked && !done)
         // {
         //    //TODO

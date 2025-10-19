@@ -61,8 +61,9 @@ namespace Gates
         
         IEnumerator WaitToShowCompleteLevel()
         {
-            yield return new WaitForSeconds(.33f);
-            InvokeOnLevelEnded();
+            ShowEndDialogueSequence();
+            yield return new WaitForSeconds(.5f);
+            HideEndDialogueSequence();
         }
     }
 }

@@ -35,4 +35,5 @@
             <engine:Button text="Button" name="Close" />
         </engine:VisualElement>
     </engine:VisualElement>
+    <engine:VisualElement name="ScreenBlocker" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; display: none;" />
 </engine:UXML>

@@ -47,6 +47,7 @@ namespace UI
         {
             //Debug.Log(AnswersParent.childCount + " children...");
             var answerButton = AnswersParent.ElementAt(hierarchyIndexOfButton).Q<Button>();
+            ScreenBlocker.style.display = DisplayStyle.Flex;
             if (isCorrect)
             {
                 answerButton.style.unityBackgroundImageTintColor = Color.green;
@@ -124,6 +125,7 @@ namespace UI
             //Debug.Log("Quiz next");
             var previousLine = quizData.quizQuestions.ElementAt(_indexOfQuizQuestion).question;//dialogueSequence.dialogueLines.ElementAt(_currentIndex).text;
             previousLine.StringChanged -= UpdateText;
+            ScreenBlocker.style.display = DisplayStyle.None;
             
             _indexOfQuizQuestion++;
             if(_indexOfQuizQuestion != quizData.quizQuestions.Count)

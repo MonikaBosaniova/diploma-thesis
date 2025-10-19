@@ -27,7 +27,7 @@ namespace Gates
         {
             Value = !Value;
             UpdateVisuals();
-            Debug.Log("Switched to: " + Value);
+            //Debug.Log("Switched to: " + Value);
         }
 
         private void UpdateVisuals()
