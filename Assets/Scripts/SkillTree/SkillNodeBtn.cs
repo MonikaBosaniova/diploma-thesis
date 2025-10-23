@@ -18,7 +18,7 @@ public class SkillNodeBtn : MonoBehaviour
     void Start()
     {
         _progressVisualsController = FindFirstObjectByType<PCProgressVisualsController>();
-        Refresh(ProgressService.I.CurrentNodeProgressChanged && (ProgressService.I.GetCurrentNodeID() == _node.Id));
+        Refresh(ProgressService.I.ProgressChanged && (ProgressService.I.GetCurrentNodeID() == _node.Id));
         ProgressService.I.OnProgressChanged += HandleChange;
         _playButton.onClick.AddListener(() => {
             if (ProgressService.I.IsUnlocked(_node.Id))
@@ -34,7 +34,7 @@ public class SkillNodeBtn : MonoBehaviour
 
     private void HandleChange(string nodeId, SkillProgress p)
     {
-        if (nodeId == _node.Id || _node.PrerequisiteIds.Contains(nodeId)) Refresh(ProgressService.I.CurrentNodeProgressChanged);
+        if (nodeId == _node.Id || _node.PrerequisiteIds.Contains(nodeId)) Refresh(ProgressService.I.ProgressChanged);
     }
 
     private void Refresh(bool useTweening)
@@ -42,21 +42,22 @@ public class SkillNodeBtn : MonoBehaviour
         bool unlocked = ProgressService.I.IsUnlocked(_node.Id);
         bool done = ProgressService.I.Get(_node.Id).completed;
         int collectedStars = ProgressService.I.Get(_node.Id).bestStars;
-        int newCollectedStars = 0;
-        if (ProgressService.I.ChangedNodeId == _node.Id)
-        {
-            Debug.Log("Changed NodeId: " + _node.Id);
-            newCollectedStars = ProgressService.I.NewStars;
-            ProgressService.I.NewStars = 0;
-            ProgressService.I.CurrentNodeProgressChanged = false;
-            ProgressService.I.ChangedNodeId = "";
-        }
+        int newCollectedStars = ProgressService.I.Get(_node.Id).newStars;
+        // if (ProgressService.I.ChangedNodeId == _node.Id)
+        // {
+        //     newCollectedStars = ProgressService.I.NewStars;
+        //     Debug.Log("Changed NodeId: " + _node.Id + "stars: " + newCollectedStars);
+        //     ProgressService.I.NewStars = 0;
+        //     ProgressService.I.CurrentNodeProgressChanged = false;
+        //     ProgressService.I.ChangedNodeId = "";
+        // }
         _lockedOverlay.SetActive(!unlocked);
         _playButton.interactable = unlocked;
         _text.text = _node.DisplayName;
         _progressVisualsController.ComponentVisibility(_node._component, unlocked, !done, false);
-        _levelStarsController.ShowProgressStars(collectedStars, newCollectedStars, useTweening);
         Debug.Log("showing: " + gameObject.name + " " + useTweening + " - " + newCollectedStars);
+        _levelStarsController.ShowProgressStars(collectedStars, newCollectedStars, useTweening);
+        ProgressService.I.Get(_node.Id).newStars = 0;
         // if (unlocked && !done)
         // {
         //    //TODO

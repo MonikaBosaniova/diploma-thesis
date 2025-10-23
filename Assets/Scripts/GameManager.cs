@@ -33,11 +33,14 @@ namespace GameStateMachine
         
         protected virtual void Initialization()
         {
-            nodeID = ProgressService.I.GetCurrentNodeID();
-            if (ProgressService.I.Get(nodeID).bestStars > 0)
+            if (ProgressService.I != null)
             {
-                skipTutorial = true;
-                stars = 1;
+                nodeID = ProgressService.I.GetCurrentNodeID();
+                if (ProgressService.I.Get(nodeID).bestStars > 0)
+                {
+                    skipTutorial = true;
+                    stars = 1;
+                }
             }
             
             GameState tutorialState = tutorialParent.AddComponent<TutorialState>();

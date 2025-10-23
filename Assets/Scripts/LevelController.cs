@@ -23,11 +23,18 @@ public class LevelController : MonoBehaviour
         
     }
     
-    protected void InvokeOnLeveStarted()
+    internal void InvokeOnLevelStarted()
     {
         IsCompleted = false;
         //Debug.Log("OnLeveStarted");
         OnLevelStarted?.Invoke();
+    }  
+    
+    internal void InvokeOnLevelEnded()
+    {
+        IsCompleted = true;
+        //Debug.Log("OnLeveStarted");
+        OnLevelEnded?.Invoke();
     }  
     
     protected void ShowEndDialogueSequence()

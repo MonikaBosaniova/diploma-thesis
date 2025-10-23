@@ -13,7 +13,7 @@ public class LevelStarsController : MonoBehaviour
     public void ShowProgressStars(int starsCount, int newStars, bool useTweening)
     {
         _stars ??= gameObject.GetComponentsInChildren<StarController>();
-        Debug.Log("ShowProgressStars: " + _stars.Length + "...." + useTweening);
+        Debug.Log("ShowProgressStars: " + newStars + "...." + useTweening);
         for (int i = 0; i < starsCount; i++)
         {
             if (useTweening && i >= (starsCount - newStars))
@@ -28,7 +28,7 @@ public class LevelStarsController : MonoBehaviour
                 
         }
         
-        ProgressService.I.NewStars = 0;
+        //ProgressService.I.NewStars = 0;
     }
     
 }

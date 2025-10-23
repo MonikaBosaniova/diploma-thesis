@@ -1479,9 +1479,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillTree: {fileID: 11400000, guid: 09c1a48abc0de374d814169892bab5b6, type: 2}
-  CurrentNodeProgressChanged: 0
+  ProgressChanged: 0
   OpenSkillTree: 0
-  NewStars: 0
+  ChangedNodeId: 
 --- !u!4 &485044800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 668086455877286115, guid: f149402989451fe4ab69bfd1ceb5124f, type: 3}

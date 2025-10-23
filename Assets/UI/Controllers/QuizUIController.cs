@@ -5,12 +5,14 @@ using System.Linq;
 using GameStateMachine;
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 namespace UI
 {
     public class QuizUIController : QuizUIControllerContext
     {
+        [SerializeField] protected GameObject backButton;
         public QuizData quizData;
         public float _successRate = 0;
         private QuizQuestion _currentQuizQuestion;
@@ -138,6 +140,7 @@ namespace UI
 
         private void ShowResultOfQuiz()
         {
+            backButton.SetActive(false);
             QuizParent.style.display = DisplayStyle.None;
             AnswersParent.Clear();
             

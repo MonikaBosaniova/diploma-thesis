@@ -13,9 +13,9 @@ public class ProgressService : MonoBehaviour
     [SerializeField] private SkillTreeAsset _skillTree;
 
     public event Action<string, SkillProgress> OnProgressChanged; // nodeId, new progress
-    public bool CurrentNodeProgressChanged = false;
+    public bool ProgressChanged = false;
     public bool OpenSkillTree = false;
-    public int NewStars = 0;
+    //public int NewStars = 0;
     public string ChangedNodeId = "";
 
     private PlayerProgressData _data;
@@ -77,14 +77,15 @@ public class ProgressService : MonoBehaviour
 
         if (stars > p.bestStars)
         {
-            NewStars++;
+            p.newStars++;
             p.bestStars = Mathf.Clamp(stars, 0, 3);
-            CurrentNodeProgressChanged = true;
-            ChangedNodeId =  nodeId;
+            ProgressChanged = true;
+            //ChangedNodeId =  nodeId;
         }
         else
         {
-
+            p.newStars = 0;
+            ProgressChanged = false;
         }
         if (timeSec >= 0 && timeSec < p.bestTimeSec) p.bestTimeSec = timeSec;
         if (stars > 0) p.completed = true;

@@ -603,6 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <IsPrepared>k__BackingField: 0
+  backButton: {fileID: 9218443766337511115}
   quizData: {fileID: 11400000, guid: 4cbba8517551bd645a83df679c4098e1, type: 2}
   _successRate: 0
 --- !u!1 &262643144
@@ -6163,6 +6164,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc67ae197bf0f2b4eb5221180c74b9d1, type: 3}
+--- !u!1 &9218443766337511115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8869316127918543629, guid: bc67ae197bf0f2b4eb5221180c74b9d1, type: 3}
+  m_PrefabInstance: {fileID: 9218443766337511114}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
