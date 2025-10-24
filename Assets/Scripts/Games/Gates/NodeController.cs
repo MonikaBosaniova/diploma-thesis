@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 
-
 namespace Gates
 {
     public abstract class NodeController : MonoBehaviour
