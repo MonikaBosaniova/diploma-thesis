@@ -4,17 +4,26 @@ using UnityEngine;
 
 public class BinaryCalculator : MonoBehaviour
 {
+    [SerializeField] private double _decValue = 0;
+    
     [Header("Binary Inputs")]
     [SerializeField] private SwitchController _switch0;
     [SerializeField] private SwitchController _switch1;
     [SerializeField] private SwitchController _switch2;
     [SerializeField] private SwitchController _switch3;
     
+    [Header("Binary Outputs")]
+    [SerializeField] private GameObject _binaryValueHelper0;
+    [SerializeField] private GameObject _binaryValueHelper1;
+    [SerializeField] private GameObject _binaryValueHelper2;
+    [SerializeField] private GameObject _binaryValueHelper3;
+    
     [Header("Dec Outputs")]
     [SerializeField] private GameObject _dec_digit_1;
     [SerializeField] private GameObject _dec_digit_10;
 
-    [SerializeField] private double _decValue = 0;
+    
+    public Action<double> OnDecValueChanged;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +32,17 @@ public class BinaryCalculator : MonoBehaviour
         _switch1.OnValueChanged += (newValue) => ComputeDecValue(1, newValue);
         _switch2.OnValueChanged += (newValue) => ComputeDecValue(2, newValue);
         _switch3.OnValueChanged += (newValue) => ComputeDecValue(3, newValue);
+        
+        _switch0.OnValueChanged += (newValue) => ShowHelperNumber(_binaryValueHelper0, newValue);
+        _switch1.OnValueChanged += (newValue) => ShowHelperNumber(_binaryValueHelper1, newValue);
+        _switch2.OnValueChanged += (newValue) => ShowHelperNumber(_binaryValueHelper2 ,newValue);
+        _switch3.OnValueChanged += (newValue) => ShowHelperNumber(_binaryValueHelper3 ,newValue);
+    }
+    
+    private void ShowHelperNumber(GameObject binHelperNumberParent, bool value)
+    {
+        binHelperNumberParent.transform.GetChild(0).gameObject.SetActive(!value);
+        binHelperNumberParent.transform.GetChild(1).gameObject.SetActive(value);
     }
 
     private void ComputeDecValue(float index, bool value)
@@ -32,8 +52,8 @@ public class BinaryCalculator : MonoBehaviour
             _decValue += newValue;
         else
             _decValue -= newValue;
-        Debug.Log("Dec Value: " + _decValue + ", Index: " + index + ", Value: " + value);
         VisualizeDecValue();
+        OnDecValueChanged?.Invoke(_decValue);
     }
 
     private void VisualizeDecValue()

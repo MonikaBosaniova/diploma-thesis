@@ -22,10 +22,11 @@ public class CameraTweening : MonoBehaviour
 
     private void Start()
     {
-        if (ProgressService.I.OpenSkillTree)
-        {
-            SpawnCameraToSkillTree();
-        }
+        if(ProgressService.I != null)
+            if (ProgressService.I.OpenSkillTree)
+            {
+                SpawnCameraToSkillTree();
+            }
     }
 
     private void SpawnCameraToSkillTree()

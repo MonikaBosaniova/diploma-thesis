@@ -39,12 +39,14 @@ namespace GameStateMachine
         protected void SaveProgress()
         {
             Debug.Log("SAVING: " + manager.stars);
-            ProgressService.I.RecordLevelResult(manager.nodeID, manager.stars, manager.time);
+            if(ProgressService.I != null)
+                ProgressService.I.RecordLevelResult(manager.nodeID, manager.stars, manager.time);
         }
 
         protected void GoToSkillTree()
         {
-            ProgressService.I.OpenSkillTree = true;
+            if(ProgressService.I != null)
+                ProgressService.I.OpenSkillTree = true;
             SceneManager.LoadScene(0);
         }
         

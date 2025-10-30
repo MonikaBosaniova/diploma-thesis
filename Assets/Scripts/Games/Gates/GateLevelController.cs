@@ -59,11 +59,6 @@ namespace Gates
             StartCoroutine(WaitToShowCompleteLevel());
         }
         
-        IEnumerator WaitToShowCompleteLevel()
-        {
-            ShowEndDialogueSequence();
-            yield return new WaitForSeconds(.5f);
-            HideEndDialogueSequence();
-        }
+
     }
 }

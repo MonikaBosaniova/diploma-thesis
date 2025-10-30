@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using DialogueSystem;
 using UnityEngine;
 
@@ -56,6 +57,13 @@ public class LevelController : MonoBehaviour
             UIManager.Instance.HideDialogWindowUI();
         }
         OnLevelEnded?.Invoke();
+    }
+    
+     protected IEnumerator WaitToShowCompleteLevel()
+    {
+        ShowEndDialogueSequence();
+        yield return new WaitForSeconds(.5f);
+        HideEndDialogueSequence();
     }
     
 }
