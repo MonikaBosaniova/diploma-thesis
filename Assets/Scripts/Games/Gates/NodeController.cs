@@ -8,6 +8,9 @@ namespace Gates
         public event Action<bool> OnValueChanged;
         public GameObject TrueModel;
         public GameObject FalseModel;
+        
+        public Material FalseMaterial;
+        public Material TrueMaterial;
 
         public bool Value
         {
@@ -51,8 +54,13 @@ namespace Gates
 
         protected void SetLineValue(bool value, GameObject line)
         {
-            line.transform.GetChild(Convert.ToInt32(value)).gameObject.SetActive(true);
-            line.transform.GetChild(Convert.ToInt32(!value)).gameObject.SetActive(false);
+            var allWireComponents = line.GetComponentsInChildren<MeshRenderer>();
+            foreach (var wire in allWireComponents)
+            {
+                wire.material = value ? TrueMaterial : FalseMaterial; 
+            }
+            //line.transform.GetChild(Convert.ToInt32(value)).gameObject.SetActive(true);
+            //line.transform.GetChild(Convert.ToInt32(!value)).gameObject.SetActive(false);
         }
     }
 }
