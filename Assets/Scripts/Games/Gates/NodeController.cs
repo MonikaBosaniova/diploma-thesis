@@ -57,7 +57,7 @@ namespace Gates
             var allWireComponents = line.GetComponentsInChildren<MeshRenderer>();
             foreach (var wire in allWireComponents)
             {
-                wire.material = value ? TrueMaterial : FalseMaterial; 
+                wire.sharedMaterial  = value ? TrueMaterial : FalseMaterial; 
             }
             //line.transform.GetChild(Convert.ToInt32(value)).gameObject.SetActive(true);
             //line.transform.GetChild(Convert.ToInt32(!value)).gameObject.SetActive(false);

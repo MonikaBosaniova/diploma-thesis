@@ -48,6 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TrueModel: {fileID: 0}
   FalseModel: {fileID: 0}
+  FalseMaterial: {fileID: 2100000, guid: 83f1e064ec1e71e479cc9127364ad795, type: 2}
+  TrueMaterial: {fileID: 2100000, guid: 983f56ff036207a4494349fc4045085f, type: 2}
   gateType: 0
   firstInput: {fileID: 0}
   secondInput: {fileID: 0}
@@ -1076,12 +1078,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5062498974239270246, guid: 4ce02ee462933154a9af787aaa3eff66, type: 3}
+      propertyPath: m_Name
+      value: Wire
+      objectReference: {fileID: 0}
     - target: {fileID: 6523302343246639652, guid: 4ce02ee462933154a9af787aaa3eff66, type: 3}
       propertyPath: m_Name
       value: SecondInputLine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2436801197804470686, guid: 4ce02ee462933154a9af787aaa3eff66, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce02ee462933154a9af787aaa3eff66, type: 3}
@@ -1192,6 +1199,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3923392105283356630, guid: 173270e8eadff524989c2f9edcc3b34d, type: 3}
+      propertyPath: m_Name
+      value: Wire
+      objectReference: {fileID: 0}
     - target: {fileID: 4153673104336665483, guid: 173270e8eadff524989c2f9edcc3b34d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1237,7 +1248,8 @@ PrefabInstance:
       value: LineStraigth
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8947885475257003362, guid: 173270e8eadff524989c2f9edcc3b34d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 173270e8eadff524989c2f9edcc3b34d, type: 3}
@@ -1473,12 +1485,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5062498974239270246, guid: 4ce02ee462933154a9af787aaa3eff66, type: 3}
+      propertyPath: m_Name
+      value: Wire
+      objectReference: {fileID: 0}
     - target: {fileID: 6523302343246639652, guid: 4ce02ee462933154a9af787aaa3eff66, type: 3}
       propertyPath: m_Name
       value: FirstInputLine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2436801197804470686, guid: 4ce02ee462933154a9af787aaa3eff66, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ce02ee462933154a9af787aaa3eff66, type: 3}
