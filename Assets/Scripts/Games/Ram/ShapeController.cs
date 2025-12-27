@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Games.Ram;
 using UnityEngine;
 
 public class ShapeController : MonoBehaviour
@@ -9,10 +10,12 @@ public class ShapeController : MonoBehaviour
     Vector3 SpawnPoint;
     DraggableObject draggableObject;
     List<BgCubeTrigger> bgTriggers = new List<BgCubeTrigger>();
+    RamLevelController ramLevelController;
 
     private void Start()
     {
         draggableObject = GetComponent<DraggableObject>();
+        
         foreach (Transform child in transform)
         {
             ChildSpawnPointPositions.Add(child.localPosition);
@@ -37,6 +40,10 @@ public class ShapeController : MonoBehaviour
         if (bgTriggers.Count == transform.childCount)
         {
             SnapObjectToPosition();
+            draggableObject.enabled = false;
+            
+            if(ramLevelController != null)
+                ramLevelController.GenerateShape();
         }
         else
         {
@@ -57,8 +64,17 @@ public class ShapeController : MonoBehaviour
     {
         for(var i = 0; i < bgTriggers.Count; i++)
         {
+            bgTriggers[i].SetSnapped(true);
             transform.GetChild(i).position = new Vector3(bgTriggers[i].transform.position.x, transform.GetChild(i).position.y, bgTriggers[i].transform.position.z);
+            bgTriggers[i].ClearColoring();
         }
+        
+        bgTriggers.Clear();
+    }
+
+    public void SetLevelController(RamLevelController ramLc)
+    {
+        this.ramLevelController = ramLc;
     }
 
 }

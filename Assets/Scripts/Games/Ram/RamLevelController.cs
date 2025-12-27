@@ -1,19 +1,20 @@
-using System;
-using System.Collections.Generic;
-using Gates;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Games.Ram
 {
     public class RamLevelController : LevelController
     {
         [Header("Ram Level")] 
-        [SerializeField] private GameObject ShapePrefab;
+        [SerializeField] private GameObject Shape;
         [SerializeField] private GameObject SpawnShapesParent;
+        [SerializeField] private GameObject ShapesDoneParent;
+        
+        RamGameManager ramGameManager;
         
         public override void Init()
         {
+            ramGameManager = FindFirstObjectByType<RamGameManager>();
+            
             for (int i = 0; i < transform.childCount; i++)
             {
                 transform.GetChild(i).gameObject.SetActive(true);
@@ -26,6 +27,14 @@ namespace Games.Ram
 
         public void GenerateShape()
         {
+            if (Shape != null)
+            {
+                Shape.transform.parent = ShapesDoneParent.transform;
+                Shape = null;
+            }
+            
+            Shape = Instantiate(ramGameManager.allPossibleGeneratedShapes[0], SpawnShapesParent.transform);
+            Shape.GetComponent<ShapeController>().SetLevelController(this);
             Debug.Log("Generate shape");
         }
 

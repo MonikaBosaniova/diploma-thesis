@@ -3,11 +3,15 @@ using UnityEngine;
 
 public class BgCubeTrigger : MonoBehaviour
 {
-    [Header("Materials")]
+    [Header("Materials")] 
     [SerializeField] Material OnMaterial;
     [SerializeField] Material OffMaterial;
-    
+    [SerializeField] Material AlreadySnappedMaterial;
+
+    [Header ("---DEBUG---")]
+    [SerializeField] bool Snapped;
     MeshRenderer meshRenderer;
+    bool newlySnapped;
 
     private void Start()
     {
@@ -17,10 +21,21 @@ public class BgCubeTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         other.transform.parent.TryGetComponent<ShapeController>(out var shapeController);
-        if (shapeController != null)
+        if (shapeController == null) return;
+        
+        if (!Snapped)
         {
             other.transform.parent.gameObject.GetComponent<ShapeController>().AddBgTrigger(this);
             meshRenderer.material = OnMaterial;
+        }
+        else
+        {
+            if (newlySnapped)
+            {
+                newlySnapped = false;
+                meshRenderer.material = OffMaterial;
+            }
+            meshRenderer.material = AlreadySnappedMaterial;
         }
     }
 
@@ -33,4 +48,16 @@ public class BgCubeTrigger : MonoBehaviour
             meshRenderer.material = OffMaterial;
         }
     }
+
+    public void SetSnapped(bool value)
+    {
+        Snapped = value;
+        newlySnapped = value;
+    }
+
+    public void ClearColoring()
+    {
+        meshRenderer.material = OffMaterial;
+    }
+    
 }
