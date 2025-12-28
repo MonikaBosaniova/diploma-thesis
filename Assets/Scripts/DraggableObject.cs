@@ -4,11 +4,11 @@ using UnityEngine;
 public class DraggableObject : MonoBehaviour
 {
     public Action DragEnd;
+    public bool dragging;
     
     Camera cam;
     float dist;
     Vector3 offset;
-    bool dragging;
 
     void Awake()
     {

@@ -11,7 +11,7 @@ public class BgCubeTrigger : MonoBehaviour
     [Header ("---DEBUG---")]
     [SerializeField] bool Snapped;
     MeshRenderer meshRenderer;
-    bool newlySnapped;
+    DraggableObject draggableObject;
 
     private void Start()
     {
@@ -21,21 +21,24 @@ public class BgCubeTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         other.transform.parent.TryGetComponent<ShapeController>(out var shapeController);
-        if (shapeController == null) return;
+        other.transform.parent.TryGetComponent(out draggableObject);
+        if (shapeController == null || draggableObject == null) return;
         
-        if (!Snapped)
+        if (draggableObject.dragging)
         {
-            other.transform.parent.gameObject.GetComponent<ShapeController>().AddBgTrigger(this);
-            meshRenderer.material = OnMaterial;
+            if (!Snapped)
+            {
+                other.transform.parent.gameObject.GetComponent<ShapeController>().AddBgTrigger(this);
+                meshRenderer.material = OnMaterial;
+            }
+            else
+            {
+                meshRenderer.material = AlreadySnappedMaterial;
+            }
         }
         else
         {
-            if (newlySnapped)
-            {
-                newlySnapped = false;
-                meshRenderer.material = OffMaterial;
-            }
-            meshRenderer.material = AlreadySnappedMaterial;
+            meshRenderer.material = OffMaterial;
         }
     }
 
@@ -52,7 +55,6 @@ public class BgCubeTrigger : MonoBehaviour
     public void SetSnapped(bool value)
     {
         Snapped = value;
-        newlySnapped = value;
     }
 
     public void ClearColoring()

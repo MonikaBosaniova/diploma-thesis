@@ -33,9 +33,9 @@ namespace Games.Ram
                 Shape = null;
             }
             
-            Shape = Instantiate(ramGameManager.allPossibleGeneratedShapes[0], SpawnShapesParent.transform);
+            var random = Random.Range(0, ramGameManager.allPossibleGeneratedShapes.Count);
+            Shape = Instantiate(ramGameManager.allPossibleGeneratedShapes[random], SpawnShapesParent.transform);
             Shape.GetComponent<ShapeController>().SetLevelController(this);
-            Debug.Log("Generate shape");
         }
 
         private void CheckFinishState(double newValue)
@@ -50,16 +50,6 @@ namespace Games.Ram
                 transform.GetChild(i).gameObject.SetActive(false);
             }
             base.Close();
-        }
-
-        private void ShowDecNumber(int numToShow)
-        {
-            
-        }
-
-        private void ShowNumberOnSpecificIndex(int indexInDisplay, int numToShow)
-        {
-
         }
         
     }

@@ -49,6 +49,10 @@ public class ShapeController : MonoBehaviour
         {
             SnapToSpawnPoint();
         }
+        
+        foreach (BgCubeTrigger bgTrigger in bgTriggers)
+            bgTrigger.ClearColoring();
+        bgTriggers.Clear();
     }
 
     private void SnapToSpawnPoint()
@@ -66,10 +70,7 @@ public class ShapeController : MonoBehaviour
         {
             bgTriggers[i].SetSnapped(true);
             transform.GetChild(i).position = new Vector3(bgTriggers[i].transform.position.x, transform.GetChild(i).position.y, bgTriggers[i].transform.position.z);
-            bgTriggers[i].ClearColoring();
         }
-        
-        bgTriggers.Clear();
     }
 
     public void SetLevelController(RamLevelController ramLc)
