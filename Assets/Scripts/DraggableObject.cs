@@ -5,6 +5,12 @@ public class DraggableObject : MonoBehaviour
 {
     public Action DragEnd;
     public bool dragging;
+
+    public bool fixX = false;
+    public bool fixZ = false;
+    
+    public float minFixValue; 
+    public float maxFixValue; 
     
     Camera cam;
     float dist;
@@ -28,7 +34,11 @@ public class DraggableObject : MonoBehaviour
         if (!dragging) return;
 
         Vector3 mouseWorld = cam.ScreenToWorldPoint(Input.mousePosition + Vector3.forward * dist);
-        transform.position = mouseWorld + offset;
+        Vector3  newPos = mouseWorld + offset;
+        newPos.y = transform.position.y;
+        newPos.x = fixX ? transform.position.x : Math.Clamp(newPos.x, minFixValue, maxFixValue);
+        newPos.z = fixZ ? transform.position.z : Math.Clamp(newPos.z, minFixValue, maxFixValue);
+        transform.position =  newPos;
     }
 
     void OnMouseUp()

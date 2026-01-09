@@ -1090,7 +1090,8 @@ MonoBehaviour:
   time: 0
   allPossibleGeneratedShapes:
   - {fileID: 6974094903832510024, guid: 86af688a2d89db8459c79829a5b58b6e, type: 3}
-  - {fileID: 6974094903832510024, guid: f5a20bccf00f96f4888d27410b215798, type: 3}
+  - {fileID: 6974094903832510024, guid: 86775c66a4a7e5047970c01eef997726, type: 3}
+  - {fileID: 6974094903832510024, guid: 54b77a3b30ddb694fa23e7b5b9e277e1, type: 3}
 --- !u!1 &275627905
 GameObject:
   m_ObjectHideFlags: 0
