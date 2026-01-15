@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Games/Binary.unity
     guid: a4c3abcb70f4591419cdbb140db7e90c
+  - enabled: 1
+    path: Assets/Scenes/Games/Ram.unity
+    guid: 5fdce08eaf4360245b635c61c0de9890
+  - enabled: 1
+    path: Assets/Scenes/Games/HDD_SSD.unity
+    guid: 72e0177c9565e184e91182758d023f95
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 88dc77f56f06f424aa8307bef3211a6b, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

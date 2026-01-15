@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6,17 +7,32 @@ namespace Games.HddSsd
 {
     public class SsdLevelController : LevelController
     {
-        public GameObject smallDisk;
-        public GameObject bigDisk;
+        public SsdButtonsController VerticalButtonsController;
+        public SsdButtonsController HorizontalButtonsController;
+        [SerializeField] private List<GameObject> rows;
         
         HddSsdGameManager hddGameManager;
-        private List<DiskController> diskControllers;
         
-        [Header("DEBUG")]
+        [Header("---DEBUG---")]
         [SerializeField] private int _maxDataCollected = 5;
         [SerializeField] private int _dataCollected = 0;
-        private int lastGeneratedRandom;
+        [SerializeField] private int numOfRepetitions = 3;
+        [SerializeField] private SsdSegment generatedData;
+        private Tuple<int,int> lastGeneratedRandom = new Tuple<int,int>(0,0);
+        private Tuple<int, int> chosenPosition = new Tuple<int, int>(0,0);
         bool finishLevel = false;
+        
+        [Header("Dimensions")]
+        [SerializeField] private int sectionXCount;
+        [SerializeField] private int sectionYCount;
+        
+        List<SsdButton> horizontalButtons = new List<SsdButton>();
+        List<SsdButton> verticalButtons = new List<SsdButton>();
+        
+        List<float> lineScalingSettings = new List<float>()
+        {
+            4.85f, 9.7f, 14.35f
+        };
         
         public override void Init()
         {
@@ -26,17 +42,72 @@ namespace Games.HddSsd
             {
                 transform.GetChild(i).gameObject.SetActive(true);
             }
+
+            sectionXCount = rows.ElementAt(0).transform.childCount / numOfRepetitions;
+            sectionYCount = rows.Count;
             
-            smallDisk.gameObject.SetActive(true);
-            diskControllers = smallDisk.transform.GetComponentsInChildren<DiskController>().ToList();
+            horizontalButtons = HorizontalButtonsController.transform.GetComponentsInChildren<SsdButton>().ToList();
+            verticalButtons = VerticalButtonsController.transform.GetComponentsInChildren<SsdButton>().ToList();
+            
+            VerticalButtonsController.OnSelectionChange += CheckVerticalCollision;
+            HorizontalButtonsController.OnSelectionChange += CheckHorizontalCollision;
+            
+            ShowPartOfSections(numOfRepetitions);
             GenerateRandomDataPoint();
             
             base.Init();
         }
 
-        public void DataCollected()
+        private void CheckHorizontalCollision(int obj)
+        {
+            chosenPosition = new Tuple<int, int>(obj, chosenPosition.Item2);
+            CheckCollision();
+        }
+
+        private void CheckVerticalCollision(int obj)
+        {
+            chosenPosition = new Tuple<int, int>(chosenPosition.Item1, obj);
+            CheckCollision();
+        }
+
+        private void CheckCollision()
+        {
+            if (!Equals(chosenPosition, lastGeneratedRandom))
+            {
+                return;
+            }
+            DataCollected();
+        }
+
+        private void ShowPartOfSections(int i)
+        {
+            for (int j = 0; j < sectionYCount; j++)
+            {
+                for (int k = 0; k < rows.ElementAt(0).transform.childCount; k++)
+                {
+                    if (k >= sectionXCount * (i - 1))
+                    {
+                        rows.ElementAt(j).transform.GetChild(k).gameObject.SetActive(true);
+                        horizontalButtons.ElementAt(k).gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        rows.ElementAt(j).transform.GetChild(k).gameObject.SetActive(false);
+                        horizontalButtons.ElementAt(k).gameObject.SetActive(false);
+                    }
+                }
+
+                var scalingIndex = lineScalingSettings.Count - i;
+                var scaleZ = lineScalingSettings[scalingIndex];
+                var posZ = scaleZ / 2f;
+                verticalButtons.ElementAt(j).gameObject.GetComponent<SsdButton>().SetLineScaling(scaleZ, posZ);
+            }
+        }
+
+        private void DataCollected()
         {
             _dataCollected++;
+            generatedData.SetValue(false);
             if (_dataCollected >= _maxDataCollected)
             {
                 _dataCollected = 0;
@@ -50,36 +121,31 @@ namespace Games.HddSsd
 
         private void ContinueInLevel()
         {
-            if (smallDisk.activeSelf)
+            if (numOfRepetitions == 1)
             {
-                smallDisk.SetActive(false);
-                bigDisk.SetActive(true);
-                diskControllers = bigDisk.transform.GetComponentsInChildren<DiskController>().ToList();
-                GenerateRandomDataPoint();
+                CheckFinishState(0);
                 return;
             }
-
-            if (bigDisk.activeSelf && !finishLevel)
-            {
-                SetSpeedRotation(50f);
-                GenerateRandomDataPoint();
-                finishLevel = true;
-                return;
-            }
-            
-            CheckFinishState(0);
+            numOfRepetitions--;
+            ShowPartOfSections(numOfRepetitions);
+            GenerateRandomDataPoint();
 
         }
 
         private void GenerateRandomDataPoint()
         {
-            var randomNum = Random.Range(0, diskControllers.Count);
-            while (randomNum == lastGeneratedRandom)
+            var randomNumX = UnityEngine.Random.Range(sectionXCount * (numOfRepetitions - 1), horizontalButtons.Count);
+            var randomNumY = UnityEngine.Random.Range(0, sectionYCount);
+            Tuple<int, int> randomPosition = new Tuple<int, int>(randomNumX, randomNumY);
+            while (Equals(randomPosition, lastGeneratedRandom))
             {
-                randomNum = Random.Range(0, diskControllers.Count);
+                randomNumX = UnityEngine.Random.Range(sectionXCount * (numOfRepetitions - 1), horizontalButtons.Count);
+                randomNumY = UnityEngine.Random.Range(0, sectionYCount);
+                randomPosition = new Tuple<int, int>(randomNumX, randomNumY);
             }
-            lastGeneratedRandom = randomNum;
-            diskControllers[randomNum].CreateCube();
+            lastGeneratedRandom = randomPosition;
+            generatedData = rows.ElementAt(randomPosition.Item2).transform.GetChild(randomPosition.Item1).gameObject.GetComponent<SsdSegment>();
+            generatedData.SetValue(true);
         }
 
 
@@ -96,14 +162,5 @@ namespace Games.HddSsd
             }
             base.Close();
         }
-
-        private void SetSpeedRotation(float newSpeed)
-        {
-            foreach (var diskController in diskControllers)
-            {
-                diskController.SetSpeedRotation(newSpeed);
-            }
-        }
-        
     }
 }
