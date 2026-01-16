@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Gates;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -28,8 +27,16 @@ namespace Games.Binary
                 decFinalNumber =  Random.Range(1, (int)Math.Pow(2, numOfBits));
             
             _binaryCalculator = gameObject.GetComponent<BinaryCalculator>();
-            if(_binaryCalculator != null)
+            if (_binaryCalculator != null)
+            {
                 _binaryCalculator.OnDecValueChanged += CheckFinishState;
+                _binaryCalculator._finalValue = decFinalNumber;
+                if (!isBinToDec)
+                {
+                    _binaryCalculator.VisualizeDecValue(decFinalNumber, true);
+                    _binaryCalculator.VisualizeDecValue(decFinalNumber, false);
+                }
+            }
             base.Init();
         }
 
@@ -48,33 +55,5 @@ namespace Games.Binary
             }
             base.Close();
         }
-
-        private void ShowBinNumber(int numToShow)
-        {
-            var binary = Convert.ToString(numToShow, 2);
-            if (binary.Length < numOfBits)
-            {
-                binary = new string('0', numOfBits - binary.Length) + binary;
-            }
-            for (int i = 0; i < binary.Length; i++)
-            {
-                Int32.TryParse(binary[i].ToString(), out int value);
-                
-            }
-            //for (var i = 0; binary)
-  
-        }
-
-        private void ShowDecNumber(int numToShow)
-        {
-            
-        }
-
-        private void ShowNumberOnSpecificIndex(int indexInDisplay, int numToShow)
-        {
-
-        }
-        
-        
     }
 }

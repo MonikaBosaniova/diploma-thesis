@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class BinaryCalculator : MonoBehaviour
 {
+    [SerializeField] public double _finalValue = 0;
     [SerializeField] private double _decValue = 0;
+    [SerializeField] private bool isBinToDec = true;
     
     [Header("Binary Inputs")]
     [SerializeField] private SwitchController _switch0;
@@ -21,6 +23,11 @@ public class BinaryCalculator : MonoBehaviour
     [Header("Dec Outputs")]
     [SerializeField] private GameObject _dec_digit_1;
     [SerializeField] private GameObject _dec_digit_10;
+    
+    [Header("Remainder Outputs")]
+    [SerializeField] private GameObject _remainder_digit_1;
+    [SerializeField] private GameObject _remainder_digit_10;
+    [SerializeField] private GameObject _remainder_minus;
 
     
     public Action<double> OnDecValueChanged;
@@ -38,6 +45,48 @@ public class BinaryCalculator : MonoBehaviour
         _switch2.OnValueChanged += (newValue) => ShowHelperNumber(_binaryValueHelper2 ,newValue);
         _switch3.OnValueChanged += (newValue) => ShowHelperNumber(_binaryValueHelper3 ,newValue);
     }
+    public void VisualizeDecValue(double value, bool settingResult)
+    {
+        Debug.Log("VISUALIZE DEC VALUE: " + value);
+        Transform digit01;
+        Transform digit10;
+        
+        if (settingResult)
+        {
+            digit01 = _dec_digit_1.transform;
+            digit10 = _dec_digit_10.transform;
+        }
+        else
+        {
+            digit01 = _remainder_digit_1.transform;
+            digit10 = _remainder_digit_10.transform;
+            _remainder_minus.SetActive(value < 0);
+            if(value < 0) value *= -1;
+        }
+            
+        var indexOfDecDigit_1 = 0d;
+        
+        if (value >= 10)
+        {
+            digit10.GetChild(0).gameObject.SetActive(false);
+            digit10.GetChild(1).gameObject.SetActive(true);
+            indexOfDecDigit_1 = Math.Abs(value - 10);
+        }
+        else
+        {
+            digit10.GetChild(0).gameObject.SetActive(true);
+            digit10.GetChild(1).gameObject.SetActive(false);
+            indexOfDecDigit_1 = value;
+
+        }
+
+        for (int i = 0; i < digit01.childCount; i++)
+        {
+            digit01.GetChild(i).gameObject.SetActive(false);
+        }
+        Debug.Log(indexOfDecDigit_1 + " ... " + digit01.name + "  /  " + digit01.childCount);
+        digit01.GetChild((int)indexOfDecDigit_1).gameObject.SetActive(true);
+    }
     
     private void ShowHelperNumber(GameObject binHelperNumberParent, bool value)
     {
@@ -52,32 +101,11 @@ public class BinaryCalculator : MonoBehaviour
             _decValue += newValue;
         else
             _decValue -= newValue;
-        VisualizeDecValue();
+        if(isBinToDec)
+            VisualizeDecValue(_decValue, true);
+        else
+            VisualizeDecValue(_finalValue - _decValue, false);
+        
         OnDecValueChanged?.Invoke(_decValue);
     }
-
-    private void VisualizeDecValue()
-    {
-        var indexOfDecDigit_1 = 0d;
-        if (_decValue >= 10)
-        {
-            _dec_digit_10.transform.GetChild(0).gameObject.SetActive(false);
-            _dec_digit_10.transform.GetChild(1).gameObject.SetActive(true);
-            indexOfDecDigit_1 = Math.Abs(_decValue - 10);
-        }
-        else
-        {
-            _dec_digit_10.transform.GetChild(0).gameObject.SetActive(true);
-            _dec_digit_10.transform.GetChild(1).gameObject.SetActive(false);
-            indexOfDecDigit_1 = _decValue;
-
-        }
-
-        for (int i = 0; i < _dec_digit_1.transform.childCount; i++)
-        {
-            _dec_digit_1.transform.GetChild(i).gameObject.SetActive(false);
-        }
-        _dec_digit_1.transform.GetChild((int)indexOfDecDigit_1).gameObject.SetActive(true);
-    }
-    
 }
