@@ -10,7 +10,11 @@ namespace Games.Binary
         [Header("Level values")]
         [SerializeField] protected int decFinalNumber = 0;
         [SerializeField] public bool isBinToDec = true;
+        [SerializeField] public bool isFreeMode = false;
         [SerializeField] public GameObject displayNumbersParent;
+        
+        [SerializeField] private bool showHelpingNumbers = true;
+        [SerializeField] private GameObject _helpingNumbers;
         
         private List<GameObject> allDisplayNumbers;
         private BinaryCalculator _binaryCalculator;
@@ -23,27 +27,36 @@ namespace Games.Binary
             {
                 transform.GetChild(i).gameObject.SetActive(true);
             }
+            
             if(decFinalNumber == 0)
                 decFinalNumber =  Random.Range(1, (int)Math.Pow(2, numOfBits));
             
             _binaryCalculator = gameObject.GetComponent<BinaryCalculator>();
             if (_binaryCalculator != null)
             {
-                _binaryCalculator.OnDecValueChanged += CheckFinishState;
+                _binaryCalculator.OnDecValueChanged += StartFinishState;
                 _binaryCalculator._finalValue = decFinalNumber;
                 if (!isBinToDec)
                 {
                     _binaryCalculator.VisualizeDecValue(decFinalNumber, true);
                     _binaryCalculator.VisualizeDecValue(decFinalNumber, false);
                 }
+                else
+                {
+                    if(!isFreeMode)
+                        _binaryCalculator.GenerateRandomBinNumber();
+                }
             }
+            
+            if(_helpingNumbers != null)
+                _helpingNumbers.SetActive(showHelpingNumbers);
+            
             base.Init();
         }
 
-        private void CheckFinishState(double newValue)
+        private void StartFinishState(double newValue)
         {
-            if (Math.Abs(decFinalNumber - newValue) > 0.01) return;
-            _binaryCalculator.OnDecValueChanged -= CheckFinishState;
+            _binaryCalculator.OnDecValueChanged -= StartFinishState;
             StartCoroutine(WaitToShowCompleteLevel());
         }
 

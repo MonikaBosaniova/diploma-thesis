@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Gates;
 using UnityEngine;
 
@@ -13,6 +15,8 @@ public class BinaryCalculator : MonoBehaviour
     [SerializeField] private SwitchController _switch1;
     [SerializeField] private SwitchController _switch2;
     [SerializeField] private SwitchController _switch3;
+    [SerializeField] private GameObject _wires;
+    private List<SwitchController> _allSwitches;
     
     [Header("Binary Outputs")]
     [SerializeField] private GameObject _binaryValueHelper0;
@@ -28,6 +32,9 @@ public class BinaryCalculator : MonoBehaviour
     [SerializeField] private GameObject _remainder_digit_1;
     [SerializeField] private GameObject _remainder_digit_10;
     [SerializeField] private GameObject _remainder_minus;
+    
+    [Header("Wrong Answer")]
+    [SerializeField] private GameObject _wrongAnswer;
 
     
     public Action<double> OnDecValueChanged;
@@ -44,10 +51,18 @@ public class BinaryCalculator : MonoBehaviour
         _switch1.OnValueChanged += (newValue) => ShowHelperNumber(_binaryValueHelper1, newValue);
         _switch2.OnValueChanged += (newValue) => ShowHelperNumber(_binaryValueHelper2 ,newValue);
         _switch3.OnValueChanged += (newValue) => ShowHelperNumber(_binaryValueHelper3 ,newValue);
+        
+        _allSwitches = new List<SwitchController>()
+        {
+            _switch0,
+            _switch1,
+            _switch2,
+            _switch3,
+        };
     }
+    
     public void VisualizeDecValue(double value, bool settingResult)
     {
-        Debug.Log("VISUALIZE DEC VALUE: " + value);
         Transform digit01;
         Transform digit10;
         
@@ -84,8 +99,49 @@ public class BinaryCalculator : MonoBehaviour
         {
             digit01.GetChild(i).gameObject.SetActive(false);
         }
-        Debug.Log(indexOfDecDigit_1 + " ... " + digit01.name + "  /  " + digit01.childCount);
         digit01.GetChild((int)indexOfDecDigit_1).gameObject.SetActive(true);
+    }
+
+    public void GenerateRandomBinNumber()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            var random = UnityEngine.Random.Range(0, 2);
+            if (random == 1)
+            {
+                _allSwitches.ElementAt(i).SwitchValue();
+            }
+            _allSwitches.ElementAt(i).gameObject.SetActive(false);
+        }
+
+        _finalValue = _decValue;
+        _decValue = 0;
+        VisualizeDecValue(0, true);
+        //TODO treba vypnut correctne
+        
+        //_wires.SetActive(false);
+    }
+
+    public void AddToDecValue(int value)
+    {
+        _wrongAnswer.SetActive(false);
+        _decValue += value;
+        _decValue = Mathf.Clamp((int)_decValue, 0, 15);
+        
+        VisualizeDecValue(_decValue, true);
+    }
+
+    public void SubmitAnswer()
+    {
+        if (Math.Abs(_finalValue - _decValue) < 0.1)
+        {
+            OnDecValueChanged?.Invoke(_decValue);
+            _finalValue = -1;
+        }
+        else
+        {
+            _wrongAnswer.SetActive(true);
+        }
     }
     
     private void ShowHelperNumber(GameObject binHelperNumberParent, bool value)
@@ -105,7 +161,11 @@ public class BinaryCalculator : MonoBehaviour
             VisualizeDecValue(_decValue, true);
         else
             VisualizeDecValue(_finalValue - _decValue, false);
-        
-        OnDecValueChanged?.Invoke(_decValue);
+
+        if (Math.Abs(_finalValue - _decValue) < 0.1)
+        {
+            OnDecValueChanged?.Invoke(_decValue);
+            _finalValue = -1;
+        }
     }
 }

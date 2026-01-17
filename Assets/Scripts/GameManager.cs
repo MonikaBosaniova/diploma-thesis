@@ -14,6 +14,7 @@ namespace GameStateMachine
         [SerializeField] protected GameObject minigameParent;
         [SerializeField] protected GameObject quizParent;
         [SerializeField] protected GameObject endParent;
+        [SerializeField] protected GameObject nextButton;
         
         [SerializeField] internal string nodeID;
         [SerializeField] internal int stars = 0;
@@ -52,7 +53,12 @@ namespace GameStateMachine
             GameState endState = gameObject.AddComponent<EndState>();
             endState.Init(gameObject);
             
-            tutorialState.OnStateComplete += () => ChangeState(minigameState);
+            tutorialState.OnStateComplete += () =>
+            {
+                ChangeState(minigameState);
+                if(nextButton != null)
+                    nextButton.SetActive(false);
+            };
             minigameState.OnStateComplete += () => ChangeState(quizState);
             quizState.OnStateComplete += () => ChangeState(endState);
             
