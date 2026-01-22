@@ -6,6 +6,8 @@ namespace Gates
     {
         public NodeController firstInput;
         public GameObject firstLine;
+
+        public GameObject wire;
         
         void Start()
         {
@@ -15,6 +17,11 @@ namespace Gates
                 SetLineValue(newValue, firstLine);
             };
 
+        }
+
+        public void HideWire()
+        {
+            wire.SetActive(false);
         }
 
         private void Initialize()

@@ -227,6 +227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TrueModel: {fileID: 715137586248855624}
   FalseModel: {fileID: 5499746166709303603}
+  FalseMaterial: {fileID: 2100000, guid: 83f1e064ec1e71e479cc9127364ad795, type: 2}
+  TrueMaterial: {fileID: 2100000, guid: 983f56ff036207a4494349fc4045085f, type: 2}
   InputValue: 0
 --- !u!1 &6040177063725726053
 GameObject:

@@ -2340,6 +2340,7 @@ MonoBehaviour:
   TrueMaterial: {fileID: 2100000, guid: 983f56ff036207a4494349fc4045085f, type: 2}
   firstInput: {fileID: 550416449}
   firstLine: {fileID: 539075874}
+  wire: {fileID: 0}
 --- !u!1 &314823388
 GameObject:
   m_ObjectHideFlags: 0
@@ -15524,6 +15525,7 @@ MonoBehaviour:
   TrueMaterial: {fileID: 2100000, guid: 983f56ff036207a4494349fc4045085f, type: 2}
   firstInput: {fileID: 690561467}
   firstLine: {fileID: 1054103083}
+  wire: {fileID: 0}
 --- !u!1 &2106102571
 GameObject:
   m_ObjectHideFlags: 0

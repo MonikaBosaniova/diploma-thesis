@@ -43,8 +43,10 @@ namespace Games.Binary
                 }
                 else
                 {
-                    if(!isFreeMode)
+                    if (!isFreeMode)
+                    {
                         _binaryCalculator.GenerateRandomBinNumber();
+                    }
                 }
             }
             
@@ -56,6 +58,7 @@ namespace Games.Binary
 
         private void StartFinishState(double newValue)
         {
+            Debug.Log("Finish state: "  + newValue);
             _binaryCalculator.OnDecValueChanged -= StartFinishState;
             StartCoroutine(WaitToShowCompleteLevel());
         }

@@ -54,6 +54,7 @@ MonoBehaviour:
   TrueMaterial: {fileID: 2100000, guid: 983f56ff036207a4494349fc4045085f, type: 2}
   firstInput: {fileID: 0}
   firstLine: {fileID: 6651146057211310868}
+  wire: {fileID: 6651146057211310868}
 --- !u!1001 &489470634391339312
 PrefabInstance:
   m_ObjectHideFlags: 0

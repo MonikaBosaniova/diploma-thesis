@@ -104,6 +104,8 @@ public class BinaryCalculator : MonoBehaviour
 
     public void GenerateRandomBinNumber()
     {
+        HideWires();
+        
         for (int i = 0; i < 4; i++)
         {
             var random = UnityEngine.Random.Range(0, 2);
@@ -113,13 +115,10 @@ public class BinaryCalculator : MonoBehaviour
             }
             _allSwitches.ElementAt(i).gameObject.SetActive(false);
         }
-
+        
         _finalValue = _decValue;
         _decValue = 0;
         VisualizeDecValue(0, true);
-        //TODO treba vypnut correctne
-        
-        //_wires.SetActive(false);
     }
 
     public void AddToDecValue(int value)
@@ -135,6 +134,7 @@ public class BinaryCalculator : MonoBehaviour
     {
         if (Math.Abs(_finalValue - _decValue) < 0.1)
         {
+            Debug.Log("Submit answer: " + _finalValue + " - " + _decValue);
             OnDecValueChanged?.Invoke(_decValue);
             _finalValue = -1;
         }
@@ -157,15 +157,27 @@ public class BinaryCalculator : MonoBehaviour
             _decValue += newValue;
         else
             _decValue -= newValue;
-        if(isBinToDec)
-            VisualizeDecValue(_decValue, true);
-        else
-            VisualizeDecValue(_finalValue - _decValue, false);
-
-        if (Math.Abs(_finalValue - _decValue) < 0.1)
+        if (isBinToDec)
         {
-            OnDecValueChanged?.Invoke(_decValue);
-            _finalValue = -1;
+            VisualizeDecValue(_decValue, true);
+        }
+        else
+        {
+            VisualizeDecValue(_finalValue - _decValue, false);
+            if (Math.Abs(_finalValue - _decValue) < 0.1)
+            {
+                Debug.Log("COMPUTE VALUE: " + _finalValue + " - " + _decValue);
+                OnDecValueChanged?.Invoke(_decValue);
+                _finalValue = -1;
+            }
+        }
+    }
+
+    private void HideWires()
+    {
+        foreach (var wire in _wires.GetComponentsInChildren<LightBulbController>())
+        {
+            wire.HideWire();
         }
     }
 }

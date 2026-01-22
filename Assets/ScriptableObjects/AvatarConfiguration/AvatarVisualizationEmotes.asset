@@ -16,6 +16,6 @@ MonoBehaviour:
   - emoteType: 0
     emoteSprite: {fileID: 0}
   - emoteType: 1
-    emoteSprite: {fileID: 2800000, guid: 56ee01cd1215d01428f68f5d8f0d393d, type: 3}
+    emoteSprite: {fileID: 2800000, guid: f12371d47acd9984c9abb1486f417f2b, type: 3}
   - emoteType: 2
-    emoteSprite: {fileID: 2800000, guid: de8736765799b614d98834be28c0b1ab, type: 3}
+    emoteSprite: {fileID: 2800000, guid: 7d9ff146e7358084a84eea5888b34e51, type: 3}
