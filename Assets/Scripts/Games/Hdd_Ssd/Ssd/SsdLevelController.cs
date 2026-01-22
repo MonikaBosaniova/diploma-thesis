@@ -18,8 +18,8 @@ namespace Games.HddSsd
         [SerializeField] private int _dataCollected = 0;
         [SerializeField] private int numOfRepetitions = 3;
         [SerializeField] private SsdSegment generatedData;
-        private Tuple<int,int> lastGeneratedRandom = new Tuple<int,int>(0,0);
-        private Tuple<int, int> chosenPosition = new Tuple<int, int>(0,0);
+        private Tuple<int,int> lastGeneratedRandom = new Tuple<int,int>(-1,-1);
+        private Tuple<int, int> chosenPosition = new Tuple<int, int>(-1,-1);
         bool finishLevel = false;
         
         [Header("Dimensions")]
