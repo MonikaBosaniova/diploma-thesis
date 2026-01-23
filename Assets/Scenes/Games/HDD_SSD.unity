@@ -1225,7 +1225,7 @@ MonoBehaviour:
   - {fileID: 352416688}
   - {fileID: 540422633}
   - {fileID: 1862413750}
-  _maxDataCollected: 5
+  _maxDataCollected: 3
   _dataCollected: 0
   numOfRepetitions: 3
   generatedData: {fileID: 0}
@@ -2713,6 +2713,7 @@ MonoBehaviour:
   minigameParent: {fileID: 1313237317}
   quizParent: {fileID: 255719259}
   endParent: {fileID: 0}
+  nextButton: {fileID: 0}
   nodeID: 
   stars: 0
   time: 0
@@ -3122,6 +3123,7 @@ MonoBehaviour:
   TrueMaterial: {fileID: 0}
   firstInput: {fileID: 550416449}
   firstLine: {fileID: 539075874}
+  wire: {fileID: 0}
 --- !u!1001 &301487356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6624,7 +6626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smallDisk: {fileID: 612458360}
   bigDisk: {fileID: 1176047405}
-  _maxDataCollected: 5
+  _maxDataCollected: 3
   _dataCollected: 0
 --- !u!1 &580329449
 GameObject:

@@ -11,13 +11,13 @@ public class UIStateManager : MonoBehaviour
     private GameObject skillTreeParent;
     
     private float skillTreeHiddenPositionX;
-    private float frontPanelStartPositionY;
+    private float frontPanelStartPositionZ;
     private void Start()
     {
         menuStateParent = transform.GetChild(0).gameObject;
         skillTreeParent = transform.GetChild(1).gameObject;
         skillTreeHiddenPositionX = skillTree.anchoredPosition.x;
-        frontPanelStartPositionY = frontPCPanel.localPosition.y;
+        frontPanelStartPositionZ = frontPCPanel.localPosition.z;
         if (ProgressService.I.OpenSkillTree)
         {
             ChangeToSkillTree(false);
@@ -50,7 +50,7 @@ public class UIStateManager : MonoBehaviour
 
     public void ChangeToMenu()
     {
-        frontPCPanel.DOLocalMoveY(frontPanelStartPositionY, .8f);
+        frontPCPanel.DOLocalMoveZ(frontPanelStartPositionZ, .8f);
         skillTree.DOAnchorPosX(skillTreeHiddenPositionX, .33f).OnComplete(() =>UpdateState(UIStates.Menu));
     }
     
@@ -60,12 +60,12 @@ public class UIStateManager : MonoBehaviour
         if (tween)
         {
             skillTree.DOAnchorPosX(0, .33f);
-            frontPCPanel.DOLocalMoveY(2f, .8f);
+            frontPCPanel.DOLocalMoveZ(-1f, .8f);
         }
         else
         {
             skillTree.DOAnchorPosX(0, 0);
-            frontPCPanel.DOLocalMoveY(2f, 0);
+            frontPCPanel.DOLocalMoveZ(-1f, 0);
         }
     }
 
