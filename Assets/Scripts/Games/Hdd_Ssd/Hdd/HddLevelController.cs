@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using UnityEngine;
 
 namespace Games.HddSsd
@@ -8,6 +9,7 @@ namespace Games.HddSsd
     {
         public GameObject smallDisk;
         public GameObject bigDisk;
+        public GameObject topCover;
         
         HddSsdGameManager hddGameManager;
         private List<DiskController> diskControllers;
@@ -31,7 +33,11 @@ namespace Games.HddSsd
             diskControllers = smallDisk.transform.GetComponentsInChildren<DiskController>().ToList();
             GenerateRandomDataPoint();
             
-            base.Init();
+            topCover.transform.DOLocalMoveZ(10.5f, 0.8f).OnComplete(() =>
+            {
+                base.Init();
+            });
+            
         }
 
         public void DataCollected()

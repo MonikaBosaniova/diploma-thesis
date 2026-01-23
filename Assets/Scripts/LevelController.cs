@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
+    
     protected internal bool IsCompleted = false;
     protected event Action OnLevelStarted;
     protected internal event Action OnLevelEnded;

@@ -6,6 +6,6 @@ namespace Games.HddSsd
 {
     public class HddSsdGameManager : GameManager
     {
-        [SerializeField] public List<GameObject> allPossibleGeneratedShapes;
+        
     }
 }
