@@ -542,6 +542,10 @@ PrefabInstance:
       propertyPath: _node
       value: 
       objectReference: {fileID: 11400000, guid: 922000787a82a914a88b3a8c08c8657f, type: 2}
+    - target: {fileID: 2886116798649554586, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
+      propertyPath: m_text
+      value: Gates
+      objectReference: {fileID: 0}
     - target: {fileID: 4663262112186638692, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_Name
       value: Gates
@@ -1282,6 +1286,10 @@ PrefabInstance:
       propertyPath: _node
       value: 
       objectReference: {fileID: 11400000, guid: a378e31cdf900034cba226d943e974c4, type: 2}
+    - target: {fileID: 2886116798649554586, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
+      propertyPath: m_text
+      value: HDD / SSD
+      objectReference: {fileID: 0}
     - target: {fileID: 4663262112186638692, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_Name
       value: HDD_SSD
@@ -1290,6 +1298,10 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 2800000, guid: 7d722d18f0f45934eba31b00fecaaa8e, type: 3}
+    - target: {fileID: 7655368431919191633, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3217,6 +3229,10 @@ PrefabInstance:
       propertyPath: _node
       value: 
       objectReference: {fileID: 11400000, guid: b05346747ce92944f88ca121c548224d, type: 2}
+    - target: {fileID: 2886116798649554586, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
+      propertyPath: m_text
+      value: Binary
+      objectReference: {fileID: 0}
     - target: {fileID: 4663262112186638692, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_Name
       value: Binary
@@ -4269,6 +4285,10 @@ PrefabInstance:
       propertyPath: _node
       value: 
       objectReference: {fileID: 11400000, guid: fd3f12fd74a9815428428dacc55049c0, type: 2}
+    - target: {fileID: 2886116798649554586, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
+      propertyPath: m_text
+      value: RAM
+      objectReference: {fileID: 0}
     - target: {fileID: 4663262112186638692, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_Name
       value: Ram
