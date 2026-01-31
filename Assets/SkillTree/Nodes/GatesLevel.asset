@@ -16,4 +16,6 @@ MonoBehaviour:
   _displayName: 
   _sceneName: Gates
   _component: 0
+  _makeUnlockedAtStart: 1
+  _forceLockedVisuals: 0
   _prerequisiteIds: []

@@ -48,14 +48,33 @@ public class ProgressService : MonoBehaviour
     public bool IsUnlocked(string nodeId)
     {
         var node = _skillTree.Nodes.FirstOrDefault(n => n.Id == nodeId);
-        if (node == null) return false; // unknown node -> locked
-        if (node.PrerequisiteIds == null || node.PrerequisiteIds.Count == 0) return true;
+        if (node == null) 
+        {
+            Debug.Log( ": locked, null node");
+            return false; // unknown node -> locked
+        }
+        if (node.PrerequisiteIds == null || node.PrerequisiteIds.Count == 0 || node._makeUnlockedAtStart)
+        {
+            Debug.Log(node.SceneName + ": unlocked");
+            return true;
+        }
         foreach (var pre in node.PrerequisiteIds)
         {
             var p = Get(pre);
-            if (!p.completed) return false;
+            if (!p.completed)
+            {
+                Debug.Log(node.SceneName + ": locked, pre");
+                return false;
+            }
         }
         return true;
+    }
+
+    public bool IsLockedOnlyVisually(string nodeId)
+    {
+        var node = _skillTree.Nodes.FirstOrDefault(n => n.Id == nodeId);
+        return node == null || // unknown node -> locked
+               node._forceLockedVisuals;
     }
 
     public IEnumerable<SkillNodeDef> GetUnlockedNodes() =>

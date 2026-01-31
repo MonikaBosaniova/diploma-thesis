@@ -16,4 +16,7 @@ MonoBehaviour:
   _displayName: 
   _sceneName: HDD_SSD
   _component: 6
-  _prerequisiteIds: []
+  _makeUnlockedAtStart: 1
+  _forceLockedVisuals: 0
+  _prerequisiteIds:
+  - c320efc5-b90e-40d4-b4cd-028261466a2d

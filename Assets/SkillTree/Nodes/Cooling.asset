@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f222b075a209b7449817e0913465f7b0, type: 3}
-  m_Name: BinaryLevel
+  m_Name: Cooling
   m_EditorClassIdentifier: 
-  _id: d762278a-9a71-4055-8b43-3d825a0961f7
+  _id: c320efc5-b90e-40d4-b4cd-028261466a2d
   _displayName: 
-  _sceneName: Binary
-  _component: 0
+  _sceneName: Cooling
+  _component: 7
   _makeUnlockedAtStart: 1
   _forceLockedVisuals: 0
-  _prerequisiteIds: []
+  _prerequisiteIds:
+  - 35e183d3-d91e-44ff-86ec-06585b3eccf1

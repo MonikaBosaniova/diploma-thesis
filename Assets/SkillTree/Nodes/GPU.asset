@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f222b075a209b7449817e0913465f7b0, type: 3}
-  m_Name: BinaryLevel
+  m_Name: GPU
   m_EditorClassIdentifier: 
-  _id: d762278a-9a71-4055-8b43-3d825a0961f7
+  _id: 1d3fda3e-dd84-49a6-a18a-4dabbab54ab5
   _displayName: 
-  _sceneName: Binary
-  _component: 0
-  _makeUnlockedAtStart: 1
-  _forceLockedVisuals: 0
-  _prerequisiteIds: []
+  _sceneName: None
+  _component: 11
+  _makeUnlockedAtStart: 0
+  _forceLockedVisuals: 1
+  _prerequisiteIds:
+  - 7209e08f-8ec2-48c6-867f-8a7c2d07d549
+  - 68b0bade-d61d-4ee0-969d-58098fb7f2f9

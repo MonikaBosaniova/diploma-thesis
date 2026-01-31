@@ -40,6 +40,7 @@ public class SkillNodeBtn : MonoBehaviour
     private void Refresh(bool useTweening)
     {
         bool unlocked = ProgressService.I.IsUnlocked(_node.Id);
+        bool forceLock = ProgressService.I.IsLockedOnlyVisually(_node.Id);
         bool done = ProgressService.I.Get(_node.Id).completed;
         int collectedStars = ProgressService.I.Get(_node.Id).bestStars;
         int newCollectedStars = ProgressService.I.Get(_node.Id).newStars;
@@ -52,6 +53,7 @@ public class SkillNodeBtn : MonoBehaviour
         //     ProgressService.I.ChangedNodeId = "";
         // }
         _lockedOverlay.SetActive(!unlocked);
+        _lockedOverlay.SetActive(forceLock);
         _playButton.interactable = unlocked;
         _text.text = _node.DisplayName;
         _progressVisualsController.ComponentVisibility(_node._component, unlocked, !done, false);

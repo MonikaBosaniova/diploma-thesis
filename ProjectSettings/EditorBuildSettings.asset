@@ -20,6 +20,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Games/HDD_SSD.unity
     guid: 72e0177c9565e184e91182758d023f95
+  - enabled: 1
+    path: Assets/Scenes/Games/Cooling.unity
+    guid: 402393e1cc84bdd42804238b956f345c
+  - enabled: 1
+    path: Assets/Scenes/Games/CPU.unity
+    guid: 4bd7416b8668ba04cae6e2713d170a28
+  - enabled: 1
+    path: Assets/Scenes/Games/None.unity
+    guid: 1b7fe153dbe39a04ba9e47d641e5100d
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 88dc77f56f06f424aa8307bef3211a6b, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

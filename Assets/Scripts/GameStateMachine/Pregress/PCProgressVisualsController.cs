@@ -164,7 +164,7 @@ public class PCProgressVisualsController : MonoBehaviour
 
     public void ShowRAM(bool active, bool holographic, bool outlined)
     {
-        //SetGameObjectActive(RAMVisuals, active);
+        //SetGameObjectVisuals(RAMVisuals, active, holographic, outlined);
     }
     
     public void ShowHDD(bool active, bool holographic, bool outlined)

@@ -10,12 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f222b075a209b7449817e0913465f7b0, type: 3}
-  m_Name: BinaryLevel
+  m_Name: PSU
   m_EditorClassIdentifier: 
-  _id: d762278a-9a71-4055-8b43-3d825a0961f7
+  _id: a0d1d573-eaa5-4492-ab1c-ba33eb72703b
   _displayName: 
-  _sceneName: Binary
-  _component: 0
-  _makeUnlockedAtStart: 1
-  _forceLockedVisuals: 0
-  _prerequisiteIds: []
+  _sceneName: None
+  _component: 3
+  _makeUnlockedAtStart: 0
+  _forceLockedVisuals: 1
+  _prerequisiteIds:
+  - ca1d62e1-caf1-4628-9469-0bbb864188d7
+  - 1d3fda3e-dd84-49a6-a18a-4dabbab54ab5
+  - 72a9ddb2-e4a6-4b79-a597-bb263a40f8b7
