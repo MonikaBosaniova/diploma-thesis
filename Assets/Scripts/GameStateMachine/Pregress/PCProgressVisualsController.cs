@@ -29,7 +29,7 @@ public class PCProgressVisualsController : MonoBehaviour
     private List<PCComponentVisuals> CoolingUnitVisuals;
     private List<PCComponentVisuals> VentilatorsOffVisuals;
     private List<PCComponentVisuals> VentilatorsOnVisuals;
-    private List<PCComponentVisuals> FrontVentilatorsVisuals;
+    private List<Animation> FrontVentilatorsVisuals;
     private List<PCComponentVisuals> GPUVisuals;
     private List<PCComponentVisuals> CablesVisuals;
 
@@ -57,40 +57,9 @@ public class PCProgressVisualsController : MonoBehaviour
         CoolingUnitVisuals = CoolingUnit.GetComponentsInChildren<PCComponentVisuals>().ToList();
         VentilatorsOffVisuals = VentilatorsOff.GetComponentsInChildren<PCComponentVisuals>().ToList();
         VentilatorsOnVisuals =  VentilatorsOn.GetComponentsInChildren<PCComponentVisuals>().ToList();
-        FrontVentilatorsVisuals = FrontVentilators.GetComponentsInChildren<PCComponentVisuals>().ToList();
+        FrontVentilatorsVisuals = FrontVentilators.GetComponentsInChildren<Animation>().ToList();
         GPUVisuals = GPU.GetComponentsInChildren<PCComponentVisuals>().ToList();
         CablesVisuals = Cables.GetComponentsInChildren<PCComponentVisuals>().ToList();
-    }
-
-    private void Start()
-    {
-        // ShowMotherBoard(false, false, false);
-        // ShowPowerUnit(false, false, false);
-        // ShowCPU(false, false, false);
-        // ShowRAM(false, false, false);
-        // ShowHDD(false, false, false);
-        // ShowCoolingUnit(false, false, false);
-        // ShowVentilatorsOff(false, false, false);
-        // ShowVentilatorsOn(false, false, false);
-        // ShowGPU(false, false, false);
-        // ShowCables(false, false, false);
-
-        // if (isVentilatorsOn)
-        // {
-        //     foreach (var animation in FrontVentilators.gameObject.GetComponentsInChildren<Animation>())
-        //     {
-        //         animation.enabled = true;
-        //         animation.Play();
-        //     }
-        // }
-        // else
-        // {
-        //     foreach (var animation in FrontVentilators.gameObject.GetComponentsInChildren<Animation>())
-        //     {
-        //         animation.Stop();
-        //         animation.enabled = false;
-        //     }
-        // }
     }
 
     public void ComponentVisibility(PCComponent component, bool visible, bool holographic, bool outlined)
@@ -194,11 +163,25 @@ public class PCProgressVisualsController : MonoBehaviour
     public void ShowVentilatorsOff(bool active, bool holographic, bool outlined)
     {
         SetGameObjectVisuals(VentilatorsOffVisuals, active,  holographic, outlined);
+        if (active)
+        {
+            foreach (var frontVent in FrontVentilatorsVisuals)
+            {
+                frontVent.Stop();
+            }
+        }
     }
     
     public void ShowVentilatorsOn(bool active, bool holographic, bool outlined)
     {
         SetGameObjectVisuals(VentilatorsOnVisuals, active,  holographic, outlined);
+        if (active)
+        {
+            foreach (var frontVent in FrontVentilatorsVisuals)
+            {
+                frontVent.Play();
+            }
+        }
     }
     
     public void ShowGPU(bool active, bool holographic, bool outlined)

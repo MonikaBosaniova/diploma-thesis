@@ -161,6 +161,7 @@ GameObject:
   - component: {fileID: 7968567067221699544}
   - component: {fileID: 8050267848816533766}
   - component: {fileID: 968785048084726851}
+  - component: {fileID: 4403860352929000872}
   m_Layer: 5
   m_Name: SkillNodeBtn
   m_TagString: Untagged
@@ -291,6 +292,27 @@ MonoBehaviour:
   _lockedOverlay: {fileID: 4357643949856930188}
   _text: {fileID: 4763495309335061948}
   _levelStarsController: {fileID: 2912723148156900262}
+--- !u!114 &4403860352929000872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4663262112186638692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &5342278948393772042
 GameObject:
   m_ObjectHideFlags: 0

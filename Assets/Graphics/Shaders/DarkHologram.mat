@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HologramMaterial
+  m_Name: DarkHologram
   m_Shader: {fileID: -6465566751694194690, guid: 5b1dfaf6199bce142bfa9f0592a64a57, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -61,7 +61,7 @@ Material:
     - _NoiseIntensity: 0.15
     - _NoiseScale: 3
     - _NoiseSpeed: 0.4
-    - _Opacity: 0.6
+    - _Opacity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RimIntensity: 0.6
@@ -69,6 +69,6 @@ Material:
     - _ScanlineScale: 1
     - _ScanlineSpeed: 0.2
     m_Colors:
-    - _Tint: {r: 0.2748754, g: 0.49533623, b: 0.8207547, a: 1}
+    - _Tint: {r: 1, g: 0.61351204, b: 0, a: 0.8352941}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 [DisallowMultipleComponent]
@@ -52,13 +53,6 @@ public class PCComponentVisuals : MonoBehaviour
         _outline.OutlineColor = new Color(1,(float)0.5592139,0,1);
     }
 
-    void Start()
-    {
-        // SetComponentVisibility(_isVisible);
-        // SetComponentHolographic(_isHologram);
-        // SetComponentOutline(_isOutlined);
-    }
-
     public void SetComponentVisibility(bool isVisible)
     {
         var allRenderers = GetComponentsInChildren<MeshRenderer>();
@@ -73,31 +67,38 @@ public class PCComponentVisuals : MonoBehaviour
     {
         if (_renderer == null) return;
 
-        var mats = _useSharedMaterials ? _renderer.sharedMaterials : _renderer.materials;
-
-        if (mats.Length == 0)
+        var allRenderers = GetComponentsInChildren<MeshRenderer>().ToList();
+        allRenderers.Add(_renderer);
+        
+        foreach (var r in allRenderers)
         {
-            mats = new Material[1];
+            var mats = _useSharedMaterials ? r.sharedMaterials : r.materials;
+
+            if (mats.Length == 0)
+            {
+                mats = new Material[1];
+            }
+
+            Material target = isHologram ? _hologramMaterial : _defaultMaterial;
+            if (target == null)
+            {
+                Debug.LogWarning($"{nameof(PCComponentVisuals)} on {name}: Target material missing. Falling back to captured default.");
+                target = _capturedDefault;
+            }
+        
+            mats[0] = target;
+
+            if (_useSharedMaterials)
+                r.sharedMaterials = mats;
+            else
+                r.materials = mats;
+
+            r.shadowCastingMode = isHologram
+                ? UnityEngine.Rendering.ShadowCastingMode.Off
+                : UnityEngine.Rendering.ShadowCastingMode.On;
+            r.receiveShadows = !isHologram;
         }
 
-        Material target = isHologram ? _hologramMaterial : _defaultMaterial;
-        if (target == null)
-        {
-            Debug.LogWarning($"{nameof(PCComponentVisuals)} on {name}: Target material missing. Falling back to captured default.");
-            target = _capturedDefault;
-        }
-
-        mats[0] = target;
-
-        if (_useSharedMaterials)
-            _renderer.sharedMaterials = mats;
-        else
-            _renderer.materials = mats;
-
-        _renderer.shadowCastingMode = isHologram
-            ? UnityEngine.Rendering.ShadowCastingMode.Off
-            : UnityEngine.Rendering.ShadowCastingMode.On;
-        _renderer.receiveShadows = !isHologram;
     }
 
     public void SetComponentOutline(bool isOutlined)

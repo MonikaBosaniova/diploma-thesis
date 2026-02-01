@@ -61,6 +61,13 @@ public class SkillNodeBtn : MonoBehaviour
         bool holographic = (unlocked && !done);
         bool outlined = false;
         _progressVisualsController.ComponentVisibility(_node._component, visible, holographic, outlined);
+        if (_node._component == PCComponent.CoolingUnit)
+        {
+            _progressVisualsController.ComponentVisibility(done ? PCComponent.VentilatorON : PCComponent.VentilatorOFF,
+                visible, holographic, outlined);
+            _progressVisualsController.ComponentVisibility(!done ? PCComponent.VentilatorON : PCComponent.VentilatorOFF,
+                !visible, !holographic, !outlined);
+        }
             
         Debug.Log("showing: " + gameObject.name + " " + useTweening + " - " + newCollectedStars);
         _levelStarsController.ShowProgressStars(collectedStars, newCollectedStars, useTweening);

@@ -1342,7 +1342,7 @@ MonoBehaviour:
   _isHologram: 0
   _isOutlined: 0
   _defaultMaterial: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
-  _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
+  _hologramMaterial: {fileID: 2100000, guid: 4f3d143f563fd7549a35e09a60d1e95c, type: 2}
   _useSharedMaterials: 0
 --- !u!1 &399004615
 GameObject:
@@ -1945,7 +1945,7 @@ MonoBehaviour:
   _isHologram: 0
   _isOutlined: 0
   _defaultMaterial: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
-  _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
+  _hologramMaterial: {fileID: 2100000, guid: 4f3d143f563fd7549a35e09a60d1e95c, type: 2}
   _useSharedMaterials: 0
 --- !u!1001 &519321680
 PrefabInstance:
@@ -2541,7 +2541,7 @@ MonoBehaviour:
   _isHologram: 0
   _isOutlined: 0
   _defaultMaterial: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
-  _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
+  _hologramMaterial: {fileID: 2100000, guid: 4f3d143f563fd7549a35e09a60d1e95c, type: 2}
   _useSharedMaterials: 0
 --- !u!1001 &694894862
 PrefabInstance:
@@ -2631,7 +2631,7 @@ MonoBehaviour:
   _isHologram: 0
   _isOutlined: 0
   _defaultMaterial: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
-  _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
+  _hologramMaterial: {fileID: 2100000, guid: 4f3d143f563fd7549a35e09a60d1e95c, type: 2}
   _useSharedMaterials: 0
 --- !u!1 &756961926 stripped
 GameObject:
@@ -3811,7 +3811,7 @@ MonoBehaviour:
   _isHologram: 0
   _isOutlined: 0
   _defaultMaterial: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
-  _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
+  _hologramMaterial: {fileID: 2100000, guid: 57f8e424fe257cd4c9aabaf4a57d3874, type: 2}
   _useSharedMaterials: 0
 --- !u!1001 &1132131851
 PrefabInstance:
@@ -4468,7 +4468,7 @@ MonoBehaviour:
   _isHologram: 0
   _isOutlined: 0
   _defaultMaterial: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
-  _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
+  _hologramMaterial: {fileID: 2100000, guid: 4f3d143f563fd7549a35e09a60d1e95c, type: 2}
   _useSharedMaterials: 0
 --- !u!1 &1365218644
 GameObject:
@@ -5591,7 +5591,7 @@ MonoBehaviour:
   _isHologram: 0
   _isOutlined: 0
   _defaultMaterial: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
-  _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
+  _hologramMaterial: {fileID: 2100000, guid: 4f3d143f563fd7549a35e09a60d1e95c, type: 2}
   _useSharedMaterials: 0
 --- !u!1 &1971567551 stripped
 GameObject:
@@ -5798,7 +5798,7 @@ MonoBehaviour:
   _isHologram: 0
   _isOutlined: 0
   _defaultMaterial: {fileID: 2100000, guid: 0ebdeddbc39de00448cc35e0e5c3b02a, type: 2}
-  _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
+  _hologramMaterial: {fileID: 2100000, guid: 4f3d143f563fd7549a35e09a60d1e95c, type: 2}
   _useSharedMaterials: 0
 --- !u!4 &2050786745 stripped
 Transform:
@@ -5841,6 +5841,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: bdfddcc0c79c2b94c80787f1f1cc247b, type: 2}
+    - target: {fileID: 3832783944431962877, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4221361191705384106, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -5865,9 +5869,17 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: bdfddcc0c79c2b94c80787f1f1cc247b, type: 2}
+    - target: {fileID: 5536450665239977578, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5915223281018806603, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6264036688331435697, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
+      propertyPath: m_PlayAutomatically
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7472017157930285171, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
       propertyPath: m_Layer
