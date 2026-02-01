@@ -33,19 +33,6 @@ public class PCProgressVisualsController : MonoBehaviour
     private List<PCComponentVisuals> GPUVisuals;
     private List<PCComponentVisuals> CablesVisuals;
 
-    // [Header("DEBUG SAVED PROGRESS")] 
-    // [SerializeField] private bool isCase = false;
-    // [SerializeField] private bool isMotherBoard = false;
-    // [SerializeField] private bool isPowerUnit = false;
-    // [SerializeField] private bool isCPU = false;
-    // [SerializeField] private bool isRAM = false;
-    // [SerializeField] private bool isHDD = false;
-    // [SerializeField] private bool isCoolingUnit = false;
-    // [SerializeField] private bool isVentilatorsOff = false;
-    // [SerializeField] private bool isVentilatorsOn = false;
-    // [SerializeField] private bool isGPU = false;
-    // [SerializeField] private bool isCables = false;
-
     private void Awake()
     {
         CaseVisual = Case.GetComponent<PCComponentVisuals>();
@@ -107,19 +94,15 @@ public class PCProgressVisualsController : MonoBehaviour
 
     public void SetGameObjectVisuals(List<PCComponentVisuals> visuals, bool active, bool holographic, bool outlined)
     {
-        //gameObject.SetActive(active);
         foreach (PCComponentVisuals visual in visuals)
         {
             visual.SetState(active,holographic, outlined);
         }
-        //gameObject.GetComponent<PCComponentVisuals>().SetComponentVisibility(active);
     }
     
     public void SetGameObjectVisual(PCComponentVisuals visual, bool active, bool holographic, bool outlined)
     {
-        //gameObject.SetActive(active);
         visual.SetState(active,holographic, outlined);
-        //gameObject.GetComponent<PCComponentVisuals>().SetComponentVisibility(active);
     }
     
     #region SHOW methods
@@ -127,7 +110,6 @@ public class PCProgressVisualsController : MonoBehaviour
     public void ShowCase(bool active, bool holographic, bool outlined)
     {
         SetGameObjectVisual(CaseVisual, active, holographic, outlined);
-        //SetGameObjectActive(FrontVentilators, active);
     }
     
     public void ShowMotherBoard(bool active, bool holographic, bool outlined)

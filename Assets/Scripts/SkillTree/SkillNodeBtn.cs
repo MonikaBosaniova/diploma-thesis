@@ -15,6 +15,10 @@ public class SkillNodeBtn : MonoBehaviour
 
     private PCProgressVisualsController _progressVisualsController;
 
+    private bool visible = false;
+    private bool hologram = false;
+    private bool outlined = false;
+
     void Start()
     {
         _progressVisualsController = FindFirstObjectByType<PCProgressVisualsController>();
@@ -57,20 +61,28 @@ public class SkillNodeBtn : MonoBehaviour
         _playButton.interactable = unlocked;
         _text.text = _node.DisplayName;
         
-        bool visible = (forceLock || done || unlocked);
-        bool holographic = (unlocked && !done);
-        bool outlined = false;
-        _progressVisualsController.ComponentVisibility(_node._component, visible, holographic, outlined);
+        visible = (forceLock || done || unlocked);
+        hologram = (unlocked && !done);
+        outlined = false;
+        _progressVisualsController.ComponentVisibility(_node._component, visible, hologram, outlined);
         if (_node._component == PCComponent.CoolingUnit)
         {
             _progressVisualsController.ComponentVisibility(done ? PCComponent.VentilatorON : PCComponent.VentilatorOFF,
-                visible, holographic, outlined);
+                visible, hologram, outlined);
             _progressVisualsController.ComponentVisibility(!done ? PCComponent.VentilatorON : PCComponent.VentilatorOFF,
-                !visible, !holographic, !outlined);
+                !visible, !hologram, !outlined);
         }
             
         Debug.Log("showing: " + gameObject.name + " " + useTweening + " - " + newCollectedStars);
         _levelStarsController.ShowProgressStars(collectedStars, newCollectedStars, useTweening);
         ProgressService.I.Get(_node.Id).newStars = 0;
+    }
+
+    public void SetOutLine(bool outlined)
+    {
+        //TODO BUG WITH OUTLINE, outlining other components and throwing errors to normals, all fbx were check to read/write true
+        // if (_node._component == PCComponent.None) return;
+        // Debug.Log("setting outline to: " + outlined + " --- " + _node._component);
+        // _progressVisualsController.ComponentVisibility(_node._component, visible, hologram, outlined);
     }
 }

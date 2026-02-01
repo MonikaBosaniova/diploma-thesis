@@ -5773,7 +5773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isVisible: 0
   _isHologram: 0
-  _isOutlined: 0
+  _isOutlined: 1
   _defaultMaterial: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
   _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
   _useSharedMaterials: 0
@@ -5972,9 +5972,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8580552615621760066, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2068640278}
-    - targetCorrespondingSourceObject: {fileID: 8580552615621760066, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2068640282}
     - targetCorrespondingSourceObject: {fileID: 7250674608007994094, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2007743882}
@@ -6080,24 +6077,6 @@ MonoBehaviour:
   FrontVentilators: {fileID: 364249490}
   GPU: {fileID: 1355474590}
   Cables: {fileID: 1086163876}
---- !u!114 &2068640282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1264688243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e05430e86b0fd14a8dde7eaec44fb0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isVisible: 0
-  _isHologram: 0
-  _isOutlined: 0
-  _defaultMaterial: {fileID: 2100000, guid: 0ebdeddbc39de00448cc35e0e5c3b02a, type: 2}
-  _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
-  _useSharedMaterials: 0
 --- !u!1 &2081962235 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8733737160516562984, guid: bcc4f305978e4cd43a691fe8fa717f13, type: 3}
