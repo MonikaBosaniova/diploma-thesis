@@ -56,14 +56,14 @@ public class SkillNodeBtn : MonoBehaviour
         _lockedOverlay.SetActive(forceLock);
         _playButton.interactable = unlocked;
         _text.text = _node.DisplayName;
-        _progressVisualsController.ComponentVisibility(_node._component, unlocked, !done, false);
+        
+        bool visible = (forceLock || done || unlocked);
+        bool holographic = (unlocked && !done);
+        bool outlined = false;
+        _progressVisualsController.ComponentVisibility(_node._component, visible, holographic, outlined);
+            
         Debug.Log("showing: " + gameObject.name + " " + useTweening + " - " + newCollectedStars);
         _levelStarsController.ShowProgressStars(collectedStars, newCollectedStars, useTweening);
         ProgressService.I.Get(_node.Id).newStars = 0;
-        // if (unlocked && !done)
-        // {
-        //    //TODO
-        //    //Make item holographic
-        // }
     }
 }

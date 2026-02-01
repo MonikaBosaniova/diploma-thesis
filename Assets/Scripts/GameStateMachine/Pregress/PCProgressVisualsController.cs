@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -23,8 +24,8 @@ public class PCProgressVisualsController : MonoBehaviour
     private PCComponentVisuals MotherBoardVisuals;
     private PCComponentVisuals PowerUnitVisuals;
     private PCComponentVisuals CPUVisuals;
-    private PCComponentVisuals[] RAMVisuals;
-    private PCComponentVisuals[] HDDVisuals;
+    private List<PCComponentVisuals> RAMVisuals;
+    private List<PCComponentVisuals> HDDVisuals;
     private List<PCComponentVisuals> CoolingUnitVisuals;
     private List<PCComponentVisuals> VentilatorsOffVisuals;
     private List<PCComponentVisuals> VentilatorsOnVisuals;
@@ -51,23 +52,28 @@ public class PCProgressVisualsController : MonoBehaviour
         MotherBoardVisuals = MotherBoard.GetComponent<PCComponentVisuals>();
         PowerUnitVisuals = PowerUnit.GetComponent<PCComponentVisuals>();
         CPUVisuals = CPU.GetComponent<PCComponentVisuals>();
-        RAMVisuals = RAM.GetComponentsInChildren<PCComponentVisuals>();
-        HDDVisuals = HDD.GetComponentsInChildren<PCComponentVisuals>();
+        RAMVisuals = RAM.GetComponentsInChildren<PCComponentVisuals>().ToList();
+        HDDVisuals = HDD.GetComponentsInChildren<PCComponentVisuals>().ToList();
+        CoolingUnitVisuals = CoolingUnit.GetComponentsInChildren<PCComponentVisuals>().ToList();
+        VentilatorsOffVisuals = VentilatorsOff.GetComponentsInChildren<PCComponentVisuals>().ToList();
+        VentilatorsOnVisuals =  VentilatorsOn.GetComponentsInChildren<PCComponentVisuals>().ToList();
+        FrontVentilatorsVisuals = FrontVentilators.GetComponentsInChildren<PCComponentVisuals>().ToList();
+        GPUVisuals = GPU.GetComponentsInChildren<PCComponentVisuals>().ToList();
+        CablesVisuals = Cables.GetComponentsInChildren<PCComponentVisuals>().ToList();
     }
 
     private void Start()
     {
-        //ShowCase(false, false, false);
-        ShowMotherBoard(false, false, false);
-        ShowPowerUnit(false, false, false);
-        ShowCPU(false, false, false);
-        ShowRAM(false, false, false);
-        ShowHDD(false, false, false);
-        ShowCoolingUnit(false, false, false);
-        ShowVentilatorsOff(false, false, false);
-        ShowVentilatorsOn(false, false, false);
-        ShowGPU(false, false, false);
-        ShowCables(false, false, false);
+        // ShowMotherBoard(false, false, false);
+        // ShowPowerUnit(false, false, false);
+        // ShowCPU(false, false, false);
+        // ShowRAM(false, false, false);
+        // ShowHDD(false, false, false);
+        // ShowCoolingUnit(false, false, false);
+        // ShowVentilatorsOff(false, false, false);
+        // ShowVentilatorsOn(false, false, false);
+        // ShowGPU(false, false, false);
+        // ShowCables(false, false, false);
 
         // if (isVentilatorsOn)
         // {
@@ -103,39 +109,47 @@ public class PCProgressVisualsController : MonoBehaviour
             case  PCComponent.CPU:
                 ShowCPU(visible, holographic, outlined);
                 break;
-            // case  PCComponent.RAM:
-            //     ShowRAM(visible, holographic, outlined);
-            //     break;
-            // case  PCComponent.HDD:
-            //     ShowHDD(visible, holographic, outlined);
-            //     break;
-            // case  PCComponent.CoolingUnit:
-            //     ShowCoolingUnit(visible, holographic, outlined);
-            //     break;
-            // case PCComponent.VentilatorON:
-            //     ShowVentilatorsOn(visible, holographic, outlined);
-            //     break;
-            // case  PCComponent.VentilatorOFF:
-            //     ShowVentilatorsOff(visible, holographic, outlined);
-            //     break;
-            // case PCComponent.FrontVentilators:
-            //     break;
-            // case  PCComponent.GPU:
-            //     ShowGPU(visible, holographic, outlined);
-            //     break;
-            // case  PCComponent.Cables:
-            //     ShowCables(visible, holographic, outlined);
-            //     break;
-            // default:
-            //     break;
+            case  PCComponent.RAM:
+                ShowRAM(visible, holographic, outlined);
+                break;
+            case  PCComponent.HDD:
+                ShowHDD(visible, holographic, outlined);
+                break;
+            case  PCComponent.CoolingUnit:
+                ShowCoolingUnit(visible, holographic, outlined);
+                break;
+            case PCComponent.VentilatorON:
+                ShowVentilatorsOn(visible, holographic, outlined);
+                break;
+            case  PCComponent.VentilatorOFF:
+                ShowVentilatorsOff(visible, holographic, outlined);
+                break;
+            case PCComponent.FrontVentilators:
+                break;
+            case  PCComponent.GPU:
+                ShowGPU(visible, holographic, outlined);
+                break;
+            case  PCComponent.Cables:
+                ShowCables(visible, holographic, outlined);
+                break;
         }
     }
 
 
-    public void SetGameObjectVisuals(PCComponentVisuals visuals, bool active, bool holographic, bool outlined)
+    public void SetGameObjectVisuals(List<PCComponentVisuals> visuals, bool active, bool holographic, bool outlined)
     {
         //gameObject.SetActive(active);
-        visuals.SetState(active,holographic, outlined);
+        foreach (PCComponentVisuals visual in visuals)
+        {
+            visual.SetState(active,holographic, outlined);
+        }
+        //gameObject.GetComponent<PCComponentVisuals>().SetComponentVisibility(active);
+    }
+    
+    public void SetGameObjectVisual(PCComponentVisuals visual, bool active, bool holographic, bool outlined)
+    {
+        //gameObject.SetActive(active);
+        visual.SetState(active,holographic, outlined);
         //gameObject.GetComponent<PCComponentVisuals>().SetComponentVisibility(active);
     }
     
@@ -143,58 +157,58 @@ public class PCProgressVisualsController : MonoBehaviour
     
     public void ShowCase(bool active, bool holographic, bool outlined)
     {
-        SetGameObjectVisuals(CaseVisual, active, holographic, outlined);
+        SetGameObjectVisual(CaseVisual, active, holographic, outlined);
         //SetGameObjectActive(FrontVentilators, active);
     }
     
     public void ShowMotherBoard(bool active, bool holographic, bool outlined)
     {
-        SetGameObjectVisuals(MotherBoardVisuals, active, holographic, outlined);
+        SetGameObjectVisual(MotherBoardVisuals, active, holographic, outlined);
     }
     
     public void ShowPowerUnit(bool active, bool holographic, bool outlined)
     {
-        SetGameObjectVisuals(PowerUnitVisuals, active, holographic, outlined);
+        SetGameObjectVisual(PowerUnitVisuals, active, holographic, outlined);
     }
     
     public void ShowCPU(bool active, bool holographic, bool outlined)
     {
-        SetGameObjectVisuals(CPUVisuals, active, holographic, outlined);
+        SetGameObjectVisual(CPUVisuals, active, holographic, outlined);
     }
 
     public void ShowRAM(bool active, bool holographic, bool outlined)
     {
-        //SetGameObjectVisuals(RAMVisuals, active, holographic, outlined);
+        SetGameObjectVisuals(RAMVisuals, active, holographic, outlined);
     }
     
     public void ShowHDD(bool active, bool holographic, bool outlined)
     {
-        //SetGameObjectActive(HDD, active);
+        SetGameObjectVisuals(HDDVisuals, active ,  holographic, outlined);
     }
     
     public void ShowCoolingUnit(bool active, bool holographic, bool outlined)
     {
-        //SetGameObjectActive(CoolingUnit, active);
+        SetGameObjectVisuals(CoolingUnitVisuals, active,  holographic, outlined);
     }
     
     public void ShowVentilatorsOff(bool active, bool holographic, bool outlined)
     {
-        //SetGameObjectActive(VentilatorsOff, active);
+        SetGameObjectVisuals(VentilatorsOffVisuals, active,  holographic, outlined);
     }
     
     public void ShowVentilatorsOn(bool active, bool holographic, bool outlined)
     {
-        //SetGameObjectActive(VentilatorsOn, active);
+        SetGameObjectVisuals(VentilatorsOnVisuals, active,  holographic, outlined);
     }
     
     public void ShowGPU(bool active, bool holographic, bool outlined)
     {
-        //SetGameObjectActive(GPU, active);
+        SetGameObjectVisuals(GPUVisuals, active,  holographic, outlined);
     }
     
     private void ShowCables(bool active, bool holographic, bool outlined)
     {
-        //SetGameObjectActive(Cables, active);
+        SetGameObjectVisuals(CablesVisuals, active,  holographic, outlined);
     }
     
     #endregion

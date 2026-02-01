@@ -61,6 +61,11 @@ public class PCComponentVisuals : MonoBehaviour
 
     public void SetComponentVisibility(bool isVisible)
     {
+        var allRenderers = GetComponentsInChildren<MeshRenderer>();
+        foreach (var r in allRenderers)
+        {
+            r.enabled = isVisible;
+        }
         _renderer.enabled = isVisible;
     }
 
