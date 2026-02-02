@@ -1,11 +1,14 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using Games.Ram;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ShapeController : MonoBehaviour
 {
-    [Header("Debug Values - READ ONLY")]
+    [Header("Debug Values - READ ONLY")] 
+    [SerializeField] internal bool canBeDestroyed = false;
+    [SerializeField] private float timeToLive = 0f;
     List<Vector3> ChildSpawnPointPositions = new List<Vector3>();
     Vector3 SpawnPoint;
     DraggableObject draggableObject;
@@ -22,6 +25,8 @@ public class ShapeController : MonoBehaviour
         }
         SpawnPoint = transform.position;
         draggableObject.DragEnd += SnapObject;
+        timeToLive = Random.Range(5, 20);
+        StartCoroutine(SetDestroyStateAfterTime());
     }
 
     public void AddBgTrigger(BgCubeTrigger bgTrigger)
@@ -71,11 +76,17 @@ public class ShapeController : MonoBehaviour
             bgTriggers[i].SetSnapped(true);
             transform.GetChild(i).position = new Vector3(bgTriggers[i].transform.position.x, transform.GetChild(i).position.y, bgTriggers[i].transform.position.z);
         }
+        ramLevelController.AddShapeToSnappedList(this);
     }
 
     public void SetLevelController(RamLevelController ramLc)
     {
-        this.ramLevelController = ramLc;
+        ramLevelController = ramLc;
+    }
+    
+    private IEnumerator SetDestroyStateAfterTime() {
+        yield return new WaitForSeconds(timeToLive);
+        canBeDestroyed = true;
     }
 
 }
