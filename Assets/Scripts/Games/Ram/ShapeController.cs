@@ -9,6 +9,7 @@ public class ShapeController : MonoBehaviour
     [Header("Debug Values - READ ONLY")] 
     [SerializeField] internal bool canBeDestroyed = false;
     [SerializeField] private float timeToLive = 0f;
+    [SerializeField] private Material snappedCubieMaterial;
     List<Vector3> ChildSpawnPointPositions = new List<Vector3>();
     Vector3 SpawnPoint;
     DraggableObject draggableObject;
@@ -75,7 +76,9 @@ public class ShapeController : MonoBehaviour
         {
             bgTriggers[i].SetSnapped(true);
             transform.GetChild(i).position = new Vector3(bgTriggers[i].transform.position.x, transform.GetChild(i).position.y, bgTriggers[i].transform.position.z);
+            transform.GetChild(i).gameObject.GetComponent<Renderer>().material = snappedCubieMaterial;
         }
+        GetComponent<DraggableObject>().enabled = false;
         ramLevelController.AddShapeToSnappedList(this);
     }
 

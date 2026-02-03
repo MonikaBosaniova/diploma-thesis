@@ -5,7 +5,8 @@ public class DraggableObject : MonoBehaviour
 {
     public Action DragEnd;
     public bool dragging;
-    
+
+    private bool draggingEnabled = true;
     Camera cam;
     float dist;
     Vector3 offset;
@@ -17,6 +18,8 @@ public class DraggableObject : MonoBehaviour
 
     void OnMouseDown()
     {
+        if (!draggingEnabled) return;
+        
         dist = Vector3.Distance(cam.transform.position, transform.position);
         Vector3 mouseWorld = cam.ScreenToWorldPoint(Input.mousePosition + Vector3.forward * dist);
         offset = transform.position - mouseWorld;
@@ -35,6 +38,11 @@ public class DraggableObject : MonoBehaviour
     {
         if(dragging) DragEnd?.Invoke();
         dragging = false;
+    }
+
+    private void OnDisable()
+    {
+        draggingEnabled = false;
     }
 }
 
