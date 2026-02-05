@@ -12,11 +12,12 @@ namespace Games.Ram
         [SerializeField] private GameObject Shape;
         [SerializeField] private GameObject SpawnShapesParent;
         [SerializeField] private GameObject ShapesDoneParent;
-        [SerializeField] private GameObject CPUParent;
-        
+        [SerializeField] private CPUWantedAddressController cpuWantedAddressController;
+
+        private int numberToGenerateAddress = 3;
         RamGameManager ramGameManager;
-        private List<ShapeController> _allSnappedShapes = new List<ShapeController>();
-        private bool generateNewShape = false;
+        private List<SnappedAddressCubieController> _allSnappedCubies = new List<SnappedAddressCubieController>();
+        private bool generateNewAddress = false;
         
         public override void Init()
         {
@@ -26,7 +27,8 @@ namespace Games.Ram
             {
                 transform.GetChild(i).gameObject.SetActive(true);
             }
-
+            
+            cpuWantedAddressController.SetRamLevelController(this);
             GenerateShape();
             
             base.Init();
@@ -34,10 +36,11 @@ namespace Games.Ram
 
         private void Update()
         {
-            if (generateNewShape)
+            if (generateNewAddress)
             {
-                GenerateWantedShape();
-                generateNewShape = false;
+                var allAddresses = GetAllAddresses();
+                cpuWantedAddressController.GenerateWantedAddress(allAddresses);
+                generateNewAddress = false;
             }
         }
 
@@ -49,27 +52,58 @@ namespace Games.Ram
                 Shape = null;
             }
             
-            var random = Random.Range(0, ramGameManager.allPossibleGeneratedShapes.Count);
-            Shape = Instantiate(ramGameManager.allPossibleGeneratedShapes[random], SpawnShapesParent.transform);
-            Shape.GetComponent<ShapeController>().SetLevelController(this);
-            if (CPUParent.transform.childCount != 1)
+            if (numberToGenerateAddress == 0 && cpuWantedAddressController.generateNewAddress)
             {
-                generateNewShape = true;
+                numberToGenerateAddress = 3;
+                generateNewAddress = true;
+                EnableHighlightingAndDraggingForSnappedCubies(true);
+            }
+            else
+            {
+                var random = Random.Range(0, ramGameManager.allPossibleGeneratedShapes.Count);
+                Shape = Instantiate(ramGameManager.allPossibleGeneratedShapes[random], SpawnShapesParent.transform);
+                Shape.GetComponent<ShapeController>().SetLevelController(this);
+                EnableHighlightingAndDraggingForSnappedCubies(false);
+            }
+            numberToGenerateAddress--;
+        }
+
+        private void EnableHighlightingAndDraggingForSnappedCubies(bool enabled)
+        {
+            Debug.Log(_allSnappedCubies.Count + "   " + enabled);
+            foreach (var snappedCubie in _allSnappedCubies)
+            {
+                snappedCubie.enableHighlighting =  enabled;
+                snappedCubie.gameObject.GetComponent<DraggableObject>().draggingEnabled = enabled;
             }
         }
 
-        public void GenerateWantedShape()
+        private List<Tuple<int, int>> GetAllAddresses()
         {
-            if(_allSnappedShapes.Count == 0) return;
-            
-            var random = Random.Range(0, _allSnappedShapes.Count);
-            var copy = Instantiate(_allSnappedShapes[random].gameObject, CPUParent.transform);
-            copy.transform.localPosition = new Vector3(0, 0.5f, 0);
+            List<Tuple<int, int>> allPossibleAddresses = new List<Tuple<int, int>>();
+            foreach (var cubie in _allSnappedCubies)
+            {
+                Tuple<int, int> cubiePosition = cubie.GetAddress();
+                allPossibleAddresses.Add(cubiePosition);
+            }
+            return allPossibleAddresses;
         }
 
-        public void AddShapeToSnappedList(ShapeController shapeController)
+        private List<Tuple<int, int>> GetAllCanBeDestroyedAddresses()
         {
-            _allSnappedShapes.Add(shapeController);
+            List<Tuple<int, int>> allPossibleAddresses = new List<Tuple<int, int>>();
+            foreach (var cubie in _allSnappedCubies)
+            {
+                Tuple<int, int> cubiePosition = cubie.GetIfCanBeDestroyedAddress();
+                if (cubiePosition != null)
+                    allPossibleAddresses.Add(cubiePosition);
+            }
+            return allPossibleAddresses;
+        }
+
+        public void AddSnappedCubieToList(SnappedAddressCubieController snappedCubie)
+        {
+            _allSnappedCubies.Add(snappedCubie);
         }
 
         private void CheckFinishState(double newValue)

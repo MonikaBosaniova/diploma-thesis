@@ -6,7 +6,8 @@ public class DraggableObject : MonoBehaviour
     public Action DragEnd;
     public bool dragging;
 
-    private bool draggingEnabled = true;
+    internal bool draggingEnabled = true;
+    
     Camera cam;
     float dist;
     Vector3 offset;

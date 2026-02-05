@@ -7,8 +7,6 @@ using Random = UnityEngine.Random;
 public class ShapeController : MonoBehaviour
 {
     [Header("Debug Values - READ ONLY")] 
-    [SerializeField] internal bool canBeDestroyed = false;
-    [SerializeField] private float timeToLive = 0f;
     [SerializeField] private Material snappedCubieMaterial;
     List<Vector3> ChildSpawnPointPositions = new List<Vector3>();
     Vector3 SpawnPoint;
@@ -26,8 +24,6 @@ public class ShapeController : MonoBehaviour
         }
         SpawnPoint = transform.position;
         draggableObject.DragEnd += SnapObject;
-        timeToLive = Random.Range(5, 20);
-        StartCoroutine(SetDestroyStateAfterTime());
     }
 
     public void AddBgTrigger(BgCubeTrigger bgTrigger)
@@ -72,24 +68,29 @@ public class ShapeController : MonoBehaviour
 
     public void SnapObjectToPosition()
     {
+        float spacing = bgTriggers[0].transform.parent.gameObject.GetComponent<CubeGridEditor>().spacing;
         for(var i = 0; i < bgTriggers.Count; i++)
         {
-            bgTriggers[i].SetSnapped(true);
-            transform.GetChild(i).position = new Vector3(bgTriggers[i].transform.position.x, transform.GetChild(i).position.y, bgTriggers[i].transform.position.z);
-            transform.GetChild(i).gameObject.GetComponent<Renderer>().material = snappedCubieMaterial;
+            var trigger = bgTriggers[i];
+            var snapChild = transform.GetChild(i);
+            
+            trigger.SetSnapped(true);
+            snapChild.position = new Vector3(trigger.transform.position.x, snapChild.position.y, trigger.transform.position.z);
+            snapChild.GetChild(0).gameObject.GetComponent<Renderer>().material = snappedCubieMaterial;
+            
+            float snappingRow = (trigger.transform.localPosition.x / spacing);
+            float snappingColumn = (trigger.transform.localPosition.z / spacing);
+            var snappedCubie = snapChild.gameObject.GetComponent<SnappedAddressCubieController>();
+            snappedCubie.snapped = true;
+            snappedCubie.SetPosition(snappingRow, snappingColumn);
+            ramLevelController.AddSnappedCubieToList(snappedCubie);
         }
+        GetComponent<BoxCollider>().enabled = false;
         GetComponent<DraggableObject>().enabled = false;
-        ramLevelController.AddShapeToSnappedList(this);
     }
 
     public void SetLevelController(RamLevelController ramLc)
     {
         ramLevelController = ramLc;
     }
-    
-    private IEnumerator SetDestroyStateAfterTime() {
-        yield return new WaitForSeconds(timeToLive);
-        canBeDestroyed = true;
-    }
-
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 public class BgCubeTrigger : MonoBehaviour
 {
     [Header("Materials")] 
+    [SerializeField] internal bool highlightingEnabled = true;
     [SerializeField] Material OnMaterial;
     [SerializeField] Material OffMaterial;
     [SerializeField] Material AlreadySnappedMaterial;
@@ -29,16 +30,19 @@ public class BgCubeTrigger : MonoBehaviour
             if (!Snapped)
             {
                 other.transform.parent.gameObject.GetComponent<ShapeController>().AddBgTrigger(this);
-                meshRenderer.material = OnMaterial;
+                if(highlightingEnabled)
+                    meshRenderer.material = OnMaterial;
             }
             else
             {
-                meshRenderer.material = AlreadySnappedMaterial;
+                if(highlightingEnabled)
+                    meshRenderer.material = AlreadySnappedMaterial;
             }
         }
         else
         {
-            meshRenderer.material = OffMaterial;
+            if(highlightingEnabled)
+                meshRenderer.material = OffMaterial;
         }
     }
 
@@ -48,7 +52,8 @@ public class BgCubeTrigger : MonoBehaviour
         if (shapeController != null)
         {
             other.transform.parent.gameObject.GetComponent<ShapeController>().RemoveBgTrigger(this);
-            meshRenderer.material = OffMaterial;
+            if(highlightingEnabled)
+                meshRenderer.material = OffMaterial;
         }
     }
 
@@ -59,7 +64,8 @@ public class BgCubeTrigger : MonoBehaviour
 
     public void ClearColoring()
     {
-        meshRenderer.material = OffMaterial;
+        if(highlightingEnabled)
+            meshRenderer.material = OffMaterial;
     }
     
 }
