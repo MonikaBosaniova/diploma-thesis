@@ -76,7 +76,7 @@ public class ShapeController : MonoBehaviour
 
     public void SnapObjectToPosition()
     {
-        bgTriggers[0].transform.parent.gameObject.TryGetComponent<CubeGridEditor>(out var cubeGridEditor);
+        bgTriggers[0].transform.parent.gameObject.TryGetComponent<RamGridGenerator>(out var cubeGridEditor);
         if (cubeGridEditor == null) return;
         
         float spacing = cubeGridEditor.spacing;

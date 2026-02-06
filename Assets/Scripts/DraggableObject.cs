@@ -4,6 +4,7 @@ using UnityEngine;
 public class DraggableObject : MonoBehaviour
 {
     public Action DragEnd;
+    public Action DragStart;
     public bool dragging;
 
     [SerializeField] internal bool draggingEnabled = true;
@@ -25,6 +26,7 @@ public class DraggableObject : MonoBehaviour
         Vector3 mouseWorld = cam.ScreenToWorldPoint(Input.mousePosition + Vector3.forward * dist);
         offset = transform.position - mouseWorld;
         dragging = true;
+        DragStart?.Invoke();
     }
 
     void OnMouseDrag()

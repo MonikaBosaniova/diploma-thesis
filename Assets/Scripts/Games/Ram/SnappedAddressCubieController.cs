@@ -11,6 +11,7 @@ namespace Games.Ram
         [SerializeField] internal bool canBeDestroyed = false;
         [SerializeField] internal bool snapped = false;
         [SerializeField] private float timeToLive = 0f;
+        [SerializeField] private GameObject hologramCube;
         
         [Header("Position")]
         [SerializeField] private int rowPosition;
@@ -26,6 +27,7 @@ namespace Games.Ram
         MeshRenderer meshRenderer;
         DraggableObject draggableObject;
         Vector3 cubieSnappedPosition = Vector3.zero;
+        private GameObject cubeHologram;
 
         private void Start()
         {
@@ -33,7 +35,8 @@ namespace Games.Ram
             timeToLive = Random.Range(5, 20);
             StartCoroutine(SetDestroyStateAfterTime());
             draggableObject = gameObject.GetComponent<DraggableObject>();
-            draggableObject.DragEnd += Snap;
+            draggableObject.DragStart += SpawnHologram;
+            draggableObject.DragEnd += Snap; 
         }
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -87,9 +90,17 @@ namespace Games.Ram
             CPUPoint = null;
         }
         
-        private void Snap()
+        internal void Snap()
         {
+            if (CPUPoint != null)
+                CPUPoint.GetComponent<CPUWantedAddressController>().CheckAddress(this);
             SetPositionOfTransform(CPUPoint != null ? CPUPoint.transform.position : cubieSnappedPosition);
+            if(CPUPoint == null) Destroy(cubeHologram);
+        }
+        
+        private void SpawnHologram()
+        {
+            cubeHologram = Instantiate(hologramCube, cubieSnappedPosition, Quaternion.identity);
         }
         
         private IEnumerator SetDestroyStateAfterTime() {

@@ -5,7 +5,7 @@ using UnityEditor.SceneManagement;
 
 namespace Games.Ram
 {
-    public class CubeGridEditor : MonoBehaviour
+    public class RamGridGenerator : MonoBehaviour
     {
         public GameObject cubePrefab;
         public int x = 3, y = 3, z = 3;
@@ -44,6 +44,6 @@ namespace Games.Ram
             EditorSceneManager.MarkSceneDirty(UnityEngine.SceneManagement.SceneManager.GetActiveScene());
         }
     }
-    #endif
-    
 }
+#endif
+    
