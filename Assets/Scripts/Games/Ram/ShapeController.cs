@@ -39,13 +39,21 @@ public class ShapeController : MonoBehaviour
     
     private void SnapObject()
     {
-        if (bgTriggers.Count == transform.childCount)
+        if (bgTriggers.Count == transform.childCount && bgTriggers.Count != 0)
         {
-            SnapObjectToPosition();
-            draggableObject.enabled = false;
-            
-            if(ramLevelController != null)
-                ramLevelController.GenerateShape();
+            //Checking that the trigger is not CPU point
+            if (bgTriggers[0].GetComponent<CPUWantedAddressController>() == null)
+            {
+                SnapObjectToPosition();
+                draggableObject.enabled = false;
+                
+                if(ramLevelController != null)
+                    ramLevelController.GenerateShape();
+            }
+            else
+            {
+                SnapToSpawnPoint();
+            }
         }
         else
         {
@@ -68,7 +76,10 @@ public class ShapeController : MonoBehaviour
 
     public void SnapObjectToPosition()
     {
-        float spacing = bgTriggers[0].transform.parent.gameObject.GetComponent<CubeGridEditor>().spacing;
+        bgTriggers[0].transform.parent.gameObject.TryGetComponent<CubeGridEditor>(out var cubeGridEditor);
+        if (cubeGridEditor == null) return;
+        
+        float spacing = cubeGridEditor.spacing;
         for(var i = 0; i < bgTriggers.Count; i++)
         {
             var trigger = bgTriggers[i];
@@ -85,8 +96,10 @@ public class ShapeController : MonoBehaviour
             snappedCubie.SetPosition(snappingRow, snappingColumn);
             ramLevelController.AddSnappedCubieToList(snappedCubie);
         }
-        GetComponent<BoxCollider>().enabled = false;
-        GetComponent<DraggableObject>().enabled = false;
+        Destroy(GetComponent<BoxCollider>());
+        Destroy(GetComponent<Rigidbody>());
+        Destroy(GetComponent<DraggableObject>());
+        //GetComponent<DraggableObject>().enabled = false;
     }
 
     public void SetLevelController(RamLevelController ramLc)

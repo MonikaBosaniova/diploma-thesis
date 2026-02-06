@@ -67,5 +67,11 @@ public class BgCubeTrigger : MonoBehaviour
         if(highlightingEnabled)
             meshRenderer.material = OffMaterial;
     }
+
+    public void SetHighlight(bool value)
+    {
+        if (highlightingEnabled)
+            meshRenderer.material = value ? OnMaterial : OffMaterial;
+    }
     
 }

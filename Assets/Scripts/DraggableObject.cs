@@ -6,7 +6,7 @@ public class DraggableObject : MonoBehaviour
     public Action DragEnd;
     public bool dragging;
 
-    internal bool draggingEnabled = true;
+    [SerializeField] internal bool draggingEnabled = true;
     
     Camera cam;
     float dist;
@@ -19,7 +19,7 @@ public class DraggableObject : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (!draggingEnabled) return;
+        if (!draggingEnabled || !enabled) return;
         
         dist = Vector3.Distance(cam.transform.position, transform.position);
         Vector3 mouseWorld = cam.ScreenToWorldPoint(Input.mousePosition + Vector3.forward * dist);

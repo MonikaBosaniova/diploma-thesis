@@ -18,6 +18,7 @@ namespace Games.Ram
         
         private RamLevelController _ramLevelController;
         private BgCubeTrigger _bgCubeTrigger;
+        private SnappedAddressCubieController _snappedAddressCubieController;
 
         private void Start()
         {
@@ -33,14 +34,12 @@ namespace Games.Ram
             _bgCubeTrigger.highlightingEnabled = true;
             generateNewAddress = false;
             var random = Random.Range(0, allPossibleAddresses.Count);
-            Debug.Log("RANDOM: R-" +allPossibleAddresses[random].Item1 + ",   C-" + allPossibleAddresses[random].Item2);
             
             //VISUALIZE ADDRESS
             string row = addressesRowParent.GetChild(allPossibleAddresses[random].Item1).GetComponent<TMP_Text>().text;
             string col = addressesColumnParent.GetChild(allPossibleAddresses[random].Item2).GetComponent<TMP_Text>().text;
             addressRow.text = row;
             addressColumn.text = col;
-            Debug.Log("CPU WANTED: R-" + row + "  C-" + col);
         }
 
         internal void SetRamLevelController(RamLevelController ramLevelController)
@@ -50,11 +49,15 @@ namespace Games.Ram
 
         private void OnTriggerEnter(Collider other)
         {
+            Debug.Log("CPU: OnTriggerEnter   ...  " + other.gameObject.name + "...gen: "+ generateNewAddress);
+
             if (generateNewAddress) return;
 
-            SnappedAddressCubieController cubie = other.gameObject.GetComponent<SnappedAddressCubieController>();
+            _snappedAddressCubieController = other.gameObject.GetComponent<SnappedAddressCubieController>();
+            _snappedAddressCubieController.SetCPUPoint(transform);
+            if (_snappedAddressCubieController != null) _bgCubeTrigger.SetHighlight(true);
             
-            bool answerIsCorrect = CheckAddress(cubie);
+            bool answerIsCorrect = CheckAddress(_snappedAddressCubieController);
             
             //TODO NICER VISUALS
             if (answerIsCorrect)
@@ -69,6 +72,16 @@ namespace Games.Ram
             {
                 Destroy(other.gameObject);
             }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            _snappedAddressCubieController = other.gameObject.GetComponent<SnappedAddressCubieController>();
+            if (_snappedAddressCubieController == null) return;
+            
+            _bgCubeTrigger.SetHighlight(false);
+            _snappedAddressCubieController.RemoveCPUPoint();
+            _snappedAddressCubieController = null;
         }
 
         private bool CheckAddress(SnappedAddressCubieController cubie)
