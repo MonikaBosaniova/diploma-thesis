@@ -22,6 +22,8 @@ namespace Games.Ram
         [SerializeField] private Material defaultMaterial;
         [SerializeField] private Material highlightMaterial;
 
+        internal BgCubeTrigger triggerWhereCubieIsSnapped;
+
         private Transform CPUPoint;
         
         MeshRenderer meshRenderer;
@@ -58,16 +60,17 @@ namespace Games.Ram
             set => enableHighlighting = value;
         }
         
-        public void SetPosition(float row, float column)
+        public void SetPositionAndTrigger(float row, float column, BgCubeTrigger trigger)
         {
             cubieSnappedPosition = transform.position;
             rowPosition = Mathf.RoundToInt(row);
             columnPosition = Mathf.RoundToInt(column);
+            triggerWhereCubieIsSnapped = trigger;
         }
 
         public Tuple<int, int> GetIfCanBeDestroyedAddress()
         {
-            return canBeDestroyed ? new Tuple<int, int>(rowPosition, columnPosition) : null;
+            return (canBeDestroyed && snapped) ? new Tuple<int, int>(rowPosition, columnPosition) : null;
         }
         
         public Tuple<int, int> GetAddress()
@@ -106,6 +109,12 @@ namespace Games.Ram
         private IEnumerator SetDestroyStateAfterTime() {
             yield return new WaitForSeconds(timeToLive);
             canBeDestroyed = true;
+        }
+
+        private void OnDestroy()
+        {
+            if(triggerWhereCubieIsSnapped != null)
+                triggerWhereCubieIsSnapped.SetSnapped(false);
         }
     }
 }

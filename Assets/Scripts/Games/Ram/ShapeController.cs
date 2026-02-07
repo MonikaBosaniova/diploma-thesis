@@ -93,7 +93,7 @@ public class ShapeController : MonoBehaviour
             float snappingColumn = (trigger.transform.localPosition.z / spacing);
             var snappedCubie = snapChild.gameObject.GetComponent<SnappedAddressCubieController>();
             snappedCubie.snapped = true;
-            snappedCubie.SetPosition(snappingRow, snappingColumn);
+            snappedCubie.SetPositionAndTrigger(snappingRow, snappingColumn, trigger);
             ramLevelController.AddSnappedCubieToList(snappedCubie);
         }
         Destroy(GetComponent<BoxCollider>());
