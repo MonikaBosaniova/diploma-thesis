@@ -6,11 +6,11 @@ namespace Games.Ram
 {
     public class RamGridGenerator : MonoBehaviour
     {
-        #if UNITY_EDITOR
             public GameObject cubePrefab;
             public int x = 3, y = 3, z = 3;
             public float spacing = 1f;
 
+        #if UNITY_EDITOR
             [ContextMenu("Generate Grid")]
             public void Generate()
             {
