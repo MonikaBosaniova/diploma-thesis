@@ -40,8 +40,9 @@ namespace Games.Ram
 
                     Undo.RegisterCreatedObjectUndo(cube, "Create Cube");
                 }
-
-                EditorSceneManager.MarkSceneDirty(UnityEngine.SceneManagement.SceneManager.GetActiveScene());
+                
+                //UNCOMMENT WHEN GENERATING, COMMENT WHEN BUILDING
+                //EditorSceneManager.MarkSceneDirty(UnityEngine.SceneManagement.SceneManager.GetActiveScene());
             }
         #endif
     }
