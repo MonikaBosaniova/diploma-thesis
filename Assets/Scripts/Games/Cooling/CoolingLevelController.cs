@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Games.Cooling;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,8 +9,10 @@ namespace Games.Ram
 {
     public class CoolingLevelController : LevelController
     {
-        // [Header("Ram Level")] 
-        // [SerializeField] private float Time;
+        [SerializeField] private MonitorController  monitorController;
+        [SerializeField] private CoolerController  cpuController;
+        [SerializeField] private CoolerController  gpuController;
+        // [SerializeField] 
         // [SerializeField] private GameObject Shape;
         // [SerializeField] private GameObject SpawnShapesParent;
         // [SerializeField] private GameObject ShapesDoneParent;
