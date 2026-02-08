@@ -12,65 +12,56 @@ namespace Games.Ram
         [SerializeField] private MonitorController  monitorController;
         [SerializeField] private CoolerController  cpuController;
         [SerializeField] private CoolerController  gpuController;
-        // [SerializeField] 
-        // [SerializeField] private GameObject Shape;
-        // [SerializeField] private GameObject SpawnShapesParent;
-        // [SerializeField] private GameObject ShapesDoneParent;
-        // [SerializeField] private CPUWantedAddressController cpuWantedAddressController;
-        //
-        // [Header("Garbage collector")] 
-        // [SerializeField] private bool gcEnabled = true;
-        // [SerializeField] private bool gcBlocked = false;
-        // [SerializeField] private float startTimeGC = 1;
-        // [SerializeField] private float actualTimeGC;
-        // [SerializeField] private float stepGC = 0.003f;
-        // [SerializeField] private GameObject disabledGC;
-        //
-        // private int numberToGenerateAddress = 3;
+
+        [SerializeField] private GameObject NoisyBubble;
+        [SerializeField] private GameObject SlowBubble;
+       
         CoolingGameManager coolingGameManager;
-        // private List<SnappedAddressCubieController> _allSnappedCubies = new List<SnappedAddressCubieController>();
-        // private bool generateNewAddress = false;
+        private ScenarioData actualScenario;
+        
+        private bool cpuIsOptimal = false;
+        private bool gpuIsOptimal = false;
         
         public override void Init()
         {
             coolingGameManager = FindFirstObjectByType<CoolingGameManager>();
             
-            // for (int i = 0; i < transform.childCount; i++)
-            // {
-            //     transform.GetChild(i).gameObject.SetActive(true);
-            // }
-            //
-            // cpuWantedAddressController.SetRamLevelController(this);
-            // GenerateShape();
+            monitorController.SetScenario(0);
+
+           UpdateDataWhenScenarioChange();
             
             base.Init();
         }
 
         private void Update()
         {
-            // if (generateNewAddress)
-            // {
-            //     var allAddresses = GetAllAddresses();
-            //     cpuWantedAddressController.GenerateWantedAddress(allAddresses);
-            //     generateNewAddress = false;
-            //     disabledGC.SetActive(true);
-            //     gcBlocked = true;
-            //     actualTimeGC = startTimeGC;
-            // }
-            //
-            // if (gcBlocked || gcEnabled) return;
-            //
-            // actualTimeGC -= stepGC;
-            // if (actualTimeGC <= 0)
-            // {
-            //     if(disabledGC != null)
-            //         disabledGC.SetActive(false);
-            //     gcEnabled = true;
-            //     actualTimeGC = startTimeGC;
-            // }
+            if(cpuController == null || gpuController == null) return;
+            
+            if (cpuController.optimal && gpuController.optimal)
+            {
+                monitorController.ChooseNewScenario();
+                UpdateDataWhenScenarioChange();
+            }
+
+            if (cpuController.noisy || gpuController.noisy)
+            {
+                NoisyBubble.SetActive(true);
+            }
+            else
+            {
+                NoisyBubble.SetActive(false);
+            }
+            
+            if (cpuController.slow || gpuController.slow)
+            {
+                SlowBubble.SetActive(true);
+            }
+            else
+            {
+                SlowBubble.SetActive(false);
+            }
         }
-        
-        
+
         public override void Close()
         {
             for (int i = 0; i < transform.childCount; i++)
@@ -78,6 +69,14 @@ namespace Games.Ram
                 transform.GetChild(i).gameObject.SetActive(false);
             }
             base.Close();
+        }
+
+        private void UpdateDataWhenScenarioChange()
+        {
+            var CPUValues = monitorController.GetCPUValuesForScenario();
+            var GPUValues = monitorController.GetGPUValuesForScenario();
+            cpuController.SetScenarioData(CPUValues[0], CPUValues[1]);
+            gpuController.SetScenarioData(GPUValues[0], GPUValues[1]);
         }
         
         private void CheckFinishState(double newValue)

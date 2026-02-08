@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Games.Cooling
@@ -21,19 +22,19 @@ namespace Games.Cooling
             SetScenario(random);
         }
 
-        internal float GetOptimalCPUCoolerValueForScenario()
+        internal List<float> GetCPUValuesForScenario()
         {
             ScenarioData scenarioData = scenariosParent.GetChild(indexOfActualScenario).GetComponent<ScenarioData>();
-            return scenarioData.optimumCoolerValueCPU;
+            return new List<float>{scenarioData.finishCoolerValueCPU , scenarioData.cpuOffset};
         }
         
-        internal float GetOptimalGPUCoolerValueForScenario()
+        internal List<float> GetGPUValuesForScenario()
         {
             ScenarioData scenarioData = scenariosParent.GetChild(indexOfActualScenario).GetComponent<ScenarioData>();
-            return scenarioData.optimumCoolerValueGPU;
+            return new List<float>{scenarioData.finishCoolerValueGPU , scenarioData.gpuOffset};
         }
         
-        private void SetScenario(int index)
+        internal void SetScenario(int index)
         {
             foreach (Transform scenario in scenariosParent)
             {
