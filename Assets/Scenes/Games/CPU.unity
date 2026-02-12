@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsPrepared>k__BackingField: 0
   backButton: {fileID: 9218443766337511115}
-  quizData: {fileID: 11400000, guid: 4cbba8517551bd645a83df679c4098e1, type: 2}
+  quizData: {fileID: 11400000, guid: 1e1285714110c304cb959316127be202, type: 2}
   _successRate: 0
 --- !u!1 &262643144
 GameObject:
@@ -1085,6 +1085,7 @@ MonoBehaviour:
   minigameParent: {fileID: 1313237317}
   quizParent: {fileID: 255719259}
   endParent: {fileID: 0}
+  nextButton: {fileID: 0}
   nodeID: 
   stars: 0
   time: 0
@@ -1249,6 +1250,7 @@ MonoBehaviour:
   TrueMaterial: {fileID: 0}
   firstInput: {fileID: 550416449}
   firstLine: {fileID: 539075874}
+  wire: {fileID: 0}
 --- !u!1001 &310997080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3709,9 +3711,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83210aaf94f4c404892968d9f32ab4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraXPos: 0
+  Time: 0
   Shape: {fileID: 0}
   SpawnShapesParent: {fileID: 1338665457}
   ShapesDoneParent: {fileID: 1109837959}
+  cpuWantedAddressController: {fileID: 0}
+  gcEnabled: 1
+  gcBlocked: 0
+  startTimeGC: 1
+  actualTimeGC: 0
+  stepGC: 0.003
+  disabledGC: {fileID: 0}
 --- !u!1001 &575530080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11152,9 +11163,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83210aaf94f4c404892968d9f32ab4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraXPos: 0
+  Time: 0
   Shape: {fileID: 0}
   SpawnShapesParent: {fileID: 0}
   ShapesDoneParent: {fileID: 0}
+  cpuWantedAddressController: {fileID: 0}
+  gcEnabled: 1
+  gcBlocked: 0
+  startTimeGC: 1
+  actualTimeGC: 0
+  stepGC: 0.003
+  disabledGC: {fileID: 0}
 --- !u!1001 &2062291553
 PrefabInstance:
   m_ObjectHideFlags: 0

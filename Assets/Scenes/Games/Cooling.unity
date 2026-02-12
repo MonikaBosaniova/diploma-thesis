@@ -1662,7 +1662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <IsPrepared>k__BackingField: 0
   backButton: {fileID: 9218443766337511115}
-  quizData: {fileID: 11400000, guid: 4cbba8517551bd645a83df679c4098e1, type: 2}
+  quizData: {fileID: 11400000, guid: ef79b6692881e9548bc96cac92169738, type: 2}
   _successRate: 0
 --- !u!1 &262643144
 GameObject:

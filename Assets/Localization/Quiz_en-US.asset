@@ -42,6 +42,488 @@ MonoBehaviour:
     m_Localized: "EN\tQ2"
     m_Metadata:
       m_Items: []
+  - m_Id: 81208772961882112
+    m_Localized: How many digits does the binary system use?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076416
+    m_Localized: 2 (0 and 1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076417
+    m_Localized: 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076418
+    m_Localized: 16
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076419
+    m_Localized: What decimal number corresponds to the binary notation 1010?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076420
+    m_Localized: 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076421
+    m_Localized: 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076422
+    m_Localized: 12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076423
+    m_Localized: What binary number corresponds to the decimal number 7?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076424
+    m_Localized: 111
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076425
+    m_Localized: 1001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076426
+    m_Localized: 1010
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076427
+    m_Localized: What does the value 1 mean in binary code?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076428
+    m_Localized: On / True
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076429
+    m_Localized: Off / False
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076430
+    m_Localized: Number two
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076431
+    m_Localized: What is the notation using only 0 and 1 called?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076432
+    m_Localized: Binary code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076433
+    m_Localized: Decimal code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076434
+    m_Localized: Hexadecimal code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076435
+    m_Localized: What is the result of the logical AND function when both inputs
+      are 1?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076436
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076437
+    m_Localized: 0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076438
+    m_Localized: It depends on chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076439
+    m_Localized: What is the result of the logical OR function when both inputs are
+      0?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076440
+    m_Localized: 0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076441
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076442
+    m_Localized: Cannot be determined
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076443
+    m_Localized: Which gate gives an output of 1 only when the inputs are different?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076444
+    m_Localized: XOR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076445
+    m_Localized: OR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076446
+    m_Localized: AND
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076447
+    m_Localized: How many possible states does one logical bit have?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076448
+    m_Localized: 2 (0 and 1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076449
+    m_Localized: 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076450
+    m_Localized: Infinitely many
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076451
+    m_Localized: What does the logical NOT function do with an input of 0?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076452
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076453
+    m_Localized: 0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076454
+    m_Localized: The output does not change
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076455
+    m_Localized: What is the main function of the CPU?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076456
+    m_Localized: Executes instructions and controls computer activity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076457
+    m_Localized: Stores data permanently even after the computer is turned off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076458
+    m_Localized: Ensures computer connection to the internet and network services
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076459
+    m_Localized: What does the processor clock frequency indicate?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076460
+    m_Localized: How many instructions it can execute per second
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076461
+    m_Localized: What is the data storage capacity of the hard drive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076462
+    m_Localized: The maximum amount of data that fits in the RAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076463
+    m_Localized: In what units is the processor clock frequency given?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076464
+    m_Localized: Hertz (Hz), usually gigahertz (GHz)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076465
+    m_Localized: Gigabytes (GB)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076466
+    m_Localized: Watts (W)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076467
+    m_Localized: What is the purpose of cache memory in the CPU?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076468
+    m_Localized: To speed up access to frequently used data
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076469
+    m_Localized: For permanent storage of documents and files on the computer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076470
+    m_Localized: For direct processing and displaying of graphics on the monitor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076471
+    m_Localized: What happens to the CPU under too much load without cooling?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076472
+    m_Localized: It overheats and may shut down or be damaged
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076473
+    m_Localized: The computer's hard drive capacity automatically increases
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076474
+    m_Localized: Its clock frequency will increase significantly without limit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076475
+    m_Localized: Why is cooling needed in a computer?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076476
+    m_Localized: To keep components from overheating
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076477
+    m_Localized: To help the computer save electricity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076478
+    m_Localized: To keep the speaker sound from degrading
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076479
+    m_Localized: What can happen if cooling is not working properly?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076480
+    m_Localized: The computer may slow down or shut itself off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076481
+    m_Localized: Stored photos and personal files may be lost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076482
+    m_Localized: Colors, brightness, and contrast on the monitor will change
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076483
+    m_Localized: What problem does dust in the fans cause?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076484
+    m_Localized: Impairs airflow and increases heating
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076485
+    m_Localized: Gradually reduces RAM capacity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076486
+    m_Localized: Negatively affects internet connection speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076487
+    m_Localized: How do you know if computer cooling is insufficient?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076488
+    m_Localized: The computer is hot and sometimes shuts down
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076489
+    m_Localized: The mouse stops responding to movement and clicks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076490
+    m_Localized: The computer won't turn on at all after pressing the button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076491
+    m_Localized: Which activity puts the most load on computer cooling?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076492
+    m_Localized: Playing a modern video game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076493
+    m_Localized: Writing text in a notepad program
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076494
+    m_Localized: Reading a short document
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076495
+    m_Localized: What is RAM in a computer?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076496
+    m_Localized: Operating (working) memory, temporary data storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076497
+    m_Localized: Permanent file storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076498
+    m_Localized: Control unit that ensures connection of hardware devices
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076499
+    m_Localized: What happens to RAM content after the computer is turned off?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076500
+    m_Localized: Data is deleted
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076501
+    m_Localized: Data stays there forever
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076502
+    m_Localized: Data is automatically saved to the internet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076503
+    m_Localized: 'What is true: the more RAM a computer has...'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076504
+    m_Localized: ...the more programs it can run faster at once
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076505
+    m_Localized: ...the less electricity it will consume during normal use
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076506
+    m_Localized: ...the larger the monitor that needs to be connected
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076507
+    m_Localized: What is the difference between RAM and a hard drive?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076508
+    m_Localized: RAM is temporary, the disk stores permanently
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076509
+    m_Localized: RAM is smaller and slower than the disk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076510
+    m_Localized: RAM is only intended for storing movies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076511
+    m_Localized: What happens when a computer has low RAM?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076512
+    m_Localized: Programs slow down or crash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076513
+    m_Localized: The computer won't turn on
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076514
+    m_Localized: The monitor turns off automatically during work
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076515
+    m_Localized: What is typical for an HDD?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076516
+    m_Localized: Contains moving mechanical parts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076517
+    m_Localized: Consists only of chips without moving parts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076518
+    m_Localized: Used only for temporary data storage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076519
+    m_Localized: What is typical for an SSD?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076520
+    m_Localized: It is fast and has no moving parts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076521
+    m_Localized: It is slow and contains rotating platters
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076522
+    m_Localized: Used only for storing music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076523
+    m_Localized: What happens to data on the HDD/SSD after shutdown?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076524
+    m_Localized: They stay stored
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076525
+    m_Localized: They are immediately deleted
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076526
+    m_Localized: Saved to RAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270720
+    m_Localized: What is the advantage of SSD over HDD?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270721
+    m_Localized: It is faster and more durable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270722
+    m_Localized: It always has more capacity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270723
+    m_Localized: It can never break down
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270724
+    m_Localized: Why is SSD often used instead of HDD in modern computers?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270725
+    m_Localized: Because it is faster and speeds up the system and programs
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270726
+    m_Localized: Because it always has unlimited storage capacity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270727
+    m_Localized: Because it only works with a gaming graphics card
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

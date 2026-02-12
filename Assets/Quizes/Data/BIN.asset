@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b25a52910ac1d6449512aa6e6e79de4, type: 3}
+  m_Name: BIN
+  m_EditorClassIdentifier: 
+  AnswerTemplate: {fileID: 9197481963319205126, guid: 84d0a223c16e8e94ab0560fa90c427be, type: 3}
+  quizQuestions:
+  - question:
+      m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772961882112
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    answers:
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076416
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076417
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076418
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    value: 1
+  - question:
+      m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076419
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    answers:
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076420
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076421
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076422
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    value: 1
+  - question:
+      m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076423
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    answers:
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076424
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076425
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076426
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    value: 1
+  - question:
+      m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076427
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    answers:
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076428
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076429
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076430
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    value: 1
+  - question:
+      m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076431
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    answers:
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076432
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076433
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    - m_TableReference:
+        m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
+      m_TableEntryReference:
+        m_KeyId: 81208772966076434
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    value: 1
+  references:
+    version: 2
+    RefIds: []

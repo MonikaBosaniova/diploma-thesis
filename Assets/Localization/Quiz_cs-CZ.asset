@@ -42,6 +42,510 @@ MonoBehaviour:
     m_Localized: "CZ\tQ2"
     m_Metadata:
       m_Items: []
+  - m_Id: 81208772961882112
+    m_Localized: "Kolik \u010D\xEDslic pou\u017E\xEDv\xE1 bin\xE1rn\xED soustava?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076416
+    m_Localized: 2 (0 a 1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076417
+    m_Localized: 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076418
+    m_Localized: 16
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076419
+    m_Localized: "Jak\xE9 \u010D\xEDslo v des\xEDtkov\xE9 soustav\u011B odpov\xEDd\xE1
+      bin\xE1rn\xEDmu z\xE1pisu 1010?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076420
+    m_Localized: 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076421
+    m_Localized: 5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076422
+    m_Localized: 12
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076423
+    m_Localized: "Jak\xE9 \u010D\xEDslo v bin\xE1rn\xED soustav\u011B odpov\xEDd\xE1
+      des\xEDtkov\xE9mu \u010D\xEDslu 7?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076424
+    m_Localized: 111
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076425
+    m_Localized: 1001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076426
+    m_Localized: 1010
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076427
+    m_Localized: "Co znamen\xE1 hodnota 1 v bin\xE1rn\xEDm k\xF3du?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076428
+    m_Localized: Zapnuto / pravda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076429
+    m_Localized: Vypnuto / nepravda
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076430
+    m_Localized: "\u010C\xEDslo dva"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076431
+    m_Localized: "Jak se naz\xFDv\xE1 z\xE1pis \u010D\xEDsla pouze pomoc\xED \u010D\xEDslic
+      0 a 1?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076432
+    m_Localized: "Bin\xE1rn\xED k\xF3d"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076433
+    m_Localized: "Des\xEDtkov\xFD k\xF3d"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076434
+    m_Localized: "Hexadecim\xE1ln\xED k\xF3d"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076435
+    m_Localized: "Jak\xFD v\xFDsledek m\xE1 logick\xE1 funkce AND, kdy\u017E jsou
+      oba vstupy 1?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076436
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076437
+    m_Localized: 0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076438
+    m_Localized: "Z\xE1vis\xED na n\xE1hod\u011B"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076439
+    m_Localized: "Jak\xFD v\xFDsledek m\xE1 logick\xE1 funkce OR, kdy\u017E jsou
+      oba vstupy 0?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076440
+    m_Localized: 0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076441
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076442
+    m_Localized: "Nelze ur\u010Dit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076443
+    m_Localized: "Kter\xE9 hradlo d\xE1v\xE1 v\xFDstup 1 pouze tehdy, kdy\u017E jsou
+      vstupy r\u016Fzn\xE9?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076444
+    m_Localized: XOR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076445
+    m_Localized: OR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076446
+    m_Localized: AND
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076447
+    m_Localized: "Kolik mo\u017En\xFDch stav\u016F m\xE1 jeden logick\xFD bit?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076448
+    m_Localized: 2 (0 a 1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076449
+    m_Localized: 10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076450
+    m_Localized: "Nekone\u010Dn\u011B mnoho"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076451
+    m_Localized: "Co prov\xE1d\xED logick\xE1 funkce NOT se vstupem 0?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076452
+    m_Localized: 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076453
+    m_Localized: 0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076454
+    m_Localized: "V\xFDstup se nezm\u011Bn\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076455
+    m_Localized: "Co je hlavn\xED funkc\xED CPU?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076456
+    m_Localized: "Vykon\xE1v\xE1 instrukce a \u0159\xEDd\xED \u010Dinnost po\u010D\xEDta\u010De"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076457
+    m_Localized: "Ukl\xE1d\xE1 data trvale i po vypnut\xED po\u010D\xEDta\u010De
+      do pam\u011Bti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076458
+    m_Localized: "Zaji\u0161\u0165uje p\u0159ipojen\xED po\u010D\xEDta\u010De k internetu
+      a s\xED\u0165ov\xFDm slu\u017Eb\xE1m"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076459
+    m_Localized: "Co ud\xE1v\xE1 taktovac\xED frekvence procesoru?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076460
+    m_Localized: "Kolik instrukc\xED za sekundu dok\xE1\u017Ee vykonat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076461
+    m_Localized: "Jak velkou kapacitu m\xE1 pevn\xFD disk pro ukl\xE1d\xE1n\xED dat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076462
+    m_Localized: "Kolik dat se maxim\xE1ln\u011B vejde do opera\u010Dn\xED pam\u011Bti
+      po\u010D\xEDta\u010De"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076463
+    m_Localized: "V jak\xFDch jednotk\xE1ch se ud\xE1v\xE1 taktovac\xED frekvence
+      procesoru?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076464
+    m_Localized: Hertz (Hz), obvykle gigahertz (GHz)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076465
+    m_Localized: Gigabajty (GB)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076466
+    m_Localized: Watty (W)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076467
+    m_Localized: "K \u010Demu slou\u017E\xED cache pam\u011B\u0165 v CPU?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076468
+    m_Localized: "K urychlen\xED p\u0159\xEDstupu k \u010Dasto pou\u017E\xEDvan\xFDm
+      dat\u016Fm"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076469
+    m_Localized: "K trval\xE9mu ukl\xE1d\xE1n\xED dokument\u016F a soubor\u016F v
+      po\u010D\xEDta\u010Di"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076470
+    m_Localized: "K p\u0159\xEDm\xE9mu zpracov\xE1n\xED a zobrazov\xE1n\xED grafiky
+      na monitoru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076471
+    m_Localized: "Co se stane s CPU p\u0159i p\u0159\xEDli\u0161 vysok\xE9 z\xE1t\u011B\u017Ei
+      bez chlazen\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076472
+    m_Localized: "P\u0159eh\u0159eje se a m\u016F\u017Ee se vypnout nebo po\u0161kodit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076473
+    m_Localized: "Automaticky se zv\xFD\u0161\xED kapacita pevn\xE9ho disku po\u010D\xEDta\u010De"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076474
+    m_Localized: "V\xFDrazn\u011B se zrychl\xED jeho taktovac\xED frekvence bez omezen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076475
+    m_Localized: "Pro\u010D je v po\u010D\xEDta\u010Di pot\u0159eba chlazen\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076476
+    m_Localized: "Aby se sou\u010D\xE1stky nep\u0159eh\u0159\xEDvaly"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076477
+    m_Localized: "Aby po\u010D\xEDta\u010D \u0161et\u0159il elekt\u0159inu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076478
+    m_Localized: "Aby se zvuk z reproduktorov nezhor\u0161il"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076479
+    m_Localized: "Co se m\u016F\u017Ee st\xE1t, kdy\u017E chlazen\xED nefunguje spr\xE1vn\u011B?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076480
+    m_Localized: "Po\u010D\xEDta\u010D se m\u016F\u017Ee zpomalit nebo s\xE1m vypnout"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076481
+    m_Localized: "M\u016F\u017Ee doj\xEDt ke ztr\xE1t\u011B ulo\u017Een\xFDch fotografi\xED
+      a osobn\xEDch soubor\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076482
+    m_Localized: "Zm\u011Bn\xED se barvy, jas a kontrast zobrazen\xED na monitoru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076483
+    m_Localized: "Jak\xFD probl\xE9m zp\u016Fsobuje prach ve v\u011Btr\xE1c\xEDch?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076484
+    m_Localized: "Zhor\u0161uje proud\u011Bn\xED vzduchu a zvy\u0161uje zah\u0159\xEDv\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076485
+    m_Localized: "Postupn\u011B sni\u017Euje kapacitu opera\u010Dn\xED pam\u011Bti
+      RAM"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076486
+    m_Localized: "Negativn\u011B ovliv\u0148uje rychlost p\u0159ipojen\xED k internetu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076487
+    m_Localized: "Jak pozn\xE1\u0161, \u017Ee chlazen\xED po\u010D\xEDta\u010De nesta\u010D\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076488
+    m_Localized: "Po\u010D\xEDta\u010D je hork\xFD a n\u011Bkdy se vypne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076489
+    m_Localized: "My\u0161 p\u0159estane reagovat na pohyb a klik\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076490
+    m_Localized: "Po\u010D\xEDta\u010D se v\u016Fbec nezapne po stisknut\xED tla\u010D\xEDtka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076491
+    m_Localized: "Kter\xE1 \u010Dinnost d\xE1 po\u010D\xEDta\u010Di nejv\u011Bt\u0161\xED
+      z\xE1t\u011B\u017E na chlazen\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076492
+    m_Localized: "Hran\xED modern\xED videohry"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076493
+    m_Localized: "Psan\xED textu v pozn\xE1mkov\xE9m programu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076494
+    m_Localized: "\u010Cten\xED kr\xE1tk\xE9ho dokumentu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076495
+    m_Localized: "Co je RAM v po\u010D\xEDta\u010Di?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076496
+    m_Localized: "Opera\u010Dn\xED (pracovn\xED) pam\u011B\u0165, do\u010Dasn\xE9
+      ulo\u017Een\xED dat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076497
+    m_Localized: "Trval\xE9 \xFAlo\u017Ei\u0161t\u011B soubor\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076498
+    m_Localized: "\u0158\xEDdic\xED jednotka, kter\xE1 zaji\u0161\u0165uje p\u0159ipojen\xED
+      hardwarov\xFDch za\u0159\xEDzen\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076499
+    m_Localized: "Co se stane s obsahem RAM po vypnut\xED po\u010D\xEDta\u010De?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076500
+    m_Localized: "Data se sma\u017Eou"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076501
+    m_Localized: "Data tam z\u016Fstanou nav\u017Edy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076502
+    m_Localized: "Data se ulo\u017E\xED automaticky na internet"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076503
+    m_Localized: "Co plat\xED: \u010D\xEDm v\xEDce RAM m\xE1 po\u010D\xEDta\u010D\u2026"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076504
+    m_Localized: "\u2026t\xEDm v\xEDce program\u016F zvl\xE1dne najednou rychleji
+      spustit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076505
+    m_Localized: "\u2026t\xEDm men\u0161\xED spot\u0159ebu elekt\u0159iny bude m\xEDt
+      p\u0159i b\u011B\u017En\xE9m pou\u017E\xEDv\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076506
+    m_Localized: "\u2026t\xEDm v\u011Bt\u0161\xED monitor je nutn\xE9 k po\u010D\xEDta\u010Di
+      p\u0159ipojit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076507
+    m_Localized: "Jak\xFD je rozd\xEDl mezi RAM a pevn\xFDm diskem?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076508
+    m_Localized: "RAM je do\u010Dasn\xE1, disk ukl\xE1d\xE1 trvale"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076509
+    m_Localized: "RAM je men\u0161\xED a pomalej\u0161\xED ne\u017E disk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076510
+    m_Localized: "RAM je ur\u010Dena jen pro ukl\xE1d\xE1n\xED film\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076511
+    m_Localized: "Co se stane, kdy\u017E m\xE1 po\u010D\xEDta\u010D m\xE1lo RAM?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076512
+    m_Localized: "Programy se zpomal\xED nebo spadnou"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076513
+    m_Localized: "Po\u010D\xEDta\u010D nebude mo\u017En\xE9 zapnout"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076514
+    m_Localized: "Monitor se automaticky vypne b\u011Bhem pr\xE1ce"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076515
+    m_Localized: "Co je typick\xE9 pro HDD?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076516
+    m_Localized: "Obsahuje pohybliv\xE9 mechanick\xE9 \u010D\xE1sti"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076517
+    m_Localized: "Je tvo\u0159en jen \u010Dipy bez pohybliv\xFDch \u010D\xE1st\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076518
+    m_Localized: "Slou\u017E\xED jen pro do\u010Dasn\xE9 ulo\u017Een\xED dat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076519
+    m_Localized: "Co je typick\xE9 pro SSD?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076520
+    m_Localized: "Je rychl\xFD a bez pohybliv\xFDch \u010D\xE1st\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076521
+    m_Localized: "Je pomal\xFD a obsahuje rotuj\xEDc\xED plotny"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076522
+    m_Localized: "Slou\u017E\xED jen pro ukl\xE1d\xE1n\xED hudby"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076523
+    m_Localized: "Co se stane s daty na HDD/SSD po vypnut\xED po\u010D\xEDta\u010De?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076524
+    m_Localized: "Z\u016Fstanou ulo\u017Eena"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076525
+    m_Localized: "Okam\u017Eit\u011B se sma\u017Eou"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772966076526
+    m_Localized: "Ulo\u017E\xED se do RAM"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270720
+    m_Localized: "Co je v\xFDhoda SSD oproti HDD?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270721
+    m_Localized: "Je rychlej\u0161\xED a odoln\u011Bj\u0161\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270722
+    m_Localized: "M\xE1 v\u017Edy v\u011Bt\u0161\xED kapacitu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270723
+    m_Localized: "Nikdy se nem\u016F\u017Ee porouchat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270724
+    m_Localized: "Pro\u010D se \u010Dasto v modern\xEDch po\u010D\xEDta\u010D\xEDch
+      pou\u017E\xEDv\xE1 SSD m\xEDsto HDD?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270725
+    m_Localized: "Proto\u017Ee je rychlej\u0161\xED a zrychluje syst\xE9m i programy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270726
+    m_Localized: "Proto\u017Ee m\xE1 v\u017Edy neomezenou kapacitu pro ukl\xE1d\xE1n\xED
+      dat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 81208772970270727
+    m_Localized: "Proto\u017Ee spolupracuje pouze s hern\xED grafickou kartou"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

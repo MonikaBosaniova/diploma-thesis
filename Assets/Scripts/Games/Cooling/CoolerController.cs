@@ -108,7 +108,7 @@ public class CoolerController : MonoBehaviour
         {
             temperatureText.color = Color.blue;
             slow = false;
-            noisy = false;
+            noisy = true;
         }
     }
 
