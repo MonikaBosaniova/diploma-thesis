@@ -8,6 +8,7 @@ namespace GameStateMachine
     {
         internal GameObject stateObject;
         internal Action OnStateComplete;
+        internal Action OnStateStart;
         internal GameManager manager;
         internal const float SuccessRateForStar = 0.8f;
         
@@ -20,6 +21,7 @@ namespace GameStateMachine
         public virtual void Enter()
         {
             stateObject.SetActive(true);
+            OnStateStart?.Invoke();
         }
         
         public virtual void Exit()

@@ -56,6 +56,10 @@ namespace GameStateMachine
             tutorialState.OnStateComplete += () =>
             {
                 ChangeState(minigameState);
+ 
+            };
+            minigameState.OnStateStart += () =>
+            {
                 if(nextButton != null)
                     nextButton.SetActive(false);
             };
