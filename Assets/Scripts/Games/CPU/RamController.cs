@@ -23,14 +23,20 @@ namespace Games.CPU
 
         public void SpawnGetManaCostData()
         {
-            
+            var manaCost = Instantiate(getManaCost, spawnPoint);
+            MoveDataToReg(manaCost.transform);
         }
 
         private void MoveDataToReg(Transform data)
         {
-            data.DOMoveX(ramPoint.position.x, 1f).OnComplete(() =>
+            data.DOMoveX(ramPoint.position.x, 1.5f).OnComplete(() =>
             {
-                data.DOMove(reg4.transform.position, 1f).SetDelay(0.3f);
+                data.DOMove(reg4.transform.position, 1f).SetDelay(0.3f).OnComplete(() =>
+                {
+                    if(reg4.childCount > 0) Destroy(reg4.GetChild(0).gameObject);
+                    data.parent = reg4;
+                    data.gameObject.GetComponent<DraggableObject>().draggingEnabled = true;
+                });
             });
         }
     }
