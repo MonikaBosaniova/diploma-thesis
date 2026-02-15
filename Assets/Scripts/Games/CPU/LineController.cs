@@ -1,16 +1,36 @@
+using DG.Tweening;
 using UnityEngine;
 
-public class LineController : MonoBehaviour
+namespace Games.CPU
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class LineController : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private float maxScaleX = 1;
+        [SerializeField] private Transform scalingObject;
+        [SerializeField] private GameObject checkMark;
+        [SerializeField] private GameObject highlightObject;
 
-    // Update is called once per frame
-    void Update()
-    {
+        private void Start()
+        {
+            scalingObject.DOScaleX(0f, 0f);
+            checkMark.SetActive(false);
+            SetHighlight(false);
+        }
+
+        [ContextMenu("RemoveToDo")]
+        public void RemoveToDo()
+        {
+            scalingObject.DOScaleX(maxScaleX, 1.5f).OnComplete(() =>
+            {
+                checkMark.SetActive(true);
+            });
+        }
+
+        public void SetHighlight(bool highlight)
+        {
+            highlightObject.SetActive(highlight);
+        }
         
+
     }
 }
