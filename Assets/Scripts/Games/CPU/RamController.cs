@@ -31,7 +31,8 @@ namespace Games.CPU
         {
             data.DOMoveX(ramPoint.position.x, 1.5f).OnComplete(() =>
             {
-                data.DOMove(reg4.transform.position, 1f).SetDelay(0.3f).OnComplete(() =>
+                data.SetLocalPositionAndRotation(new Vector3(data.localPosition.x, 0.25f, data.localPosition.z), data.rotation);
+                data.DOMove(new Vector3(reg4.transform.position.x, 0.25f, reg4.transform.position.z) , 1f).SetDelay(0.3f).OnComplete(() =>
                 {
                     if(reg4.childCount > 0) Destroy(reg4.GetChild(0).gameObject);
                     data.parent = reg4;
