@@ -29,6 +29,9 @@ namespace Games.CPU
 
         private void MoveDataToReg(Transform data)
         {
+            RegData reg = data.gameObject.GetComponent<RegData>();
+            DraggableObject draggable = data.gameObject.GetComponent<DraggableObject>();
+            
             data.DOMoveX(ramPoint.position.x, 1.5f).OnComplete(() =>
             {
                 data.SetLocalPositionAndRotation(new Vector3(data.localPosition.x, 0.25f, data.localPosition.z), data.rotation);
@@ -36,9 +39,24 @@ namespace Games.CPU
                 {
                     if(reg4.childCount > 0) Destroy(reg4.GetChild(0).gameObject);
                     data.parent = reg4;
-                    data.gameObject.GetComponent<DraggableObject>().draggingEnabled = true;
+                    
+                    reg._regParent = reg4;
+                    draggable.draggingEnabled = true;
                 });
             });
+
+            draggable.DragEnd += () => SnapDataToReg(reg);
+        }
+
+        private void SnapDataToReg(RegData data)
+        {
+            data.transform.position = new Vector3(data._regParent.position.x, data.transform.position.y, data._regParent.position.z);
+            
+            if(data._regParent.childCount > 0 && data._regParent.GetChild(0) != data.transform) Destroy(data._regParent.GetChild(0).gameObject);
+            data.transform.parent = data._regParent;
+            RegTrigger regTrigger = data._regParent.GetComponent<RegTrigger>();
+            regTrigger.snap?.Invoke();
+            regTrigger.SetHighlight(false);
         }
     }
     

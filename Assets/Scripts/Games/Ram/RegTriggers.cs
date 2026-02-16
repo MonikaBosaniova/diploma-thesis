@@ -15,6 +15,9 @@ namespace Games.CPU
         [SerializeField] bool Snapped;
         MeshRenderer meshRenderer;
         DraggableObject draggableObject;
+        RegData data;
+
+        internal Action snap;
 
         private void Start()
         {
@@ -26,7 +29,8 @@ namespace Games.CPU
             Debug.Log(other.name);
             //other.transform.parent.TryGetComponent<ShapeController>(out var shapeController);
             other.transform.TryGetComponent(out draggableObject);
-            if (draggableObject == null) return;
+            other.transform.TryGetComponent(out data);
+            if (draggableObject == null || data == null) return;
             //if (shapeController == null || draggableObject == null) return;
             
             if (draggableObject.dragging)
@@ -48,6 +52,8 @@ namespace Games.CPU
                 if(highlightingEnabled)
                     meshRenderer.material = OffMaterial;
             }
+
+            data._regParent = transform;
         }
 
         private void OnTriggerExit(Collider other)
