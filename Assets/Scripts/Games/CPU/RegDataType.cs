@@ -3,6 +3,9 @@ public enum RegDataType
     None,
     ManaLeft,
     Cost,
-    DiffRes,
-    BiggerThanZeroRes
+    PlusRes,
+    MinusRes,
+    MultiplyRes,
+    BiggerThanZeroRes,
+    LesserThanZeroRes,
 }

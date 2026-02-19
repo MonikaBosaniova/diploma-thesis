@@ -1,10 +1,13 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 
 namespace Games.CPU
 {
     public class ALUController : MonoBehaviour
     {
+        public GameObject aluResultPrefab;
+        public Transform outputSpawn;
         [SerializeField] private RegTrigger reg1_in;
         [SerializeField] private RegTrigger reg2_in;
         [SerializeField] private RegTrigger reg3_out;
@@ -42,6 +45,7 @@ namespace Games.CPU
             if (reg2_in.transform.childCount > 0)
                 value += reg2_in.transform.GetChild(0).GetComponent<RegData>().value;
             
+            InstantiateNewOutData(value, RegDataType.PlusRes);
             Debug.Log("PLUS: " + value);
         }
 
@@ -53,6 +57,7 @@ namespace Games.CPU
             if (reg2_in.transform.childCount > 0)
                 value -= reg2_in.transform.GetChild(0).GetComponent<RegData>().value;
             
+            InstantiateNewOutData(value, RegDataType.MinusRes);
             Debug.Log("Minus: " + value);
         }
 
@@ -61,15 +66,64 @@ namespace Games.CPU
             var value = 1f;
             if(reg1_in.transform.childCount > 0)
                 value *= reg1_in.transform.GetChild(0).GetComponent<RegData>().value;
+            else value = 0f;
             if (reg2_in.transform.childCount > 0)
                 value *= reg2_in.transform.GetChild(0).GetComponent<RegData>().value;
+            else value = 0f;
             
+            InstantiateNewOutData(value, RegDataType.MultiplyRes);
             Debug.Log("Multiply: " + value);
         }
 
-        private void InstatiateNewOutData(float value)
+        public void LessThanZero()
         {
+            var value = 0f;
+            if (reg1_in.transform.childCount > 0)
+            {
+                if (reg1_in.transform.GetChild(0).GetComponent<RegData>().value < 0)
+                {
+                    value = 1f;
+                }
+            }
             
+            InstantiateNewOutData(value, RegDataType.LesserThanZeroRes);
+        }
+        
+        public void BiggerThanZero()
+        {
+            var value = 0f;
+            if (reg1_in.transform.childCount > 0)
+            {
+                if (reg1_in.transform.GetChild(0).GetComponent<RegData>().value > 0)
+                {
+                    value = 1f;
+                }
+            }
+            
+            InstantiateNewOutData(value, RegDataType.BiggerThanZeroRes);
+        }
+
+        private void InstantiateNewOutData(float value, RegDataType type)
+        {
+            var newDataObject = Instantiate(aluResultPrefab, outputSpawn);
+            DraggableObject draggable = newDataObject.gameObject.GetComponent<DraggableObject>();
+            var data = newDataObject.GetComponent<RegData>();
+            data.value = value;
+            data.type = type;
+            data._regParent = reg3_out.transform;
+            
+            Transform outputReg = reg3_out.transform;
+            if (outputReg.childCount > 0)
+            {
+                Destroy(outputReg.GetChild(0).gameObject);
+            }
+            newDataObject.transform.parent = reg3_out.transform;
+            newDataObject.transform.DOLocalMove(new Vector3(0,0.25f,0), 1.5f).OnComplete(() =>
+            {
+                draggable.draggingEnabled = true;
+            });
+            reg3_out.snappedData = data;
+            draggable.DragEnd += () => reg3_out.SnapDataToReg(data);
         }
 
         private void CleanDisplay(int display)

@@ -8,6 +8,7 @@ namespace Games.CPU
         public RegTrigger regTrigger;
 
         public RegDataType NeededType;
+        public float NeededValue;
 
         public bool IfIamDoneAllBeforeAreDoneToo;
         public bool IamIndependedDone;
@@ -15,7 +16,19 @@ namespace Games.CPU
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            
+            //TODO HARDCODED
+            if (NeededType == RegDataType.ManaLeft)
+                NeededValue = 12;
+            if (NeededType == RegDataType.Cost)
+                NeededValue = 10;
+            if (NeededType == RegDataType.PlusRes)
+                NeededValue = 22;
+            if (NeededType == RegDataType.MinusRes)
+                NeededValue = 2f;
+            if (NeededType == RegDataType.MultiplyRes)
+                NeededValue = 120f;
+            if (NeededType == RegDataType.BiggerThanZeroRes)
+                NeededValue = 1f;
         }
 
         // Update is called once per frame
@@ -26,7 +39,8 @@ namespace Games.CPU
                 done = false;
                 return;
             }
-            done = regTrigger.snappedData.type == NeededType;
+
+            done = (regTrigger.snappedData.type == NeededType) && (Mathf.Approximately(regTrigger.snappedData.value, NeededValue));
         }
     }
     

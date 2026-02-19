@@ -95,5 +95,17 @@ namespace Games.CPU
                 meshRenderer.material = value ? OnMaterial : OffMaterial;
         }
         
+        internal void SnapDataToReg(RegData data)
+        {
+            data.transform.position = new Vector3(data._regParent.position.x, data.transform.position.y, data._regParent.position.z);
+            
+            if(data._regParent.childCount > 0 && data._regParent.GetChild(0) != data.transform) Destroy(data._regParent.GetChild(0).gameObject);
+            data.transform.parent = data._regParent;
+            RegTrigger regTrigger = data._regParent.GetComponent<RegTrigger>();
+            regTrigger.snappedData = data;
+            regTrigger.snap?.Invoke();
+            regTrigger.SetHighlight(false);
+        }
+        
     }
 }
