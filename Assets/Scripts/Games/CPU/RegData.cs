@@ -7,6 +7,7 @@ namespace Games.CPU
     {
         internal bool snapped = false;
         internal Transform _regParent;
+        internal RegDataType type;
         internal float value;
         
         // Start is called once before the first execution of Update after the MonoBehaviour is created

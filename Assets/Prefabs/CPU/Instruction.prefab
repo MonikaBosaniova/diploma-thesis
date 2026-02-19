@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1295459242614254611}
   - component: {fileID: 3671843808478008061}
+  - component: {fileID: 7778605641452224528}
   m_Layer: 0
   m_Name: Instruction
   m_TagString: Untagged
@@ -49,10 +50,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa685ab18ada33b449472f6f77847c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxScaleX: 1.7
+  instructionData: {fileID: 7778605641452224528}
+  maxScaleX: 2.75
   scalingObject: {fileID: 8935796964231989590}
   checkMark: {fileID: 2260196689359428227}
   highlightObject: {fileID: 4386967045580023270}
+--- !u!114 &7778605641452224528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2170762109218946126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7214fffcc55893f4581431572f17c492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  done: 0
+  regTrigger: {fileID: 0}
+  NeededType: 0
+  IfIamDoneAllBeforeAreDoneToo: 0
+  IamIndependedDone: 0
 --- !u!1 &2260196689359428227
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,8 +396,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 3
-  m_fontSizeBase: 3
+  m_fontSize: 2.7
+  m_fontSizeBase: 2.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 5
@@ -393,7 +412,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}

@@ -5,6 +5,8 @@ namespace Games.CPU
 {
     public class RegTrigger : MonoBehaviour
     {
+        public RegData snappedData;
+        
         [Header("Materials")] 
         [SerializeField] internal bool highlightingEnabled = true;
         [SerializeField] Material OnMaterial;
@@ -15,13 +17,21 @@ namespace Games.CPU
         [SerializeField] bool Snapped;
         MeshRenderer meshRenderer;
         DraggableObject draggableObject;
-        RegData data;
 
         internal Action snap;
+        private RegData collidingData;
 
         private void Start()
         {
             meshRenderer = GetComponent<MeshRenderer>();
+        }
+
+        private void Update()
+        {
+            if (transform.childCount == 0)
+            {
+                snappedData = null;
+            }
         }
 
         private void OnTriggerEnter(Collider other)
@@ -29,8 +39,8 @@ namespace Games.CPU
             Debug.Log(other.name);
             //other.transform.parent.TryGetComponent<ShapeController>(out var shapeController);
             other.transform.TryGetComponent(out draggableObject);
-            other.transform.TryGetComponent(out data);
-            if (draggableObject == null || data == null) return;
+            other.transform.TryGetComponent(out collidingData);
+            if (draggableObject == null || collidingData == null) return;
             //if (shapeController == null || draggableObject == null) return;
             
             if (draggableObject.dragging)
@@ -53,7 +63,7 @@ namespace Games.CPU
                     meshRenderer.material = OffMaterial;
             }
 
-            data._regParent = transform;
+            collidingData._regParent = transform;
         }
 
         private void OnTriggerExit(Collider other)
@@ -64,7 +74,8 @@ namespace Games.CPU
                 //other.transform.parent.gameObject.GetComponent<ShapeController>().RemoveBgTrigger(this);
                 if(highlightingEnabled)
                     meshRenderer.material = OffMaterial;
-            //}
+                
+                //}
         }
 
         public void SetSnapped(bool value)

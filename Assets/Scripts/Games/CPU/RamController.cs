@@ -18,18 +18,20 @@ namespace Games.CPU
         public void SpawnGetManaLeftData()
         {
             var manaLeft = Instantiate(getManaLeft, spawnPoint);
-            MoveDataToReg(manaLeft.transform);
+            MoveDataToReg(manaLeft.transform, RegDataType.ManaLeft);
         }
 
         public void SpawnGetManaCostData()
         {
             var manaCost = Instantiate(getManaCost, spawnPoint);
-            MoveDataToReg(manaCost.transform);
+            MoveDataToReg(manaCost.transform, RegDataType.Cost);
         }
 
-        private void MoveDataToReg(Transform data)
+        private void MoveDataToReg(Transform data, RegDataType type)
         {
             RegData reg = data.gameObject.GetComponent<RegData>();
+            reg.type = type;
+            
             DraggableObject draggable = data.gameObject.GetComponent<DraggableObject>();
             
             data.DOMoveX(ramPoint.position.x, 1.5f).OnComplete(() =>
@@ -55,6 +57,7 @@ namespace Games.CPU
             if(data._regParent.childCount > 0 && data._regParent.GetChild(0) != data.transform) Destroy(data._regParent.GetChild(0).gameObject);
             data.transform.parent = data._regParent;
             RegTrigger regTrigger = data._regParent.GetComponent<RegTrigger>();
+            regTrigger.snappedData = data;
             regTrigger.snap?.Invoke();
             regTrigger.SetHighlight(false);
         }
