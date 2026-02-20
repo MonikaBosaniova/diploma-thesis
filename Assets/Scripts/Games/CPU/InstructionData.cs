@@ -4,7 +4,8 @@ namespace Games.CPU
 {
     public class InstructionData : MonoBehaviour
     {
-        public bool done;  
+        public bool done;
+        public bool instructionWithoutRegisters;
         public RegTrigger regTrigger;
 
         public RegDataType NeededType;
@@ -39,8 +40,13 @@ namespace Games.CPU
                 done = false;
                 return;
             }
-
-            done = (regTrigger.snappedData.type == NeededType) && (Mathf.Approximately(regTrigger.snappedData.value, NeededValue));
+            
+            if(!instructionWithoutRegisters)
+                done = (regTrigger.snappedData.type == NeededType) && (Mathf.Approximately(regTrigger.snappedData.value, NeededValue));
+            else
+            {
+                //HERE
+            }
         }
     }
     
