@@ -12,6 +12,7 @@ namespace Games.CPU
         [SerializeField] internal Transform _regParent;
         [SerializeField] internal RegDataType type;
         [SerializeField] internal float value;
+        [SerializeField] internal float eqValue;
         
         public TMP_Text variableName;
         public TMP_Text valueText;
@@ -47,6 +48,11 @@ namespace Games.CPU
             {
                 value = 10f;
             }
+            
+            // if (type == RegDataType.BiggerThanZeroRes)
+            // {
+            //     eqValue = value;
+            // }
             
             valueText.text = value.ToString(CultureInfo.InvariantCulture);
             variableName.text = variableNames[type];

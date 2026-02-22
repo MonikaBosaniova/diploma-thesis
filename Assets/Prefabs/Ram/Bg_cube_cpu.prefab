@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd320ec28a7d5bd4f864aa9970174535, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snappedData: {fileID: 0}
   highlightingEnabled: 1
   OnMaterial: {fileID: -3234403777141971520, guid: 0122708312df5684794eb2c16c8d3caf, type: 3}
   OffMaterial: {fileID: 2100000, guid: 0354410bf4f3e5d4c935e8ddc2775100, type: 2}

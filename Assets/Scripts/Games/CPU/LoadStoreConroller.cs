@@ -18,7 +18,7 @@ namespace Games.CPU
 
         public void StoreManaLeftToRAM()
         {
-            Debug.Log("Store Mana left");
+            ramController.DespawnWizardShield();
         }
         
     }

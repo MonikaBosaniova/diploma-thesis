@@ -92,23 +92,29 @@ namespace Games.CPU
         public void BiggerThanZero()
         {
             var value = 0f;
+            var eqValue = 0f;
             if (reg1_in.transform.childCount > 0)
             {
                 if (reg1_in.transform.GetChild(0).GetComponent<RegData>().value > 0)
                 {
                     value = 1f;
                 }
+                
+                //HARDCODED
+                if(Mathf.Approximately(reg1_in.transform.GetChild(0).GetComponent<RegData>().value, 2f))
+                    eqValue = 2f;
             }
             
-            InstantiateNewOutData(value, RegDataType.BiggerThanZeroRes);
+            InstantiateNewOutData(value, RegDataType.BiggerThanZeroRes, eqValue);
         }
 
-        private void InstantiateNewOutData(float value, RegDataType type)
+        private void InstantiateNewOutData(float value, RegDataType type, float eqValue = 0f)
         {
             var newDataObject = Instantiate(aluResultPrefab, outputSpawn);
             DraggableObject draggable = newDataObject.gameObject.GetComponent<DraggableObject>();
             var data = newDataObject.GetComponent<RegData>();
             data.value = value;
+            data.eqValue = eqValue;
             data.type = type;
             data._regParent = reg3_out.transform;
             

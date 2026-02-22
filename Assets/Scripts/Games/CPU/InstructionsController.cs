@@ -40,21 +40,30 @@ namespace Games.CPU
 
         private void Visualize(int possibleIndex)
         {
+            var indexOfLastForcedNotDoneTask = -1;
             for (int i = 0; i < lines.Count; i++)
             {
+                var instructionData = lines[i].instructionData;
                 lines[i].SetHighlight(false);
-                if (i <= possibleIndex || (lines[i].instructionData.IamIndependedDone && lines[i].instructionData.done))
+                if ((i <= possibleIndex && !instructionData.NeededToBeDone) || (instructionData.IamIndependedDone && instructionData.done))
                 {
                     lines[i].ToDoRemove();
                 }
                 else
                 {
                     lines[i].ToDoRemove(true);
+                    instructionData.OnNotDone?.Invoke();
+                    if(instructionData.NeededToBeDone && !instructionData.done)
+                        indexOfLastForcedNotDoneTask = i - 1;
                 }
                 
             }
-            if(possibleIndex  + 1 < lines.Count)
-                lines[possibleIndex + 1].SetHighlight(true);
+
+            var highlightedIndex = -1;
+            highlightedIndex = (indexOfLastForcedNotDoneTask < possibleIndex) && indexOfLastForcedNotDoneTask != -1 ? 
+                indexOfLastForcedNotDoneTask : possibleIndex;
+            if(highlightedIndex  + 1 < lines.Count)
+                lines[highlightedIndex + 1].SetHighlight(true);
         }
     }
 }

@@ -6,6 +6,7 @@ namespace Games.CPU
 {
     public class RamController : MonoBehaviour
     {
+        [SerializeField] private CPULevelController cpuLevelController;
         [SerializeField] private Transform spawnPoint;  
         [SerializeField] private Transform ramPoint;
         [SerializeField] private Transform reg4;
@@ -49,6 +50,19 @@ namespace Games.CPU
             
             RegTrigger rt = reg4.GetComponent<RegTrigger>();
             draggable.DragEnd += () => rt.SnapDataToReg(reg);
+        }
+
+        public void DespawnWizardShield()
+        {
+            var data = reg4.transform.GetChild(0).transform;
+            data.DOMoveX(ramPoint.position.x, 1f).OnComplete(() =>
+            {
+                data.SetLocalPositionAndRotation(new Vector3(data.localPosition.x, 0.25f, data.localPosition.z), data.rotation);
+                data.DOMove(new Vector3(spawnPoint.position.x, 0.25f, spawnPoint.position.z) , 1.5f).SetDelay(0.3f).OnComplete(() =>
+                {
+                    cpuLevelController.CheckFinishState();
+                });
+            });
         }
     }
     

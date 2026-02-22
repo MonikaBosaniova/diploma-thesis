@@ -36,7 +36,6 @@ namespace Games.CPU
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log(other.name);
             //other.transform.parent.TryGetComponent<ShapeController>(out var shapeController);
             other.transform.TryGetComponent(out draggableObject);
             other.transform.TryGetComponent(out collidingData);

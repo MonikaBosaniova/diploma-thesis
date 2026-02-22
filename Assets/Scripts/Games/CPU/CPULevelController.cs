@@ -1,38 +1,37 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Games.CPU
 {
     public class CPULevelController : LevelController
     {
-        
-        public override void Init()
-        {
-            
-            base.Init();
-        }
+        [SerializeField] private bool shieldActivated = false;
+        [SerializeField] private bool shieldSentToRam = false;
 
-        private void Update()
-        {
-            
-        }
-        
-        
         public override void Close()
         {
             for (int i = 0; i < transform.childCount; i++)
             {
                 transform.GetChild(i).gameObject.SetActive(false);
             }
+
             base.Close();
         }
-        
-        private void CheckFinishState(double newValue)
+
+        public void CheckFinishState()
         {
-            StartCoroutine(WaitToShowCompleteLevel());
+            Debug.Log("CallFinishState");
+            if (shieldActivated && shieldSentToRam)
+                StartCoroutine(WaitToShowCompleteLevel());
+        }
+
+        public void SetShieldActivated(bool sa)
+        {
+            shieldActivated = sa;
+        }
+
+        public void ShieldSentToRam(bool shieldSent)
+        {
+            shieldSentToRam = shieldSent;
         }
         
     }
