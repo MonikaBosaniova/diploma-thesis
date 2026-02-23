@@ -1,11 +1,11 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <engine:VisualElement name="DialogueBackground" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.7); justify-content: flex-end;">
         <engine:VisualElement style="flex-grow: 0; flex-direction: row; align-items: flex-end;">
-            <engine:VisualElement style="flex-grow: 1; height: 50px; background-color: rgb(0, 0, 0); justify-content: flex-start; flex-direction: row;">
-                <engine:VisualElement style="flex-grow: 0; height: 100px; width: 100px; background-image: resource(&apos;UI/Default9Sliced&apos;); align-self: flex-end;">
-                    <engine:VisualElement name="AvatarImage" style="flex-grow: 1; height: 100px; width: 100px;" />
+            <engine:VisualElement style="flex-grow: 1; height: 145px; background-color: rgb(0, 0, 0); justify-content: flex-start; flex-direction: row;">
+                <engine:VisualElement style="flex-grow: 0; height: 384px; width: 256px; background-image: resource(&apos;UI/Default9Sliced&apos;); align-self: flex-end;">
+                    <engine:VisualElement name="AvatarImage" style="flex-grow: 1; height: 384px; width: 256px;" />
                 </engine:VisualElement>
-                <engine:Label text="LOREM" name="DialogueText" style="color: rgb(255, 255, 255); -unity-text-align: middle-left; margin-left: 24px;" />
+                <engine:Label text="LOREM" name="DialogueText" style="color: rgb(255, 255, 255); -unity-text-align: middle-left; margin-left: 24px; font-size: 40px;" />
             </engine:VisualElement>
         </engine:VisualElement>
     </engine:VisualElement>

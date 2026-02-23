@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09e3281c364619f4894abe9e6bf41a44, type: 3}
-  m_Name: LevelEnd
+  m_Name: GTS_MiniGame_Start
   m_EditorClassIdentifier: 
   dialogueLines:
   - text:
       m_TableReference:
         m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
       m_TableEntryReference:
-        m_KeyId: 118525458794532864
+        m_KeyId: 164636933619306496
         m_Key: 
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-    avatar: 3
+    avatar: 7
   references:
     version: 2
     RefIds: []

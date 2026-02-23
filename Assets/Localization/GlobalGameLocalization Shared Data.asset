@@ -59,6 +59,10 @@ MonoBehaviour:
     m_Key: Congratulation
     m_Metadata:
       m_Items: []
+  - m_Id: 164636933619306496
+    m_Key: GTS_Minigame_start
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

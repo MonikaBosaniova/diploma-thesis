@@ -59,7 +59,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 118525458794532864
-    m_Localized: Super!
+    m_Localized: "Super! Zvl\xE1dli sme to!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164636933619306496
+    m_Localized: "Rozsvi\u0165 v\u0161echny \u017E\xE1rovky!"
     m_Metadata:
       m_Items: []
   references:
