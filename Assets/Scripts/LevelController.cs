@@ -16,28 +16,16 @@ public class LevelController : MonoBehaviour
     {
         cameraXPos = transform.position.x;
         cameraZPos = transform.position.z;
-        Debug.Log("LevelController::Init()" + cameraXPos + cameraZPos);
         Transform camera = Camera.main.transform;
         
-        if (camera != null)// && (!Mathf.Approximately(cameraXPos, camera.position.x)
-            //|| !Mathf.Approximately(cameraZPos, camera.position.z)))
+        if (camera != null)
         {
-            //if (transform.GetSiblingIndex() != 0)
-            //{
-                Debug.Log("TWEEN CAMERA");
                 camera.DOMove(new Vector3(cameraXPos,camera.position.y, cameraZPos), 0.8f).OnComplete(SetupDialogueSequence);
-            //}
-            //else
-            // {
-            //     camera.position = new Vector3(0,10,0);
-            //     SetupDialogueSequence();
-            // }
         }
         else
         {
             SetupDialogueSequence();
         }
-        
     }
 
     public virtual void Close()
@@ -93,7 +81,6 @@ public class LevelController : MonoBehaviour
         if (ds != null && ds.GetType() != typeof(EndDialogueSequenceController))
         {
             UIManager.Instance.ShowDialogWindowUI(ds.dialogueSequence);
-            //Debug.Log("Show DIALOGUE");
         }
     }
     
