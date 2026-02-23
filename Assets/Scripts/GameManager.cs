@@ -8,7 +8,7 @@ namespace GameStateMachine
 {
     public class GameManager : MonoBehaviour
     {
-        protected GameState CurrentState;
+        public GameState CurrentState;
         [SerializeField] private bool skipTutorial = false;
         [SerializeField] protected GameObject tutorialParent;
         [SerializeField] protected GameObject minigameParent;

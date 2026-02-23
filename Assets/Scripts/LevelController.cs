@@ -6,23 +6,32 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    [SerializeField] private float cameraXPos = 0;
+    private float cameraXPos = 0;
+    private float cameraZPos = 0;
     protected internal bool IsCompleted = false;
     protected event Action OnLevelStarted;
     protected internal event Action OnLevelEnded;
 
     public virtual void Init()
     {
+        cameraXPos = transform.position.x;
+        cameraZPos = transform.position.z;
+        Debug.Log("LevelController::Init()" + cameraXPos + cameraZPos);
         Transform camera = Camera.main.transform;
-        if (camera != null && !Mathf.Approximately(cameraXPos, camera.position.x))
+        
+        if (camera != null)// && (!Mathf.Approximately(cameraXPos, camera.position.x)
+            //|| !Mathf.Approximately(cameraZPos, camera.position.z)))
         {
-            if(transform.GetSiblingIndex() != 0)
-                camera.DOMoveX(cameraXPos, 0.8f).OnComplete(SetupDialogueSequence);
-            else
-            {
-                camera.position = new Vector3(0,10,0);
-                SetupDialogueSequence();
-            }
+            //if (transform.GetSiblingIndex() != 0)
+            //{
+                Debug.Log("TWEEN CAMERA");
+                camera.DOMove(new Vector3(cameraXPos,camera.position.y, cameraZPos), 0.8f).OnComplete(SetupDialogueSequence);
+            //}
+            //else
+            // {
+            //     camera.position = new Vector3(0,10,0);
+            //     SetupDialogueSequence();
+            // }
         }
         else
         {

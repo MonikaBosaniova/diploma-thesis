@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using GameStateMachine;
 using UnityEngine;
 
 namespace Gates
 {
     public class GateLevelController : LevelController
     {
+        public bool freeMode = false;
         private List<LightBulbController> _allLightBulbs;
         
         public override void Init()
@@ -17,11 +19,12 @@ namespace Gates
             }
             //transform.GetChild(0).gameObject.SetActive(true);
             _allLightBulbs = gameObject.GetComponentsInChildren<LightBulbController>().ToList();
-
-            foreach (var lightBulb in _allLightBulbs)
-            {
-                lightBulb.OnValueChanged += CheckFinishState;
-            }
+            
+            if(!freeMode)
+                foreach (var lightBulb in _allLightBulbs)
+                {
+                    lightBulb.OnValueChanged += CheckFinishState;
+                }
             
             base.Init();
         }

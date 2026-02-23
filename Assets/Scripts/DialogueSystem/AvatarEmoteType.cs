@@ -4,6 +4,16 @@ namespace DialogueSystem
     {
         None,
         Happy,
-        Sad
+        Sad,
+        Celebrating,
+        Confused,
+        DoYouKnow,
+        Hi,
+        LightBulb,
+        Like,
+        Talking,
+        Thinking,
+        Thinking2,
+        Wow
     }
 }

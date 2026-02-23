@@ -19,3 +19,23 @@ MonoBehaviour:
     emoteSprite: {fileID: 2800000, guid: f12371d47acd9984c9abb1486f417f2b, type: 3}
   - emoteType: 2
     emoteSprite: {fileID: 2800000, guid: 7d9ff146e7358084a84eea5888b34e51, type: 3}
+  - emoteType: 3
+    emoteSprite: {fileID: 2800000, guid: 83c4ce4b6c484a44aa5464099d3fabbd, type: 3}
+  - emoteType: 4
+    emoteSprite: {fileID: 2800000, guid: 0b997b594ce549645a1da9c65d2bf9b4, type: 3}
+  - emoteType: 5
+    emoteSprite: {fileID: 2800000, guid: 38bf45e8d5aa0b94480a92fecb5a481a, type: 3}
+  - emoteType: 6
+    emoteSprite: {fileID: 2800000, guid: 88b3e7c7a3dc5104f8f9261f332a3edb, type: 3}
+  - emoteType: 7
+    emoteSprite: {fileID: 2800000, guid: aac9b40699451a948889b2572be9047e, type: 3}
+  - emoteType: 8
+    emoteSprite: {fileID: 2800000, guid: f12371d47acd9984c9abb1486f417f2b, type: 3}
+  - emoteType: 9
+    emoteSprite: {fileID: 2800000, guid: a9f6effd791194e468a06e0098b3898a, type: 3}
+  - emoteType: 10
+    emoteSprite: {fileID: 2800000, guid: 36480821d332a9c439aaa6aa2196b9c7, type: 3}
+  - emoteType: 11
+    emoteSprite: {fileID: 2800000, guid: dc1059a7d77248d4cb29e03c32da4639, type: 3}
+  - emoteType: 12
+    emoteSprite: {fileID: 2800000, guid: ea670313d39965c4ea80f36965b3ab68, type: 3}
