@@ -123,7 +123,7 @@ MonoBehaviour:
       m_TableReference:
         m_TableCollectionName: GUID:031cd969291c2774f93441ceaa8558fb
       m_TableEntryReference:
-        m_KeyId: 81208772966076467
+        m_KeyId: 81208772966076447
         m_Key: 
       m_FallbackState: 0
       m_WaitForCompletion: 0
