@@ -63,6 +63,18 @@ MonoBehaviour:
     m_Key: GTS_Minigame_start
     m_Metadata:
       m_Items: []
+  - m_Id: 164884267116646400
+    m_Key: BIN_Minigame_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164884481839845376
+    m_Key: BIN_Minigame_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164884554699100160
+    m_Key: BIN_Minigame_2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -66,6 +66,20 @@ MonoBehaviour:
     m_Localized: "Rozsvi\u0165 v\u0161echny \u017E\xE1rovky!"
     m_Metadata:
       m_Items: []
+  - m_Id: 164884267116646400
+    m_Localized: "Vytvo\u0159 bin\xE1rn\xED z\xE1pis!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164884481839845376
+    m_Localized: Teraz to skus bez pomoci
+    m_Metadata:
+      m_Items: []
+  - m_Id: 164884554699100160
+    m_Localized: "Te\u010F to oto\u010D\xEDme: Jak\xE9 \u010D\xEDslo pr\xE1v\u011B
+      vid\xED\u0161? Pomoc\xED tla\u010D\xEDtek plus a minus uprav hodnotu, a kdy\u017E
+      si bude\u0161 jist\xFD, stiskni tla\u010D\xEDtko rovn\xE1 se."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
