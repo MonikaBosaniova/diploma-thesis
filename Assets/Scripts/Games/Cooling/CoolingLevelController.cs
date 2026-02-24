@@ -14,7 +14,9 @@ namespace Games.Ram
         [SerializeField] private CoolerController  gpuController;
 
         [SerializeField] private GameObject NoisyBubble;
-        [SerializeField] private GameObject SlowBubble;
+        [SerializeField] private GameObject slowBubble;
+        
+        [SerializeField] private int numOfRepetitions;
        
         CoolingGameManager coolingGameManager;
         private ScenarioData actualScenario;
@@ -36,7 +38,12 @@ namespace Games.Ram
         private void Update()
         {
             if(cpuController == null || gpuController == null) return;
-            
+
+            if (numOfRepetitions == 0)
+            {
+                CallFinishState();
+                return;
+            }
             if (cpuController.optimal && gpuController.optimal)
             {
                 monitorController.ChooseNewScenario();
@@ -54,11 +61,11 @@ namespace Games.Ram
             
             if (cpuController.slow || gpuController.slow)
             {
-                SlowBubble.SetActive(true);
+                slowBubble.SetActive(true);
             }
             else
             {
-                SlowBubble.SetActive(false);
+                slowBubble.SetActive(false);
             }
         }
 
@@ -73,13 +80,19 @@ namespace Games.Ram
 
         private void UpdateDataWhenScenarioChange()
         {
+            if (numOfRepetitions == 0)
+            {
+                CallFinishState();
+                return;
+            }
             var CPUValues = monitorController.GetCPUValuesForScenario();
             var GPUValues = monitorController.GetGPUValuesForScenario();
             cpuController.SetScenarioData(CPUValues[0], CPUValues[1]);
             gpuController.SetScenarioData(GPUValues[0], GPUValues[1]);
+            numOfRepetitions--;
         }
         
-        private void CheckFinishState(double newValue)
+        private void CallFinishState()
         {
             StartCoroutine(WaitToShowCompleteLevel());
         }
