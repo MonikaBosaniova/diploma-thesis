@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6953490373416734253}
   - component: {fileID: 3782489618003962430}
   m_Layer: 0
-  m_Name: END_TUTORIAL
+  m_Name: ONLY_AVATAR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
