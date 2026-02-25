@@ -75,6 +75,22 @@ MonoBehaviour:
     m_Key: BIN_Minigame_2
     m_Metadata:
       m_Items: []
+  - m_Id: 165347498411020288
+    m_Key: COOL_Minigame_Start_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165350384738095104
+    m_Key: COOL_Minigame_Start_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165350462869590016
+    m_Key: COOL_Minigame_Start_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165350482553458688
+    m_Key: COOL_Minigame_Start_3
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

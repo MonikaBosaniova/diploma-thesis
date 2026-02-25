@@ -80,6 +80,29 @@ MonoBehaviour:
       si bude\u0161 jist\xFD, stiskni tla\u010D\xEDtko rovn\xE1 se."
     m_Metadata:
       m_Items: []
+  - m_Id: 165347498411020288
+    m_Localized: "Tv\xFDm \xFAkolem bude nastavit v\xFDkon ventil\xE1tor\u016F tak,
+      aby chladily sou\u010D\xE1stky pr\xE1v\u011B tak akor\xE1t."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165350384738095104
+    m_Localized: "Kdy\u017E pob\u011B\u017E\xED p\u0159\xEDli\u0161 rychle, u\u017Eivatel
+      si bude st\u011B\u017Eovat na hluk a sou\u010D\xE1stky budou zbyte\u010Dn\u011B
+      <color=blue>podchlazen\xE9 (modr\xE9)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165350462869590016
+    m_Localized: "Kdy\u017E pob\u011B\u017E\xED p\u0159\xEDli\u0161 pomalu, sou\u010D\xE1stky
+      <color=red>se p\u0159eh\u0159ej\xED (\u010Derven\xE9)</color> a po\u010D\xEDta\u010D
+      se bude zpomalovat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165350482553458688
+    m_Localized: "Sna\u017E se naj\xEDt ide\xE1ln\xED nastaven\xED, p\u0159i kter\xE9m
+      se teplota postupn\u011B ust\xE1l\xED na spr\xE1vn\xE9 hodnot\u011B a <color=green>z\u016Fstane
+      v zelen\xE9 z\xF3n\u011B</color>."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
