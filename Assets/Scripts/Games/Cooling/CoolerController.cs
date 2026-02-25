@@ -50,7 +50,7 @@ public class CoolerController : MonoBehaviour
     void Update()
     {
         optimal = false;
-        Debug.Log(gameObject.name + " : " + finishTemperatureForScenario + " " + actualTemperature);
+        //Debug.Log(gameObject.name + " : " + finishTemperatureForScenario + " " + actualTemperature);
 
         if (Mathf.Abs(ComputeFinishTempOfCooler() - actualTemperature) <= .1f)
         {
