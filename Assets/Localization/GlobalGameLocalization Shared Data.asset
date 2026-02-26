@@ -91,6 +91,38 @@ MonoBehaviour:
     m_Key: COOL_Minigame_Start_3
     m_Metadata:
       m_Items: []
+  - m_Id: 165661820018348032
+    m_Key: HDD_Minigame_Start_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165661930609561600
+    m_Key: HDD_Minigame_Start_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165661996279779328
+    m_Key: HDD_Minigame_Start_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165662052739305472
+    m_Key: HDD_Minigame_More_Space_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165672401345564672
+    m_Key: HDD_Minigame_More_Space_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165671560337281024
+    m_Key: HDD_Minigame_More_Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165709255029673984
+    m_Key: SSD_Minigame_Start_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165709426505404416
+    m_Key: SSD_Minigame_Start_1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

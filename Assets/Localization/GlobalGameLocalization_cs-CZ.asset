@@ -103,6 +103,54 @@ MonoBehaviour:
       v zelen\xE9 z\xF3n\u011B</color>."
     m_Metadata:
       m_Items: []
+  - m_Id: 165661820018348032
+    m_Localized: "V t\xE9to \xFArovni prozkoum\xE1me, jak vlastn\u011B funguje HDD
+      (pevn\xFD disk)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165661930609561600
+    m_Localized: "U\u017E v\xEDme, \u017Ee HDD je oproti bleskov\xE9mu SSD sp\xED\u0161e
+      \u201Apomal\xFD b\u011B\u017Eec\u2018, a v t\xE9hle h\u0159e si tu pomalost
+      vyzkou\u0161\xED\u0161 na vlastn\xED k\u016F\u017Ei."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165661996279779328
+    m_Localized: "Tv\xFDm \xFAkolem je ovl\xE1dat <color=green><b>\u010Dtec\xED hlavu</color></b>
+      disku tak, aby jej\xED \u0161pi\u010Dka p\u0159esn\u011B zachytila \u010Dtvere\u010Dky
+      p\u0159edstavuj\xEDc\xED data. P\u0159iprav se, na\u010D\xEDt\xE1n\xED soubor\u016F
+      za\u010D\xEDn\xE1!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165662052739305472
+    m_Localized: "Pozor, p\u0159itvrzujeme! Pr\xE1v\u011B zvy\u0161ujeme kapacitu
+      disku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165672401345564672
+    m_Localized: "Aby se na stejnou plochu ve\u0161lo v\xEDc soubor\u016F, mus\xEDme
+      data naskl\xE1dat mnohem t\u011Bsn\u011Bji k sob\u011B."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165671560337281024
+    m_Localized: "I mezi HDD jsou rozd\xEDly! Tenhle model m\xE1 <color=green><b>vy\u0161\u0161\xED
+      ot\xE1\u010Dky</color></b>, tak\u017Ee data pod \u010Dtec\xED hlavou proud\xED
+      mnohem rychleji. Vyu\u017Eij tenhle v\xFDkon a <color=green><b>v\u0161echna
+      je chy\u0165</color></b>, a\u0165 m\xE1me soubor na\u010Dten\xFD v rekordn\xEDm
+      \u010Dase!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165709255029673984
+    m_Localized: "V\xEDtej ve sv\u011Bt\u011B SSD! Zapome\u0148 na pomal\xE9 mechanick\xE9
+      hlavy. SSD funguje na principu elektrick\xFDch impulz\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 165709426505404416
+    m_Localized: "Tv\xFDm \xFAkolem je aktivovat spr\xE1vn\xFD <color=green><b>\u0159\xE1dek
+      a sloupec</color></b> pomoc\xED kuli\u010Dek na okraji. Tam, kde se tv\xE9
+      volby protnou, bleskov\u011B p\u0159e\u010Dte\u0161 data ze zelen\xE9 bu\u0148ky.
+      \u017D\xE1dn\xE9 \u010Dek\xE1n\xED, jen \u010Dist\xE1 rychlost!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
+using DialogueSystem;
 using UnityEngine;
 
 namespace Games.HddSsd
@@ -13,6 +14,8 @@ namespace Games.HddSsd
         
         HddSsdGameManager hddGameManager;
         private List<DiskController> diskControllers;
+
+        private DialogueSequenceController _dialogueSequenceController;
         
         [Header("DEBUG")]
         [SerializeField] private int _maxDataCollected = 5;
@@ -22,7 +25,10 @@ namespace Games.HddSsd
         
         public override void Init()
         {
+            base.Init();
+            
             hddGameManager = FindFirstObjectByType<HddSsdGameManager>();
+            _dialogueSequenceController = transform.GetComponent<DialogueSequenceController>();
             
             for (int i = 0; i < transform.childCount; i++)
             {
@@ -33,11 +39,8 @@ namespace Games.HddSsd
             diskControllers = smallDisk.transform.GetComponentsInChildren<DiskController>().ToList();
             GenerateRandomDataPoint();
             
-            topCover.transform.DOLocalMoveZ(10.5f, 0.8f).OnComplete(() =>
-            {
-                base.Init();
-            });
-            
+            topCover.transform.DOLocalMoveZ(10.5f, 0.8f);
+
         }
 
         public void DataCollected()
@@ -58,6 +61,7 @@ namespace Games.HddSsd
         {
             if (smallDisk.activeSelf)
             {
+                SetDialogueText(_dialogueSequenceController.afterMoreDialogueSequences.ElementAt(0));
                 smallDisk.SetActive(false);
                 bigDisk.SetActive(true);
                 diskControllers = bigDisk.transform.GetComponentsInChildren<DiskController>().ToList();
@@ -67,6 +71,7 @@ namespace Games.HddSsd
 
             if (bigDisk.activeSelf && !finishLevel)
             {
+                SetDialogueText(_dialogueSequenceController.afterMoreDialogueSequences.ElementAt(1));
                 SetSpeedRotation(50f);
                 GenerateRandomDataPoint();
                 finishLevel = true;
@@ -108,6 +113,14 @@ namespace Games.HddSsd
             foreach (var diskController in diskControllers)
             {
                 diskController.SetSpeedRotation(newSpeed);
+            }
+        }
+
+        private void SetDialogueText(DialogueSequence sequence)
+        {
+            if (_dialogueSequenceController != null)
+            {
+                UIManager.Instance.ShowDialogWindowUI(sequence);
             }
         }
         
