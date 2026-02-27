@@ -108,7 +108,7 @@ public class ProgressService : MonoBehaviour
         }
         if (timeSec >= 0 && timeSec < p.bestTimeSec) p.bestTimeSec = timeSec;
         if (stars > 0) p.completed = true;
-
+        
         Save();
         OnProgressChanged?.Invoke(nodeId, p);
     }

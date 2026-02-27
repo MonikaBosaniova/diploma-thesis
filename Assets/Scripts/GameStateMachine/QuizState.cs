@@ -5,7 +5,6 @@ namespace GameStateMachine
 {
     public class QuizState : GameState
     {
-        
         protected QuizData QuizData;
         protected GameObject QuizParent;
         private int _currentTutorialIndex;

@@ -14,12 +14,14 @@ namespace GameStateMachine
         [SerializeField] protected GameObject tutorialParent;
         [SerializeField] protected GameObject minigameParent;
         [SerializeField] protected GameObject quizParent;
-        [SerializeField] protected GameObject endParent;
+        [SerializeField] protected GameObject reviewParent;
         [SerializeField] protected GameObject nextButton;
 
         [SerializeField] internal string nodeID;
         [SerializeField] internal int stars = 0;
         [SerializeField] internal float time = 0;
+
+        internal float StartTime;
 
         private void Start()
         {
@@ -87,6 +89,26 @@ namespace GameStateMachine
                 {
                     var child = level.transform.GetChild(i);
                     child.gameObject.SetActive(false);
+                }
+            }
+        }
+        
+        [ContextMenu("Show All Levels")]
+        public void ShowAllLevels()
+        {
+            List<LevelController> levels = new  List<LevelController>();
+            var tutorialLevels = tutorialParent.GetComponentsInChildren<LevelController>().ToList();
+            var  minigameLevels = minigameParent.GetComponentsInChildren<LevelController>().ToList();
+            
+            levels.AddRange(tutorialLevels);
+            levels.AddRange(minigameLevels);
+
+            foreach (var level in levels)
+            {
+                for (int i = 0; i < level.transform.childCount; i++)
+                {
+                    var child = level.transform.GetChild(i);
+                    child.gameObject.SetActive(true);
                 }
             }
         }

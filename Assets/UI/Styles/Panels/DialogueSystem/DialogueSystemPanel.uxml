@@ -5,7 +5,7 @@
                 <engine:VisualElement style="flex-grow: 0; height: 384px; width: 256px; background-image: resource(&apos;UI/Default9Sliced&apos;); align-self: flex-end;">
                     <engine:VisualElement name="AvatarImage" style="flex-grow: 1; height: 384px; width: 256px;" />
                 </engine:VisualElement>
-                <engine:Label text="LOREM" name="DialogueText" style="color: rgb(255, 255, 255); -unity-text-align: middle-left; margin-left: 24px; font-size: 40px; max-width: 1650px; white-space: normal; width: 100%;" />
+                <engine:Label name="DialogueText" style="color: rgb(255, 255, 255); -unity-text-align: middle-left; margin-left: 24px; font-size: 40px; max-width: 1650px; white-space: normal; width: 100%;" />
             </engine:VisualElement>
         </engine:VisualElement>
     </engine:VisualElement>

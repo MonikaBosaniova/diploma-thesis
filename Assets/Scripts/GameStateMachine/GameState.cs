@@ -20,22 +20,17 @@ namespace GameStateMachine
 
         public virtual void Enter()
         {
+            manager.StartTime = Time.time;
             stateObject.SetActive(true);
             OnStateStart?.Invoke();
         }
         
         public virtual void Exit()
         {
+            manager.time = Time.time - manager.StartTime;
             SaveProgress();
+            LogProgress(this.name);
             stateObject.SetActive(false);
-        }
-        
-        protected void PrintChildren(GameObject parent)
-        {
-            foreach (Transform child in parent.transform)
-            {
-                //Debug.Log("Child: " + child.name);
-            }
         }
         
         protected void SaveProgress()
@@ -43,6 +38,7 @@ namespace GameStateMachine
             Debug.Log("SAVING: " + manager.stars);
             if(ProgressService.I != null)
                 ProgressService.I.RecordLevelResult(manager.nodeID, manager.stars, manager.time);
+            
         }
 
         protected void GoToSkillTree()
@@ -50,6 +46,12 @@ namespace GameStateMachine
             if(ProgressService.I != null)
                 ProgressService.I.OpenSkillTree = true;
             SceneManager.LoadScene(0);
+        }
+
+        private void LogProgress(string state)
+        {
+            if(LoggerService.Instance != null)
+                LoggerService.Instance.LogProgressInLevel(state, manager.time);
         }
         
         public abstract void Update();

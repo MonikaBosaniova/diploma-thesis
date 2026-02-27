@@ -13,6 +13,9 @@ namespace UI
     public class QuizUIController : QuizUIControllerContext
     {
         [SerializeField] protected GameObject backButton;
+        public bool showCorrectAnswer;
+        public bool quizBefore;
+        public bool showResults;
         public QuizData quizData;
         public float _successRate = 0;
         private QuizQuestion _currentQuizQuestion;
@@ -45,20 +48,22 @@ namespace UI
         }
 
 
-        private void ShowResultOfQuestion(bool isCorrect, int hierarchyIndexOfButton)
+        private void ShowResultOfQuestion(bool isCorrect, int hierarchyIndexOfButton, int answerIndex)
         {
             //Debug.Log(AnswersParent.childCount + " children...");
             var answerButton = AnswersParent.ElementAt(hierarchyIndexOfButton).Q<Button>();
             ScreenBlocker.style.display = DisplayStyle.Flex;
             if (isCorrect)
             {
-                answerButton.style.unityBackgroundImageTintColor = Color.green;
-                CorrectAnswerWasClicked(answerButton);
+                if(showCorrectAnswer)
+                    answerButton.style.unityBackgroundImageTintColor = Color.green;
+                CorrectAnswerWasClicked(answerButton, answerIndex);
             }
             else
             {
-                answerButton.style.unityBackgroundImageTintColor = Color.red;
-                IncorrectAnswerWasClicked(answerButton);
+                if(showCorrectAnswer)
+                    answerButton.style.unityBackgroundImageTintColor = Color.red;
+                IncorrectAnswerWasClicked(answerButton, answerIndex);
             }
             
             //TODO
@@ -72,16 +77,27 @@ namespace UI
             FindAnyObjectByType<QuizState>().OnStateComplete?.Invoke();
         }
 
-        private void CorrectAnswerWasClicked(Button answerButton)
+        private void CorrectAnswerWasClicked(Button answerButton, int answerIndex)
         {
             score += _currentQuizQuestion.value;
             Score.text = score.ToString();
+            
+            LogQuizAnswer(true, answerIndex);
         }
 
-        private void IncorrectAnswerWasClicked(Button answerButton)
+        private void IncorrectAnswerWasClicked(Button answerButton, int answerIndex)
         {
             //TODO
             //show wrong answer prettier
+            LogQuizAnswer(false, answerIndex);
+        }
+
+        private void LogQuizAnswer(bool isCorrect, int answer)
+        {
+            if (LoggerService.Instance != null)
+            {
+                LoggerService.Instance.LogQuizAnswer(quizBefore, _indexOfQuizQuestion, isCorrect, answer);
+            }
         }
 
         private void ShowAndBindCurrentQuizQuestion()
@@ -99,7 +115,7 @@ namespace UI
             _currentQuizQuestion = quizData.quizQuestions.ElementAt(_indexOfQuizQuestion);
             var localizedStringQuestion = _currentQuizQuestion.question;
             localizedStringQuestion.StringChanged += UpdateText;//(te(value) => Question.text = value);
-            localizedStringQuestion.RefreshString(); 
+            localizedStringQuestion.RefreshString();
             
             List<LocalizedString> randomizedAnswers = _currentQuizQuestion.answers.OrderBy(x => Guid.NewGuid()).ToList();
             
@@ -113,9 +129,16 @@ namespace UI
                 var index = i;
                 
                 if(randomizedAnswers.ElementAt(i) == _currentQuizQuestion.answers.ElementAt(0))
-                    answerButton.clicked += () => ShowResultOfQuestion(true, index);
+                    answerButton.clicked += () => ShowResultOfQuestion(true, index, 0);
                 else
-                    answerButton.clicked += () => ShowResultOfQuestion(false, index);
+                {
+                    if(randomizedAnswers.ElementAt(i) == _currentQuizQuestion.answers.ElementAt(1))
+                        answerButton.clicked += () => ShowResultOfQuestion(false, index, 1);
+                    else
+                    {
+                        answerButton.clicked += () => ShowResultOfQuestion(false, index, 2);
+                    }
+                }
                 
                 localizedString.StringChanged += (value) => answerButton.text = value;
                 localizedString.RefreshString();
@@ -134,7 +157,13 @@ namespace UI
                 ShowAndBindCurrentQuizQuestion();
             else
             {
-                ShowResultOfQuiz();
+                if(showResults)
+                    ShowResultOfQuiz();
+                else
+                {
+                    TutorialController tc = transform.parent.GetComponent<TutorialController>();
+                    tc?.ContinueToNextLevel();
+                }
             }
         }
 
