@@ -29,7 +29,6 @@ namespace Games.CPU
 
         public void CheckFinishState()
         {
-            Debug.Log("CallFinishState");
             if (shieldActivated && shieldSentToRam)
                 StartCoroutine(WaitToShowCompleteLevel());
         }

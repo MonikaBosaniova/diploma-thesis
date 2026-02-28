@@ -151,6 +151,32 @@ MonoBehaviour:
       \u017D\xE1dn\xE9 \u010Dek\xE1n\xED, jen \u010Dist\xE1 rychlost!"
     m_Metadata:
       m_Items: []
+  - m_Id: 166456809505804288
+    m_Localized: "V\xEDtej v j\xE1dru <color=green><b>CPU</color></b>! Tv\xFDm \xFAkolem
+      je postupovat podle <color=green><b>instrukc\xED</color></b> v se\u0161itu
+      vlevo a zjistit, zda kouzeln\xEDk m\u016F\u017Ee vy\u010Darovat sv\u016Fj \u0161t\xEDt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166460212755681280
+    m_Localized: "Data z <color=green><b>RAM</color></b> si do procesoru p\u0159ivol\xE1\u0161
+      v <color=blue><b>modr\xE9m panelu</color></b>. Pot\xE9 je m\u016F\u017Ee\u0161
+      my\u0161\xED p\u0159et\xE1hnout do spr\xE1vn\xE9ho <color=green><b>registru
+      (R1\u2013R4)</color></b> v cache."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166460294875959296
+    m_Localized: "Barevn\xE9 bloky naho\u0159e slou\u017E\xED pro <color=green><b>v\xFDpo\u010Dty</color></b>
+      a <color=green><b>porovn\xE1v\xE1n\xED</color></b>. P\u0159et\xE1hni do vstupn\xEDch
+      registr\u016F hodnoty, aby procesor provedl operaci, kterou pr\xE1v\u011B pot\u0159ebuje\u0161."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166462323631443968
+    m_Localized: "V\xFDsledky operac\xED m\u016F\u017Ee\u0161 br\xE1t a p\u0159esouvat
+      d\xE1l mezi <color=green><b>registry</color></b> nebo odes\xEDlat zp\u011Bt
+      do <color=green><b>RAM</color></b>. Sleduj se\u0161it a postupuj p\u0159esn\u011B
+      podle zad\xE1n\xED!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
