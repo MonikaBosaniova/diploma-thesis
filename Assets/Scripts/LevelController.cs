@@ -11,6 +11,7 @@ public class LevelController : MonoBehaviour
     protected internal bool IsCompleted = false;
     protected event Action OnLevelStarted;
     protected internal event Action OnLevelEnded;
+    protected internal event Action OnGoBackInTutorial;
 
     public virtual void Init()
     {
@@ -36,15 +37,19 @@ public class LevelController : MonoBehaviour
     internal void InvokeOnLevelStarted()
     {
         IsCompleted = false;
-        //Debug.Log("OnLeveStarted");
         OnLevelStarted?.Invoke();
     }  
     
     internal void InvokeOnLevelEnded()
     {
         IsCompleted = true;
-        //Debug.Log("OnLeveStarted");
         OnLevelEnded?.Invoke();
+    }  
+    
+    internal void InvokeGoBackInTutorial()
+    {
+        IsCompleted = true;
+        OnGoBackInTutorial?.Invoke();
     }  
     
     protected void ShowEndDialogueSequence()

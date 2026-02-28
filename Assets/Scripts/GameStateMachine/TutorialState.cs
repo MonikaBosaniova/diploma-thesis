@@ -26,6 +26,7 @@ namespace GameStateMachine
             foreach (var tutorialStep in Tutorials)
             {
                 tutorialStep.OnLevelEnded += ContinueToNextTutorial;
+                tutorialStep.OnGoBackInTutorial += GoBackInTutorial;
             }
             Tutorials.ElementAt(0).Init();
         }
@@ -55,6 +56,17 @@ namespace GameStateMachine
                 Tutorials.ElementAt(_currentTutorialIndex + 1).Init();
                 _currentTutorialIndex++;
             }
+            Debug.Log("TUTORIAL GO: " + _currentTutorialIndex);
+            
+        }
+        
+        protected void GoBackInTutorial()
+        {
+            Tutorials.ElementAt(_currentTutorialIndex).Close();
+            if (_currentTutorialIndex < 1) return;
+            Tutorials.ElementAt(_currentTutorialIndex - 1).Init();
+            _currentTutorialIndex--;
+            Debug.Log("TUTORIAL BACK: " + _currentTutorialIndex);
         }
     }
 }

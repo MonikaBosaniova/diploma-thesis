@@ -20,12 +20,12 @@ public class StartQuizLevelController : LevelController
     
     public override void Close()
     {
-        gameObject.SetActive(false);
         // for (int i = 0; i < transform.childCount; i++)
         // {
         //     transform.GetChild(i).gameObject.SetActive(false);
         // }
         base.Close();
+        gameObject.SetActive(false);
     }
     
     

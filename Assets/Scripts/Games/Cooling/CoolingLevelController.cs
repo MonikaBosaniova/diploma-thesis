@@ -74,7 +74,7 @@ namespace Games.Ram
             if(cpuController == null || gpuController == null ||
                cpuSlider == null || gpuSlider == null) return;
 
-            if (numOfRepetitions == 0)
+            if (numOfRepetitions == 0 && !tutorialState)
             {
                 CallFinishState();
                 return;
@@ -145,6 +145,8 @@ namespace Games.Ram
                     }
                 }
             }
+
+            if (tutorialState) return;
             
             if (cpuController.optimal && gpuController.optimal)
             {
@@ -177,12 +179,15 @@ namespace Games.Ram
             {
                 transform.GetChild(i).gameObject.SetActive(false);
             }
+            
+            
+            
             base.Close();
         }
 
         private void UpdateDataWhenScenarioChange()
         {
-            if (numOfRepetitions == 0)
+            if (numOfRepetitions == 0 && !tutorialState)
             {
                 CallFinishState();
                 return;

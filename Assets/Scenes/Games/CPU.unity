@@ -1154,6 +1154,7 @@ MonoBehaviour:
   quizParent: {fileID: 255719259}
   reviewParent: {fileID: 0}
   nextButton: {fileID: 1206248756}
+  backButton: {fileID: 1206248757}
   nodeID: 
   stars: 0
   time: 0
@@ -5623,6 +5624,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1939169142589381404, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1415162212}
+    - target: {fileID: 1939169142589381404, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoBackInLevels
+      objectReference: {fileID: 0}
     - target: {fileID: 2568792732633903425, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
       propertyPath: m_Name
       value: GameTemplate
@@ -5688,6 +5697,11 @@ GameObject:
 --- !u!1 &1206248756 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7142179973047593347, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
+  m_PrefabInstance: {fileID: 1206248754}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1206248757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6232390802007140880, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
   m_PrefabInstance: {fileID: 1206248754}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1206272845
@@ -6713,6 +6727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c19f51d8790924591a4bafb6feb952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backTutorialButton: {fileID: 1206248757}
+  nextTutorialButton: {fileID: 1206248756}
 --- !u!1 &1465654969
 GameObject:
   m_ObjectHideFlags: 0

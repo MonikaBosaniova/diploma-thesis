@@ -16,6 +16,7 @@ namespace GameStateMachine
         [SerializeField] protected GameObject quizParent;
         [SerializeField] protected GameObject reviewParent;
         [SerializeField] protected GameObject nextButton;
+        [SerializeField] protected GameObject backButton;
 
         [SerializeField] internal string nodeID;
         [SerializeField] internal int stars = 0;
@@ -59,8 +60,13 @@ namespace GameStateMachine
             tutorialState.OnStateComplete += () => { ChangeState(minigameState); };
             minigameState.OnStateStart += () =>
             {
+                //TODO this hides before quiz, if the player run the game more times
+                tutorialState.transform.GetChild(0).gameObject.SetActive(false);
+                
                 if (nextButton != null)
                     nextButton.SetActive(false);
+                if (backButton != null)
+                    backButton.SetActive(false);
             };
             minigameState.OnStateComplete += () => ChangeState(quizState);
             quizState.OnStateComplete += () => ChangeState(endState);

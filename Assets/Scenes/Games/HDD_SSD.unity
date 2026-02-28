@@ -333,10 +333,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4139980754188424828, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       insertIndex: 1
       addedObject: {fileID: 685268724}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
 --- !u!4 &60568449 stripped
 Transform:
@@ -727,6 +724,7 @@ MonoBehaviour:
   quizParent: {fileID: 255719259}
   reviewParent: {fileID: 0}
   nextButton: {fileID: 1374193586}
+  backButton: {fileID: 1374193588}
   nodeID: 
   stars: 0
   time: 0
@@ -1380,13 +1378,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3044289042661005011, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
 --- !u!4 &626652856 stripped
 Transform:
@@ -1737,10 +1729,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7716283863162038046, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
 --- !u!4 &864778934 stripped
 Transform:
@@ -2320,10 +2309,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4139980754188424828, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1622300178}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
 --- !u!4 &1079659913 stripped
 Transform:
@@ -2878,6 +2864,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1939169142589381404, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1415162212}
+    - target: {fileID: 1939169142589381404, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoBackInLevels
+      objectReference: {fileID: 0}
     - target: {fileID: 2568792732633903425, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
       propertyPath: m_Name
       value: GameTemplate
@@ -2949,6 +2943,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5770456592584046871, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
   m_PrefabInstance: {fileID: 1374193585}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1374193588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6232390802007140880, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
+  m_PrefabInstance: {fileID: 1374193585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1415162210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,6 +3001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c19f51d8790924591a4bafb6feb952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backTutorialButton: {fileID: 1374193588}
+  nextTutorialButton: {fileID: 1374193586}
 --- !u!1 &1433919705
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,10 +3834,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4139980754188424828, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1781711665}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
 --- !u!4 &1814855277 stripped
 Transform:
@@ -4136,10 +4134,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4139980754188424828, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1433919706}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
 --- !u!4 &1949489957 stripped
 Transform:
@@ -4349,10 +4344,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7716283863162038046, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
 --- !u!4 &2042586484 stripped
 Transform:
@@ -4595,10 +4587,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &2088462178 stripped
 Transform:
