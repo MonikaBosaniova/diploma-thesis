@@ -23,6 +23,8 @@ public class CoolerController : MonoBehaviour
     [SerializeField] private float maxTemperature;
     [SerializeField] private float midValuePoint;
     [SerializeField] private float highValuePoint;
+    
+    [SerializeField] private float temperatureChangeSpeed = 10f; // degrees per second
 
     [Header("---DEBUG---")] 
     public bool optimal;
@@ -63,11 +65,11 @@ public class CoolerController : MonoBehaviour
             
         }else if (ComputeFinishTempOfCooler() < actualTemperature)
         {
-            actualTemperature -= .01f;
+            actualTemperature -= temperatureChangeSpeed * Time.deltaTime;
         }
         else
         {
-            actualTemperature += .01f;
+            actualTemperature += temperatureChangeSpeed * Time.deltaTime;
         }
         
         UpdateTemperatureText(actualTemperature);
