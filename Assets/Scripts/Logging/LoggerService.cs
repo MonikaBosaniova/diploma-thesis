@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 public class LoggerService : MonoBehaviour
 {
@@ -182,8 +183,8 @@ public class LoggerService : MonoBehaviour
         if (value is bool)
             return ((bool)value) ? "true" : "false";
 
-        if (value is int || value is float || value is double || value is long)
-            return value.ToString();
+        if (value is IFormattable formattable)  
+            return formattable.ToString(null, CultureInfo.InvariantCulture);
 
         return "\"" + EscapeString(value.ToString()) + "\"";
     }
