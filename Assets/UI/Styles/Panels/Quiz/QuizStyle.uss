@@ -96,3 +96,61 @@
     -unity-slice-type: tiled;
     -unity-background-image-tint-color: rgba(255, 255, 255, 0.06);
 }
+
+SliderInt #unity-tracker {
+    height: 20px;
+}
+
+SliderInt #unity-dragger {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(108, 200, 114);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+SliderInt > VisualElement {
+    flex-direction: row-reverse;
+}
+
+SliderInt #unity-text-field {
+    height: 50px;
+    flex-direction: row;
+    align-self: center;
+    margin-right: 36px;
+    background-color: rgb(166, 67, 67);
+    margin-top: 18px;
+}
+
+SliderInt #unity-text-input {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    -unity-text-align: middle-center;
+    background-color: rgb(125, 125, 125);
+}
+
+SliderInt Label {
+    flex-wrap: wrap;
+    white-space: normal;
+    font-size: 30px;
+}
+
+SliderInt:hover:focus Label {
+    color: rgb(255, 255, 255);
+}
+
+SliderInt:focus Label {
+    color: rgb(255, 255, 255);
+}

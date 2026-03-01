@@ -1,0 +1,26 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/Panels/Quiz/QuizStyle.uss?fileID=7433441132597879392&amp;guid=1b715b0e49026534eada70e755eefa7d&amp;type=3#QuizStyle" />
+    <ui:VisualElement picking-mode="Ignore" class="background" style="flex-grow: 1; justify-content: center; flex-direction: column;">
+        <ui:VisualElement picking-mode="Ignore" style="flex-grow: 1; flex-direction: column; align-self: auto; justify-content: center;">
+            <ui:VisualElement name="Questions" class="gameResults" style="display: flex; -unity-slice-scale: 0.5px; margin-left: 0; width: 60%; height: 79%;">
+                <ui:VisualElement style="flex-grow: 0; flex-direction: row; justify-content: space-around; flex-shrink: 0;">
+                    <ui:VisualElement style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Graphics/emotes/sad_talking.png?fileID=2800000&amp;guid=58a15063523316f45a9452018a94efd0&amp;type=3#sad_talking&quot;); -unity-background-scale-mode: scale-to-fit; width: 256px; flex-shrink: 0; height: 400px; flex-direction: column-reverse;">
+                        <ui:Label text="1 = VŮBEC" style="font-size: 40px; -unity-font-style: bold; -unity-text-align: upper-center; color: rgb(255, 185, 95); top: 53px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Sliders" style="flex-grow: 0; flex-shrink: 0; width: 50%; justify-content: space-evenly; font-size: 45px; color: rgb(255, 255, 255); -unity-font-style: bold; -unity-text-align: middle-center; align-content: stretch; -unity-text-outline-color: rgb(65, 65, 65); -unity-text-outline-width: 1px; text-shadow: 1px 1px 0 rgb(0, 0, 0);">
+                        <ui:VisualElement name="Slider" style="flex-grow: 0; flex-direction: column; flex-shrink: 0; justify-content: space-evenly; font-size: 30px; white-space: normal; overflow: visible; flex-wrap: wrap;">
+                            <ui:SliderInt label="Jak moc tě hra bavila?" value="0" high-value="5" low-value="1" page-size="1" fill="true" name="Enjoy" show-input-field="true" style="flex-direction: column; justify-content: space-around; align-items: stretch; align-content: auto; min-height: 150px;" />
+                            <ui:SliderInt label="Bylo pro tebe ovládání hry snadné?" value="0" high-value="5" low-value="1" page-size="1" fill="true" name="Tutorial" show-input-field="true" style="flex-direction: column; justify-content: space-around; align-items: stretch; align-content: auto; min-height: 150px;" />
+                            <ui:SliderInt label="Jak pro tebe byla hra přínosná?" value="0" high-value="5" low-value="1" page-size="1" fill="true" name="Knowledge" show-input-field="true" style="flex-direction: column; justify-content: space-around; align-items: stretch; align-content: auto; min-height: 150px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Graphics/emotes/like.png?fileID=2800000&amp;guid=f12371d47acd9984c9abb1486f417f2b&amp;type=3#like&quot;); -unity-background-scale-mode: scale-to-fit; width: 256px; flex-shrink: 0; height: 400px; flex-direction: column-reverse;">
+                        <ui:Label text="5 = ÚPLNĚ" style="font-size: 40px; -unity-font-style: bold; -unity-text-align: upper-center; color: rgb(255, 185, 95); top: 53px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button text="Odeslat!" name="Close" class="gameResultsButton" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="ScreenBlocker" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; display: none;" />
+</ui:UXML>
