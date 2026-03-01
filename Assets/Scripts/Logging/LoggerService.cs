@@ -25,7 +25,7 @@ public class LoggerService : MonoBehaviour
 
     private static readonly Regex[] IgnoreFilters = new Regex[]
     {
-        new Regex(@"^some random rule$", RegexOptions.Compiled),
+        new Regex(@"with Unicode value \\u25A2 was not found", RegexOptions.Compiled),
     };
     
     private void Awake()
@@ -100,6 +100,17 @@ public class LoggerService : MonoBehaviour
         data["state"] = state;
         data["time"] = time;
 
+        SendLog(data);
+    }
+
+    public void LogOpinionAboutMinigame(int enjoy, int tutorial, int knowledge)
+    {
+        var data = CreateLogBase("log", "opinion_about_minigame");
+        
+        data["enjoy"] = enjoy;
+        data["tutorial"] = tutorial;
+        data["knowledge"] = knowledge;
+        
         SendLog(data);
     }
 

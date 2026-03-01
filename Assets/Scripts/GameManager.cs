@@ -10,7 +10,8 @@ namespace GameStateMachine
     public class GameManager : MonoBehaviour
     {
         public GameState CurrentState;
-        [SerializeField] private bool skipTutorial = false;
+        [SerializeField] internal bool skipTutorial = false;
+        [SerializeField] internal bool gamePlayed = false;
         [SerializeField] protected GameObject tutorialParent;
         [SerializeField] protected GameObject minigameParent;
         [SerializeField] protected GameObject quizParent;
@@ -43,6 +44,10 @@ namespace GameStateMachine
                 nodeID = ProgressService.I.GetCurrentNodeID();
                 if (ProgressService.I.Get(nodeID).bestStars > 0)
                 {
+                    if (ProgressService.I.Get(nodeID).bestStars >= 2)
+                    {
+                        gamePlayed = true;
+                    }
                     skipTutorial = true;
                     stars = 1;
                 }
@@ -68,7 +73,11 @@ namespace GameStateMachine
                 if (backButton != null)
                     backButton.SetActive(false);
             };
-            minigameState.OnStateComplete += () => ChangeState(quizState);
+            minigameState.OnStateComplete += () =>
+            {
+                gamePlayed = true;
+                ChangeState(quizState);
+            };
             quizState.OnStateComplete += () => ChangeState(endState);
 
             ChangeState(skipTutorial ? minigameState : tutorialState);
