@@ -8,6 +8,7 @@ namespace GameStateMachine
 {
     public class TutorialState : GameState
     {
+        internal float quizBeforeTime;
         protected List<LevelController> Tutorials;
         protected GameObject TutorialsParent;
         private int _currentTutorialIndex;
@@ -34,7 +35,11 @@ namespace GameStateMachine
         public override void Exit()
         {
             manager.AddStar();
-            base.Exit();
+            manager.time = Time.time - manager.StartTime - quizBeforeTime;
+            SaveProgress();
+            LogProgress(this.name);
+            stateObject.SetActive(false);
+            //base.Exit();
         }
 
         public override void Update()

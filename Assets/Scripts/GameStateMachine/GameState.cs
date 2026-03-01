@@ -48,7 +48,7 @@ namespace GameStateMachine
             SceneManager.LoadScene(0);
         }
 
-        private void LogProgress(string state)
+        protected void LogProgress(string state)
         {
             if(LoggerService.Instance != null)
                 LoggerService.Instance.LogProgressInLevel(state, manager.time);
