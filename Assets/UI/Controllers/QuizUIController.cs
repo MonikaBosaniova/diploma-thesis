@@ -48,36 +48,37 @@ namespace UI
         }
 
 
-        private void ShowResultOfQuestion(bool isCorrect, int hierarchyIndexOfButton, int answerIndex)
+        private void ShowResultOfQuestion(bool isCorrect, int hierarchyIndexOfButton, int answerIndex, int correctAnswerIndex)
         {
             //Debug.Log(AnswersParent.childCount + " children...");
             var answerButton = AnswersParent.ElementAt(hierarchyIndexOfButton).Q<Button>();
+            var  correctButton = AnswersParent.ElementAt(correctAnswerIndex).Q<Button>();
+            
             ScreenBlocker.style.display = DisplayStyle.Flex;
             if (isCorrect)
             {
                 if(showCorrectAnswer)
                     answerButton.style.unityBackgroundImageTintColor = Color.green;
-                CorrectAnswerWasClicked(answerButton, answerIndex);
+                CorrectAnswerWasClicked(answerIndex);
             }
             else
             {
-                if(showCorrectAnswer)
+                if (showCorrectAnswer)
+                {
                     answerButton.style.unityBackgroundImageTintColor = Color.red;
-                IncorrectAnswerWasClicked(answerButton, answerIndex);
+                    correctButton.style.unityBackgroundImageTintColor = Color.green;
+                }
+                IncorrectAnswerWasClicked(answerIndex);
             }
-            
-            //TODO
-            //show results prettier
             
             StartCoroutine(WaitToShowQuizAnswer());
         }
         private void ReturnToMenu()
         {
-            //ResultBoard.style.display = DisplayStyle.None;
             FindAnyObjectByType<QuizState>().OnStateComplete?.Invoke();
         }
 
-        private void CorrectAnswerWasClicked(Button answerButton, int answerIndex)
+        private void CorrectAnswerWasClicked(int answerIndex)
         {
             score += _currentQuizQuestion.value;
             Score.text = score.ToString();
@@ -85,7 +86,7 @@ namespace UI
             LogQuizAnswer(true, answerIndex);
         }
 
-        private void IncorrectAnswerWasClicked(Button answerButton, int answerIndex)
+        private void IncorrectAnswerWasClicked(int answerIndex)
         {
             //TODO
             //show wrong answer prettier
@@ -128,16 +129,26 @@ namespace UI
                 var localizedString = randomizedAnswers.ElementAt(i);
                 var answerButton = answer.Q<Button>();
                 var index = i;
+
+                var correctIndex = 0;
+
+                for (int j = 0; j < randomizedAnswers.Count; j++)
+                {
+                    if (randomizedAnswers.ElementAt(j) == _currentQuizQuestion.answers.ElementAt(0))
+                    {
+                        correctIndex = j;
+                    }
+                }
                 
                 if(randomizedAnswers.ElementAt(i) == _currentQuizQuestion.answers.ElementAt(0))
-                    answerButton.clicked += () => ShowResultOfQuestion(true, index, 0);
+                    answerButton.clicked += () => ShowResultOfQuestion(true, index, 0,  correctIndex);
                 else
                 {
                     if(randomizedAnswers.ElementAt(i) == _currentQuizQuestion.answers.ElementAt(1))
-                        answerButton.clicked += () => ShowResultOfQuestion(false, index, 1);
+                        answerButton.clicked += () => ShowResultOfQuestion(false, index, 1,  correctIndex);
                     else
                     {
-                        answerButton.clicked += () => ShowResultOfQuestion(false, index, 2);
+                        answerButton.clicked += () => ShowResultOfQuestion(false, index, 2, correctIndex);
                     }
                 }
                 
@@ -186,7 +197,8 @@ namespace UI
         
         IEnumerator WaitToShowQuizAnswer()
         {
-            yield return new WaitForSeconds(.33f);
+            var timeToWait = quizBefore ? 0.33f : 2f;
+            yield return new WaitForSeconds(timeToWait);
             NextQuizQuestion();
         }
     }
