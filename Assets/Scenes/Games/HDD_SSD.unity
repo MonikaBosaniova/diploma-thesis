@@ -1703,12 +1703,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6515971698142737458, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
       propertyPath: m_text
-      value: "HDD je star\u0161\xED typ. \n\nUvnit\u0159 m\xE1 to\u010D\xEDc\xED
-        se kotou\u010De a \u010Dtec\xED hlavi\u010Dku, tak\u017Ee je to trochu jako
-        gramofon. \nKv\u016Fli tomu b\xFDv\xE1 pomalej\u0161\xED, m\u016F\u017Ee
-        b\xFDt sly\u0161et a je citliv\u011Bj\u0161\xED na ot\u0159esy. \n\nJeho
-        v\xFDhoda je, \u017Ee \u010Dasto nab\xEDz\xED hodn\u011B m\xEDsta za ni\u017E\u0161\xED
-        cenu. "
+      value: "<color=green><b>HDD</b></color> je star\u0161\xED typ.\n\nUvnit\u0159
+        m\xE1 <color=green><b>to\u010D\xEDc\xED se kotou\u010De</b></color> a \u010Dtec\xED
+        hlavi\u010Dku, tak\u017Ee je to trochu jako gramofon. Kv\u016Fli tomu b\xFDv\xE1
+        pomalej\u0161\xED, m\u016F\u017Ee b\xFDt sly\u0161et a je <color=green><b>citliv\u011Bj\u0161\xED
+        na ot\u0159esy</b></color>.\n\nJeho v\xFDhoda je, \u017Ee \u010Dasto nab\xEDz\xED
+        <color=green><b>hodn\u011B m\xEDsta</b></color> za ni\u017E\u0161\xED cenu."
       objectReference: {fileID: 0}
     - target: {fileID: 6515971698142737458, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
       propertyPath: m_fontSize
@@ -3816,7 +3816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       propertyPath: m_text
-      value: "Existuj\xED dva hlavn\xED typy disk\u016F:"
+      value: "Existuj\xED dva <color=green><b>hlavn\xED typy disk\u016F</b></color>:"
       objectReference: {fileID: 0}
     - target: {fileID: 9132594739293679387, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4318,12 +4318,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6515971698142737458, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
       propertyPath: m_text
-      value: "SSD je nov\u011Bj\u0161\xED typ disku. \n\nNem\xE1 \u017E\xE1dn\xE9
-        to\u010D\xEDc\xED se \u010D\xE1sti, funguje sp\xED\u0161 jako velk\xE1 flashka.
-        \nProto je rychlej\u0161\xED, tich\xFD a obvykle odoln\u011Bj\u0161\xED.
-        Nejv\u011Bt\u0161\xED v\xFDhoda SSD oproti HDD je pr\xE1v\u011B rychlost:
-        po\u010D\xEDta\u010D se se SSD rychleji zapne, programy a hry se rychleji
-        na\u010D\xEDtaj\xED a cel\xFD po\u010D\xEDta\u010D p\u016Fsob\xED plynuleji.  "
+      value: "SSD je <color=green><b>nov\u011Bj\u0161\xED typ disku</b></color>.\n\nNem\xE1
+        \u017E\xE1dn\xE9 to\u010D\xEDc\xED se \u010D\xE1sti, funguje sp\xED\u0161
+        jako <color=green><b>velk\xE1 flashka</b></color>.\nProto je rychlej\u0161\xED,
+        tich\xFD a obvykle odoln\u011Bj\u0161\xED. Nejv\u011Bt\u0161\xED v\xFDhoda
+        SSD oproti HDD je pr\xE1v\u011B <color=green><b>rychlost</b></color>: po\u010D\xEDta\u010D
+        se se SSD rychleji zapne, programy a hry se rychleji na\u010D\xEDtaj\xED
+        a cel\xFD po\u010D\xEDta\u010D p\u016Fsob\xED plynuleji."
       objectReference: {fileID: 0}
     - target: {fileID: 6515971698142737458, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
       propertyPath: m_fontSize
