@@ -123,6 +123,7 @@ namespace UI
             for (int i = 0; i < _currentQuizQuestion.answers.Count; i++)
             {
                 var answer = quizData.AnswerTemplate.Instantiate();
+                answer.style.flexGrow = 1;
                 AnswersParent.Add(answer);
                 var localizedString = randomizedAnswers.ElementAt(i);
                 var answerButton = answer.Q<Button>();

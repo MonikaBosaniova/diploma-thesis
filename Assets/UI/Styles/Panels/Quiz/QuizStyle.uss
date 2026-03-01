@@ -1,13 +1,12 @@
 .questionBox {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     -unity-slice-scale: 0.5px;
     background-image: url("project://database/Assets/Graphics/UI/card.png?fileID=2800000&guid=485fa3447a29f764582d7bd1462f937c&type=3#card");
     -unity-background-image-tint-color: rgb(255, 255, 255);
     -unity-background-scale-mode: stretch-to-fill;
-    min-height: 138px;
     flex-shrink: 0;
     -unity-slice-left: 100;
     -unity-slice-top: 100;
@@ -34,12 +33,18 @@
     -unity-slice-top: 100;
     -unity-slice-right: 100;
     -unity-slice-bottom: 100;
-    font-size: 23px;
-    color: rgb(202, 202, 202);
+    font-size: 36px;
+    color: rgb(255, 255, 255);
     -unity-text-outline-color: rgb(96, 96, 96);
     -unity-text-outline-width: 0.5px;
     text-shadow: 1px 1px 0 rgb(55, 55, 55);
-    min-height: 70px;
+    -unity-font-style: bold;
+    flex-grow: 0;
+    height: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .defaultAnswerBox:hover {
