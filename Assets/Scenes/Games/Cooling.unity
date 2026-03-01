@@ -1819,7 +1819,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4540151202534381025, guid: 0699e317e641c6044b353d666185a69e, type: 3}
       propertyPath: m_text
-      value: "... a \u010Dasto i <color=green><b>grafick\xE1 karta</b></color>."
+      value: "... a \u010Dasto i <color=green><b>grafick\xE1 karta</b></color>...."
       objectReference: {fileID: 0}
     - target: {fileID: 4683399175135817791, guid: 0699e317e641c6044b353d666185a69e, type: 3}
       propertyPath: m_Sprite
@@ -3630,8 +3630,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4540151202534381025, guid: 0699e317e641c6044b353d666185a69e, type: 3}
       propertyPath: m_text
-      value: "Spot\u0159ebov\xE1vaj\xED elektrickou energii a \u010D\xE1st z n\xED
-        se <color=green><b>m\u011Bn\xED na teplo</b></color>. Chlazen\xED odv\xE1d\xED
+      value: "... spot\u0159ebov\xE1vaj\xED elektrickou energii a \u010D\xE1st z
+        n\xED se <color=green><b>m\u011Bn\xED na teplo</b></color>. Chlazen\xED odv\xE1d\xED
         teplo pry\u010D, aby se sou\u010D\xE1stky <color=green><b>nep\u0159eh\u0159\xE1ly</b></color>
         a fungovaly spr\xE1vn\u011B.\n\nSleduj, jak postupn\xE1 zm\u011Bna <color=green><b>rychlosti
         ventil\xE1tor\u016F</b></color> ovliv\u0148uje <color=green><b>teplotu</b></color>
