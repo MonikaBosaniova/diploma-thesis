@@ -223,6 +223,10 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 2800000, guid: 286ffb39e82766b459b6dda18d9ccab1, type: 3}
+    - target: {fileID: 8050267848816533766, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2124,6 +2128,10 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 2800000, guid: 598baf66ef007ab4fb0080bad04eef45, type: 3}
+    - target: {fileID: 8050267848816533766, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3413,6 +3421,10 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 2800000, guid: 88d5d949a8dbeb24887f59d9c00fec60, type: 3}
+    - target: {fileID: 8050267848816533766, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4835,6 +4847,10 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 2800000, guid: 88d5d949a8dbeb24887f59d9c00fec60, type: 3}
+    - target: {fileID: 8050267848816533766, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5803,6 +5819,10 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 2800000, guid: 88d5d949a8dbeb24887f59d9c00fec60, type: 3}
+    - target: {fileID: 8050267848816533766, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

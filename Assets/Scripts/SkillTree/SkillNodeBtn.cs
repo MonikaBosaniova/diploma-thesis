@@ -25,7 +25,7 @@ public class SkillNodeBtn : MonoBehaviour
         Refresh(ProgressService.I.ProgressChanged && (ProgressService.I.GetCurrentNodeID() == _node.Id));
         ProgressService.I.OnProgressChanged += HandleChange;
         _playButton.onClick.AddListener(() => {
-            if (ProgressService.I.IsUnlocked(_node.Id))
+            if (ProgressService.I.IsUnlocked(_node.Id) && _playButton.interactable)
             {
                 ProgressService.I.SetCurrentNodeID(_node.Id);
                 SceneManager.LoadScene(_node.SceneName);
@@ -58,7 +58,7 @@ public class SkillNodeBtn : MonoBehaviour
         // }
         _lockedOverlay.SetActive(!unlocked);
         _lockedOverlay.SetActive(forceLock);
-        _playButton.interactable = unlocked;
+        _playButton.interactable = (unlocked && !forceLock);
         _text.text = _node.DisplayName;
         
         visible = (forceLock || done || unlocked);
