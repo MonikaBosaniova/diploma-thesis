@@ -542,7 +542,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &79437743 stripped
 Transform:
@@ -1505,7 +1508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentState: {fileID: 0}
-  skipTutorial: 0
+  skipTutorial: 1
   tutorialParent: {fileID: 1415162210}
   minigameParent: {fileID: 1313237317}
   quizParent: {fileID: 255719259}
@@ -1989,7 +1992,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &319815166 stripped
 Transform:
@@ -3147,7 +3153,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &462160504 stripped
 Transform:
@@ -3636,7 +3645,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7716283863162038046, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
 --- !u!4 &535896303 stripped
 Transform:
@@ -3823,11 +3835,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6515971698142737458, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
       propertyPath: m_text
-      value: "Kdy\u017E elektrick\xFD proud te\u010De, m\u016F\u017Eeme to br\xE1t
-        jako hodnotu 1. Kdy\u017E proud nete\u010De, bereme to jako 0. A proto\u017Ee
-        po\u010D\xEDta\u010D um\xED spolehliv\u011B rozli\u0161it pr\xE1v\u011B tyhle
-        dv\u011B mo\u017Enosti, pracuje v takzvan\xE9 bin\xE1rn\xED soustav\u011B,
-        kter\xE1 pou\u017E\xEDv\xE1 jen \u010D\xEDslice 0 a 1. "
+      value: "Kdy\u017E <color=green><b>elektrick\xFD proud te\u010De</color></b>,
+        m\u016F\u017Eeme to br\xE1t jako <color=green><b>hodnotu 1</color></b>. Kdy\u017E
+        <color=green><b>proud nete\u010De</color></b>, bereme to jako <color=green><b>0</color></b>.
+        A proto\u017Ee po\u010D\xEDta\u010D um\xED spolehliv\u011B rozli\u0161it
+        pr\xE1v\u011B tyhle dv\u011B mo\u017Enosti, pracuje v takzvan\xE9 <color=green><b>bin\xE1rn\xED
+        soustav\u011B</color></b>, kter\xE1 pou\u017E\xEDv\xE1 jen <color=green><b>\u010D\xEDslice
+        0 a 1</color></b>."
       objectReference: {fileID: 0}
     - target: {fileID: 6515971698142737458, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
       propertyPath: m_fontSize
@@ -3848,7 +3862,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7716283863162038046, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
 --- !u!4 &600683191 stripped
 Transform:
@@ -4584,7 +4601,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &678018310 stripped
 Transform:
@@ -5209,12 +5229,14 @@ PrefabInstance:
     - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_text
       value: "A\u017E si tohle trochu vyzkou\u0161\xED\u0161, za\u010Dne ti d\xE1vat
-        smysl, pro\u010D je bin\xE1rn\xED soustava pro po\u010D\xEDta\u010D tak d\u016Fle\u017Eit\xE1:
-        jeho logick\xE9 obvody neust\xE1le pracuj\xED s hodnotami 0 a 1, tedy s t\xEDm,
-        jestli je n\u011Bco vypnut\xE9 nebo zapnut\xE9, jestli proud te\u010De nebo
-        nete\u010De. Z t\u011Bchto jednoduch\xFDch \u201Eano/ne\u201C rozhodnut\xED
-        pak po\u010D\xEDta\u010D slo\u017E\xED v\u0161echno ostatn\xED \u2013 \u010D\xEDsla,
-        text, obr\xE1zky, zvuk i hry. "
+        smysl, pro\u010D je <color=green><b>bin\xE1rn\xED soustava</color></b> pro
+        po\u010D\xEDta\u010D tak d\u016Fle\u017Eit\xE1: jeho <color=green><b>logick\xE9
+        obvody</color></b> neust\xE1le pracuj\xED s <color=green><b>hodnotami 0 a
+        1</color></b>, tedy s t\xEDm, jestli je n\u011Bco <color=green><b>vypnut\xE9
+        nebo zapnut\xE9</color></b>, jestli <color=green><b>proud te\u010De nebo
+        nete\u010De</color></b>. Z t\u011Bchto jednoduch\xFDch <color=green><b>\u201Eano/ne\u201C
+        rozhodnut\xED</color></b> pak po\u010D\xEDta\u010D slo\u017E\xED v\u0161echno
+        ostatn\xED \u2013 \u010D\xEDsla, text, obr\xE1zky, zvuk i hry."
       objectReference: {fileID: 0}
     - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_fontSize
@@ -5299,7 +5321,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &762041913 stripped
 Transform:
@@ -5811,7 +5836,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &839530022 stripped
 Transform:
@@ -6512,7 +6540,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &964827705 stripped
 Transform:
@@ -6763,7 +6794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332026662797742231, guid: b920bb6f8d8c8a44b95787fb5fc0dd1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 197.3
+      value: 237.46
       objectReference: {fileID: 0}
     - target: {fileID: 4332026662797742231, guid: b920bb6f8d8c8a44b95787fb5fc0dd1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7135,7 +7166,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &1054576303 stripped
 Transform:
@@ -7224,7 +7258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4540151202534381025, guid: 0699e317e641c6044b353d666185a69e, type: 3}
       propertyPath: m_text
-      value: "Tohle je \u010D\xEDslo v dvojkov\xE9m z\xE1pisu"
+      value: "Tohle je \u010D\xEDslo v <color=green><b>dvojkov\xE9m z\xE1pisu</color></b>."
       objectReference: {fileID: 0}
     - target: {fileID: 4683399175135817791, guid: 0699e317e641c6044b353d666185a69e, type: 3}
       propertyPath: m_FlipX
@@ -7241,7 +7275,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &1064329797 stripped
 Transform:
@@ -7753,7 +7790,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &1174443919 stripped
 Transform:
@@ -8063,7 +8103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332026662797742231, guid: e6999bb0e84e6324ab4d5cf7ba94031d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 197.3
+      value: 215.4
       objectReference: {fileID: 0}
     - target: {fileID: 4332026662797742231, guid: e6999bb0e84e6324ab4d5cf7ba94031d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8410,10 +8450,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4540151202534381025, guid: 0699e317e641c6044b353d666185a69e, type: 3}
       propertyPath: m_text
-      value: "V bin\xE1rn\xEDm \u010D\xEDsle m\xE1 ka\u017Ed\xE1 cifra svou pozici
-        (index) a jej\xED hodnota se po\u010D\xEDt\xE1 jako 2 na dan\xFD index; kdy\u017E
-        tyto hodnoty se\u010Dteme podle toho, kde je jedni\u010Dka, dostaneme v\xFDsledn\xE9
-        \u010D\xEDslo."
+      value: "V <color=green><b>bin\xE1rn\xEDm \u010D\xEDsle</b></color> m\xE1 ka\u017Ed\xE1
+        <color=green><b>cifra</b></color> svou <color=green><b>pozici (index)</b></color>
+        a jej\xED hodnota se po\u010D\xEDt\xE1 jako <color=green><b>2 na dan\xFD
+        index</b></color>; kdy\u017E tyto hodnoty <color=green><b>se\u010Dteme</b></color>
+        podle toho, kde je <color=green><b>jedni\u010Dka</b></color>, dostaneme <color=green><b>v\xFDsledn\xE9
+        \u010D\xEDslo</b></color>."
       objectReference: {fileID: 0}
     - target: {fileID: 4683399175135817791, guid: 0699e317e641c6044b353d666185a69e, type: 3}
       propertyPath: m_FlipX
@@ -8438,7 +8480,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &1338797474 stripped
 Transform:
@@ -8513,7 +8558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332026662797742231, guid: b920bb6f8d8c8a44b95787fb5fc0dd1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 197.3
+      value: 237.46
       objectReference: {fileID: 0}
     - target: {fileID: 4332026662797742231, guid: b920bb6f8d8c8a44b95787fb5fc0dd1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8752,7 +8797,8 @@ PrefabInstance:
     - target: {fileID: 6515971698142737458, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
       propertyPath: m_text
       value: "Po\u010D\xEDta\u010D nep\u0159em\xFD\u0161l\xED jako \u010Dlov\u011Bk.
-        \nVlastn\u011B pozn\xE1 jen dv\u011B v\u011Bci: \nzapnuto nebo vypnuto.  "
+        \nVlastn\u011B pozn\xE1 jen dv\u011B v\u011Bci: \n<color=green><b>zapnuto
+        nebo vypnuto</b></color> "
       objectReference: {fileID: 0}
     - target: {fileID: 6515971698142737458, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
       propertyPath: m_fontSize
@@ -8773,7 +8819,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7716283863162038046, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
 --- !u!4 &1405716782 stripped
 Transform:
@@ -9414,7 +9463,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4540151202534381025, guid: 0699e317e641c6044b353d666185a69e, type: 3}
       propertyPath: m_text
-      value: "Tohle je \u010D\xEDslo v des\xE1tkov\xE9m (tak jak ho pozn\xE1me)."
+      value: "Tohle je \u010D\xEDslo v <color=green><b>des\xEDtkov\xE9m z\xE1pisu</color></b>
+        (tak jak ho pozn\xE1me)."
       objectReference: {fileID: 0}
     - target: {fileID: 4683399175135817791, guid: 0699e317e641c6044b353d666185a69e, type: 3}
       propertyPath: m_FlipX
@@ -9435,7 +9485,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &1481216224 stripped
 Transform:
@@ -9540,7 +9593,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1094594776}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &1481296944 stripped
 Transform:
@@ -10927,7 +10983,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &1764069342 stripped
 Transform:
@@ -11438,9 +11497,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_text
-      value: "V \u010De\u0161tin\u011B tomu n\u011Bkdy \u0159\xEDk\xE1me i dvojkov\xE1
-        soustava, proto\u017Ee pou\u017E\xEDv\xE1 jen dv\u011B \u010D\xEDsla \u2013
-        jedni\u010Dku a nulu.  "
+      value: "V \u010De\u0161tin\u011B tomu n\u011Bkdy \u0159\xEDk\xE1me i <color=green><b>dvojkov\xE1
+        soustava</color></b>, proto\u017Ee pou\u017E\xEDv\xE1 jen <color=green><b>dv\u011B
+        \u010D\xEDsla</color></b> \u2013 <color=green><b>jedni\u010Dku a nulu</color></b>."
       objectReference: {fileID: 0}
     - target: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11515,7 +11574,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       insertIndex: 1
       addedObject: {fileID: 474196992}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &1841214181 stripped
 Transform:
@@ -12013,7 +12075,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2664933416821986150, guid: 0699e317e641c6044b353d666185a69e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0699e317e641c6044b353d666185a69e, type: 3}
 --- !u!4 &1910816867 stripped
 Transform:
@@ -12539,7 +12604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332026662797742231, guid: b920bb6f8d8c8a44b95787fb5fc0dd1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 197.3
+      value: 258.22
       objectReference: {fileID: 0}
     - target: {fileID: 4332026662797742231, guid: b920bb6f8d8c8a44b95787fb5fc0dd1d, type: 3}
       propertyPath: m_LocalPosition.y
