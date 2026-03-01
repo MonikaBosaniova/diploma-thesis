@@ -2900,6 +2900,7 @@ GameObject:
   - component: {fileID: 842013944}
   - component: {fileID: 842013947}
   - component: {fileID: 842013948}
+  - component: {fileID: 842013949}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2943,14 +2944,14 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 0.000356853
     width: 1
-    height: 1
+    height: 0.9992863
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 5.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3041,6 +3042,20 @@ MonoBehaviour:
   defaultRotation: {x: 7.1502094, y: 308.60522, z: -0.0019758435}
   skillTreePosition: {x: -7.673, y: 1.874, z: 5.365004}
   skillTreeRotation: {x: 4.272, y: 0, z: 0}
+--- !u!114 &842013949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842013943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b768ff710b8df714b820812b875ca9c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetWidth: 19.2
+  targetHeight: 10.8
 --- !u!1 &851079871
 GameObject:
   m_ObjectHideFlags: 0

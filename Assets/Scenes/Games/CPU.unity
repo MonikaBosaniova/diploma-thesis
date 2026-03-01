@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentState: {fileID: 0}
-  skipTutorial: 0
+  skipTutorial: 1
   tutorialParent: {fileID: 1415162210}
   minigameParent: {fileID: 1313237317}
   quizParent: {fileID: 255719259}
@@ -6547,6 +6547,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 361455809865397090, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
+      propertyPath: orthographic size
+      value: 4.6889954
+      objectReference: {fileID: 0}
     - target: {fileID: 1939169142589381404, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
