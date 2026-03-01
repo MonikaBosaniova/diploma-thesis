@@ -726,7 +726,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 922000787a82a914a88b3a8c08c8657f, type: 2}
     - target: {fileID: 2886116798649554586, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_text
-      value: Gates
+      value: "Logick\xE1 hradla"
       objectReference: {fileID: 0}
     - target: {fileID: 4663262112186638692, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_Name
@@ -1845,7 +1845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: "Hr\xE1t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2114,7 +2114,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 85d512122e5b8b349ad865f35c8f9b14, type: 2}
     - target: {fileID: 2886116798649554586, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_text
-      value: Motherboard
+      value: "Z\xE1kladn\xED deska "
       objectReference: {fileID: 0}
     - target: {fileID: 4663262112186638692, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_Name
@@ -3657,7 +3657,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b05346747ce92944f88ca121c548224d, type: 2}
     - target: {fileID: 2886116798649554586, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_text
-      value: Binary
+      value: "Bin\xE1rn\xED soustava "
       objectReference: {fileID: 0}
     - target: {fileID: 4663262112186638692, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_Name
@@ -4286,7 +4286,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 5bf074314762ecd45ad51d577ae22513, type: 2}
     - target: {fileID: 2886116798649554586, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_text
-      value: Cooling
+      value: "Chlazen\xED "
       objectReference: {fileID: 0}
     - target: {fileID: 4663262112186638692, guid: 6c8376b1023712a438f9deee6c79c981, type: 3}
       propertyPath: m_Name
@@ -4527,7 +4527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back
+  m_text: "Zp\u011Bt"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
