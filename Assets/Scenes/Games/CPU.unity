@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentState: {fileID: 0}
-  skipTutorial: 1
+  skipTutorial: 0
   tutorialParent: {fileID: 1415162210}
   minigameParent: {fileID: 1313237317}
   quizParent: {fileID: 255719259}
@@ -6549,7 +6549,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 361455809865397090, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
       propertyPath: orthographic size
-      value: 4.6889954
+      value: 6.0042405
       objectReference: {fileID: 0}
     - target: {fileID: 1939169142589381404, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -12265,9 +12265,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197785774675965194, guid: 13252a9bf0b5fd340bfd6f84404f1eb2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4212267249390475974, guid: 13252a9bf0b5fd340bfd6f84404f1eb2, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820662431897900611, guid: 13252a9bf0b5fd340bfd6f84404f1eb2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4820662431897900611, guid: 13252a9bf0b5fd340bfd6f84404f1eb2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 6678765835925229679, guid: 13252a9bf0b5fd340bfd6f84404f1eb2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 7323524958141623060, guid: 13252a9bf0b5fd340bfd6f84404f1eb2, type: 3}
       propertyPath: m_IsActive
