@@ -9,7 +9,7 @@ namespace Games.Ram
     public class RamLevelController : LevelController
     {
         [Header("Ram Level")] 
-        [SerializeField] private float Time;
+        [SerializeField] private float _time;
         [SerializeField] private GameObject Shape;
         [SerializeField] private GameObject SpawnShapesParent;
         [SerializeField] private GameObject ShapesDoneParent;
@@ -20,7 +20,7 @@ namespace Games.Ram
         [SerializeField] private bool gcBlocked = false;
         [SerializeField] private float startTimeGC = 1;
         [SerializeField] private float actualTimeGC;
-        [SerializeField] private float stepGC = 0.005f;
+        [SerializeField] private float stepGC = 0.05f;
         [SerializeField] private GameObject disabledGC;
         
         private int numberToGenerateAddress = 3;
@@ -28,6 +28,7 @@ namespace Games.Ram
         RamGameManager ramGameManager;
         private List<SnappedAddressCubieController> _allSnappedCubies = new List<SnappedAddressCubieController>();
         private bool generateNewAddress = false;
+        private int numOfGCCalled = 0;
         
         public override void Init()
         {
@@ -50,6 +51,7 @@ namespace Games.Ram
             {
                 var allAddresses = GetAllAddresses();
                 cpuWantedAddressController.GenerateWantedAddress(allAddresses);
+                numOfGCCalled = 0;
                 generateNewAddress = false;
                 disabledGC.SetActive(true);
                 gcBlocked = true;
@@ -58,13 +60,13 @@ namespace Games.Ram
             
             if (gcBlocked || gcEnabled) return;
 
-            actualTimeGC -= stepGC;
+            actualTimeGC -= stepGC * Time.deltaTime;
             if (actualTimeGC <= 0)
             {
                 if(disabledGC != null)
                     disabledGC.SetActive(false);
                 gcEnabled = true;
-                actualTimeGC = startTimeGC;
+                //actualTimeGC = startTimeGC;
             }
         }
 
@@ -78,7 +80,7 @@ namespace Games.Ram
             
             if (numberToGenerateAddress == 0 && cpuWantedAddressController.generateNewAddress)
             {
-                numberToGenerateAddress = 3;
+                numberToGenerateAddress = 4;
                 generateNewAddress = true;
                 EnableHighlightingAndDraggingForSnappedCubies(true);
             }
@@ -116,7 +118,9 @@ namespace Games.Ram
             
             //LOGIC FOR DESTROYING
             //removing 10% randomly
-            int numOfToBeDestroyedAddresses = Mathf.RoundToInt(allDestroyableCubies.Count * 0.3f);
+            float probbilityToRemoved = 0.2f;
+            if(numOfGCCalled > 1)  probbilityToRemoved = 0.4f;
+            int numOfToBeDestroyedAddresses = Mathf.RoundToInt(allDestroyableCubies.Count * probbilityToRemoved);
             Debug.Log("REMOVING: " + numOfToBeDestroyedAddresses);
 
             if (allDestroyableCubies.Count < numOfToBeDestroyedAddresses)
@@ -142,7 +146,9 @@ namespace Games.Ram
                         Destroy(toBeRemovedCubie.gameObject);
                 }
             }
-                
+            
+            actualTimeGC = startTimeGC;
+            numOfGCCalled++;
         }
 
         private void EnableHighlightingAndDraggingForSnappedCubies(bool enabled)

@@ -180,9 +180,9 @@ MonoBehaviour:
   - m_Id: 166857543216910336
     m_Localized: "V\xEDtej v roli <b>spr\xE1vce pam\u011Bti</b>, tv\xFDm \xFAkolem
       je udr\u017Eet syst\xE9m v chodu a zajistit, aby procesor nikdy nemusel \u010Dekat.
-      Z prav\xFD \u010D\xE1sti obrazovky ti budou p\u0159ich\xE1zet <b>datov\xE9
-      bloky</b>, kter\xE9 mus\xED\u0161 \u0161ikovn\u011B <color=green><b>ukl\xE1dat
-      do slot\u016F v RAM</b></color>."
+      Z <color=green>HDD/SSD</color> ti budou p\u0159ich\xE1zet <b>datov\xE9 bloky</b>,
+      kter\xE9 mus\xED\u0161 \u0161ikovn\u011B <color=green><b>ukl\xE1dat do slot\u016F
+      v RAM</b></color>."
     m_Metadata:
       m_Items: []
   - m_Id: 166859659973087232
