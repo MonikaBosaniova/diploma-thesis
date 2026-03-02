@@ -20,10 +20,11 @@ namespace Games.Ram
         [SerializeField] private bool gcBlocked = false;
         [SerializeField] private float startTimeGC = 1;
         [SerializeField] private float actualTimeGC;
-        [SerializeField] private float stepGC = 0.003f;
+        [SerializeField] private float stepGC = 0.005f;
         [SerializeField] private GameObject disabledGC;
         
         private int numberToGenerateAddress = 3;
+        private int numberOfWantedAddresses = 5;
         RamGameManager ramGameManager;
         private List<SnappedAddressCubieController> _allSnappedCubies = new List<SnappedAddressCubieController>();
         private bool generateNewAddress = false;
@@ -52,7 +53,7 @@ namespace Games.Ram
                 generateNewAddress = false;
                 disabledGC.SetActive(true);
                 gcBlocked = true;
-                actualTimeGC = startTimeGC;
+                //actualTimeGC = startTimeGC;
             }
             
             if (gcBlocked || gcEnabled) return;
@@ -115,7 +116,7 @@ namespace Games.Ram
             
             //LOGIC FOR DESTROYING
             //removing 10% randomly
-            int numOfToBeDestroyedAddresses = Mathf.RoundToInt(allDestroyableCubies.Count * 0.1f);
+            int numOfToBeDestroyedAddresses = Mathf.RoundToInt(allDestroyableCubies.Count * 0.3f);
             Debug.Log("REMOVING: " + numOfToBeDestroyedAddresses);
 
             if (allDestroyableCubies.Count < numOfToBeDestroyedAddresses)
@@ -176,7 +177,7 @@ namespace Games.Ram
             return allPossibleACubies;
         }
         
-        private void CheckFinishState(double newValue)
+        public void CallFinishState()
         {
             StartCoroutine(WaitToShowCompleteLevel());
         }

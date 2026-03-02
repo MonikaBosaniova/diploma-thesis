@@ -28,6 +28,7 @@ namespace Games.Ram
         private RamLevelController _ramLevelController;
         private BgCubeTrigger _bgCubeTrigger;
         private SnappedAddressCubieController _snappedAddressCubieController;
+        internal int numberOfWantedAddresses = 5;        
 
         private void Start()
         {
@@ -39,6 +40,7 @@ namespace Games.Ram
         {
             //List<Tuple<int,int>> allPossibleAddresses = GetAllAddresses();
             if (allPossibleAddresses.Count == 0) return;
+            if(numberOfWantedAddresses == 0) _ramLevelController.CallFinishState();
             
             _bgCubeTrigger.highlightingEnabled = true;
             generateNewAddress = false;
@@ -47,10 +49,12 @@ namespace Games.Ram
             columnAddress = allPossibleAddresses[random].Item2;
             
             //VISUALIZE ADDRESS
+            addressColumnTextBox.transform.parent.gameObject.SetActive(true);
             string row = addressesRowParent.GetChild(rowAddress).GetComponent<TMP_Text>().text;
             string col = addressesColumnParent.GetChild(columnAddress).GetComponent<TMP_Text>().text;
             addressRowTextBox.text = row;
             addressColumnTextBox.text = col;
+            numberOfWantedAddresses--;
         }
 
         internal void SetRamLevelController(RamLevelController ramLevelController)
@@ -68,6 +72,7 @@ namespace Games.Ram
             // //TODO NICER VISUALS
             if (answerIsCorrect)
             {
+                addressColumnTextBox.transform.parent.gameObject.SetActive(false);
                 addressRowTextBox.text = "";
                 addressColumnTextBox.text = "";
                 _bgCubeTrigger.SetHighlight(false);

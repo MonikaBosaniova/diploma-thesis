@@ -77,6 +77,7 @@ namespace Games.Ram
             if (numOfRepetitions == 0 && !tutorialState)
             {
                 CallFinishState();
+                numOfRepetitions = 3;
                 return;
             }
             
@@ -179,8 +180,6 @@ namespace Games.Ram
             {
                 transform.GetChild(i).gameObject.SetActive(false);
             }
-            
-            
             
             base.Close();
         }

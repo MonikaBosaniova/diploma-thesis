@@ -81,7 +81,6 @@ namespace GameStateMachine
             quizState.OnStateComplete += () => ChangeState(endState);
 
             ChangeState(skipTutorial ? minigameState : tutorialState);
-            HideAllLevels();
         }
 
         public void AddStar()

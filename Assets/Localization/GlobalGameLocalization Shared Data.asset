@@ -139,6 +139,22 @@ MonoBehaviour:
     m_Key: CPU_Minigame_Start_3
     m_Metadata:
       m_Items: []
+  - m_Id: 166857543216910336
+    m_Key: RAM_Minigame_Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166859659973087232
+    m_Key: RAM_Minigame_Start_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166859833378197504
+    m_Key: RAM_Minigame_Start_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 166859951946977280
+    m_Key: RAM_Minigame_Start_3
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
