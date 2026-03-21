@@ -155,6 +155,750 @@ MonoBehaviour:
     m_Key: RAM_Minigame_Start_3
     m_Metadata:
       m_Items: []
+  - m_Id: 173922145806733312
+    m_Key: Ram/RamGameManager/Levels/01/CPU/CPU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922953180893184
+    m_Key: Ram/RamGameManager/Tutorial/END/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922963524046848
+    m_Key: Ram/RamGameManager/Tutorial/ONLY_AVATAR (5)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922978652901376
+    m_Key: Ram/RamGameManager/Tutorial/ONLY_AVATAR (4)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922988907974656
+    m_Key: Ram/RamGameManager/Tutorial/ONLY_AVATAR (3)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923009661390848
+    m_Key: Ram/RamGameManager/Tutorial/ONLY_AVATAR (2)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923027009032192
+    m_Key: Ram/RamGameManager/Tutorial/ONLY_AVATAR (1)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923036588822528
+    m_Key: Ram/RamGameManager/Tutorial/ONLY_AVATAR/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923046575460352
+    m_Key: Ram/RamGameManager/Tutorial/Start/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923149470126080
+    m_Key: Ram/RamGameManager/Tutorial/Start/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173938918367055872
+    m_Key: Ram/RamGameManager/Levels/01/Spawn/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939219157372928
+    m_Key: Binary/BinaryGameManager/Tutorial/Start/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939257489117184
+    m_Key: Binary/BinaryGameManager/Tutorial/ONLY_AVATAR (4)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939283107926016
+    m_Key: Binary/BinaryGameManager/Tutorial/ONLY_AVATAR/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939324069498880
+    m_Key: Binary/BinaryGameManager/Tutorial/FreeMode (7)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939348987858944
+    m_Key: Binary/BinaryGameManager/Tutorial/FreeMode (6)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939381313359872
+    m_Key: Binary/BinaryGameManager/Levels/DecCalculator (1)/ResultButtons/Wrong/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939416474210304
+    m_Key: Binary/BinaryGameManager/Levels/DecCalculator/ResultButtons/Wrong/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939428482502656
+    m_Key: Binary/BinaryGameManager/Tutorial/FreeMode (5)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939453715435520
+    m_Key: Binary/BinaryGameManager/Tutorial/FreeMode/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939480282157056
+    m_Key: Binary/BinaryGameManager/Tutorial/ONLY_AVATAR (2)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939508925059072
+    m_Key: Binary/BinaryGameManager/Tutorial/ONLY_AVATAR/Avatar (1)/textBubble/Text
+      (TMP) 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939522644627456
+    m_Key: Binary/BinaryGameManager/Tutorial/01 (1)/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939531951788032
+    m_Key: Binary/BinaryGameManager/Tutorial/01 (1)/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939560032653312
+    m_Key: Binary/BinaryGameManager/Tutorial/Light/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939571713789952
+    m_Key: Binary/BinaryGameManager/Tutorial/Light/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939583709499392
+    m_Key: Binary/BinaryGameManager/Tutorial/Start/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939590831427584
+    m_Key: Binary/BinaryGameManager/Tutorial/ONLY_AVATAR (1)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939624138395648
+    m_Key: Binary/BinaryGameManager/Tutorial/FreeMode (1)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939695110213632
+    m_Key: Binary/BinaryGameManager/Tutorial/FreeMode (4)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939720175374336
+    m_Key: Binary/BinaryGameManager/Tutorial/FreeMode (3)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939743390846976
+    m_Key: Binary/BinaryGameManager/Tutorial/FreeMode (2)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939771526238208
+    m_Key: Binary/BinaryGameManager/Levels/DecCalculator (2)/ResultButtons/Wrong/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940123113771008
+    m_Key: Cooling/CoolingManager/Tutorial/Level (3)/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940131619819520
+    m_Key: Cooling/CoolingManager/Tutorial/Start/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940140377526272
+    m_Key: Cooling/CoolingManager/Tutorial/Level (1)/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940149630160896
+    m_Key: Cooling/CoolingManager/Tutorial/ONLY_AVATAR (3)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940157930688512
+    m_Key: Cooling/CoolingManager/Tutorial/ONLY_AVATAR (2)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940165769842688
+    m_Key: Cooling/CoolingManager/Tutorial/ONLY_AVATAR (1)/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940172417814528
+    m_Key: Cooling/CoolingManager/Tutorial/Warning/Warnings/warning/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940177400647680
+    m_Key: Cooling/CoolingManager/Tutorial/Warning/Warnings/hot/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940184925229056
+    m_Key: Cooling/CoolingManager/Tutorial/Warning/Warnings/sound/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940194018480128
+    m_Key: Cooling/CoolingManager/Tutorial/Warning/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940215694643200
+    m_Key: Cooling/CoolingManager/Tutorial/ONLY_AVATAR/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940229460348928
+    m_Key: Cooling/CoolingManager/Tutorial/Apps (1)/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940238620708864
+    m_Key: Cooling/CoolingManager/Tutorial/Apps/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940247168700416
+    m_Key: Cooling/CoolingManager/Tutorial/Level (4)/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940255158849536
+    m_Key: Cooling/CoolingManager/Tutorial/Level (2)/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940264600227840
+    m_Key: Cooling/CoolingManager/Tutorial/Warning/Warnings/slow/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940279678750720
+    m_Key: Cooling/CoolingManager/Tutorial/Start/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940334821265408
+    m_Key: CPU/CPUGameManager/Levels/01/CPU/Load/Store/Load/title/load
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940441125900288
+    m_Key: CPU/CPUGameManager/Tutorial/program (1)/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940466681794560
+    m_Key: CPU/CPUGameManager/Levels/01/CPU/Load/Store/Store/store mana/model/Text/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940479252123648
+    m_Key: CPU/CPUGameManager/Tutorial/END/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940485438722048
+    m_Key: CPU/CPUGameManager/Levels/01/Monitor/Question/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940518670192640
+    m_Key: CPU/CPUGameManager/Levels/01/CPU/Load/Store/Load/cost/model/Text/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940526001836032
+    m_Key: CPU/CPUGameManager/Tutorial/Temp (1)/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940536659562496
+    m_Key: CPU/CPUGameManager/Levels/01/Monitor/CreateShieldButton/createShield/model/Text/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940544498716672
+    m_Key: CPU/CPUGameManager/Tutorial/Takt/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940551381569536
+    m_Key: CPU/CPUGameManager/Tutorial/Temp/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940566271348736
+    m_Key: CPU/CPUGameManager/Tutorial/Takt/Avatar (1)/textBubble (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940576773885952
+    m_Key: CPU/CPUGameManager/Tutorial/Cache/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940583124062208
+    m_Key: CPU/CPUGameManager/Tutorial/Cache/Cache/CPU/Cache/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940605685223424
+    m_Key: CPU/CPUGameManager/Levels/01/CPU/Load/Store/Load/mana/model/Text/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940627680153600
+    m_Key: CPU/CPUGameManager/Levels/01/CPU/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940637251555328
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940644218294272
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940664380313600
+    m_Key: CPU/CPUGameManager/Tutorial/program/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940673087688704
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940685641240576
+    m_Key: CPU/CPUGameManager/Tutorial/Start/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940693119684608
+    m_Key: CPU/CPUGameManager/Tutorial/intro/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940704670797824
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (1)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940714527412224
+    m_Key: CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940722031022080
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (5)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940730285412352
+    m_Key: CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (1)/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940737206013952
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (4)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940745133248512
+    m_Key: CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (2)/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940754247471104
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (3)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940774472404992
+    m_Key: CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (3)/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940787948703744
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (2)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940795003523072
+    m_Key: CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (4)/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940801886375936
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (1)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940808509181952
+    m_Key: CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (5)/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940815912128512
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940829656862720
+    m_Key: CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (6)/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940843544203264
+    m_Key: CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (7)/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940853061079040
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (6)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940863559421952
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (11)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940872786890752
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (10)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940879116095488
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (9)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940889668964352
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (8)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940896757338112
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (7)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940905347272704
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (6)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940912993488896
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (5)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940927795187712
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (4)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940935093276672
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (3)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940942265536512
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction
+      (2)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940951853715456
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940977506078720
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (7)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940986406391808
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (9)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940994262323200
+    m_Key: CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Instructions/Instruction/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941001103233024
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (6)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941008632008704
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (7)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941025254035456
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (8)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941032224968704
+    m_Key: CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Instructions/Instruction
+      (4)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941041267888128
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (5)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941048528228352
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (9)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941054895181824
+    m_Key: CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Instructions/Instruction
+      (2)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941066093973504
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (10)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941072842608640
+    m_Key: CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Instructions/Instruction
+      (1)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941080790814720
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (11)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941089384943616
+    m_Key: CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Instructions/Instruction/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941102940934144
+    m_Key: CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Instructions/Instruction
+      (3)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941110922694656
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (8)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941118271115264
+    m_Key: CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Instructions/Instruction
+      (1)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941129549598720
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction/Text
+      (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941137506193408
+    m_Key: CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Instructions/Instruction
+      (2)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941145714446336
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (3)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941152182063104
+    m_Key: CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Instructions/Instruction
+      (3)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941158834229248
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (2)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941164555259904
+    m_Key: CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Instructions/Instruction
+      (4)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941173153583104
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (1)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941191763709952
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction
+      (4)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941201658073088
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (10)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941215784488960
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction
+      (11)/Text (TMP) (1)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941240350527488
+    m_Key: CPU/CPUGameManager/Levels/01/Notepad/ToDos/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941247283712000
+    m_Key: CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941254825070592
+    m_Key: CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941263549222912
+    m_Key: CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941269664518144
+    m_Key: CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941279684710400
+    m_Key: CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941670501568512
+    m_Key: Gates/GatesGameManager/Tutorial/Start/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943009793167360
+    m_Key: Gate/Prefab Mode in Context/Gate/Types/NONE/Cube/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943222951890944
+    m_Key: Gates/GatesGameManager/Tutorial/Level_Intro3/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943266576846848
+    m_Key: Gates/GatesGameManager/Tutorial/Level_NOT/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943373191860224
+    m_Key: Gates/GatesGameManager/Tutorial/Level_Intro/Avatar (1)/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943386714296320
+    m_Key: Gates/GatesGameManager/Tutorial/Level_Intro/TextBox (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943413314572288
+    m_Key: Gates/GatesGameManager/Tutorial/Level_Intro/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943433128464384
+    m_Key: Gates/GatesGameManager/Tutorial/Start/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943456616566784
+    m_Key: Gates/GatesGameManager/Tutorial/Level_AND/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943471430848512
+    m_Key: Gates/GatesGameManager/Tutorial/Level_Intro2/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943535943438336
+    m_Key: Gates/GatesGameManager/Tutorial/Level_OR/Symbol/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943547133841408
+    m_Key: Gates/GatesGameManager/Tutorial/Level_OR/TextBox (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943574937882624
+    m_Key: Gates/GatesGameManager/Tutorial/Level_OR/TextBox (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943601995337728
+    m_Key: Gates/GatesGameManager/Tutorial/Level_NOT/Symbol/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943630743097344
+    m_Key: Gates/GatesGameManager/Tutorial/Level_XOR/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943644550746112
+    m_Key: Gates/GatesGameManager/Tutorial/Level_XOR/TextBox (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943660791091200
+    m_Key: Gates/GatesGameManager/Tutorial/Level_XOR/TextBox (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943670123417600
+    m_Key: Gates/GatesGameManager/Tutorial/Level_XOR/Symbol/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943683289337856
+    m_Key: Gates/GatesGameManager/Tutorial/END/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943725760860160
+    m_Key: Gates/GatesGameManager/Tutorial/Level_AND/Symbol/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943758308659200
+    m_Key: Gates/GatesGameManager/Tutorial/Level_AND/TextBox (2)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943773496233984
+    m_Key: Gates/GatesGameManager/Tutorial/Level_AND/TextBox (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943788574756864
+    m_Key: Gates/GatesGameManager/Tutorial/Level_NOT/TextBox (1)/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943813023354880
+    m_Key: Gates/GatesGameManager/Tutorial/Level_OR/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944768162844672
+    m_Key: HDD_SSD/HDD_SSDGameManager/Tutorial/Start/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944781404262400
+    m_Key: HDD_SSD/HDD_SSDGameManager/Tutorial/Start/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944791327985664
+    m_Key: HDD_SSD/HDD_SSDGameManager/Tutorial/saving_files/Avatar/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944803093008384
+    m_Key: HDD_SSD/HDD_SSDGameManager/Tutorial/two_types/Avatar/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944810521120768
+    m_Key: HDD_SSD/HDD_SSDGameManager/Tutorial/two_types (1)/Avatar/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944819043946496
+    m_Key: HDD_SSD/HDD_SSDGameManager/Tutorial/two_types (2)/Avatar/textBubble/Text
+      (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944826501419008
+    m_Key: HDD_SSD/HDD_SSDGameManager/Tutorial/HDD/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944835410120704
+    m_Key: HDD_SSD/HDD_SSDGameManager/Tutorial/SSD/TextBox/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944845057019904
+    m_Key: HDD_SSD/HDD_SSDGameManager/Tutorial/END/Avatar (1)/textBubble/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

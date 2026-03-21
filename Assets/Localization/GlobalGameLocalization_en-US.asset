@@ -59,103 +59,957 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 118525458794532864
-    m_Localized: Super!
+    m_Localized: Awesome! We did it!
     m_Metadata:
       m_Items: []
   - m_Id: 164636933619306496
-    m_Localized: TODO
+    m_Localized: Light up all the bulbs!
     m_Metadata:
       m_Items: []
   - m_Id: 164884267116646400
-    m_Localized: TODO
+    m_Localized: Create a binary code!
     m_Metadata:
       m_Items: []
   - m_Id: 164884481839845376
-    m_Localized: TODO
+    m_Localized: Now try it without help!
     m_Metadata:
       m_Items: []
   - m_Id: 164884554699100160
-    m_Localized: TODO
+    m_Localized: 'Now let''s turn it around: What number do you see right now? Use
+      the plus and minus buttons to adjust the value, and when you are sure, press
+      the equals button.'
     m_Metadata:
       m_Items: []
   - m_Id: 165347498411020288
-    m_Localized: TODO
+    m_Localized: Your task will be to set the fan performance so that they cool the
+      components just right.
     m_Metadata:
       m_Items: []
   - m_Id: 165350384738095104
-    m_Localized: TODO
+    m_Localized: If they run too fast, the user will complain about the noise and
+      the components will be unnecessarily <color=blue>overcooled (blue).
     m_Metadata:
       m_Items: []
   - m_Id: 165350462869590016
-    m_Localized: TODO
+    m_Localized: If they run too slow, the components will <color=red>overheat (red)</color>
+      and the computer will slow down.
     m_Metadata:
       m_Items: []
   - m_Id: 165350482553458688
-    m_Localized: TODO
+    m_Localized: Try to find the ideal setting where the temperature gradually stabilizes
+      at the correct value and <color=green>stays in the green zone</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 165661820018348032
-    m_Localized: TODO
+    m_Localized: In this level, we will explore how an HDD (hard drive) actually
+      works.
     m_Metadata:
       m_Items: []
   - m_Id: 165661930609561600
-    m_Localized: TODO
+    m_Localized: We already know that an HDD is more of a 'slow runner' compared
+      to a lightning-fast SSD, and in this game, you'll experience that slowness
+      firsthand.
     m_Metadata:
       m_Items: []
   - m_Id: 165661996279779328
-    m_Localized: TODO
+    m_Localized: Your task is to control the drive's <color=green><b>read head</color></b>
+      so that its tip exactly catches the squares representing data. Get ready, file
+      loading is starting!
     m_Metadata:
       m_Items: []
   - m_Id: 165662052739305472
-    m_Localized: TODO
+    m_Localized: Watch out, things are getting tougher! We are increasing the drive
+      capacity right now.
     m_Metadata:
       m_Items: []
   - m_Id: 165671560337281024
-    m_Localized: TODO
+    m_Localized: There are differences even among HDDs! This model has a <color=green><b>higher
+      RPM</color></b>, so the data flows much faster under the read head. Use this
+      performance and <color=green><b>catch them all</color></b>, so we have the
+      file loaded in record time!
     m_Metadata:
       m_Items: []
   - m_Id: 165672401345564672
-    m_Localized: TODO
+    m_Localized: To fit more files into the same area, we need to pack the data much
+      closer together.
     m_Metadata:
       m_Items: []
   - m_Id: 165709255029673984
-    m_Localized: TODO
+    m_Localized: Welcome to the world of SSDs! Forget about slow mechanical heads.
+      An SSD works on the principle of electrical impulses.
     m_Metadata:
       m_Items: []
   - m_Id: 165709426505404416
-    m_Localized: TODO
+    m_Localized: Your task is to activate the correct <color=green><b>row and column</color></b>
+      using the balls on the edge. Where your choices intersect, you will instantly
+      read data from the green cell. No waiting, just pure speed!
     m_Metadata:
       m_Items: []
   - m_Id: 166456809505804288
-    m_Localized: TODO
+    m_Localized: Welcome to the <color=green><b>CPU</color></b> core! Your task is
+      to follow the <color=green><b>instructions</color></b> in the notebook on the
+      left and find out if the wizard can conjure his shield.
     m_Metadata:
       m_Items: []
   - m_Id: 166460212755681280
-    m_Localized: TODO
+    m_Localized: You can summon data from <color=green><b>RAM</color></b> into the
+      processor via the <color=blue><b>blue panel</color></b>. Then you can drag
+      them with your mouse into the correct <color=green><b>register (R1-R4)</color></b>
+      in the cache.
     m_Metadata:
       m_Items: []
   - m_Id: 166460294875959296
-    m_Localized: TODO
+    m_Localized: The colored blocks at the top are used for <color=green><b>calculations</color></b>
+      and <color=green><b>comparisons</color></b>. Drag values into the input registers
+      so the processor performs the operation you currently need.
     m_Metadata:
       m_Items: []
   - m_Id: 166462323631443968
-    m_Localized: TODO
+    m_Localized: You can take the results of operations and move them further between
+      <color=green><b>registers</color></b> or send them back to <color=green><b>RAM</color></b>.
+      Watch the notebook and follow the instructions exactly!
     m_Metadata:
       m_Items: []
   - m_Id: 166857543216910336
-    m_Localized: TODO
+    m_Localized: Welcome to the role of <b>memory manager</b>, your task is to keep
+      the system running and ensure the processor never has to wait. <b>Data blocks</b>
+      will come to you from the <color=green>HDD/SSD</color>, which you must cleverly
+      <color=green><b>store in RAM slots</b></color>.
     m_Metadata:
       m_Items: []
   - m_Id: 166859659973087232
-    m_Localized: TODO
+    m_Localized: Try to stack the data closely together to <b>save as much space
+      as possible</b> for the next packages.
     m_Metadata:
       m_Items: []
   - m_Id: 166859833378197504
-    m_Localized: TODO
+    m_Localized: Pay close attention to the <b>CPU</b>, which will continuously request
+      specific data using <b>addresses</b>. As soon as you see a request, you must
+      <color=green><b>drag the data from RAM</b></color> and deliver it directly
+      to the processor.
     m_Metadata:
       m_Items: []
   - m_Id: 166859951946977280
-    m_Localized: TODO
+    m_Localized: Some data in memory is no longer needed and just unnecessarily takes
+      up precious space. You can therefore <color=green><b>trigger a memory cleanup</b></color>,
+      which automatically deletes everything the processor is no longer using.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922145806733312
+    m_Localized: CPU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922953180893184
+    m_Localized: "Let's try it out \r\nin the game."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922963524046848
+    m_Localized: 'The <b>Operating system</b> is smart. When it sees that the <b>RAM</b>
+      is filling up, it tries to <color=green><b>clear it out</b></color>.
+
+      
+
+      It
+      asks programs if they are no longer <b>using</b> something, and so a <color=green><b>piece
+      of space is freed up</b></color>.
+
+      
+
+      Click on the garbage truck
+      and delete unnecessary data from RAM!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922978652901376
+    m_Localized: 'But beware: <b>more RAM</b> does not automatically mean the <color=green><b>fastest
+      computer</b></color>, but it often helps a lot when you are doing <color=green><b>multiple
+      things at once</b></color>.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922988907974656
+    m_Localized: "Usually, the <b>more RAM</b> a computer has, the more things it
+      can handle <b>at once</b>.\r\n\r\nFor example:\r\n\u25CF  you can have <color=green><b>more
+      programs and tabs</b></color> open in the browser,\r\n\u25CF  the computer
+      <color=green><b>stutters less</b></color> during demanding work,\r\n\u25CF 
+      work is usually <color=green><b>smoother</b></color> (especially in games,
+      video editing, graphics)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923009661390848
+    m_Localized: 'The difference between <b>RAM</b> and a <b>hard drive</b> is in
+      their purpose:
+
+      
+
+      <b>RAM</b> is <color=green><b>fast and temporary</b></color>
+      (working) memory.
+
+      
+
+      <b>A hard drive / SSD</b> is <color=green><b>long-term
+      storage</b></color>: files and programs are stored there so they remain <color=green><b>even
+      after turning off</b></color>.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923027009032192
+    m_Localized: It is a <color=green><b><u>temporary memory</u></b></color>. Once
+      you turn off the computer, the contents of the RAM are <color=green><b>deleted</b></color>,
+      because it needs <color=green><b>electrical energy</b></color> to remember
+      data.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923036588822528
+    m_Localized: 'It is also called <color=green><b>operating memory</b></color>.
+      It''s a fast memory that the computer uses like a "work desk".
+
+      
+
+      When
+      you are doing something (open a game, browser, document), the computer <color=green><b>temporarily
+      stores important things in RAM</b></color> so it has <color=green><b>fast access</b></color>
+      to them and can work smoothly.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923046575460352
+    m_Localized: 'What is RAM? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923149470126080
+    m_Localized: RAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173938918367055872
+    m_Localized: HDD/SSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939219157372928
+    m_Localized: 'Binary system '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939257489117184
+    m_Localized: "Let's try it out \r\nin the game."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939283107926016
+    m_Localized: 'Once you try this a bit, it will make sense why the <color=green><b>binary
+      system</color></b> is so important to a computer: its <color=green><b>logic
+      circuits</color></b> constantly work with <color=green><b>values 0 and 1</color></b>,
+      meaning whether something is <color=green><b>off or on</color></b>, whether
+      the <color=green><b>current is flowing or not</color></b>. From these simple
+      <color=green><b>"yes/no" decisions</color></b>, the computer then builds everything
+      else - numbers, text, images, sound, and games.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939324069498880
+    m_Localized: Try it yourself!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939348987858944
+    m_Localized: And this is 4!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939381313359872
+    m_Localized: Wrong answer!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939416474210304
+    m_Localized: Wrong answer!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939428482502656
+    m_Localized: This is 3!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939453715435520
+    m_Localized: This is a number in <color=green><b>binary notation</color></b>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939480282157056
+    m_Localized: Zero is 0, one is 1. That's clear. But what about two?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939508925059072
+    m_Localized: We also sometimes call it the <color=green><b>base-2 system</color></b>,
+      because it only uses <color=green><b>two numbers</color></b> - <color=green><b>one
+      and zero</color></b>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939522644627456
+    m_Localized: Try it out!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939531951788032
+    m_Localized: When the <color=green><b>electric current flows</color></b>, we
+      can count it as a <color=green><b>value of 1</color></b>. When the <color=green><b>current
+      does not flow</color></b>, we take it as <color=green><b>0</color></b>. And
+      because computers can reliably distinguish these two options, they work in
+      the so-called <color=green><b>binary system</color></b>, which only uses the
+      <color=green><b>digits 0 and 1</color></b>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939560032653312
+    m_Localized: 'Think of it as a special language that computers "speak".  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939571713789952
+    m_Localized: "A computer doesn't think like a human. \r\nActually, it only recognizes
+      two things: \r\n<color=green><b>on or off</b></color> "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939583709499392
+    m_Localized: 'What is the binary system? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939590831427584
+    m_Localized: How are numbers written?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939624138395648
+    m_Localized: This is a number in <color=green><b>decimal notation</color></b>
+      (as we know it).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939695110213632
+    m_Localized: This is 2!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939720175374336
+    m_Localized: This is 1!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939743390846976
+    m_Localized: In a <color=green><b>binary number</b></color>, each <color=green><b>digit</b></color>
+      has its <color=green><b>position (index)</b></color> and its value is calculated
+      as <color=green><b>2 to the power of that index</b></color>; when we <color=green><b>sum</b></color>
+      these values based on where the <color=green><b>one</b></color> is, we get
+      the <color=green><b>final number</b></color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939771526238208
+    m_Localized: Wrong answer!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940123113771008
+    m_Localized: ... and often also the <color=green><b>graphics card</b></color>....
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940131619819520
+    m_Localized: 'Why does a computer need cooling? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940140377526272
+    m_Localized: When a computer works, its components...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940149630160896
+    m_Localized: "Let's try it out \r\nin the game."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940157930688512
+    m_Localized: "When the cooling doesn't work properly, many things can happen,
+      such as:\r\n\r\n\u25CF  components may automatically <color=green><b>slow down</b></color>
+      (to not heat up as much),\r\n\r\n\u25CF  the computer may <color=green><b>freeze</b></color>,\r\n\r\n\u25CF 
+      it may <color=green><b>restart or shut down</b></color>,\r\n\r\n\u25CF  during
+      long-term overheating, components can even get <color=green><b>damaged</b></color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940165769842688
+    m_Localized: The problem can also be caused by <color=green><b>dust in the fans</b></color>.
+      It blocks airflow, makes the fan turn slower, and heat is then dissipated poorly.
+      The computer therefore <color=green><b>overheats</b></color> faster. That is
+      why it is important to clean the fans regularly and <color=green><b>not block
+      the ventilation openings</b></color>, especially on laptops.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940172417814528
+    m_Localized: Sometimes a <color=green><b>temperature warning</b></color> appears,
+      or the computer behaves <color=green><b>weirdly</b></color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940177400647680
+    m_Localized: The computer is <color=green><b>hot to the touch</b></color> (especially
+      laptops)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940184925229056
+    m_Localized: The fan is <color=green><b>humming</b></color> or constantly running
+      at <color=green><b>full speed</b></color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940194018480128
+    m_Localized: "The computer will often \r\n\"tell\" you itself: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940215694643200
+    m_Localized: 'How do you know if the computer''s cooling isn''t enough? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940229460348928
+    m_Localized: ...and also rendering video, streaming and playing at the same time,
+      or running <color=green><b>demanding programs</b></color>. At that moment,
+      the components <color=green><b>heat up the most</b></color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940238620708864
+    m_Localized: The biggest load is typically when <color=green><b>playing demanding
+      games</color></b>...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940247168700416
+    m_Localized: '...they consume electrical energy and part of it <color=green><b>turns
+      into heat</b></color>. Cooling takes the heat away so the components <color=green><b>don''t
+      overheat</b></color> and work correctly.
+
+      
+
+      Watch how a gradual
+      change in <color=green><b>fan speed</b></color> affects the <color=green><b>temperature</b></color>
+      of individual components.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940255158849536
+    m_Localized: ... mainly the <color=green><b>CPU</b></color> ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940264600227840
+    m_Localized: The game or program starts to <color=green><b>stutter and slow down</b></color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940279678750720
+    m_Localized: Cooling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940334821265408
+    m_Localized: Load
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940441125900288
+    m_Localized: 'When you start a game or open a website, the <color=green><b>CPU</color></b>
+      constantly processes commands like: <color=green><b>"load data"</color></b>,
+      <color=green><b>"calculate this"</color></b> or <color=green><b>"send the result
+      on"</color></b>. It''s millions of small steps that make up everything you
+      see on the screen!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940466681794560
+    m_Localized: The wizard has a shield
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940479252123648
+    m_Localized: "Let's try it out \r\nin the game."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940485438722048
+    m_Localized: "Does the wizard have enough mana\r\nto conjure a shield?\r\n If
+      so, create it."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940518670192640
+    m_Localized: Spell cost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940526001836032
+    m_Localized: It will try to save itself by <color=green><b>slowing down</color></b>
+      so that it doesn't heat up as much. If that's not enough, the computer may
+      <color=green><b>freeze</color></b>, restart, or completely <color=green><b>shut
+      down</color></b> so the processor doesn't get damaged. That is why computers
+      have <color=green><b>cooling</color></b>, such as a metal cooler and a <color=green><b>fan</color></b>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940536659562496
+    m_Localized: Show shield
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940544498716672
+    m_Localized: "To keep up with all this, it works to the rhythm of so-called <color=green><b>clock
+      cycles</color></b> - it's like a metronome or a heartbeat. \r\n\r\n<color=green><b>Clock
+      rate</color></b> tells us how many steps the CPU can handle in <color=green><b>one
+      second</color></b>. \r\n\r\nThe higher it is, the faster it ticks, but remember
+      - the overall <color=green><b>speed of a computer</color></b> also depends
+      on other things!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940551381569536
+    m_Localized: When the <color=green><b>CPU</color></b> works hard, it starts to
+      heat up. If the load is too high and it can't keep up without <color=green><b>cooling</color></b>,
+      the temperature can rise to a dangerous level. What happens then?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940566271348736
+    m_Localized: Clock rate is given in units of <color=green><b>hertz (Hz)</color></b>,
+      most commonly as <color=green><b>gigahertz (GHz)</color></b>. For example,
+      a processor with <color=green><b>4 GHz</color></b> can handle an incredible
+      <color=green><b>4 billion cycles</color></b> in a single second. That's pretty
+      fast, right?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940576773885952
+    m_Localized: 'Inside the <color=green><b>CPU</color></b> there is one more important
+      thing: <color=green><b>cache memory</color></b>. It''s a small but <color=green><b>extremely
+      fast</color></b> memory right on the processor, which serves as a <color=green><b>stash</color></b>
+      for the data the CPU needs right now. It uses it so it doesn''t have to constantly
+      access the <color=green><b>RAM</color></b>, which takes much <color=green><b>longer</color></b>.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940583124062208
+    m_Localized: Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940605685223424
+    m_Localized: Remaining mana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940627680153600
+    m_Localized: Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940637251555328
+    m_Localized: A processor doesn't know what it will be cooking in the end, it
+      just precisely follows commands <color=green><b>one by one</color></b> in the
+      exact order they are written. Just one bad step in the recipe and the whole
+      program (or dinner) ends in an error!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940644218294272
+    m_Localized: "Each <color=green><b>instruction</color></b> is <color=green><b>one
+      step</color></b> in a recipe - like \u201Aadd butter\u2018 or \u201Astir\u2018."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940664380313600
+    m_Localized: "It makes millions of tiny steps: it <color=green><b>calculates</color></b>,
+      <color=green><b>compares</color></b> and <color=green><b>controls</color></b>
+      the rest of the computer.\r\n For instance, it tells the graphics what to draw,
+      and the drive what to save...\r\nWithout it, not a single pixel moves!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940673087688704
+    m_Localized: 'Imagine that the <color=green><b>CPU</color></b> (processor) is
+      like a chef and the program is its <color=green><b>recipe</color></b>. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940685641240576
+    m_Localized: 'What is a CPU? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940693119684608
+    m_Localized: The CPU or <color=green><b>processor</color></b> is very important
+      in a computer. Its main function is to <color=green><b>execute instructions</color></b>.
+      What does that mean?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940704670797824
+    m_Localized: Prepare <color=red><b>100 g of butter</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940714527412224
+    m_Localized: load <color="red"> MANA </color> into <color="red"> R1 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940722031022080
+    m_Localized: Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940730285412352
+    m_Localized: load <color="red"> COST </color> into <color="red"> R2 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940737206013952
+    m_Localized: Prepare an empty <color=red><b>bowl</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940745133248512
+    m_Localized: minus <color="red"> R1 </color> and <color="red"> R2 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940754247471104
+    m_Localized: Prepare <color=red><b>75ml of milk</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940774472404992
+    m_Localized: move <color="red">MINUS</color> to <color="red">R2</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940787948703744
+    m_Localized: Prepare <color=red><b>2 eggs</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940795003523072
+    m_Localized: '> 0 <color="red"> R2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940801886375936
+    m_Localized: Prepare <color=red><b>100 g of butter</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940808509181952
+    m_Localized: Show shield
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940815912128512
+    m_Localized: Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940829656862720
+    m_Localized: move <color="red">> 0</color> to <color="red">R4</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940843544203264
+    m_Localized: save <color="red">> 0</color> to <color="red">RAM</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940853061079040
+    m_Localized: Add <color=red><b>butter</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940863559421952
+    m_Localized: "Bake for <color=red><b>40 minutes</color></b> at <color=red><b>170
+      \xB0C</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940872786890752
+    m_Localized: Transfer everything to a baking sheet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940879116095488
+    m_Localized: Mix everything in the bowl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940889668964352
+    m_Localized: Add <color=red><b>milk</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940896757338112
+    m_Localized: Add <color=red><b>eggs</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940905347272704
+    m_Localized: Add <color=red><b>butter</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940912993488896
+    m_Localized: Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940927795187712
+    m_Localized: Prepare an empty <color=red><b>bowl</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940935093276672
+    m_Localized: Prepare <color=red><b>75ml of milk</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940942265536512
+    m_Localized: Prepare <color=red><b>2 eggs</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940951853715456
+    m_Localized: Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940977506078720
+    m_Localized: Add <color=red><b>eggs</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940986406391808
+    m_Localized: Mix everything in the bowl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940994262323200
+    m_Localized: load <color="red"> MANA </color> into <color="red"> R1 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941001103233024
+    m_Localized: Add <color=red><b>butter</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941008632008704
+    m_Localized: Add <color=red><b>eggs</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941025254035456
+    m_Localized: Add <color=red><b>milk</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941032224968704
+    m_Localized: '> 0 <color="red"> R2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941041267888128
+    m_Localized: Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941048528228352
+    m_Localized: Mix everything in the bowl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941054895181824
+    m_Localized: minus <color="red"> R1 </color> and <color="red"> R2 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941066093973504
+    m_Localized: Transfer everything to a baking sheet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941072842608640
+    m_Localized: load <color="red"> COST </color> into <color="red"> R2 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941080790814720
+    m_Localized: "Bake for <color=red><b>40 minutes</color></b> at <color=red><b>170
+      \xB0C</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941089384943616
+    m_Localized: load <color="red"> MANA </color> into <color="red"> R1 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941102940934144
+    m_Localized: move <color="red"> R3 </color> to <color="red"> R2 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941110922694656
+    m_Localized: Add <color=red><b>milk</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941118271115264
+    m_Localized: load <color="red"> COST </color> into <color="red"> R2 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941129549598720
+    m_Localized: Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941137506193408
+    m_Localized: minus <color="red"> R1 </color> and <color="red"> R2 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941145714446336
+    m_Localized: Prepare <color=red><b>75ml of milk</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941152182063104
+    m_Localized: move <color="red"> R3 </color> to <color="red"> R2 </color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941158834229248
+    m_Localized: Prepare <color=red><b>2 eggs</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941164555259904
+    m_Localized: '> 0 <color="red"> R2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941173153583104
+    m_Localized: Prepare <color=red><b>100 g of butter</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941191763709952
+    m_Localized: Prepare an empty <color=red><b>bowl</color></b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941201658073088
+    m_Localized: Transfer everything to a baking sheet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941215784488960
+    m_Localized: "Bake for <color=red><b>40 minutes</color></b> at <color=red><b>170
+      \xB0C</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941240350527488
+    m_Localized: 'Instructions:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941247283712000
+    m_Localized: 'Recipe:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941254825070592
+    m_Localized: 'Recipe:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941263549222912
+    m_Localized: 'Instructions:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941269664518144
+    m_Localized: 'Recipe:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941279684710400
+    m_Localized: 'Instructions:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941670501568512
+    m_Localized: Logic gates
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943009793167360
+    m_Localized: Gate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943222951890944
+    m_Localized: Let's look at the different types of logic gates and find out how
+      they work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943266576846848
+    m_Localized: 'NOT - inverting '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943373191860224
+    m_Localized: "Try changing the values 1 and 0. Watch what happens\r\n to the
+      lightbulb."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943386714296320
+    m_Localized: 'They only work with two values: <color=green><b> 0 </color>and
+      <color=green>1 </b> </color> (off/on), which represents whether the electrical
+      current is flowing there or not. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943413314572288
+    m_Localized: "These are simple \r\n\"electronic decision makers\" \r\nin a computer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943433128464384
+    m_Localized: 'What are logic gates? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943456616566784
+    m_Localized: 'AND - and at the same time '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943471430848512
+    m_Localized: We can imagine it as <color=green><b>two switches (inputs)</b></color>,
+      whose state is evaluated by a <color=green><b>logic gate</b></color>, and based
+      on that it turns the <color=green><b>lightbulb (output)</b></color> on or off.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943535943438336
+    m_Localized: Symbol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943547133841408
+    m_Localized: "\"You get points  <b><color=green>IF </b> </color>you complete
+      task 1<b><color=green> OR </b></color>task 2, \r\nyou don't have to complete
+      both.\u201D "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943574937882624
+    m_Localized: 'The lightbulb will shine <b><color=green> if </b></color><b><color=green>
+      at least one </b></color>switch is on. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943601995337728
+    m_Localized: Symbol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943630743097344
+    m_Localized: 'XOR - either or '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943644550746112
+    m_Localized: 'The lightbulb will shine <b><color=green>if </b></color><b><color=green>
+      only one </b></color>switch is on. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943660791091200
+    m_Localized: "\u201CYou can have chocolate <b><color=green>or</b></color> a piece
+      of candy, but <b><color=green>not both</b></color>.\u201D\r\n\r\n   "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943670123417600
+    m_Localized: Symbol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943683289337856
+    m_Localized: "Let's try it out \r\nin the game."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943725760860160
+    m_Localized: Symbol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943758308659200
+    m_Localized: "\u201CYou can go outside <b><color=green>ONLY IF </b> </color>you
+      have a hat <b><color=green> AND </b> </color>a jacket.\u201D "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943773496233984
+    m_Localized: 'The lightbulb will shine <b><color=green>only when </b> </color><b><color=green>
+      both </b> </color>switches are on. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943788574756864
+    m_Localized: "Not has only <b><color=green>one input</b></color> (switch) and
+      simply \r\n<b><color=green>flips it to the other position</b></color>. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943813023354880
+    m_Localized: 'OR - at least one is enough '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944768162844672
+    m_Localized: HDD and SSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944781404262400
+    m_Localized: What are HDD and SSD?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944791327985664
+    m_Localized: "When you save a photo, game, or document to your computer, it gets
+      saved \r\non the <color=green><b>disk</color></b> - that's <color=green><b>long-term
+      storage</color></b>. Unlike <color=green><b>RAM</color></b>, the disk <color=green><b><u>isn't
+      erased</color></b></u> when you turn off the computer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944803093008384
+    m_Localized: 'There are two <color=green><b>main types of disks</b></color>:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944810521120768
+    m_Localized: HDD and...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944819043946496
+    m_Localized: ... SSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944826501419008
+    m_Localized: '<color=green><b>HDD</b></color> is an older type.
+
+      
+
+      Inside
+      it has <color=green><b>spinning platters</b></color> and a read head, so it''s
+      a bit like a record player. Because of this, it''s usually slower, can be heard,
+      and is <color=green><b>more sensitive to shocks</b></color>.
+
+      
+
+      Its
+      advantage is that it often offers <color=green><b>a lot of space</b></color>
+      for a lower price.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944835410120704
+    m_Localized: 'SSD is a <color=green><b>newer type of disk</b></color>.
+
+      
+
+      It
+      has no spinning parts, it works more like a <color=green><b>large flash drive</b></color>.
+
+      Therefore
+      it is faster, quiet and usually more durable. The biggest advantage of SSD
+      over HDD is exactly the <color=green><b>speed</b></color>: the computer turns
+      on faster with an SSD, programs and games load faster, and the whole computer
+      feels smoother.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944845057019904
+    m_Localized: "Let's try it out \r\nin the game."
     m_Metadata:
       m_Items: []
   references:

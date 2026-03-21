@@ -1,0 +1,371 @@
+Key,Id,Czech (Czech Republic)(cs-CZ),English (United States)(en-US),Slovak (Slovakia)(sk-SK)
+"Test",15689658368,"CZ test","EN test","SK Test"
+"None",55834391986982912,"CZ None","EN None","SK None"
+"Quiz results",92127792197685248,"CZ Quiz results","EN Quiz results","SK Quiz results"
+"Game results",92128937733410816,"CZ Game results","EN Game results","SK Game results"
+"Minigame results",92129047615787008,"CZ Minigame results","EN Minigame results","SK Minigame results"
+"Play",93109690059345920,"Hrát","Play","Hrať"
+"Settings",93109837128421376,"Nastavení","Settings","Nastavenia"
+"Gates",93158983956844544,"Hradlá","Logic gates","Hradlá"
+"Levels",93159239264129024,"Levely","Levels","Levely"
+"Quiz",93186492266074112,"Kvíz","Quiz","Kvíz"
+"Congratulation",118525458794532864,"Super! Zvládli sme to!","Awesome! We did it!","Super! Zvládli sme to!"
+"GTS_Minigame_start",164636933619306496,"Rozsviť všechny žárovky!","Light up all the bulbs!","Rozsvieť všetky žiarovky!"
+"BIN_Minigame_0",164884267116646400,"Vytvoř binární zápis!","Create a binary code!","Vytvor binárny zápis!"
+"BIN_Minigame_1",164884481839845376,"Teď to zkus bez pomoci!","Now try it without help!","Teraz to skús bez pomoci!"
+"BIN_Minigame_2",164884554699100160,"Teď to otočíme: Jaké číslo právě vidíš? Pomocí tlačítek plus a minus uprav hodnotu, a když si budeš jistý, stiskni tlačítko rovná se.","Now let's turn it around: What number do you see right now? Use the plus and minus buttons to adjust the value, and when you are sure, press the equals button.","Teraz to otočíme: Aké číslo práve vidíš? Pomocou tlačidiel plus a mínus uprav hodnotu, a keď si budeš istý, stlač tlačidlo rovná sa."
+"COOL_Minigame_Start_0",165347498411020288,"Tvým úkolem bude nastavit výkon ventilátorů tak, aby chladily součástky právě tak akorát.","Your task will be to set the fan performance so that they cool the components just right.","Tvojou úlohou bude nastaviť výkon ventilátorov tak, aby chladili súčiastky práve tak akurát."
+"COOL_Minigame_Start_1",165350384738095104,"Když poběží příliš rychle, uživatel si bude stěžovat na hluk a součástky budou zbytečně <color=blue>podchlazené (modré).","If they run too fast, the user will complain about the noise and the components will be unnecessarily <color=blue>overcooled (blue).","Keď pobežia príliš rýchlo, užívateľ sa bude sťažovať na hluk a súčiastky budú zbytočne <color=blue>podchladené (modré)."
+"COOL_Minigame_Start_2",165350462869590016,"Když poběží příliš pomalu, součástky <color=red>se přehřejí (červené)</color> a počítač se bude zpomalovat.","If they run too slow, the components will <color=red>overheat (red)</color> and the computer will slow down.","Keď pobežia príliš pomaly, súčiastky <color=red>sa prehrejú (červené)</color> a počítač sa bude spomaľovať."
+"COOL_Minigame_Start_3",165350482553458688,"Snaž se najít ideální nastavení, při kterém se teplota postupně ustálí na správné hodnotě a <color=green>zůstane v zelené zóně</color>.","Try to find the ideal setting where the temperature gradually stabilizes at the correct value and <color=green>stays in the green zone</color>.","Snaž sa nájsť ideálne nastavenie, pri ktorom sa teplota postupne ustáli na správnej hodnote a <color=green>zostane v zelenej zóne</color>."
+"HDD_Minigame_Start_0",165661820018348032,"V této úrovni prozkoumáme, jak vlastně funguje HDD (pevný disk).","In this level, we will explore how an HDD (hard drive) actually works.","V tejto úrovni preskúmame, ako vlastne funguje HDD (pevný disk)."
+"HDD_Minigame_Start_1",165661930609561600,"Už víme, že HDD je oproti bleskovému SSD spíše ‚pomalý běžec‘, a v téhle hře si tu pomalost vyzkoušíš na vlastní kůži.","We already know that an HDD is more of a 'slow runner' compared to a lightning-fast SSD, and in this game, you'll experience that slowness firsthand.","Už vieme, že HDD je oproti bleskovému SSD skôr ‚pomalý bežec‘, a v tejto hre si tú pomalosť vyskúšaš na vlastnej koži."
+"HDD_Minigame_Start_2",165661996279779328,"Tvým úkolem je ovládat <color=green><b>čtecí hlavu</color></b> disku tak, aby její špička přesně zachytila čtverečky představující data. Připrav se, načítání souborů začíná!","Your task is to control the drive's <color=green><b>read head</color></b> so that its tip exactly catches the squares representing data. Get ready, file loading is starting!","Tvojou úlohou je ovládať <color=green><b>čítaciu hlavu</color></b> disku tak, aby jej špička presne zachytila štvorčeky predstavujúce dáta. Priprav sa, načítavanie súborov začína!"
+"HDD_Minigame_More_Space_0",165662052739305472,"Pozor, přitvrzujeme! Právě zvyšujeme kapacitu disku.","Watch out, things are getting tougher! We are increasing the drive capacity right now.","Pozor, pritvrdzujeme! Práve zvyšujeme kapacitu disku."
+"HDD_Minigame_More_Space_1",165672401345564672,"Aby se na stejnou plochu vešlo víc souborů, musíme data naskládat mnohem těsněji k sobě.","To fit more files into the same area, we need to pack the data much closer together.","Aby sa na rovnakú plochu zmestilo viac súborov, musíme dáta naskladať oveľa tesnejšie k sebe."
+"HDD_Minigame_More_Speed",165671560337281024,"I mezi HDD jsou rozdíly! Tenhle model má <color=green><b>vyšší otáčky</color></b>, takže data pod čtecí hlavou proudí mnohem rychleji. Využij tenhle výkon a <color=green><b>všechna je chyť</color></b>, ať máme soubor načtený v rekordním čase!","There are differences even among HDDs! This model has a <color=green><b>higher RPM</color></b>, so the data flows much faster under the read head. Use this performance and <color=green><b>catch them all</color></b>, so we have the file loaded in record time!","Aj medzi HDD sú rozdiely! Tento model má <color=green><b>vyššie otáčky</color></b>, takže dáta pod čítacou hlavou prúdia oveľa rýchlejšie. Využi tento výkon a <color=green><b>všetky ich chyť</color></b>, nech máme súbor načítaný v rekordnom čase!"
+"SSD_Minigame_Start_0",165709255029673984,"Vítej ve světě SSD! Zapomeň na pomalé mechanické hlavy. SSD funguje na principu elektrických impulzů.","Welcome to the world of SSDs! Forget about slow mechanical heads. An SSD works on the principle of electrical impulses.","Vitaj vo svete SSD! Zabudni na pomalé mechanické hlavy. SSD funguje na princípe elektrických impulzov."
+"SSD_Minigame_Start_1",165709426505404416,"Tvým úkolem je aktivovat správný <color=green><b>řádek a sloupec</color></b> pomocí kuliček na okraji. Tam, kde se tvé volby protnou, bleskově přečteš data ze zelené buňky. Žádné čekání, jen čistá rychlost!","Your task is to activate the correct <color=green><b>row and column</color></b> using the balls on the edge. Where your choices intersect, you will instantly read data from the green cell. No waiting, just pure speed!","Tvojou úlohou je aktivovať správny <color=green><b>riadok a stĺpec</color></b> pomocou guličiek na okraji. Tam, kde sa tvoje voľby pretnú, bleskovo prečítaš dáta zo zelenej bunky. Žiadne čakanie, len čistá rýchlosť!"
+"CPU_Minigame_Start_0",166456809505804288,"Vítej v jádru <color=green><b>CPU</color></b>! Tvým úkolem je postupovat podle <color=green><b>instrukcí</color></b> v sešitu vlevo a zjistit, zda kouzelník může vyčarovat svůj štít.","Welcome to the <color=green><b>CPU</color></b> core! Your task is to follow the <color=green><b>instructions</color></b> in the notebook on the left and find out if the wizard can conjure his shield.","Vitaj v jadre <color=green><b>CPU</color></b>! Tvojou úlohou je postupovať podľa <color=green><b>inštrukcií</color></b> v zošite vľavo a zistiť, či kúzelník môže vyčarovať svoj štít."
+"CPU_Minigame_Start_1",166460212755681280,"Data z <color=green><b>RAM</color></b> si do procesoru přivoláš v <color=blue><b>modrém panelu</color></b>. Poté je můžeš myší přetáhnout do správného <color=green><b>registru (R1-R4)</color></b> v cache.","You can summon data from <color=green><b>RAM</color></b> into the processor via the <color=blue><b>blue panel</color></b>. Then you can drag them with your mouse into the correct <color=green><b>register (R1-R4)</color></b> in the cache.","Dáta z <color=green><b>RAM</color></b> si do procesora privoláš v <color=blue><b>modrom paneli</color></b>. Potom ich môžeš myšou pretiahnuť do správneho <color=green><b>registra (R1-R4)</color></b> v cache."
+"CPU_Minigame_Start_2",166460294875959296,"Barevné bloky nahoře slouží pro <color=green><b>výpočty</color></b> a <color=green><b>porovnávání</color></b>. Přetáhni do vstupních registrů hodnoty, aby procesor provedl operaci, kterou právě potřebuješ.","The colored blocks at the top are used for <color=green><b>calculations</color></b> and <color=green><b>comparisons</color></b>. Drag values into the input registers so the processor performs the operation you currently need.","Farebné bloky hore slúžia na <color=green><b>výpočty</color></b> a <color=green><b>porovnávanie</color></b>. Pretiahni do vstupných registrov hodnoty, aby procesor vykonal operáciu, ktorú práve potrebuješ."
+"CPU_Minigame_Start_3",166462323631443968,"Výsledky operací můžeš brát a přesouvat dál mezi <color=green><b>registry</color></b> nebo odesílat zpět do <color=green><b>RAM</color></b>. Sleduj sešit a postupuj přesně podle zadání!","You can take the results of operations and move them further between <color=green><b>registers</color></b> or send them back to <color=green><b>RAM</color></b>. Watch the notebook and follow the instructions exactly!","Výsledky operácií môžeš brať a presúvať ďalej medzi <color=green><b>registrami</color></b> alebo odosielať späť do <color=green><b>RAM</color></b>. Sleduj zošit a postupuj presne podľa zadania!"
+"RAM_Minigame_Start",166857543216910336,"Vítej v roli <b>správce paměti</b>, tvým úkolem je udržet systém v chodu a zajistit, aby procesor nikdy nemusel čekat. Z <color=green>HDD/SSD</color> ti budou přicházet <b>datové bloky</b>, které musíš šikovně <color=green><b>ukládat do slotů v RAM</b></color>.","Welcome to the role of <b>memory manager</b>, your task is to keep the system running and ensure the processor never has to wait. <b>Data blocks</b> will come to you from the <color=green>HDD/SSD</color>, which you must cleverly <color=green><b>store in RAM slots</b></color>.","Vitaj v úlohe <b>správcu pamäte</b>, tvojou úlohou je udržať systém v chode a zaistiť, aby procesor nikdy nemusel čakať. Z <color=green>HDD/SSD</color> ti budú prichádzať <b>dátové bloky</b>, ktoré musíš šikovne <color=green><b>ukladať do slotov v RAM</b></color>."
+"RAM_Minigame_Start_1",166859659973087232,"Snaž se data skládat těsně vedle sebe, abys <b>ušetřil co nejvíc místa</b> pro další balíčky.","Try to stack the data closely together to <b>save as much space as possible</b> for the next packages.","Snaž sa dáta skladať tesne vedľa seba, aby si <b>ušetril čo najviac miesta</b> pre ďalšie balíčky."
+"RAM_Minigame_Start_2",166859833378197504,"Sleduj pozorně <b>CPU</b>, který si bude průběžně žádat o konkrétní data pomocí <b>adres</b>. Jakmile uvidíš požadavek, musíš <color=green><b>táhnutím vzít data z RAM</b></color> a doručit je přímo do procesoru.","Pay close attention to the <b>CPU</b>, which will continuously request specific data using <b>addresses</b>. As soon as you see a request, you must <color=green><b>drag the data from RAM</b></color> and deliver it directly to the processor.","Sleduj pozorne <b>CPU</b>, ktorý si bude priebežne žiadať o konkrétne dáta pomocou <b>adries</b>. Akonáhle uvidíš požiadavku, musíš <color=green><b>tiahnutím vziať dáta z RAM</b></color> a doručiť ich priamo do procesora."
+"RAM_Minigame_Start_3",166859951946977280,"Některá data v paměti už nejsou potřeba a jen zbytečně zabírají drahocenné místo. Můžeš proto <color=green><b>vyvolávat úklid paměti</b></color>, který automaticky smaže vše, co už procesor nepoužívá.","Some data in memory is no longer needed and just unnecessarily takes up precious space. You can therefore <color=green><b>trigger a memory cleanup</b></color>, which automatically deletes everything the processor is no longer using.","Niektoré dáta v pamäti už nie sú potrebné a len zbytočne zaberajú drahocenné miesto. Môžeš preto <color=green><b>vyvolať upratovanie pamäte</b></color>, ktoré automaticky zmaže všetko, čo už procesor nepoužíva."
+"Ram/RamGameManager/Levels/01/CPU/CPU",173922145806733312,"CPU","CPU","CPU""Ram/RamGameManager/Levels/01/Spawn/Text (TMP)"
+"Ram/RamGameManager/Tutorial/END/Avatar (1)/textBubble/Text (TMP)",173922953180893184,"Pojďme si to vyzkoušet 
+ve hře.","Let's try it out 
+in the game.","Poďme si to vyskúšať 
+v hre."
+"Ram/RamGameManager/Tutorial/ONLY_AVATAR (5)/Avatar (1)/textBubble/Text (TMP)",173922963524046848,"<b>Operační systém</b> je chytrý. Když vidí, že se <b>RAM</b> zaplňuje, zkusí ji <color=green><b>vyklidit</b></color>.
+
+Poprosí programy, jestli něco už <b>nepoužívají</b>, a tak se <color=green><b>kousek místa uvolní</b></color>.
+
+Klikni na popelářské auto a vymaž nepotřebné data z RAM!","The <b>Operating system</b> is smart. When it sees that the <b>RAM</b> is filling up, it tries to <color=green><b>clear it out</b></color>.
+
+It asks programs if they are no longer <b>using</b> something, and so a <color=green><b>piece of space is freed up</b></color>.
+
+Click on the garbage truck and delete unnecessary data from RAM!","<b>Operačný systém</b> je šikovný. Keď vidí, že sa <b>RAM</b> zapĺňa, skúsi ju <color=green><b>vyčistiť</b></color>.
+
+Poprosí programy, či niečo už <b>nepoužívajú</b>, a tak sa <color=green><b>kúsok miesta uvoľní</b></color>.
+
+Klikni na smetiarske auto a vymaž nepotrebné dáta z RAM!"
+"Ram/RamGameManager/Tutorial/ONLY_AVATAR (4)/Avatar (1)/textBubble/Text (TMP)",173922978652901376,"Ale pozor: <b>více RAM</b> neznamená automaticky <color=green><b>nejrychlejší počítač</b></color>, ale často to hodně pomůže, když děláš <color=green><b>víc věcí najednou</b></color>.","But beware: <b>more RAM</b> does not automatically mean the <color=green><b>fastest computer</b></color>, but it often helps a lot when you are doing <color=green><b>multiple things at once</b></color>.","Ale pozor: <b>viac RAM</b> neznamená automaticky <color=green><b>najrýchlejší počítač</b></color>, ale často to veľmi pomôže, keď robíš <color=green><b>viac vecí naraz</b></color>."
+"Ram/RamGameManager/Tutorial/ONLY_AVATAR (3)/Avatar (1)/textBubble/Text (TMP)",173922988907974656,"Obvykle platí, že <b>čím více RAM</b> má počítač, tím víc věcí zvládne <b>najednou</b>.
+
+Například:
+●  můžeš mít otevřeno <color=green><b>víc programů a záložek</b></color> v prohlížeči,
+●  počítač se <color=green><b>méně zasekává</b></color> při náročnější práci,
+●  práce bývá <color=green><b>plynulejší</b></color> (hlavně u her, střihu videa, grafiky).","Usually, the <b>more RAM</b> a computer has, the more things it can handle <b>at once</b>.
+
+For example:
+●  you can have <color=green><b>more programs and tabs</b></color> open in the browser,
+●  the computer <color=green><b>stutters less</b></color> during demanding work,
+●  work is usually <color=green><b>smoother</b></color> (especially in games, video editing, graphics).","Zvyčajne platí, že <b>čím viac RAM</b> má počítač, tým viac vecí zvládne <b>naraz</b>.
+
+Napríklad:
+●  môžeš mať otvorené <color=green><b>viac programov a záložiek</b></color> v prehliadači,
+●  počítač sa <color=green><b>menej zasekáva</b></color> pri náročnejšej práci,
+●  práca býva <color=green><b>plynulejšia</b></color> (hlavne pri hrách, strihu videa, grafike)."
+"Ram/RamGameManager/Tutorial/ONLY_AVATAR (2)/Avatar (1)/textBubble/Text (TMP)",173923009661390848,"Rozdíl mezi <b>RAM</b> a <b>pevným diskem</b> je v jejich účelu:
+
+<b>RAM</b> je <color=green><b>rychlá a dočasná</b></color> (pracovní) paměť.
+
+<b>Pevný disk / SSD</b> je <color=green><b>dlouhodobé úložiště</b></color>: tam se ukládají soubory a programy tak, aby tam byly <color=green><b>i po vypnutí</b></color>.","The difference between <b>RAM</b> and a <b>hard drive</b> is in their purpose:
+
+<b>RAM</b> is <color=green><b>fast and temporary</b></color> (working) memory.
+
+<b>A hard drive / SSD</b> is <color=green><b>long-term storage</b></color>: files and programs are stored there so they remain <color=green><b>even after turning off</b></color>.","Rozdiel medzi <b>RAM</b> a <b>pevným diskom</b> je v ich účele:
+
+<b>RAM</b> je <color=green><b>rýchla a dočasná</b></color> (pracovná) pamäť.
+
+<b>Pevný disk / SSD</b> je <color=green><b>dlhodobé úložisko</b></color>: tam sa ukladajú súbory a programy tak, aby tam boli <color=green><b>aj po vypnutí</b></color>."
+"Ram/RamGameManager/Tutorial/ONLY_AVATAR (1)/Avatar (1)/textBubble/Text (TMP)",173923027009032192,"Je to <color=green><b><u>dočasná paměť</u></b></color>. Jakmile počítač vypneš, obsah RAM se <color=green><b>smaže</b></color>, protože ke zapamatování dat potřebuje <color=green><b>elektrickou energii</b></color>.","It is a <color=green><b><u>temporary memory</u></b></color>. Once you turn off the computer, the contents of the RAM are <color=green><b>deleted</b></color>, because it needs <color=green><b>electrical energy</b></color> to remember data.","Je to <color=green><b><u>dočasná pamäť</u></b></color>. Akonáhle počítač vypneš, obsah RAM sa <color=green><b>zmaže</b></color>, pretože na zapamätanie dát potrebuje <color=green><b>elektrickú energiu</b></color>."
+"Ram/RamGameManager/Tutorial/ONLY_AVATAR/Avatar (1)/textBubble/Text (TMP)",173923036588822528,"Říká se jí také <color=green><b>operační paměť</b></color>. Je to rychlá paměť, kterou počítač používá jako „pracovní stůl“.
+
+Když něco děláš (otevřeš hru, prohlížeč, dokument), počítač si důležité věci <color=green><b>dočasně ukládá do RAM</b></color>, aby k nim měl <color=green><b>rychlý přístup</b></color> a mohl pracovat plynule.","It is also called <color=green><b>operating memory</b></color>. It's a fast memory that the computer uses like a ""work desk"".
+
+When you are doing something (open a game, browser, document), the computer <color=green><b>temporarily stores important things in RAM</b></color> so it has <color=green><b>fast access</b></color> to them and can work smoothly.","Hovorí sa jej tiež <color=green><b>operačná pamäť</b></color>. Je to rýchla pamäť, ktorú počítač používa ako „pracovný stôl“.
+
+Keď niečo robíš (otvoríš hru, prehliadač, dokument), počítač si dôležité veci <color=green><b>dočasne ukladá do RAM</b></color>, aby k nim mal <color=green><b>rýchly prístup</b></color> a mohol pracovať plynulo."
+"Ram/RamGameManager/Tutorial/Start/Avatar/textBubble/Text (TMP)",173923046575460352,"Co je to RAM? ","What is RAM? ","Čo je to RAM? "
+"Ram/RamGameManager/Tutorial/Start/TextBox/Text (TMP)",173923149470126080,"RAM","RAM","RAM"
+"Ram/RamGameManager/Levels/01/Spawn/Text (TMP)",173938918367055872,"HDD/SSD","HDD/SSD","HDD/SSD"
+"Binary/BinaryGameManager/Tutorial/Start/TextBox/Text (TMP)",173939219157372928,"Binární soustava ","Binary system ","Binárna sústava "
+"Binary/BinaryGameManager/Tutorial/ONLY_AVATAR (4)/Avatar (1)/textBubble/Text (TMP)",173939257489117184,"Pojďme si to vyzkoušet 
+ve hře.","Let's try it out 
+in the game.","Poďme si to vyskúšať 
+v hre."
+"Binary/BinaryGameManager/Tutorial/ONLY_AVATAR/Avatar (1)/textBubble/Text (TMP)",173939283107926016,"Až si tohle trochu vyzkoušíš, začne ti dávat smysl, proč je <color=green><b>binární soustava</color></b> pro počítač tak důležitá: jeho <color=green><b>logické obvody</color></b> neustále pracují s <color=green><b>hodnotami 0 a 1</color></b>, tedy s tím, jestli je něco <color=green><b>vypnuté nebo zapnuté</color></b>, jestli <color=green><b>proud teče nebo neteče</color></b>. Z těchto jednoduchých <color=green><b>„ano/ne“ rozhodnutí</color></b> pak počítač složí všechno ostatní - čísla, text, obrázky, zvuk i hry.","Once you try this a bit, it will make sense why the <color=green><b>binary system</color></b> is so important to a computer: its <color=green><b>logic circuits</color></b> constantly work with <color=green><b>values 0 and 1</color></b>, meaning whether something is <color=green><b>off or on</color></b>, whether the <color=green><b>current is flowing or not</color></b>. From these simple <color=green><b>""yes/no"" decisions</color></b>, the computer then builds everything else - numbers, text, images, sound, and games.","Až si toto trochu vyskúšaš, začne ti dávať zmysel, prečo je <color=green><b>binárna sústava</color></b> pre počítač tak dôležitá: jeho <color=green><b>logické obvody</color></b> neustále pracujú s <color=green><b>hodnotami 0 a 1</color></b>, teda s tým, či je niečo <color=green><b>vypnuté alebo zapnuté</color></b>, či <color=green><b>prúd tečie alebo netečie</color></b>. Z týchto jednoduchých <color=green><b>„áno/nie“ rozhodnutí</color></b> potom počítač zloží všetko ostatné - čísla, text, obrázky, zvuk aj hry."
+"Binary/BinaryGameManager/Tutorial/FreeMode (7)/Avatar (1)/textBubble/Text (TMP)",173939324069498880,"Zkus to sám!","Try it yourself!","Skús to sám!"
+"Binary/BinaryGameManager/Tutorial/FreeMode (6)/Avatar (1)/textBubble/Text (TMP)",173939348987858944,"A tohle 4!","And this is 4!","A toto sú 4!"
+"Binary/BinaryGameManager/Levels/DecCalculator (1)/ResultButtons/Wrong/Text (TMP)",173939381313359872,"Špatná odpověď!","Wrong answer!","Zlá odpoveď!"
+"Binary/BinaryGameManager/Levels/DecCalculator/ResultButtons/Wrong/Text (TMP)",173939416474210304,"Špatná odpověď!","Wrong answer!","Zlá odpoveď!"
+"Binary/BinaryGameManager/Tutorial/FreeMode (5)/Avatar (1)/textBubble/Text (TMP)",173939428482502656,"Tohle je 3!","This is 3!","Toto sú 3!"
+"Binary/BinaryGameManager/Tutorial/FreeMode/Avatar (1)/textBubble/Text (TMP)",173939453715435520,"Tohle je číslo v <color=green><b>dvojkovém zápisu</color></b>.","This is a number in <color=green><b>binary notation</color></b>.","Toto je číslo v <color=green><b>dvojkovom zápise</color></b>."
+"Binary/BinaryGameManager/Tutorial/ONLY_AVATAR (2)/Avatar (1)/textBubble/Text (TMP)",173939480282157056,"Nula je 0, jednička je 1. To je jasné. Ale co třeba dvojka?","Zero is 0, one is 1. That's clear. But what about two?","Nula je 0, jednotka je 1. To je jasné. Ale čo napríklad dvojka?"
+"Binary/BinaryGameManager/Tutorial/ONLY_AVATAR/Avatar (1)/textBubble/Text (TMP) 1",173939508925059072,"V češtině tomu někdy říkáme i <color=green><b>dvojková soustava</color></b>, protože používá jen <color=green><b>dvě čísla</color></b> - <color=green><b>jedničku a nulu</color></b>.","We also sometimes call it the <color=green><b>base-2 system</color></b>, because it only uses <color=green><b>two numbers</color></b> - <color=green><b>one and zero</color></b>.","V slovenčine tomu niekedy hovoríme aj <color=green><b>dvojková sústava</color></b>, pretože používa len <color=green><b>dve čísla</color></b> - <color=green><b>jednotku a nulu</color></b>."
+"Binary/BinaryGameManager/Tutorial/01 (1)/Avatar (1)/textBubble/Text (TMP)",173939522644627456,"Vyzkoušej si to!","Try it out!","Vyskúšaj si to!"
+"Binary/BinaryGameManager/Tutorial/01 (1)/TextBox/Text (TMP)",173939531951788032,"Když <color=green><b>elektrický proud teče</color></b>, můžeme to brát jako <color=green><b>hodnotu 1</color></b>. Když <color=green><b>proud neteče</color></b>, bereme to jako <color=green><b>0</color></b>. A protože počítač umí spolehlivě rozlišit právě tyhle dvě možnosti, pracuje v takzvané <color=green><b>binární soustavě</color></b>, která používá jen <color=green><b>číslice 0 a 1</color></b>.","When the <color=green><b>electric current flows</color></b>, we can count it as a <color=green><b>value of 1</color></b>. When the <color=green><b>current does not flow</color></b>, we take it as <color=green><b>0</color></b>. And because computers can reliably distinguish these two options, they work in the so-called <color=green><b>binary system</color></b>, which only uses the <color=green><b>digits 0 and 1</color></b>.","Keď <color=green><b>elektrický prúd tečie</color></b>, môžeme to brať ako <color=green><b>hodnotu 1</color></b>. Keď <color=green><b>prúd netečie</color></b>, berieme to ako <color=green><b>0</color></b>. A pretože počítač dokáže spoľahlivo rozlíšiť práve tieto dve možnosti, pracuje v takzvanej <color=green><b>binárnej sústave</color></b>, ktorá používa len <color=green><b>číslice 0 a 1</color></b>."
+"Binary/BinaryGameManager/Tutorial/Light/Avatar (1)/textBubble/Text (TMP)",173939560032653312,"Představ si to jako speciální jazyk, kterým “mluví” počítače.  ","Think of it as a special language that computers ""speak"".  ","Predstav si to ako špeciálny jazyk, ktorým „hovoria“ počítače.  "
+"Binary/BinaryGameManager/Tutorial/Light/TextBox/Text (TMP)",173939571713789952,"Počítač nepřemýšlí jako člověk. 
+Vlastně pozná jen dvě věci: 
+<color=green><b>zapnuto nebo vypnuto</b></color> ","A computer doesn't think like a human. 
+Actually, it only recognizes two things: 
+<color=green><b>on or off</b></color> ","Počítač nepremýšľa ako človek. 
+Vlastne pozná len dve veci: 
+<color=green><b>zapnuté alebo vypnuté</b></color> "
+"Binary/BinaryGameManager/Tutorial/Start/Avatar/textBubble/Text (TMP)",173939583709499392,"Co je to binární soustava? ","What is the binary system? ","Čo je to binárna sústava? "
+"Binary/BinaryGameManager/Tutorial/ONLY_AVATAR (1)/Avatar (1)/textBubble/Text (TMP)",173939590831427584,"Jak se zapisují čísla?","How are numbers written?","Ako sa zapisujú čísla?"
+"Binary/BinaryGameManager/Tutorial/FreeMode (1)/Avatar (1)/textBubble/Text (TMP)",173939624138395648,"Tohle je číslo v <color=green><b>desítkovém zápisu</color></b> (tak jak ho poznáme).","This is a number in <color=green><b>decimal notation</color></b> (as we know it).","Toto je číslo v <color=green><b>desiatkovom zápise</color></b> (tak ako ho poznáme)."
+"Binary/BinaryGameManager/Tutorial/FreeMode (4)/Avatar (1)/textBubble/Text (TMP)",173939695110213632,"Tohle je 2!","This is 2!","Toto sú 2!"
+"Binary/BinaryGameManager/Tutorial/FreeMode (3)/Avatar (1)/textBubble/Text (TMP)",173939720175374336,"Tohle je 1!","This is 1!","Toto je 1!"
+"Binary/BinaryGameManager/Tutorial/FreeMode (2)/Avatar (1)/textBubble/Text (TMP)",173939743390846976,"V <color=green><b>binárním čísle</b></color> má každá <color=green><b>cifra</b></color> svou <color=green><b>pozici (index)</b></color> a její hodnota se počítá jako <color=green><b>2 na daný index</b></color>; když tyto hodnoty <color=green><b>sečteme</b></color> podle toho, kde je <color=green><b>jednička</b></color>, dostaneme <color=green><b>výsledné číslo</b></color>.","In a <color=green><b>binary number</b></color>, each <color=green><b>digit</b></color> has its <color=green><b>position (index)</b></color> and its value is calculated as <color=green><b>2 to the power of that index</b></color>; when we <color=green><b>sum</b></color> these values based on where the <color=green><b>one</b></color> is, we get the <color=green><b>final number</b></color>.","V <color=green><b>binárnom čísle</b></color> má každá <color=green><b>cifra</b></color> svoju <color=green><b>pozíciu (index)</b></color> a jej hodnota sa počíta ako <color=green><b>2 na daný index</b></color>; keď tieto hodnoty <color=green><b>sčítame</b></color> podľa toho, kde je <color=green><b>jednotka</b></color>, dostaneme <color=green><b>výsledné číslo</b></color>."
+"Binary/BinaryGameManager/Levels/DecCalculator (2)/ResultButtons/Wrong/Text (TMP)",173939771526238208,"Špatná odpověď!","Wrong answer!","Zlá odpoveď!"
+"Cooling/CoolingManager/Tutorial/Level (3)/Avatar/textBubble/Text (TMP)",173940123113771008,"... a často i <color=green><b>grafická karta</b></color>....","... and often also the <color=green><b>graphics card</b></color>....","... a často aj <color=green><b>grafická karta</b></color>...."
+"Cooling/CoolingManager/Tutorial/Start/Avatar/textBubble/Text (TMP)",173940131619819520,"Proč je v počítači potřeba chlazení? ","Why does a computer need cooling? ","Prečo je v počítači potrebné chladenie? "
+"Cooling/CoolingManager/Tutorial/Level (1)/Avatar/textBubble/Text (TMP)",173940140377526272,"Když počítač pracuje, jeho součástky...","When a computer works, its components...","Keď počítač pracuje, jeho súčiastky..."
+"Cooling/CoolingManager/Tutorial/ONLY_AVATAR (3)/Avatar (1)/textBubble/Text (TMP)",173940149630160896,"Pojďme si to vyzkoušet 
+ve hře.","Let's try it out 
+in the game.","Poďme si to vyskúšať 
+v hre."
+"Cooling/CoolingManager/Tutorial/ONLY_AVATAR (2)/Avatar (1)/textBubble/Text (TMP)",173940157930688512,"Když chlazení nefunguje správně, může se dít spousta věcí, například:
+
+●  součástky se mohou automaticky <color=green><b>zpomalit</b></color> (aby se tolik nehřály),
+
+●  počítač se může <color=green><b>zasekávat</b></color>,
+
+●  může se <color=green><b>restartovat nebo vypnout</b></color>,
+
+●  při dlouhodobém přehřívání se mohou součástky i <color=green><b>poškodit</b></color>","When the cooling doesn't work properly, many things can happen, such as:
+
+●  components may automatically <color=green><b>slow down</b></color> (to not heat up as much),
+
+●  the computer may <color=green><b>freeze</b></color>,
+
+●  it may <color=green><b>restart or shut down</b></color>,
+
+●  during long-term overheating, components can even get <color=green><b>damaged</b></color>","Keď chladenie nefunguje správne, môže sa diať veľa vecí, napríklad:
+
+●  súčiastky sa môžu automaticky <color=green><b>spomaliť</b></color> (aby sa toľko nehriali),
+
+●  počítač sa môže <color=green><b>zasekávať</b></color>,
+
+●  môže sa <color=green><b>reštartovať alebo vypnúť</b></color>,
+
+●  pri dlhodobom prehrievaní sa môžu súčiastky aj <color=green><b>poškodiť</b></color>"
+"Cooling/CoolingManager/Tutorial/ONLY_AVATAR (1)/Avatar (1)/textBubble/Text (TMP)",173940165769842688,"Problém může způsobovat i <color=green><b>prach ve ventilátorech</b></color>. Ten brání proudění vzduchu, ventilátor se hůře otáčí a teplo se pak špatně odvádí. Počítač se proto rychleji <color=green><b>přehřívá</b></color>. Proto je důležité ventilátory pravidelně čistit a <color=green><b>nezakrývat větrací otvory</b></color>, hlavně u notebooků.","The problem can also be caused by <color=green><b>dust in the fans</b></color>. It blocks airflow, makes the fan turn slower, and heat is then dissipated poorly. The computer therefore <color=green><b>overheats</b></color> faster. That is why it is important to clean the fans regularly and <color=green><b>not block the ventilation openings</b></color>, especially on laptops.","Problém môže spôsobovať aj <color=green><b>prach vo ventilátoroch</b></color>. Ten bráni prúdeniu vzduchu, ventilátor sa horšie otáča a teplo sa potom zle odvádza. Počítač sa preto rýchlejšie <color=green><b>prehrieva</b></color>. Preto je dôležité ventilátory pravidelne čistiť a <color=green><b>nezakrývať vetracie otvory</b></color>, hlavne pri notebookoch."
+"Cooling/CoolingManager/Tutorial/Warning/Warnings/warning/Text (TMP)",173940172417814528,"Někdy se objeví <color=green><b>hláška o teplotě</b></color>, nebo se počítač chová <color=green><b>divně</b></color>.","Sometimes a <color=green><b>temperature warning</b></color> appears, or the computer behaves <color=green><b>weirdly</b></color>.","Niekedy sa objaví <color=green><b>hláška o teplote</b></color>, alebo sa počítač správa <color=green><b>zvláštne</b></color>."
+"Cooling/CoolingManager/Tutorial/Warning/Warnings/hot/Text (TMP)",173940177400647680,"Počítač je <color=green><b>horký na dotek</b></color> (hlavně notebook)","The computer is <color=green><b>hot to the touch</b></color> (especially laptops)","Počítač je <color=green><b>horúci na dotyk</b></color> (hlavne notebook)"
+"Cooling/CoolingManager/Tutorial/Warning/Warnings/sound/Text (TMP)",173940184925229056,"Větrák <color=green><b>hučí</b></color> nebo jede pořád na <color=green><b>plné otáčky</b></color>.","The fan is <color=green><b>humming</b></color> or constantly running at <color=green><b>full speed</b></color>.","Vetrák <color=green><b>hučí</b></color> alebo ide stále na <color=green><b>plné otáčky</b></color>."
+"Cooling/CoolingManager/Tutorial/Warning/Avatar/textBubble/Text (TMP)",173940194018480128,"Počítač ti to často 
+„řekne“ sám: ","The computer will often 
+""tell"" you itself: ","Počítač ti to často 
+„povie“ sám: "
+"Cooling/CoolingManager/Tutorial/ONLY_AVATAR/Avatar (1)/textBubble/Text (TMP)",173940215694643200,"Jak poznáš, že chlazení počítače nestačí? ","How do you know if the computer's cooling isn't enough? ","Ako spoznáš, že chladenie počítača nestačí? "
+"Cooling/CoolingManager/Tutorial/Apps (1)/Avatar/textBubble/Text (TMP)",173940229460348928,"...a také renderování videa, streamování a hraní zároveň nebo spouštění <color=green><b>náročných programů</b></color>. V tu chvíli se součástky <color=green><b>zahřívají nejvíc</b></color>.","...and also rendering video, streaming and playing at the same time, or running <color=green><b>demanding programs</b></color>. At that moment, the components <color=green><b>heat up the most</b></color>.","...a tiež renderovanie videa, streamovanie a hranie zároveň alebo spúšťanie <color=green><b>náročných programov</b></color>. V tej chvíli sa súčiastky <color=green><b>zahrievajú najviac</b></color>."
+"Cooling/CoolingManager/Tutorial/Apps/Avatar/textBubble/Text (TMP)",173940238620708864,"Největší zátěž bývá typicky při <color=green><b>hraní náročných her</color></b>...","The biggest load is typically when <color=green><b>playing demanding games</color></b>...","Najväčšia záťaž býva typicky pri <color=green><b>hraní náročných hier</color></b>..."
+"Cooling/CoolingManager/Tutorial/Level (4)/Avatar/textBubble/Text (TMP)",173940247168700416,"... spotřebovávají elektrickou energii a část z ní se <color=green><b>mění na teplo</b></color>. Chlazení odvádí teplo pryč, aby se součástky <color=green><b>nepřehřály</b></color> a fungovaly správně.
+
+Sleduj, jak postupná změna <color=green><b>rychlosti ventilátorů</b></color> ovlivňuje <color=green><b>teplotu</b></color> jednotlivých součástek.","...they consume electrical energy and part of it <color=green><b>turns into heat</b></color>. Cooling takes the heat away so the components <color=green><b>don't overheat</b></color> and work correctly.
+
+Watch how a gradual change in <color=green><b>fan speed</b></color> affects the <color=green><b>temperature</b></color> of individual components.","...spotrebovávajú elektrickú energiu a časť z nej sa <color=green><b>mení na teplo</b></color>. Chladenie odvádza teplo preč, aby sa súčiastky <color=green><b>neprehriali</b></color> a fungovali správne.
+
+Sleduj, ako postupná zmena <color=green><b>rýchlosti ventilátorov</b></color> ovplyvňuje <color=green><b>teplotu</b></color> jednotlivých súčiastok."
+"Cooling/CoolingManager/Tutorial/Level (2)/Avatar/textBubble/Text (TMP)",173940255158849536,"... hlavně <color=green><b>CPU</b></color> ...","... mainly the <color=green><b>CPU</b></color> ...","... hlavne <color=green><b>CPU</b></color> ..."
+"Cooling/CoolingManager/Tutorial/Warning/Warnings/slow/Text (TMP)",173940264600227840,"Hra nebo program se začne <color=green><b>sekat a zpomalovat</b></color>.","The game or program starts to <color=green><b>stutter and slow down</b></color>.","Hra alebo program sa začne <color=green><b>sekať a spomaľovať</b></color>."
+"Cooling/CoolingManager/Tutorial/Start/TextBox/Text (TMP)",173940279678750720,"Chlazení","Cooling","Chladenie"
+"CPU/CPUGameManager/Levels/01/CPU/Load/Store/Load/title/load",173940334821265408,"Načíst","Load","Načítať"
+"CPU/CPUGameManager/Tutorial/program (1)/Avatar (1)/textBubble/Text (TMP)",173940441125900288,"Když spustíš hru nebo otevřeš web, <color=green><b>CPU</color></b> neustále dokola zpracovává příkazy typu: <color=green><b>„načti data“</color></b>, <color=green><b>„spočítej tohle“</color></b> nebo <color=green><b>„pošli výsledek dál“</color></b>. Jsou to miliony malých kroků, které tvoří vše, co vidíš na obrazovce!","When you start a game or open a website, the <color=green><b>CPU</color></b> constantly processes commands like: <color=green><b>""load data""</color></b>, <color=green><b>""calculate this""</color></b> or <color=green><b>""send the result on""</color></b>. It's millions of small steps that make up everything you see on the screen!","Keď spustíš hru alebo otvoríš web, <color=green><b>CPU</color></b> neustále dokola spracováva príkazy typu: <color=green><b>„načítaj dáta“</color></b>, <color=green><b>„spočítaj toto“</color></b> alebo <color=green><b>„pošli výsledok ďalej“</color></b>. Sú to milióny malých krokov, ktoré tvoria všetko, čo vidíš na obrazovke!"
+"CPU/CPUGameManager/Levels/01/CPU/Load/Store/Store/store mana/model/Text/Text (TMP)",173940466681794560,"Kouzelník má štít","The wizard has a shield","Kúzelník má štít"
+"CPU/CPUGameManager/Tutorial/END/Avatar (1)/textBubble/Text (TMP)",173940479252123648,"Pojďme si to vyzkoušet 
+ve hře.","Let's try it out 
+in the game.","Poďme si to vyskúšať 
+v hre."
+"CPU/CPUGameManager/Levels/01/Monitor/Question/Text (TMP)",173940485438722048,"Má kouzelník dostatek many
+pro vyčarování štítu?
+ Pokud ano, tak ho vytvoř.","Does the wizard have enough mana
+to conjure a shield?
+ If so, create it.","Má kúzelník dostatok many
+na vyčarovanie štítu?
+ Ak áno, tak ho vytvor."
+"CPU/CPUGameManager/Levels/01/CPU/Load/Store/Load/cost/model/Text/Text (TMP)",173940518670192640,"Cena kouzla","Spell cost","Cena kúzla"
+"CPU/CPUGameManager/Tutorial/Temp (1)/Avatar (1)/textBubble/Text (TMP)",173940526001836032,"Bude se snažit zachránit tím, že <color=green><b>zpomalí</color></b>, aby se tolik nehřál. Pokud to nestačí, počítač se může <color=green><b>zaseknout</color></b>, restartovat nebo úplně <color=green><b>vypnout</color></b>, aby se procesor nepoškodil. Proto mívají počítače <color=green><b>chlazení</color></b>, například kovový chladič a <color=green><b>větrák</color></b>.","It will try to save itself by <color=green><b>slowing down</color></b> so that it doesn't heat up as much. If that's not enough, the computer may <color=green><b>freeze</color></b>, restart, or completely <color=green><b>shut down</color></b> so the processor doesn't get damaged. That is why computers have <color=green><b>cooling</color></b>, such as a metal cooler and a <color=green><b>fan</color></b>.","Bude sa snažiť zachrániť tým, že <color=green><b>spomalí</color></b>, aby sa toľko nehrial. Ak to nestačí, počítač sa môže <color=green><b>zaseknúť</color></b>, reštartovať alebo úplne <color=green><b>vypnúť</color></b>, aby sa procesor nepoškodil. Preto mávajú počítače <color=green><b>chladenie</color></b>, napríklad kovový chladič a <color=green><b>vetrák</color></b>."
+"CPU/CPUGameManager/Levels/01/Monitor/CreateShieldButton/createShield/model/Text/Text (TMP)",173940536659562496,"Zobraz štít","Show shield","Zobraz štít"
+"CPU/CPUGameManager/Tutorial/Takt/Avatar (1)/textBubble/Text (TMP)",173940544498716672,"Aby tohle všechno stíhal, pracuje v rytmu takzvaných <color=green><b>taktů</color></b> - je to jako metronom nebo tep. 
+
+<color=green><b>Taktovací frekvence</color></b> říká, kolik kroků CPU zvládne za <color=green><b>jednu sekundu</color></b>. 
+
+Čím je vyšší, tím rychleji kmitá, ale pamatuj - celková <color=green><b>rychlost počítače</color></b> závisí i na dalších věcech!","To keep up with all this, it works to the rhythm of so-called <color=green><b>clock cycles</color></b> - it's like a metronome or a heartbeat. 
+
+<color=green><b>Clock rate</color></b> tells us how many steps the CPU can handle in <color=green><b>one second</color></b>. 
+
+The higher it is, the faster it ticks, but remember - the overall <color=green><b>speed of a computer</color></b> also depends on other things!","Aby toto všetko stíhal, pracuje v rytme takzvaných <color=green><b>taktov</color></b> - je to ako metronóm alebo tep. 
+
+<color=green><b>Taktovacia frekvencia</color></b> hovorí, koľko krokov CPU zvládne za <color=green><b>jednu sekundu</color></b>. 
+
+Čím je vyššia, tým rýchlejšie kmitá, ale pamätaj - celková <color=green><b>rýchlosť počítača</color></b> závisí aj od ďalších vecí!"
+"CPU/CPUGameManager/Tutorial/Temp/Avatar (1)/textBubble/Text (TMP)",173940551381569536,"Když <color=green><b>CPU</color></b> hodně pracuje, začne se zahřívat. Pokud je zátěž příliš vysoká bez <color=green><b>chlazení</color></b> nestíhá, teplota může vystoupat na nebezpečnou úroveň. Co se stane pak?","When the <color=green><b>CPU</color></b> works hard, it starts to heat up. If the load is too high and it can't keep up without <color=green><b>cooling</color></b>, the temperature can rise to a dangerous level. What happens then?","Keď <color=green><b>CPU</color></b> veľa pracuje, začne sa zahrievať. Pokiaľ je záťaž príliš vysoká a bez <color=green><b>chladenia</color></b> nestíha, teplota môže vystúpiť na nebezpečnú úroveň. Čo sa stane potom?"
+"CPU/CPUGameManager/Tutorial/Takt/Avatar (1)/textBubble (1)/Text (TMP)",173940566271348736,"Taktovací frekvence se udává v jednotkách <color=green><b>hertz (Hz)</color></b>, nejčastěji jako <color=green><b>gigahertz (GHz)</color></b>. Například procesor se <color=green><b>4 GHz</color></b> zvládne neuvěřitelné <color=green><b>4 miliardy taktů</color></b> za jedinou sekundu. To je pořádný fičák, co?","Clock rate is given in units of <color=green><b>hertz (Hz)</color></b>, most commonly as <color=green><b>gigahertz (GHz)</color></b>. For example, a processor with <color=green><b>4 GHz</color></b> can handle an incredible <color=green><b>4 billion cycles</color></b> in a single second. That's pretty fast, right?","Taktovacia frekvencia sa udáva v jednotkách <color=green><b>hertz (Hz)</color></b>, najčastejšie ako <color=green><b>gigahertz (GHz)</color></b>. Napríklad procesor so <color=green><b>4 GHz</color></b> zvládne neuveriteľné <color=green><b>4 miliardy taktov</color></b> za jedinú sekundu. To je poriadny fičák, čo?"
+"CPU/CPUGameManager/Tutorial/Cache/Avatar (1)/textBubble/Text (TMP)",173940576773885952,"Uvnitř <color=green><b>CPU</color></b> je ještě jedna důležitá věc: <color=green><b>cache paměť (keš)</color></b>. Je to malá, ale <color=green><b>extrémně rychlá</color></b> paměť přímo v procesoru, která slouží jako <color=green><b>zásobník</color></b> pro data, která CPU potřebuje právě teď. Používá ji proto, aby nemusel neustále přistupovat do <color=green><b>RAM</color></b>, což trvá mnohem <color=green><b>déle</color></b>.","Inside the <color=green><b>CPU</color></b> there is one more important thing: <color=green><b>cache memory</color></b>. It's a small but <color=green><b>extremely fast</color></b> memory right on the processor, which serves as a <color=green><b>stash</color></b> for the data the CPU needs right now. It uses it so it doesn't have to constantly access the <color=green><b>RAM</color></b>, which takes much <color=green><b>longer</color></b>.","Vnútri <color=green><b>CPU</color></b> je ešte jedna dôležitá vec: <color=green><b>cache pamäť (keš)</color></b>. Je to malá, ale <color=green><b>extrémne rýchla</color></b> pamäť priamo v procesore, ktorá slúži ako <color=green><b>zásobník</color></b> pre dáta, ktoré CPU potrebuje práve teraz. Používa ju preto, aby nemusel neustále pristupovať do <color=green><b>RAM</color></b>, čo trvá oveľa <color=green><b>dlhšie</color></b>."
+"CPU/CPUGameManager/Tutorial/Cache/Cache/CPU/Cache/Text (TMP)",173940583124062208,"Cache","Cache","Cache"
+"CPU/CPUGameManager/Levels/01/CPU/Load/Store/Load/mana/model/Text/Text (TMP)",173940605685223424,"Zostatek many","Remaining mana","Zostatok many"
+"CPU/CPUGameManager/Levels/01/CPU/Text (TMP)",173940627680153600,"Cache","Cache","Cache"
+"CPU/CPUGameManager/Tutorial/chef (2)/Avatar (1)/textBubble/Text (TMP)",173940637251555328,"Procesor neví, co bude vařit na konci, prostě jen precizně plní příkazy <color=green><b>jeden po druhém</color></b> přesně v tom pořadí, jak jsou napsané. Stačí jeden špatný krok v receptu a celý program (nebo večeře) skončí chybou!","A processor doesn't know what it will be cooking in the end, it just precisely follows commands <color=green><b>one by one</color></b> in the exact order they are written. Just one bad step in the recipe and the whole program (or dinner) ends in an error!","Procesor nevie, čo bude variť na konci, proste len precízne plní príkazy <color=green><b>jeden po druhom</color></b> presne v tom poradí, ako sú napísané. Stačí jeden zlý krok v recepte a celý program (alebo večera) skončí chybou!"
+"CPU/CPUGameManager/Tutorial/chef (1)/Avatar (1)/textBubble/Text (TMP)",173940644218294272,"Každá <color=green><b>instrukce</color></b> je <color=green><b>jeden krok</color></b> v receptu - třeba ‚přidej máslo‘ nebo ‚zamíchej‘.","Each <color=green><b>instruction</color></b> is <color=green><b>one step</color></b> in a recipe - like ‚add butter‘ or ‚stir‘.","Každá <color=green><b>inštrukcia</color></b> je <color=green><b>jeden krok</color></b> v recepte - napríklad ‚pridaj maslo‘ alebo ‚zamiešaj‘."
+"CPU/CPUGameManager/Tutorial/program/Avatar (1)/textBubble/Text (TMP)",173940664380313600,"Dělá miliony malých krůčků: <color=green><b>počítá</color></b>, <color=green><b>porovnává</color></b> a <color=green><b>řídí</color></b> zbytek počítače.
+ Napřiklad říká grafice, co nakreslit, a disku, co uložit...
+Bez něj se nepohne ani pixel!","It makes millions of tiny steps: it <color=green><b>calculates</color></b>, <color=green><b>compares</color></b> and <color=green><b>controls</color></b> the rest of the computer.
+ For instance, it tells the graphics what to draw, and the drive what to save...
+Without it, not a single pixel moves!","Robí milióny malých krôčikov: <color=green><b>počíta</color></b>, <color=green><b>porovnáva</color></b> a <color=green><b>riadi</color></b> zvyšok počítača.
+ Napríklad hovorí grafike, čo nakresliť, a disku, čo uložiť...
+Bez neho sa nepohne ani pixel!"
+"CPU/CPUGameManager/Tutorial/chef/Avatar (1)/textBubble/Text (TMP)",173940673087688704,"Představ si, že <color=green><b>CPU</color></b> (procesor) je jako šéfkuchař a program je jeho <color=green><b>recept</color></b>. ","Imagine that the <color=green><b>CPU</color></b> (processor) is like a chef and the program is its <color=green><b>recipe</color></b>. ","Predstav si, že <color=green><b>CPU</color></b> (procesor) je ako šéfkuchár a program je jeho <color=green><b>recept</color></b>. "
+"CPU/CPUGameManager/Tutorial/Start/Avatar/textBubble/Text (TMP)",173940685641240576,"Co je to CPU? ","What is a CPU? ","Čo je to CPU? "
+"CPU/CPUGameManager/Tutorial/intro/Avatar (1)/textBubble/Text (TMP)",173940693119684608,"CPU neboli <color=green><b>procesor</color></b> je v počítači velmi důležitý. Jeho hlavní funkce je <color=green><b>vykonávat instrukce</color></b>. Co to znamená?","The CPU or <color=green><b>processor</color></b> is very important in a computer. Its main function is to <color=green><b>execute instructions</color></b>. What does that mean?","CPU čiže <color=green><b>procesor</color></b> je v počítači veľmi dôležitý. Jeho hlavnou funkciou je <color=green><b>vykonávať inštrukcie</color></b>. Čo to znamená?"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (1)/Text (TMP) (1)",173940704670797824,"Připravíme si <color=red><b>100 g másla</color></b>","Prepare <color=red><b>100 g of butter</color></b>","Pripravíme si <color=red><b>100 g masla</color></b>"
+"CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction/Text (TMP) (1)",173940714527412224,"načíst <color=""red""> MANU </color> do <color=""red""> R1 </color>","load <color=""red""> MANA </color> into <color=""red""> R1 </color>","načítať <color=""red""> MANU </color> do <color=""red""> R1 </color>"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (5)/Text (TMP) (1)",173940722031022080,"Přidáme <color=red><b>směs</color></b> na <color=red><b>těsto</color></b>","Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>","Pridáme <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+"CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (1)/Text (TMP) (1)",173940730285412352,"načíst <color=""red""> CENU </color> do <color=""red""> R2 </color>","load <color=""red""> COST </color> into <color=""red""> R2 </color>","načítať <color=""red""> CENU </color> do <color=""red""> R2 </color>"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (4)/Text (TMP) (1)",173940737206013952,"Připravíme si prázdnou <color=red><b>mísu</color></b>","Prepare an empty <color=red><b>bowl</color></b>","Pripravíme si prázdnu <color=red><b>misu</color></b>"
+"CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (2)/Text (TMP) (1)",173940745133248512,"minus <color=""red""> R1 </color> a <color=""red""> R2 </color>","minus <color=""red""> R1 </color> and <color=""red""> R2 </color>","mínus <color=""red""> R1 </color> a <color=""red""> R2 </color>"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (3)/Text (TMP) (1)",173940754247471104,"Připravíme si <color=red><b>75 mléka</color></b>","Prepare <color=red><b>75ml of milk</color></b>","Pripravíme si <color=red><b>75 ml mlieka</color></b>"
+"CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (3)/Text (TMP) (1)",173940774472404992,"přesunot <color=""red"">MINUS</color> do <color=""red"">R2</color>","move <color=""red"">MINUS</color> to <color=""red"">R2</color>","presunúť <color=""red"">MINUS</color> do <color=""red"">R2</color>"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (2)/Text (TMP) (1)",173940787948703744,"Připravíme si <color=red><b>2 vejce</color></b>","Prepare <color=red><b>2 eggs</color></b>","Pripravíme si <color=red><b>2 vajcia</color></b>"
+"CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (4)/Text (TMP) (1)",173940795003523072,"> 0 <color=""red""> R2","> 0 <color=""red""> R2","> 0 <color=""red""> R2"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (1)/Text (TMP) (1)",173940801886375936,"Připravíme si <color=red><b>100 g másla</color></b>","Prepare <color=red><b>100 g of butter</color></b>","Pripravíme si <color=red><b>100 g masla</color></b>"
+"CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (5)/Text (TMP) (1)",173940808509181952,"Zobraz štít","Show shield","Zobraz štít"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction/Text (TMP) (1)",173940815912128512,"Připravíme si <color=red><b>směs</color></b> na <color=red><b>těsto</color></b>","Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>","Pridáme <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+"CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (6)/Text (TMP) (1)",173940829656862720,"přesunot <color=""red"">> 0</color> do <color=""red"">R4</color>","move <color=""red"">> 0</color> to <color=""red"">R4</color>","presunúť <color=""red"">> 0</color> do <color=""red"">R4</color>",
+"CPU/CPUGameManager/Levels/01/Notepad/ToDos/Instructions/Instruction (7)/Text (TMP) (1)",173940843544203264,"ulož <color=""red"">> 0</color> do <color=""red"">RAM</color>","save <color=""red"">> 0</color> to <color=""red"">RAM</color>","uložiť <color=""red"">> 0</color> do <color=""red"">RAM</color>"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (6)/Text (TMP) (1)",173940853061079040,"Přidáme <color=red><b>máslo</color></b>","Add <color=red><b>butter</color></b>","Pridáme <color=red><b>maslo</color></b>"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (11)/Text (TMP) (1)",173940863559421952,"Pečeme <color=red><b>40 minut</color></b> na <color=red><b>170 °C</color></b>","Bake for <color=red><b>40 minutes</color></b> at <color=red><b>170 °C</color></b>","Pečieme <color=red><b>40 minút</color></b> na <color=red><b>170 °C</color></b>"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (10)/Text (TMP) (1)",173940872786890752,"Vše přendáme na plech","Transfer everything to a baking sheet","Všetko preložíme na plech"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (9)/Text (TMP) (1)",173940879116095488,"Vše v míse smícháme","Mix everything in the bowl","Všetko v mise zmiešame"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (8)/Text (TMP) (1)",173940889668964352,"Přidáme <color=red><b>mléko</color></b>","Add <color=red><b>milk</color></b>","Pridáme <color=red><b>mlieko</color></b>"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (7)/Text (TMP) (1)",173940896757338112,"Přidáme <color=red><b>vejce</color></b>","Add <color=red><b>eggs</color></b>","Pridáme <color=red><b>vajcia</color></b>"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (6)/Text (TMP) (1)",173940905347272704,"Přidáme <color=red><b>máslo</color></b>","Add <color=red><b>butter</color></b>","Pridáme <color=red><b>maslo</color></b>"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (5)/Text (TMP) (1)",173940912993488896,"Přidáme <color=red><b>směs</color></b> na <color=red><b>těsto</color></b>","Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>","Pridáme <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (4)/Text (TMP) (1)",173940927795187712,"Připravíme si prázdnou <color=red><b>mísu</color></b>","Prepare an empty <color=red><b>bowl</color></b>","Pripravíme si prázdnu <color=red><b>misu</color></b>"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (3)/Text (TMP) (1)",173940935093276672,"Připravíme si <color=red><b>75 mléka</color></b>","Prepare <color=red><b>75ml of milk</color></b>","Pripravíme si <color=red><b>75 ml mlieka</color></b>"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction (2)/Text (TMP) (1)",173940942265536512,"Připravíme si <color=red><b>2 vejce</color></b>","Prepare <color=red><b>2 eggs</color></b>","Pripravíme si <color=red><b>2 vajcia</color></b>"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Instructions/Instruction/Text (TMP) (1)",173940951853715456,"Připravíme si <color=red><b>směs</color></b> na <color=red><b>těsto</color></b>","Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>","Pridáme <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (7)/Text (TMP) (1)",173940977506078720,"Přidáme <color=red><b>vejce</color></b>","Add <color=red><b>eggs</color></b>","Pridáme <color=red><b>vajcia</color></b>"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (9)/Text (TMP) (1)",173940986406391808,"Vše v míse smícháme","Mix everything in the bowl","Všetko v mise zmiešame"
+"CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Instructions/Instruction/Text (TMP) (1)",173940994262323200,"načíst <color=""red""> MANU </color> do <color=""red""> R1 </color>","load <color=""red""> MANA </color> into <color=""red""> R1 </color>","načítať <color=""red""> MANU </color> do <color=""red""> R1 </color>"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (6)/Text (TMP) (1)",173941001103233024,"Přidáme <color=red><b>máslo</color></b>","Add <color=red><b>butter</color></b>","Pridáme <color=red><b>maslo</color></b>"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (7)/Text (TMP) (1)",173941008632008704,"Přidáme <color=red><b>vejce</color></b>","Add <color=red><b>eggs</color></b>","Pridáme <color=red><b>vajcia</color></b>"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (8)/Text (TMP) (1)",173941025254035456,"Přidáme <color=red><b>mléko</color></b>","Add <color=red><b>milk</color></b>","Pridáme <color=red><b>mlieko</color></b>"
+"CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Instructions/Instruction (4)/Text (TMP) (1)",173941032224968704,"> 0 <color=""red""> R2","> 0 <color=""red""> R2","> 0 <color=""red""> R2",
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (5)/Text (TMP) (1)",173941041267888128,"Přidáme <color=red><b>směs</color></b> na <color=red><b>těsto</color></b>","Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>","Pridáme <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (9)/Text (TMP) (1)",173941048528228352,"Vše v míse smícháme","Mix everything in the bowl","Všetko v mise zmiešame"
+"CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Instructions/Instruction (2)/Text (TMP) (1)",173941054895181824,"minus <color=""red""> R1 </color> a <color=""red""> R2 </color>","minus <color=""red""> R1 </color> and <color=""red""> R2 </color>","mínus <color=""red""> R1 </color> a <color=""red""> R2 </color>"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (10)/Text (TMP) (1)",173941066093973504,"Vše přendáme na plech","Transfer everything to a baking sheet","Všetko preložíme na plech"
+"CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Instructions/Instruction (1)/Text (TMP) (1)",173941072842608640,"načíst <color=""red""> CENU </color> do <color=""red""> R2 </color>","load <color=""red""> COST </color> into <color=""red""> R2 </color>","načítať <color=""red""> CENU </color> do <color=""red""> R2 </color>"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (11)/Text (TMP) (1)",173941080790814720,"Pečeme <color=red><b>40 minut</color></b> na <color=red><b>170 °C</color></b>","Bake for <color=red><b>40 minutes</color></b> at <color=red><b>170 °C</color></b>","Pečieme <color=red><b>40 minút</color></b> na <color=red><b>170 °C</color></b>"
+"CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Instructions/Instruction/Text (TMP) (1)",173941089384943616,"načíst <color=""red""> MANU </color> do <color=""red""> R1 </color>","load <color=""red""> MANA </color> into <color=""red""> R1 </color>","načítať <color=""red""> MANU </color> do <color=""red""> R1 </color>"
+"CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Instructions/Instruction (3)/Text (TMP) (1)",173941102940934144,"přesunot <color=""red""> R3 </color> do <color=""red""> R2 </color>","move <color=""red""> R3 </color> to <color=""red""> R2 </color>","presunúť <color=""red""> R3 </color> do <color=""red""> R2 </color>"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (8)/Text (TMP) (1)",173941110922694656,"Přidáme <color=red><b>mléko</color></b>","Add <color=red><b>milk</color></b>","Pridáme <color=red><b>mlieko</color></b>"
+"CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Instructions/Instruction (1)/Text (TMP) (1)",173941118271115264,"načíst <color=""red""> CENU </color> do <color=""red""> R2 </color>","load <color=""red""> COST </color> into <color=""red""> R2 </color>","načítať <color=""red""> CENU </color> do <color=""red""> R2 </color>"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction/Text (TMP) (1)",173941129549598720,"Připravíme si <color=red><b>směs</color></b> na <color=red><b>těsto</color></b>","Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>","Pridáme <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>",
+"CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Instructions/Instruction (2)/Text (TMP) (1)",173941137506193408,"minus <color=""red""> R1 </color> a <color=""red""> R2 </color>","minus <color=""red""> R1 </color> and <color=""red""> R2 </color>","mínus <color=""red""> R1 </color> a <color=""red""> R2 </color>"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (3)/Text (TMP) (1)",173941145714446336,"Připravíme si <color=red><b>75 mléka</color></b>","Prepare <color=red><b>75ml of milk</color></b>","Pripravíme si <color=red><b>75 ml mlieka</color></b>"
+"CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Instructions/Instruction (3)/Text (TMP) (1)",173941152182063104,"přesunot <color=""red""> R3 </color> do <color=""red""> R2 </color>","move <color=""red""> R3 </color> to <color=""red""> R2 </color>","presunúť <color=""red""> R3 </color> do <color=""red""> R2 </color>"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (2)/Text (TMP) (1)",173941158834229248,"Připravíme si <color=red><b>2 vejce</color></b>","Prepare <color=red><b>2 eggs</color></b>","Pripravíme si <color=red><b>2 vajcia</color></b>"
+"CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Instructions/Instruction (4)/Text (TMP) (1)",173941164555259904,"> 0 <color=""red""> R2","> 0 <color=""red""> R2","> 0 <color=""red""> R2"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (1)/Text (TMP) (1)",173941173153583104,"Připravíme si <color=red><b>100 g másla</color></b>","Prepare <color=red><b>100 g of butter</color></b>","Pripravíme si <color=red><b>100 g masla</color></b>"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Instructions/Instruction (4)/Text (TMP) (1)",173941191763709952,"Připravíme si prázdnou <color=red><b>mísu</color></b>","Prepare an empty <color=red><b>bowl</color></b>","Pripravíme si prázdnu <color=red><b>misu</color></b>"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (10)/Text (TMP) (1)",173941201658073088,"Vše přendáme na plech","Transfer everything to a baking sheet","Všetko preložíme na plech"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Instructions/Instruction (11)/Text (TMP) (1)",173941215784488960,"Pečeme <color=red><b>40 minut</color></b> na <color=red><b>170 °C</color></b>","Bake for <color=red><b>40 minutes</color></b> at <color=red><b>170 °C</color></b>","Pečieme <color=red><b>40 minút</color></b> na <color=red><b>170 °C</color></b>"
+"CPU/CPUGameManager/Levels/01/Notepad/ToDos/Title",173941240350527488,"Instrukce:","Instructions:","Inštrukcie:"
+"CPU/CPUGameManager/Tutorial/chef (1)/Notepad/ToDos/Title",173941247283712000,"Recept:","Recipe:","Recept:"
+"CPU/CPUGameManager/Tutorial/chef (2)/Notepad/ToDos/Title",173941254825070592,"Recept:","Recipe:","Recept:"
+"CPU/CPUGameManager/Tutorial/program (1)/Notepad/ToDos/Title",173941263549222912,"Instrukce:","Instructions:","Inštrukcie:"
+"CPU/CPUGameManager/Tutorial/chef/Notepad/ToDos/Title",173941269664518144,"Recept:","Recipe:","Recept:"
+"CPU/CPUGameManager/Tutorial/program/Notepad/ToDos/Title",173941279684710400,"Instrukce:","Instructions:","Inštrukcie:",
+"Gates/GatesGameManager/Tutorial/Start/TextBox/Text (TMP)",173941670501568512,"Logická hradla","Logic gates","Logické hradlá"
+"Gate/Prefab Mode in Context/Gate/Types/NONE/Cube/Text (TMP)",173943009793167360,"Hradlo","Gate","Hradlo"
+"Gates/GatesGameManager/Tutorial/Level_Intro3/Avatar (1)/textBubble/Text (TMP)",173943222951890944,"Pojďme se podívat na různé typy logických hradel a zjistit, jak fungují.","Let's look at the different types of logic gates and find out how they work.","Poďme sa pozrieť na rôzne typy logických hradiel a zistiť, ako fungujú."
+"Gates/GatesGameManager/Tutorial/Level_NOT/TextBox/Text (TMP)",173943266576846848,"NOT (NE) - otáčení ","NOT - inverting ","NOT (NIE) - prevracanie "
+"Gates/GatesGameManager/Tutorial/Level_Intro/Avatar (1)/textBubble/Text (TMP)",173943373191860224,"Zkus měnit hodnoty 1 a 0. Sleduj, co se stane
+ se žárovkou.","Try changing the values 1 and 0. Watch what happens
+ to the lightbulb.","Skús meniť hodnoty 1 a 0. Sleduj, čo sa stane
+ so žiarovkou."
+"Gates/GatesGameManager/Tutorial/Level_Intro/TextBox (1)/Text (TMP)",173943386714296320,"Pracují jen se dvěma hodnotami: <color=green><b> 0 </color>a <color=green>1 </b> </color> (vypnuto/zapnuto), což reprezentuje, jestli tam zrovna teče elektrický proud, nebo ne. ","They only work with two values: <color=green><b> 0 </color>and <color=green>1 </b> </color> (off/on), which represents whether the electrical current is flowing there or not. ","Pracujú len s dvoma hodnotami: <color=green><b> 0 </color>a <color=green>1 </b> </color> (vypnuté/zapnuté), čo reprezentuje, či tam práve tečie elektrický prúd, alebo nie. "
+"Gates/GatesGameManager/Tutorial/Level_Intro/TextBox/Text (TMP)",173943413314572288,"To jsou jednoduché 
+„elektronické rozhodovače“ 
+v počítači.","These are simple 
+""electronic decision makers"" 
+in a computer.","To sú jednoduché 
+„elektronické rozhodovače“ 
+v počítači."
+"Gates/GatesGameManager/Tutorial/Start/Avatar/textBubble/Text (TMP)",173943433128464384,"Co jsou logická hradla? ","What are logic gates? ","Čo sú logické hradlá? "
+"Gates/GatesGameManager/Tutorial/Level_AND/TextBox/Text (TMP)",173943456616566784,"AND (A) - a zároveň ","AND - and at the same time ","AND (A) - a zároveň "
+"Gates/GatesGameManager/Tutorial/Level_Intro2/TextBox/Text (TMP)",173943471430848512,"Můžeme si to představit jako <color=green><b>dva vypínače (vstupy)</b></color>, jejichž stav vyhodnocuje <color=green><b>logické hradlo</b></color>, a podle toho pak rozsvítí nebo zhasne <color=green><b>žárovku (výstup)</b></color>.","We can imagine it as <color=green><b>two switches (inputs)</b></color>, whose state is evaluated by a <color=green><b>logic gate</b></color>, and based on that it turns the <color=green><b>lightbulb (output)</b></color> on or off.","Môžeme si to predstaviť ako <color=green><b>dva vypínače (vstupy)</b></color>, ktorých stav vyhodnocuje <color=green><b>logické hradlo</b></color>, a podľa toho potom rozsvieti alebo zhasne <color=green><b>žiarovku (výstup)</b></color>."
+"Gates/GatesGameManager/Tutorial/Level_OR/Symbol/Text (TMP)",173943535943438336,"Symbol","Symbol","Symbol",
+"Gates/GatesGameManager/Tutorial/Level_OR/TextBox (2)/Text (TMP)",173943547133841408,"""Body dostaneš,  <b><color=green>KDYŽ </b> </color>splníš úkol 1<b><color=green> NEBO </b></color>úkol 2, 
+nemusíš splnit oba.” ","""You get points  <b><color=green>IF </b> </color>you complete task 1<b><color=green> OR </b></color>task 2, 
+you don't have to complete both.” ","""Body dostaneš,  <b><color=green>KEĎ </b> </color>splníš úlohu 1<b><color=green> ALEBO </b></color>úlohu 2, 
+nemusíš splniť obe.” "
+"Gates/GatesGameManager/Tutorial/Level_OR/TextBox (1)/Text (TMP)",173943574937882624,"Žárovka bude svítit, <b><color=green> když </b></color>bude zapnutý<b><color=green> alespoň jeden </b></color>vypínač. ","The lightbulb will shine <b><color=green> if </b></color><b><color=green> at least one </b></color>switch is on. ","Žiarovka bude svietiť, <b><color=green> keď </b></color>bude zapnutý<b><color=green> aspoň jeden </b></color>vypínač. "
+"Gates/GatesGameManager/Tutorial/Level_NOT/Symbol/Text (TMP)",173943601995337728,"Symbol","Symbol","Symbol"
+"Gates/GatesGameManager/Tutorial/Level_XOR/TextBox/Text (TMP)",173943630743097344,"XOR - buď a nebo ","XOR - either or ","XOR - buď a alebo "
+"Gates/GatesGameManager/Tutorial/Level_XOR/TextBox (1)/Text (TMP)",173943644550746112,"Žárovka bude svítit, <b><color=green>když </b></color>je zapnutý<b><color=green> pouze jeden </b></color>vypínač. ","The lightbulb will shine <b><color=green>if </b></color><b><color=green> only one </b></color>switch is on. ","Žiarovka bude svietiť, <b><color=green>keď </b></color>je zapnutý<b><color=green> iba jeden </b></color>vypínač. "
+"Gates/GatesGameManager/Tutorial/Level_XOR/TextBox (2)/Text (TMP)",173943660791091200,"“Můžeš si vzít čokoládu <b><color=green>nebo</b></color> bonbon, ale <b><color=green>ne obojí</b></color>.”
+
+   ","“You can have chocolate <b><color=green>or</b></color> a piece of candy, but <b><color=green>not both</b></color>.”
+
+   ","“Môžeš si vziať čokoládu <b><color=green>alebo</b></color> cukrík, ale <b><color=green>nie oboje</b></color>.”
+
+   "
+"Gates/GatesGameManager/Tutorial/Level_XOR/Symbol/Text (TMP)",173943670123417600,"Symbol","Symbol","Symbol"
+"Gates/GatesGameManager/Tutorial/END/Avatar (1)/textBubble/Text (TMP)",173943683289337856,"Pojďme si to vyzkoušet 
+ve hře.","Let's try it out 
+in the game.","Poďme si to vyskúšať 
+v hre."
+"Gates/GatesGameManager/Tutorial/Level_AND/Symbol/Text (TMP)",173943725760860160,"Symbol","Symbol","Symbol"
+"Gates/GatesGameManager/Tutorial/Level_AND/TextBox (2)/Text (TMP)",173943758308659200,"“Můžeš jít ven, <b><color=green>JEN KDYŽ </b> </color>budeš mít čepici <b><color=green> A </b> </color>bundu.” ","“You can go outside <b><color=green>ONLY IF </b> </color>you have a hat <b><color=green> AND </b> </color>a jacket.” ","“Môžeš ísť von, <b><color=green>LEN KEĎ </b> </color>budeš mať čiapku <b><color=green> A </b> </color>bundu.” "
+"Gates/GatesGameManager/Tutorial/Level_AND/TextBox (1)/Text (TMP)",173943773496233984,"Žárovka bude svítit, <b><color=green>jen když </b> </color>jsou zapnuté <b><color=green> oba </b> </color>vypínače. ","The lightbulb will shine <b><color=green>only when </b> </color><b><color=green> both </b> </color>switches are on. ","Žiarovka bude svietiť, <b><color=green>len keď </b> </color>sú zapnuté <b><color=green> oba </b> </color>vypínače. "
+"Gates/GatesGameManager/Tutorial/Level_NOT/TextBox (1)/Text (TMP)",173943788574756864,"Not má jen <b><color=green>jeden vstup</b></color> (vypínač) a jen ho 
+<b><color=green>přepne do té druhé polohy</b></color>. ","Not has only <b><color=green>one input</b></color> (switch) and simply 
+<b><color=green>flips it to the other position</b></color>. ","Not má len <b><color=green>jeden vstup</b></color> (vypínač) a len ho 
+<b><color=green>prepne do tej druhej polohy</b></color>. "
+"Gates/GatesGameManager/Tutorial/Level_OR/TextBox/Text (TMP)",173943813023354880,"OR (NEBO) - stačí alespoň jeden ","OR - at least one is enough ","OR (ALEBO) - stačí aspoň jeden "
+"HDD_SSD/HDD_SSDGameManager/Tutorial/Start/TextBox/Text (TMP)",173944768162844672,"HDD a SSD","HDD and SSD","HDD a SSD"
+"HDD_SSD/HDD_SSDGameManager/Tutorial/Start/Avatar/textBubble/Text (TMP)",173944781404262400,"Co je HDD a SSD?","What are HDD and SSD?","Čo je HDD a SSD?"
+"HDD_SSD/HDD_SSDGameManager/Tutorial/saving_files/Avatar/textBubble/Text (TMP)",173944791327985664,"Když si do počítače uložíš fotku, hru nebo dokument, uloží se 
+na <color=green><b>disk</color></b> - to je <color=green><b>dlouhodobé úložiště</color></b>. Na rozdíl od <color=green><b>RAM</color></b> se disk <color=green><b><u>nevymaže</color></b></u> po vypnutí počítače.","When you save a photo, game, or document to your computer, it gets saved 
+on the <color=green><b>disk</color></b> - that's <color=green><b>long-term storage</color></b>. Unlike <color=green><b>RAM</color></b>, the disk <color=green><b><u>isn't erased</color></b></u> when you turn off the computer.","Keď si do počítača uložíš fotku, hru alebo dokument, uloží sa 
+na <color=green><b>disk</color></b> - to je <color=green><b>dlhodobé úložisko</color></b>. Na rozdiel od <color=green><b>RAM</color></b> sa disk <color=green><b><u>nevymaže</color></b></u> po vypnutí počítača."
+"HDD_SSD/HDD_SSDGameManager/Tutorial/two_types/Avatar/textBubble/Text (TMP)",173944803093008384,"Existují dva <color=green><b>hlavní typy disků</b></color>:","There are two <color=green><b>main types of disks</b></color>:","Existujú dva <color=green><b>hlavné typy diskov</b></color>:"
+"HDD_SSD/HDD_SSDGameManager/Tutorial/two_types (1)/Avatar/textBubble/Text (TMP)",173944810521120768,"HDD a...","HDD and...","HDD a..."
+"HDD_SSD/HDD_SSDGameManager/Tutorial/two_types (2)/Avatar/textBubble/Text (TMP)",173944819043946496,"... SSD","... SSD","... SSD"
+"HDD_SSD/HDD_SSDGameManager/Tutorial/HDD/TextBox/Text (TMP)",173944826501419008,"<color=green><b>HDD</b></color> je starší typ.
+
+Uvnitř má <color=green><b>točící se kotouče</b></color> a čtecí hlavičku, takže je to trochu jako gramofon. Kvůli tomu bývá pomalejší, může být slyšet a je <color=green><b>citlivější na otřesy</b></color>.
+
+Jeho výhoda je, že často nabízí <color=green><b>hodně místa</b></color> za nižší cenu.","<color=green><b>HDD</b></color> is an older type.
+
+Inside it has <color=green><b>spinning platters</b></color> and a read head, so it's a bit like a record player. Because of this, it's usually slower, can be heard, and is <color=green><b>more sensitive to shocks</b></color>.
+
+Its advantage is that it often offers <color=green><b>a lot of space</b></color> for a lower price.","<color=green><b>HDD</b></color> je starší typ.
+
+Vnútri má <color=green><b>točiace sa kotúče</b></color> a čítaciu hlavičku, takže je to trochu ako gramofón. Kvôli tomu býva pomalší, môže ho byť počuť a je <color=green><b>citlivejší na otrasy</b></color>.
+
+Jeho výhodou je, že často ponúka <color=green><b>veľa miesta</b></color> za nižšiu cenu.",
+"HDD_SSD/HDD_SSDGameManager/Tutorial/SSD/TextBox/Text (TMP)",173944835410120704,"SSD je <color=green><b>novější typ disku</b></color>.
+
+Nemá žádné točící se části, funguje spíš jako <color=green><b>velká flashka</b></color>.
+Proto je rychlejší, tichý a obvykle odolnější. Největší výhoda SSD oproti HDD je právě <color=green><b>rychlost</b></color>: počítač se se SSD rychleji zapne, programy a hry se rychleji načítají a celý počítač působí plynuleji.","SSD is a <color=green><b>newer type of disk</b></color>.
+
+It has no spinning parts, it works more like a <color=green><b>large flash drive</b></color>.
+Therefore it is faster, quiet and usually more durable. The biggest advantage of SSD over HDD is exactly the <color=green><b>speed</b></color>: the computer turns on faster with an SSD, programs and games load faster, and the whole computer feels smoother.","SSD je <color=green><b>novší typ disku</b></color>.
+
+Nemá žiadne točiace sa časti, funguje skôr ako <color=green><b>veľký USB kľúč</b></color>.
+Preto je rýchlejší, tichý a zvyčajne odolnejší. Najväčšia výhoda SSD oproti HDD je práve <color=green><b>rýchlosť</b></color>: počítač sa s SSD rýchlejšie zapne, programy a hry sa rýchlejšie načítavajú a celý počítač pôsobí plynulejšie."
+"HDD_SSD/HDD_SSDGameManager/Tutorial/END/Avatar (1)/textBubble/Text (TMP)",173944845057019904,"Pojďme si to vyzkoušet 
+ve hře.","Let's try it out 
+in the game.","Poďme si to vyskúšať 
+v hre."

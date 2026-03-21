@@ -59,103 +59,956 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 118525458794532864
-    m_Localized: Super!
+    m_Localized: "Super! Zvl\xE1dli sme to!"
     m_Metadata:
       m_Items: []
   - m_Id: 164636933619306496
-    m_Localized: TODO
+    m_Localized: "Rozsvie\u0165 v\u0161etky \u017Eiarovky!"
     m_Metadata:
       m_Items: []
   - m_Id: 164884267116646400
-    m_Localized: TODO
+    m_Localized: "Vytvor bin\xE1rny z\xE1pis!"
     m_Metadata:
       m_Items: []
   - m_Id: 164884481839845376
-    m_Localized: TODO
+    m_Localized: "Teraz to sk\xFAs bez pomoci!"
     m_Metadata:
       m_Items: []
   - m_Id: 164884554699100160
-    m_Localized: TODO
+    m_Localized: "Teraz to oto\u010D\xEDme: Ak\xE9 \u010D\xEDslo pr\xE1ve vid\xED\u0161?
+      Pomocou tla\u010Didiel plus a m\xEDnus uprav hodnotu, a ke\u010F si bude\u0161
+      ist\xFD, stla\u010D tla\u010Didlo rovn\xE1 sa."
     m_Metadata:
       m_Items: []
   - m_Id: 165347498411020288
-    m_Localized: TODO
+    m_Localized: "Tvojou \xFAlohou bude nastavi\u0165 v\xFDkon ventil\xE1torov tak,
+      aby chladili s\xFA\u010Diastky pr\xE1ve tak akur\xE1t."
     m_Metadata:
       m_Items: []
   - m_Id: 165350384738095104
-    m_Localized: TODO
+    m_Localized: "Ke\u010F pobe\u017Eia pr\xEDli\u0161 r\xFDchlo, u\u017E\xEDvate\u013E
+      sa bude s\u0165a\u017Eova\u0165 na hluk a s\xFA\u010Diastky bud\xFA zbyto\u010Dne
+      <color=blue>podchladen\xE9 (modr\xE9)."
     m_Metadata:
       m_Items: []
   - m_Id: 165350462869590016
-    m_Localized: TODO
+    m_Localized: "Ke\u010F pobe\u017Eia pr\xEDli\u0161 pomaly, s\xFA\u010Diastky
+      <color=red>sa prehrej\xFA (\u010Derven\xE9)</color> a po\u010D\xEDta\u010D
+      sa bude spoma\u013Eova\u0165."
     m_Metadata:
       m_Items: []
   - m_Id: 165350482553458688
-    m_Localized: TODO
+    m_Localized: "Sna\u017E sa n\xE1js\u0165 ide\xE1lne nastavenie, pri ktorom sa
+      teplota postupne ust\xE1li na spr\xE1vnej hodnote a <color=green>zostane v
+      zelenej z\xF3ne</color>."
     m_Metadata:
       m_Items: []
   - m_Id: 165661820018348032
-    m_Localized: TODO
+    m_Localized: "V tejto \xFArovni presk\xFAmame, ako vlastne funguje HDD (pevn\xFD
+      disk)."
     m_Metadata:
       m_Items: []
   - m_Id: 165661930609561600
-    m_Localized: TODO
+    m_Localized: "U\u017E vieme, \u017Ee HDD je oproti bleskov\xE9mu SSD sk\xF4r
+      \u201Apomal\xFD be\u017Eec\u2018, a v tejto hre si t\xFA pomalos\u0165 vysk\xFA\u0161a\u0161
+      na vlastnej ko\u017Ei."
     m_Metadata:
       m_Items: []
   - m_Id: 165661996279779328
-    m_Localized: TODO
+    m_Localized: "Tvojou \xFAlohou je ovl\xE1da\u0165 <color=green><b>\u010D\xEDtaciu
+      hlavu</color></b> disku tak, aby jej \u0161pi\u010Dka presne zachytila \u0161tvor\u010Deky
+      predstavuj\xFAce d\xE1ta. Priprav sa, na\u010D\xEDtavanie s\xFAborov za\u010D\xEDna!"
     m_Metadata:
       m_Items: []
   - m_Id: 165662052739305472
-    m_Localized: TODO
+    m_Localized: "Pozor, pritvrdzujeme! Pr\xE1ve zvy\u0161ujeme kapacitu disku."
     m_Metadata:
       m_Items: []
   - m_Id: 165671560337281024
-    m_Localized: TODO
+    m_Localized: "Aj medzi HDD s\xFA rozdiely! Tento model m\xE1 <color=green><b>vy\u0161\u0161ie
+      ot\xE1\u010Dky</color></b>, tak\u017Ee d\xE1ta pod \u010D\xEDtacou hlavou pr\xFAdia
+      ove\u013Ea r\xFDchlej\u0161ie. Vyu\u017Ei tento v\xFDkon a <color=green><b>v\u0161etky
+      ich chy\u0165</color></b>, nech m\xE1me s\xFAbor na\u010D\xEDtan\xFD v rekordnom
+      \u010Dase!"
     m_Metadata:
       m_Items: []
   - m_Id: 165672401345564672
-    m_Localized: TODO
+    m_Localized: "Aby sa na rovnak\xFA plochu zmestilo viac s\xFAborov, mus\xEDme
+      d\xE1ta nasklada\u0165 ove\u013Ea tesnej\u0161ie k sebe."
     m_Metadata:
       m_Items: []
   - m_Id: 165709255029673984
-    m_Localized: TODO
+    m_Localized: "Vitaj vo svete SSD! Zabudni na pomal\xE9 mechanick\xE9 hlavy. SSD
+      funguje na princ\xEDpe elektrick\xFDch impulzov."
     m_Metadata:
       m_Items: []
   - m_Id: 165709426505404416
-    m_Localized: TODO
+    m_Localized: "Tvojou \xFAlohou je aktivova\u0165 spr\xE1vny <color=green><b>riadok
+      a st\u013Apec</color></b> pomocou guli\u010Diek na okraji. Tam, kde sa tvoje
+      vo\u013Eby pretn\xFA, bleskovo pre\u010D\xEDta\u0161 d\xE1ta zo zelenej bunky.
+      \u017Diadne \u010Dakanie, len \u010Dist\xE1 r\xFDchlos\u0165!"
     m_Metadata:
       m_Items: []
   - m_Id: 166456809505804288
-    m_Localized: TODO
+    m_Localized: "Vitaj v jadre <color=green><b>CPU</color></b>! Tvojou \xFAlohou
+      je postupova\u0165 pod\u013Ea <color=green><b>in\u0161trukci\xED</color></b>
+      v zo\u0161ite v\u013Eavo a zisti\u0165, \u010Di k\xFAzeln\xEDk m\xF4\u017Ee
+      vy\u010Darova\u0165 svoj \u0161t\xEDt."
     m_Metadata:
       m_Items: []
   - m_Id: 166460212755681280
-    m_Localized: TODO
+    m_Localized: "D\xE1ta z <color=green><b>RAM</color></b> si do procesora privol\xE1\u0161
+      v <color=blue><b>modrom paneli</color></b>. Potom ich m\xF4\u017Ee\u0161 my\u0161ou
+      pretiahnu\u0165 do spr\xE1vneho <color=green><b>registra (R1-R4)</color></b>
+      v cache."
     m_Metadata:
       m_Items: []
   - m_Id: 166460294875959296
-    m_Localized: TODO
+    m_Localized: "Farebn\xE9 bloky hore sl\xFA\u017Eia na <color=green><b>v\xFDpo\u010Dty</color></b>
+      a <color=green><b>porovn\xE1vanie</color></b>. Pretiahni do vstupn\xFDch registrov
+      hodnoty, aby procesor vykonal oper\xE1ciu, ktor\xFA pr\xE1ve potrebuje\u0161."
     m_Metadata:
       m_Items: []
   - m_Id: 166462323631443968
-    m_Localized: TODO
+    m_Localized: "V\xFDsledky oper\xE1ci\xED m\xF4\u017Ee\u0161 bra\u0165 a pres\xFAva\u0165
+      \u010Falej medzi <color=green><b>registrami</color></b> alebo odosiela\u0165
+      sp\xE4\u0165 do <color=green><b>RAM</color></b>. Sleduj zo\u0161it a postupuj
+      presne pod\u013Ea zadania!"
     m_Metadata:
       m_Items: []
   - m_Id: 166857543216910336
-    m_Localized: TODO
+    m_Localized: "Vitaj v \xFAlohe <b>spr\xE1vcu pam\xE4te</b>, tvojou \xFAlohou
+      je udr\u017Ea\u0165 syst\xE9m v chode a zaisti\u0165, aby procesor nikdy nemusel
+      \u010Daka\u0165. Z <color=green>HDD/SSD</color> ti bud\xFA prich\xE1dza\u0165
+      <b>d\xE1tov\xE9 bloky</b>, ktor\xE9 mus\xED\u0161 \u0161ikovne <color=green><b>uklada\u0165
+      do slotov v RAM</b></color>."
     m_Metadata:
       m_Items: []
   - m_Id: 166859659973087232
-    m_Localized: TODO
+    m_Localized: "Sna\u017E sa d\xE1ta sklada\u0165 tesne ved\u013Ea seba, aby si
+      <b>u\u0161etril \u010Do najviac miesta</b> pre \u010Fal\u0161ie bal\xED\u010Dky."
     m_Metadata:
       m_Items: []
   - m_Id: 166859833378197504
-    m_Localized: TODO
+    m_Localized: "Sleduj pozorne <b>CPU</b>, ktor\xFD si bude priebe\u017Ene \u017Eiada\u0165
+      o konkr\xE9tne d\xE1ta pomocou <b>adries</b>. Akon\xE1hle uvid\xED\u0161 po\u017Eiadavku,
+      mus\xED\u0161 <color=green><b>tiahnut\xEDm vzia\u0165 d\xE1ta z RAM</b></color>
+      a doru\u010Di\u0165 ich priamo do procesora."
     m_Metadata:
       m_Items: []
   - m_Id: 166859951946977280
-    m_Localized: TODO
+    m_Localized: "Niektor\xE9 d\xE1ta v pam\xE4ti u\u017E nie s\xFA potrebn\xE9 a
+      len zbyto\u010Dne zaberaj\xFA drahocenn\xE9 miesto. M\xF4\u017Ee\u0161 preto
+      <color=green><b>vyvola\u0165 upratovanie pam\xE4te</b></color>, ktor\xE9 automaticky
+      zma\u017Ee v\u0161etko, \u010Do u\u017E procesor nepou\u017E\xEDva."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922145806733312
+    m_Localized: CPU"Ram/RamGameManager/Levels/01/Spawn/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922953180893184
+    m_Localized: "Po\u010Fme si to vysk\xFA\u0161a\u0165 \r\nv hre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922963524046848
+    m_Localized: "<b>Opera\u010Dn\xFD syst\xE9m</b> je \u0161ikovn\xFD. Ke\u010F
+      vid\xED, \u017Ee sa <b>RAM</b> zap\u013A\u0148a, sk\xFAsi ju <color=green><b>vy\u010Disti\u0165</b></color>.\r\n\r\nPopros\xED
+      programy, \u010Di nie\u010Do u\u017E <b>nepou\u017E\xEDvaj\xFA</b>, a tak sa
+      <color=green><b>k\xFAsok miesta uvo\u013En\xED</b></color>.\r\n\r\nKlikni na
+      smetiarske auto a vyma\u017E nepotrebn\xE9 d\xE1ta z RAM!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922978652901376
+    m_Localized: "Ale pozor: <b>viac RAM</b> neznamen\xE1 automaticky <color=green><b>najr\xFDchlej\u0161\xED
+      po\u010D\xEDta\u010D</b></color>, ale \u010Dasto to ve\u013Emi pom\xF4\u017Ee,
+      ke\u010F rob\xED\u0161 <color=green><b>viac vec\xED naraz</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173922988907974656
+    m_Localized: "Zvy\u010Dajne plat\xED, \u017Ee <b>\u010D\xEDm viac RAM</b> m\xE1
+      po\u010D\xEDta\u010D, t\xFDm viac vec\xED zvl\xE1dne <b>naraz</b>.\r\n\r\nNapr\xEDklad:\r\n\u25CF 
+      m\xF4\u017Ee\u0161 ma\u0165 otvoren\xE9 <color=green><b>viac programov a z\xE1lo\u017Eiek</b></color>
+      v prehliada\u010Di,\r\n\u25CF  po\u010D\xEDta\u010D sa <color=green><b>menej
+      zasek\xE1va</b></color> pri n\xE1ro\u010Dnej\u0161ej pr\xE1ci,\r\n\u25CF  pr\xE1ca
+      b\xFDva <color=green><b>plynulej\u0161ia</b></color> (hlavne pri hr\xE1ch,
+      strihu videa, grafike)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923009661390848
+    m_Localized: "Rozdiel medzi <b>RAM</b> a <b>pevn\xFDm diskom</b> je v ich \xFA\u010Dele:\r\n\r\n<b>RAM</b>
+      je <color=green><b>r\xFDchla a do\u010Dasn\xE1</b></color> (pracovn\xE1) pam\xE4\u0165.\r\n\r\n<b>Pevn\xFD
+      disk / SSD</b> je <color=green><b>dlhodob\xE9 \xFAlo\u017Eisko</b></color>:
+      tam sa ukladaj\xFA s\xFAbory a programy tak, aby tam boli <color=green><b>aj
+      po vypnut\xED</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923027009032192
+    m_Localized: "Je to <color=green><b><u>do\u010Dasn\xE1 pam\xE4\u0165</u></b></color>.
+      Akon\xE1hle po\u010D\xEDta\u010D vypne\u0161, obsah RAM sa <color=green><b>zma\u017Ee</b></color>,
+      preto\u017Ee na zapam\xE4tanie d\xE1t potrebuje <color=green><b>elektrick\xFA
+      energiu</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923036588822528
+    m_Localized: "Hovor\xED sa jej tie\u017E <color=green><b>opera\u010Dn\xE1 pam\xE4\u0165</b></color>.
+      Je to r\xFDchla pam\xE4\u0165, ktor\xFA po\u010D\xEDta\u010D pou\u017E\xEDva
+      ako \u201Epracovn\xFD st\xF4l\u201C.\r\n\r\nKe\u010F nie\u010Do rob\xED\u0161
+      (otvor\xED\u0161 hru, prehliada\u010D, dokument), po\u010D\xEDta\u010D si d\xF4le\u017Eit\xE9
+      veci <color=green><b>do\u010Dasne uklad\xE1 do RAM</b></color>, aby k nim mal
+      <color=green><b>r\xFDchly pr\xEDstup</b></color> a mohol pracova\u0165 plynulo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923046575460352
+    m_Localized: "\u010Co je to RAM? "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173923149470126080
+    m_Localized: RAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173938918367055872
+    m_Localized: HDD/SSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939219157372928
+    m_Localized: "Bin\xE1rna s\xFAstava "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939257489117184
+    m_Localized: "Po\u010Fme si to vysk\xFA\u0161a\u0165 \r\nv hre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939283107926016
+    m_Localized: "A\u017E si toto trochu vysk\xFA\u0161a\u0161, za\u010Dne ti d\xE1va\u0165
+      zmysel, pre\u010Do je <color=green><b>bin\xE1rna s\xFAstava</color></b> pre
+      po\u010D\xEDta\u010D tak d\xF4le\u017Eit\xE1: jeho <color=green><b>logick\xE9
+      obvody</color></b> neust\xE1le pracuj\xFA s <color=green><b>hodnotami 0 a 1</color></b>,
+      teda s t\xFDm, \u010Di je nie\u010Do <color=green><b>vypnut\xE9 alebo zapnut\xE9</color></b>,
+      \u010Di <color=green><b>pr\xFAd te\u010Die alebo nete\u010Die</color></b>.
+      Z t\xFDchto jednoduch\xFDch <color=green><b>\u201E\xE1no/nie\u201C rozhodnut\xED</color></b>
+      potom po\u010D\xEDta\u010D zlo\u017E\xED v\u0161etko ostatn\xE9 - \u010D\xEDsla,
+      text, obr\xE1zky, zvuk aj hry."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939324069498880
+    m_Localized: "Sk\xFAs to s\xE1m!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939348987858944
+    m_Localized: "A toto s\xFA 4!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939381313359872
+    m_Localized: "Zl\xE1 odpove\u010F!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939416474210304
+    m_Localized: "Zl\xE1 odpove\u010F!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939428482502656
+    m_Localized: "Toto s\xFA 3!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939453715435520
+    m_Localized: "Toto je \u010D\xEDslo v <color=green><b>dvojkovom z\xE1pise</color></b>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939480282157056
+    m_Localized: "Nula je 0, jednotka je 1. To je jasn\xE9. Ale \u010Do napr\xEDklad
+      dvojka?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939508925059072
+    m_Localized: "V sloven\u010Dine tomu niekedy hovor\xEDme aj <color=green><b>dvojkov\xE1
+      s\xFAstava</color></b>, preto\u017Ee pou\u017E\xEDva len <color=green><b>dve
+      \u010D\xEDsla</color></b> - <color=green><b>jednotku a nulu</color></b>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939522644627456
+    m_Localized: "Vysk\xFA\u0161aj si to!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939531951788032
+    m_Localized: "Ke\u010F <color=green><b>elektrick\xFD pr\xFAd te\u010Die</color></b>,
+      m\xF4\u017Eeme to bra\u0165 ako <color=green><b>hodnotu 1</color></b>. Ke\u010F
+      <color=green><b>pr\xFAd nete\u010Die</color></b>, berieme to ako <color=green><b>0</color></b>.
+      A preto\u017Ee po\u010D\xEDta\u010D dok\xE1\u017Ee spo\u013Eahlivo rozl\xED\u0161i\u0165
+      pr\xE1ve tieto dve mo\u017Enosti, pracuje v takzvanej <color=green><b>bin\xE1rnej
+      s\xFAstave</color></b>, ktor\xE1 pou\u017E\xEDva len <color=green><b>\u010D\xEDslice
+      0 a 1</color></b>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939560032653312
+    m_Localized: "Predstav si to ako \u0161peci\xE1lny jazyk, ktor\xFDm \u201Ehovoria\u201C
+      po\u010D\xEDta\u010De.  "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939571713789952
+    m_Localized: "Po\u010D\xEDta\u010D neprem\xFD\u0161\u013Ea ako \u010Dlovek. \r\nVlastne
+      pozn\xE1 len dve veci: \r\n<color=green><b>zapnut\xE9 alebo vypnut\xE9</b></color> "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939583709499392
+    m_Localized: "\u010Co je to bin\xE1rna s\xFAstava? "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939590831427584
+    m_Localized: "Ako sa zapisuj\xFA \u010D\xEDsla?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939624138395648
+    m_Localized: "Toto je \u010D\xEDslo v <color=green><b>desiatkovom z\xE1pise</color></b>
+      (tak ako ho pozn\xE1me)."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939695110213632
+    m_Localized: "Toto s\xFA 2!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939720175374336
+    m_Localized: Toto je 1!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939743390846976
+    m_Localized: "V <color=green><b>bin\xE1rnom \u010D\xEDsle</b></color> m\xE1 ka\u017Ed\xE1
+      <color=green><b>cifra</b></color> svoju <color=green><b>poz\xEDciu (index)</b></color>
+      a jej hodnota sa po\u010D\xEDta ako <color=green><b>2 na dan\xFD index</b></color>;
+      ke\u010F tieto hodnoty <color=green><b>s\u010D\xEDtame</b></color> pod\u013Ea
+      toho, kde je <color=green><b>jednotka</b></color>, dostaneme <color=green><b>v\xFDsledn\xE9
+      \u010D\xEDslo</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173939771526238208
+    m_Localized: "Zl\xE1 odpove\u010F!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940123113771008
+    m_Localized: "... a \u010Dasto aj <color=green><b>grafick\xE1 karta</b></color>...."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940131619819520
+    m_Localized: "Pre\u010Do je v po\u010D\xEDta\u010Di potrebn\xE9 chladenie? "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940140377526272
+    m_Localized: "Ke\u010F po\u010D\xEDta\u010D pracuje, jeho s\xFA\u010Diastky..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940149630160896
+    m_Localized: "Po\u010Fme si to vysk\xFA\u0161a\u0165 \r\nv hre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940157930688512
+    m_Localized: "Ke\u010F chladenie nefunguje spr\xE1vne, m\xF4\u017Ee sa dia\u0165
+      ve\u013Ea vec\xED, napr\xEDklad:\r\n\r\n\u25CF  s\xFA\u010Diastky sa m\xF4\u017Eu
+      automaticky <color=green><b>spomali\u0165</b></color> (aby sa to\u013Eko nehriali),\r\n\r\n\u25CF 
+      po\u010D\xEDta\u010D sa m\xF4\u017Ee <color=green><b>zasek\xE1va\u0165</b></color>,\r\n\r\n\u25CF 
+      m\xF4\u017Ee sa <color=green><b>re\u0161tartova\u0165 alebo vypn\xFA\u0165</b></color>,\r\n\r\n\u25CF 
+      pri dlhodobom prehrievan\xED sa m\xF4\u017Eu s\xFA\u010Diastky aj <color=green><b>po\u0161kodi\u0165</b></color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940165769842688
+    m_Localized: "Probl\xE9m m\xF4\u017Ee sp\xF4sobova\u0165 aj <color=green><b>prach
+      vo ventil\xE1toroch</b></color>. Ten br\xE1ni pr\xFAdeniu vzduchu, ventil\xE1tor
+      sa hor\u0161ie ot\xE1\u010Da a teplo sa potom zle odv\xE1dza. Po\u010D\xEDta\u010D
+      sa preto r\xFDchlej\u0161ie <color=green><b>prehrieva</b></color>. Preto je
+      d\xF4le\u017Eit\xE9 ventil\xE1tory pravidelne \u010Disti\u0165 a <color=green><b>nezakr\xFDva\u0165
+      vetracie otvory</b></color>, hlavne pri notebookoch."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940172417814528
+    m_Localized: "Niekedy sa objav\xED <color=green><b>hl\xE1\u0161ka o teplote</b></color>,
+      alebo sa po\u010D\xEDta\u010D spr\xE1va <color=green><b>zvl\xE1\u0161tne</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940177400647680
+    m_Localized: "Po\u010D\xEDta\u010D je <color=green><b>hor\xFAci na dotyk</b></color>
+      (hlavne notebook)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940184925229056
+    m_Localized: "Vetr\xE1k <color=green><b>hu\u010D\xED</b></color> alebo ide st\xE1le
+      na <color=green><b>pln\xE9 ot\xE1\u010Dky</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940194018480128
+    m_Localized: "Po\u010D\xEDta\u010D ti to \u010Dasto \r\n\u201Epovie\u201C s\xE1m: "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940215694643200
+    m_Localized: "Ako spozn\xE1\u0161, \u017Ee chladenie po\u010D\xEDta\u010Da nesta\u010D\xED? "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940229460348928
+    m_Localized: "...a tie\u017E renderovanie videa, streamovanie a hranie z\xE1rove\u0148
+      alebo sp\xFA\u0161\u0165anie <color=green><b>n\xE1ro\u010Dn\xFDch programov</b></color>.
+      V tej chv\xEDli sa s\xFA\u010Diastky <color=green><b>zahrievaj\xFA najviac</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940238620708864
+    m_Localized: "Najv\xE4\u010D\u0161ia z\xE1\u0165a\u017E b\xFDva typicky pri <color=green><b>hran\xED
+      n\xE1ro\u010Dn\xFDch hier</color></b>..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940247168700416
+    m_Localized: "...spotrebov\xE1vaj\xFA elektrick\xFA energiu a \u010Das\u0165
+      z nej sa <color=green><b>men\xED na teplo</b></color>. Chladenie odv\xE1dza
+      teplo pre\u010D, aby sa s\xFA\u010Diastky <color=green><b>neprehriali</b></color>
+      a fungovali spr\xE1vne.\r\n\r\nSleduj, ako postupn\xE1 zmena <color=green><b>r\xFDchlosti
+      ventil\xE1torov</b></color> ovplyv\u0148uje <color=green><b>teplotu</b></color>
+      jednotliv\xFDch s\xFA\u010Diastok."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940255158849536
+    m_Localized: ... hlavne <color=green><b>CPU</b></color> ...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940264600227840
+    m_Localized: "Hra alebo program sa za\u010Dne <color=green><b>seka\u0165 a spoma\u013Eova\u0165</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940279678750720
+    m_Localized: Chladenie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940334821265408
+    m_Localized: "Na\u010D\xEDta\u0165"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940441125900288
+    m_Localized: "Ke\u010F spust\xED\u0161 hru alebo otvor\xED\u0161 web, <color=green><b>CPU</color></b>
+      neust\xE1le dokola spracov\xE1va pr\xEDkazy typu: <color=green><b>\u201Ena\u010D\xEDtaj
+      d\xE1ta\u201C</color></b>, <color=green><b>\u201Espo\u010D\xEDtaj toto\u201C</color></b>
+      alebo <color=green><b>\u201Epo\u0161li v\xFDsledok \u010Falej\u201C</color></b>.
+      S\xFA to mili\xF3ny mal\xFDch krokov, ktor\xE9 tvoria v\u0161etko, \u010Do
+      vid\xED\u0161 na obrazovke!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940466681794560
+    m_Localized: "K\xFAzeln\xEDk m\xE1 \u0161t\xEDt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940479252123648
+    m_Localized: "Po\u010Fme si to vysk\xFA\u0161a\u0165 \r\nv hre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940485438722048
+    m_Localized: "M\xE1 k\xFAzeln\xEDk dostatok many\r\nna vy\u010Darovanie \u0161t\xEDtu?\r\n
+      Ak \xE1no, tak ho vytvor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940518670192640
+    m_Localized: "Cena k\xFAzla"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940526001836032
+    m_Localized: "Bude sa sna\u017Ei\u0165 zachr\xE1ni\u0165 t\xFDm, \u017Ee <color=green><b>spomal\xED</color></b>,
+      aby sa to\u013Eko nehrial. Ak to nesta\u010D\xED, po\u010D\xEDta\u010D sa m\xF4\u017Ee
+      <color=green><b>zasekn\xFA\u0165</color></b>, re\u0161tartova\u0165 alebo \xFAplne
+      <color=green><b>vypn\xFA\u0165</color></b>, aby sa procesor nepo\u0161kodil.
+      Preto m\xE1vaj\xFA po\u010D\xEDta\u010De <color=green><b>chladenie</color></b>,
+      napr\xEDklad kovov\xFD chladi\u010D a <color=green><b>vetr\xE1k</color></b>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940536659562496
+    m_Localized: "Zobraz \u0161t\xEDt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940544498716672
+    m_Localized: "Aby toto v\u0161etko st\xEDhal, pracuje v rytme takzvan\xFDch <color=green><b>taktov</color></b>
+      - je to ako metron\xF3m alebo tep. \r\n\r\n<color=green><b>Taktovacia frekvencia</color></b>
+      hovor\xED, ko\u013Eko krokov CPU zvl\xE1dne za <color=green><b>jednu sekundu</color></b>.
+      \r\n\r\n\u010C\xEDm je vy\u0161\u0161ia, t\xFDm r\xFDchlej\u0161ie kmit\xE1,
+      ale pam\xE4taj - celkov\xE1 <color=green><b>r\xFDchlos\u0165 po\u010D\xEDta\u010Da</color></b>
+      z\xE1vis\xED aj od \u010Fal\u0161\xEDch vec\xED!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940551381569536
+    m_Localized: "Ke\u010F <color=green><b>CPU</color></b> ve\u013Ea pracuje, za\u010Dne
+      sa zahrieva\u0165. Pokia\u013E je z\xE1\u0165a\u017E pr\xEDli\u0161 vysok\xE1
+      a bez <color=green><b>chladenia</color></b> nest\xEDha, teplota m\xF4\u017Ee
+      vyst\xFApi\u0165 na nebezpe\u010Dn\xFA \xFArove\u0148. \u010Co sa stane potom?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940566271348736
+    m_Localized: "Taktovacia frekvencia sa ud\xE1va v jednotk\xE1ch <color=green><b>hertz
+      (Hz)</color></b>, naj\u010Dastej\u0161ie ako <color=green><b>gigahertz (GHz)</color></b>.
+      Napr\xEDklad procesor so <color=green><b>4 GHz</color></b> zvl\xE1dne neuverite\u013En\xE9
+      <color=green><b>4 miliardy taktov</color></b> za jedin\xFA sekundu. To je poriadny
+      fi\u010D\xE1k, \u010Do?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940576773885952
+    m_Localized: "Vn\xFAtri <color=green><b>CPU</color></b> je e\u0161te jedna d\xF4le\u017Eit\xE1
+      vec: <color=green><b>cache pam\xE4\u0165 (ke\u0161)</color></b>. Je to mal\xE1,
+      ale <color=green><b>extr\xE9mne r\xFDchla</color></b> pam\xE4\u0165 priamo
+      v procesore, ktor\xE1 sl\xFA\u017Ei ako <color=green><b>z\xE1sobn\xEDk</color></b>
+      pre d\xE1ta, ktor\xE9 CPU potrebuje pr\xE1ve teraz. Pou\u017E\xEDva ju preto,
+      aby nemusel neust\xE1le pristupova\u0165 do <color=green><b>RAM</color></b>,
+      \u010Do trv\xE1 ove\u013Ea <color=green><b>dlh\u0161ie</color></b>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940583124062208
+    m_Localized: Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940605685223424
+    m_Localized: Zostatok many
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940627680153600
+    m_Localized: Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940637251555328
+    m_Localized: "Procesor nevie, \u010Do bude vari\u0165 na konci, proste len prec\xEDzne
+      pln\xED pr\xEDkazy <color=green><b>jeden po druhom</color></b> presne v tom
+      porad\xED, ako s\xFA nap\xEDsan\xE9. Sta\u010D\xED jeden zl\xFD krok v recepte
+      a cel\xFD program (alebo ve\u010Dera) skon\u010D\xED chybou!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940644218294272
+    m_Localized: "Ka\u017Ed\xE1 <color=green><b>in\u0161trukcia</color></b> je <color=green><b>jeden
+      krok</color></b> v recepte - napr\xEDklad \u201Apridaj maslo\u2018 alebo \u201Azamie\u0161aj\u2018."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940664380313600
+    m_Localized: "Rob\xED mili\xF3ny mal\xFDch kr\xF4\u010Dikov: <color=green><b>po\u010D\xEDta</color></b>,
+      <color=green><b>porovn\xE1va</color></b> a <color=green><b>riadi</color></b>
+      zvy\u0161ok po\u010D\xEDta\u010Da.\r\n Napr\xEDklad hovor\xED grafike, \u010Do
+      nakresli\u0165, a disku, \u010Do ulo\u017Ei\u0165...\r\nBez neho sa nepohne
+      ani pixel!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940673087688704
+    m_Localized: "Predstav si, \u017Ee <color=green><b>CPU</color></b> (procesor)
+      je ako \u0161\xE9fkuch\xE1r a program je jeho <color=green><b>recept</color></b>. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940685641240576
+    m_Localized: "\u010Co je to CPU? "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940693119684608
+    m_Localized: "CPU \u010Di\u017Ee <color=green><b>procesor</color></b> je v po\u010D\xEDta\u010Di
+      ve\u013Emi d\xF4le\u017Eit\xFD. Jeho hlavnou funkciou je <color=green><b>vykon\xE1va\u0165
+      in\u0161trukcie</color></b>. \u010Co to znamen\xE1?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940704670797824
+    m_Localized: "Priprav\xEDme si <color=red><b>100 g masla</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940714527412224
+    m_Localized: "na\u010D\xEDta\u0165 <color=\"red\"> MANU </color> do <color=\"red\">
+      R1 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940722031022080
+    m_Localized: "Prid\xE1me <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940730285412352
+    m_Localized: "na\u010D\xEDta\u0165 <color=\"red\"> CENU </color> do <color=\"red\">
+      R2 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940737206013952
+    m_Localized: "Priprav\xEDme si pr\xE1zdnu <color=red><b>misu</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940745133248512
+    m_Localized: "m\xEDnus <color=\"red\"> R1 </color> a <color=\"red\"> R2 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940754247471104
+    m_Localized: "Priprav\xEDme si <color=red><b>75 ml mlieka</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940774472404992
+    m_Localized: "presun\xFA\u0165 <color=\"red\">MINUS</color> do <color=\"red\">R2</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940787948703744
+    m_Localized: "Priprav\xEDme si <color=red><b>2 vajcia</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940795003523072
+    m_Localized: '> 0 <color="red"> R2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940801886375936
+    m_Localized: "Priprav\xEDme si <color=red><b>100 g masla</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940808509181952
+    m_Localized: "Zobraz \u0161t\xEDt"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940815912128512
+    m_Localized: "Prid\xE1me <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940829656862720
+    m_Localized: "presun\xFA\u0165 <color=\"red\">> 0</color> do <color=\"red\">R4</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940843544203264
+    m_Localized: "ulo\u017Ei\u0165 <color=\"red\">> 0</color> do <color=\"red\">RAM</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940853061079040
+    m_Localized: "Prid\xE1me <color=red><b>maslo</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940863559421952
+    m_Localized: "Pe\u010Dieme <color=red><b>40 min\xFAt</color></b> na <color=red><b>170
+      \xB0C</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940872786890752
+    m_Localized: "V\u0161etko prelo\u017E\xEDme na plech"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940879116095488
+    m_Localized: "V\u0161etko v mise zmie\u0161ame"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940889668964352
+    m_Localized: "Prid\xE1me <color=red><b>mlieko</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940896757338112
+    m_Localized: "Prid\xE1me <color=red><b>vajcia</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940905347272704
+    m_Localized: "Prid\xE1me <color=red><b>maslo</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940912993488896
+    m_Localized: "Prid\xE1me <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940927795187712
+    m_Localized: "Priprav\xEDme si pr\xE1zdnu <color=red><b>misu</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940935093276672
+    m_Localized: "Priprav\xEDme si <color=red><b>75 ml mlieka</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940942265536512
+    m_Localized: "Priprav\xEDme si <color=red><b>2 vajcia</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940951853715456
+    m_Localized: "Prid\xE1me <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940977506078720
+    m_Localized: "Prid\xE1me <color=red><b>vajcia</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940986406391808
+    m_Localized: "V\u0161etko v mise zmie\u0161ame"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173940994262323200
+    m_Localized: "na\u010D\xEDta\u0165 <color=\"red\"> MANU </color> do <color=\"red\">
+      R1 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941001103233024
+    m_Localized: "Prid\xE1me <color=red><b>maslo</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941008632008704
+    m_Localized: "Prid\xE1me <color=red><b>vajcia</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941025254035456
+    m_Localized: "Prid\xE1me <color=red><b>mlieko</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941032224968704
+    m_Localized: '> 0 <color="red"> R2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941041267888128
+    m_Localized: "Prid\xE1me <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941048528228352
+    m_Localized: "V\u0161etko v mise zmie\u0161ame"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941054895181824
+    m_Localized: "m\xEDnus <color=\"red\"> R1 </color> a <color=\"red\"> R2 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941066093973504
+    m_Localized: "V\u0161etko prelo\u017E\xEDme na plech"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941072842608640
+    m_Localized: "na\u010D\xEDta\u0165 <color=\"red\"> CENU </color> do <color=\"red\">
+      R2 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941080790814720
+    m_Localized: "Pe\u010Dieme <color=red><b>40 min\xFAt</color></b> na <color=red><b>170
+      \xB0C</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941089384943616
+    m_Localized: "na\u010D\xEDta\u0165 <color=\"red\"> MANU </color> do <color=\"red\">
+      R1 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941102940934144
+    m_Localized: "presun\xFA\u0165 <color=\"red\"> R3 </color> do <color=\"red\">
+      R2 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941110922694656
+    m_Localized: "Prid\xE1me <color=red><b>mlieko</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941118271115264
+    m_Localized: "na\u010D\xEDta\u0165 <color=\"red\"> CENU </color> do <color=\"red\">
+      R2 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941129549598720
+    m_Localized: "Prid\xE1me <color=red><b>zmes</color></b> na <color=red><b>cesto</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941137506193408
+    m_Localized: "m\xEDnus <color=\"red\"> R1 </color> a <color=\"red\"> R2 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941145714446336
+    m_Localized: "Priprav\xEDme si <color=red><b>75 ml mlieka</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941152182063104
+    m_Localized: "presun\xFA\u0165 <color=\"red\"> R3 </color> do <color=\"red\">
+      R2 </color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941158834229248
+    m_Localized: "Priprav\xEDme si <color=red><b>2 vajcia</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941164555259904
+    m_Localized: '> 0 <color="red"> R2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941173153583104
+    m_Localized: "Priprav\xEDme si <color=red><b>100 g masla</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941191763709952
+    m_Localized: "Priprav\xEDme si pr\xE1zdnu <color=red><b>misu</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941201658073088
+    m_Localized: "V\u0161etko prelo\u017E\xEDme na plech"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941215784488960
+    m_Localized: "Pe\u010Dieme <color=red><b>40 min\xFAt</color></b> na <color=red><b>170
+      \xB0C</color></b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941240350527488
+    m_Localized: "In\u0161trukcie:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941247283712000
+    m_Localized: 'Recept:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941254825070592
+    m_Localized: 'Recept:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941263549222912
+    m_Localized: "In\u0161trukcie:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941269664518144
+    m_Localized: 'Recept:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941279684710400
+    m_Localized: "In\u0161trukcie:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173941670501568512
+    m_Localized: "Logick\xE9 hradl\xE1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943009793167360
+    m_Localized: Hradlo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943222951890944
+    m_Localized: "Po\u010Fme sa pozrie\u0165 na r\xF4zne typy logick\xFDch hradiel
+      a zisti\u0165, ako funguj\xFA."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943266576846848
+    m_Localized: 'NOT (NIE) - prevracanie '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943373191860224
+    m_Localized: "Sk\xFAs meni\u0165 hodnoty 1 a 0. Sleduj, \u010Do sa stane\r\n
+      so \u017Eiarovkou."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943386714296320
+    m_Localized: "Pracuj\xFA len s dvoma hodnotami: <color=green><b> 0 </color>a
+      <color=green>1 </b> </color> (vypnut\xE9/zapnut\xE9), \u010Do reprezentuje,
+      \u010Di tam pr\xE1ve te\u010Die elektrick\xFD pr\xFAd, alebo nie. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943413314572288
+    m_Localized: "To s\xFA jednoduch\xE9 \r\n\u201Eelektronick\xE9 rozhodova\u010De\u201C
+      \r\nv po\u010D\xEDta\u010Di."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943433128464384
+    m_Localized: "\u010Co s\xFA logick\xE9 hradl\xE1? "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943456616566784
+    m_Localized: "AND (A) - a z\xE1rove\u0148 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943471430848512
+    m_Localized: "M\xF4\u017Eeme si to predstavi\u0165 ako <color=green><b>dva vyp\xEDna\u010De
+      (vstupy)</b></color>, ktor\xFDch stav vyhodnocuje <color=green><b>logick\xE9
+      hradlo</b></color>, a pod\u013Ea toho potom rozsvieti alebo zhasne <color=green><b>\u017Eiarovku
+      (v\xFDstup)</b></color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943535943438336
+    m_Localized: Symbol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943547133841408
+    m_Localized: "\"Body dostane\u0161,  <b><color=green>KE\u010E </b> </color>spln\xED\u0161
+      \xFAlohu 1<b><color=green> ALEBO </b></color>\xFAlohu 2, \r\nnemus\xED\u0161
+      splni\u0165 obe.\u201D "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943574937882624
+    m_Localized: "\u017Diarovka bude svieti\u0165, <b><color=green> ke\u010F </b></color>bude
+      zapnut\xFD<b><color=green> aspo\u0148 jeden </b></color>vyp\xEDna\u010D. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943601995337728
+    m_Localized: Symbol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943630743097344
+    m_Localized: "XOR - bu\u010F a alebo "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943644550746112
+    m_Localized: "\u017Diarovka bude svieti\u0165, <b><color=green>ke\u010F </b></color>je
+      zapnut\xFD<b><color=green> iba jeden </b></color>vyp\xEDna\u010D. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943660791091200
+    m_Localized: "\u201CM\xF4\u017Ee\u0161 si vzia\u0165 \u010Dokol\xE1du <b><color=green>alebo</b></color>
+      cukr\xEDk, ale <b><color=green>nie oboje</b></color>.\u201D\r\n\r\n   "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943670123417600
+    m_Localized: Symbol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943683289337856
+    m_Localized: "Po\u010Fme si to vysk\xFA\u0161a\u0165 \r\nv hre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943725760860160
+    m_Localized: Symbol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943758308659200
+    m_Localized: "\u201CM\xF4\u017Ee\u0161 \xEDs\u0165 von, <b><color=green>LEN KE\u010E
+      </b> </color>bude\u0161 ma\u0165 \u010Diapku <b><color=green> A </b> </color>bundu.\u201D "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943773496233984
+    m_Localized: "\u017Diarovka bude svieti\u0165, <b><color=green>len ke\u010F </b>
+      </color>s\xFA zapnut\xE9 <b><color=green> oba </b> </color>vyp\xEDna\u010De. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943788574756864
+    m_Localized: "Not m\xE1 len <b><color=green>jeden vstup</b></color> (vyp\xEDna\u010D)
+      a len ho \r\n<b><color=green>prepne do tej druhej polohy</b></color>. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173943813023354880
+    m_Localized: "OR (ALEBO) - sta\u010D\xED aspo\u0148 jeden "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944768162844672
+    m_Localized: HDD a SSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944781404262400
+    m_Localized: "\u010Co je HDD a SSD?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944791327985664
+    m_Localized: "Ke\u010F si do po\u010D\xEDta\u010Da ulo\u017E\xED\u0161 fotku,
+      hru alebo dokument, ulo\u017E\xED sa \r\nna <color=green><b>disk</color></b>
+      - to je <color=green><b>dlhodob\xE9 \xFAlo\u017Eisko</color></b>. Na rozdiel
+      od <color=green><b>RAM</color></b> sa disk <color=green><b><u>nevyma\u017Ee</color></b></u>
+      po vypnut\xED po\u010D\xEDta\u010Da."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944803093008384
+    m_Localized: "Existuj\xFA dva <color=green><b>hlavn\xE9 typy diskov</b></color>:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944810521120768
+    m_Localized: HDD a...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944819043946496
+    m_Localized: ... SSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944826501419008
+    m_Localized: "<color=green><b>HDD</b></color> je star\u0161\xED typ.\r\n\r\nVn\xFAtri
+      m\xE1 <color=green><b>to\u010Diace sa kot\xFA\u010De</b></color> a \u010D\xEDtaciu
+      hlavi\u010Dku, tak\u017Ee je to trochu ako gramof\xF3n. Kv\xF4li tomu b\xFDva
+      pomal\u0161\xED, m\xF4\u017Ee ho by\u0165 po\u010Du\u0165 a je <color=green><b>citlivej\u0161\xED
+      na otrasy</b></color>.\r\n\r\nJeho v\xFDhodou je, \u017Ee \u010Dasto pon\xFAka
+      <color=green><b>ve\u013Ea miesta</b></color> za ni\u017E\u0161iu cenu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944835410120704
+    m_Localized: "SSD je <color=green><b>nov\u0161\xED typ disku</b></color>.\r\n\r\nNem\xE1
+      \u017Eiadne to\u010Diace sa \u010Dasti, funguje sk\xF4r ako <color=green><b>ve\u013Ek\xFD
+      USB k\u013E\xFA\u010D</b></color>.\r\nPreto je r\xFDchlej\u0161\xED, tich\xFD
+      a zvy\u010Dajne odolnej\u0161\xED. Najv\xE4\u010D\u0161ia v\xFDhoda SSD oproti
+      HDD je pr\xE1ve <color=green><b>r\xFDchlos\u0165</b></color>: po\u010D\xEDta\u010D
+      sa s SSD r\xFDchlej\u0161ie zapne, programy a hry sa r\xFDchlej\u0161ie na\u010D\xEDtavaj\xFA
+      a cel\xFD po\u010D\xEDta\u010D p\xF4sob\xED plynulej\u0161ie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 173944845057019904
+    m_Localized: "Po\u010Fme si to vysk\xFA\u0161a\u0165 \r\nv hre."
     m_Metadata:
       m_Items: []
   references:

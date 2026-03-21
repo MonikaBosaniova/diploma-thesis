@@ -448,10 +448,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &61168511 stripped
 RectTransform:
@@ -1518,13 +1515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_text
-      value: "\u0158\xEDk\xE1 se j\xED tak\xE9 <color=green><b>opera\u010Dn\xED pam\u011B\u0165</b></color>.
-        Je to rychl\xE1 pam\u011B\u0165, kterou po\u010D\xEDta\u010D pou\u017E\xEDv\xE1
-        jako \u201Epracovn\xED st\u016Fl\u201C.\r\n\r\nKdy\u017E n\u011Bco d\u011Bl\xE1\u0161
-        (otev\u0159e\u0161 hru, prohl\xED\u017Ee\u010D, dokument), po\u010D\xEDta\u010D
-        si d\u016Fle\u017Eit\xE9 v\u011Bci <color=green><b>do\u010Dasn\u011B ukl\xE1d\xE1
-        do RAM</b></color>, aby k nim m\u011Bl <color=green><b>rychl\xFD p\u0159\xEDstup</b></color>
-        a mohl pracovat plynule."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1600,13 +1591,70 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 446611302}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 262337382}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &262337379 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
   m_PrefabInstance: {fileID: 262337378}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &262337380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 262337378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &262337381 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 262337378}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262337380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &262337382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262337380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768098
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768098
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 262337381}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768099
+        m_UpdateType: 0
+    - rid: 33873142105768099
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173923036588822528
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1 &262643144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1791,10 +1839,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &263309227 stripped
 RectTransform:
@@ -2080,13 +2125,70 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       insertIndex: 1
       addedObject: {fileID: 174238325}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 301266634}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &301266631 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
   m_PrefabInstance: {fileID: 301266630}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &301266632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 301266630}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &301266633 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 301266630}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301266632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &301266634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301266632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768094
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768094
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 301266633}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768095
+        m_UpdateType: 0
+    - rid: 33873142105768095
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173923009661390848
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1001 &326207138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2315,13 +2417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_text
-      value: "Obvykle plat\xED, \u017Ee <b>\u010D\xEDm v\xEDce RAM</b> m\xE1 po\u010D\xEDta\u010D,
-        t\xEDm v\xEDc v\u011Bc\xED zvl\xE1dne <b>najednou</b>.\r\n\r\nNap\u0159\xEDklad:\r\n\u25CF 
-        m\u016F\u017Ee\u0161 m\xEDt otev\u0159eno <color=green><b>v\xEDc program\u016F
-        a z\xE1lo\u017Eek</b></color> v prohl\xED\u017Ee\u010Di,\r\n\u25CF  po\u010D\xEDta\u010D
-        se <color=green><b>m\xE9n\u011B zasek\xE1v\xE1</b></color> p\u0159i n\xE1ro\u010Dn\u011Bj\u0161\xED
-        pr\xE1ci,\r\n\u25CF  pr\xE1ce b\xFDv\xE1 <color=green><b>plynulej\u0161\xED</b></color>
-        (hlavn\u011B u her, st\u0159ihu videa, grafiky)."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6803601083831967028, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2409,13 +2505,70 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       insertIndex: 1
       addedObject: {fileID: 670713834}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 361840875}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &361840872 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
   m_PrefabInstance: {fileID: 361840871}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &361840873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 361840871}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &361840874 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 361840871}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361840873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &361840875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361840873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768092
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768092
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 361840874}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768093
+        m_UpdateType: 0
+    - rid: 33873142105768093
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173922988907974656
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1001 &363303706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2520,9 +2673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_text
-      value: "Ale pozor: <b>v\xEDce RAM</b> neznamen\xE1 automaticky <color=green><b>nejrychlej\u0161\xED
-        po\u010D\xEDta\u010D</b></color>, ale \u010Dasto to hodn\u011B pom\u016F\u017Ee,
-        kdy\u017E d\u011Bl\xE1\u0161 <color=green><b>v\xEDc v\u011Bc\xED najednou</b></color>."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6803601083831967028, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2610,13 +2761,70 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1858969626}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 399416445}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &399416442 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
   m_PrefabInstance: {fileID: 399416441}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &399416443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 399416441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &399416444 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 399416441}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399416443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &399416445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399416443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768090
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768090
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 399416444}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768091
+        m_UpdateType: 0
+    - rid: 33873142105768091
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173922978652901376
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1001 &405502731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3434,10 +3642,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &569484046 stripped
 RectTransform:
@@ -4572,18 +4777,132 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       propertyPath: m_text
-      value: 'Co je to RAM? '
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3044289042661005011, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 793182338}
+    - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 793182337}
   m_SourcePrefab: {fileID: 100100000, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
 --- !u!4 &793182332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4139980754188424828, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
   m_PrefabInstance: {fileID: 793182331}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &793182333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+  m_PrefabInstance: {fileID: 793182331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &793182334 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+  m_PrefabInstance: {fileID: 793182331}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793182333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &793182335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3044289042661005011, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+  m_PrefabInstance: {fileID: 793182331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &793182336 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1965718122681697791, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+  m_PrefabInstance: {fileID: 793182331}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793182335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &793182337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793182333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768100
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768100
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 793182334}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768101
+        m_UpdateType: 0
+    - rid: 33873142105768101
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173923046575460352
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
+--- !u!114 &793182338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793182335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768102
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768102
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 793182336}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768103
+        m_UpdateType: 0
+    - rid: 33873142105768103
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173923149470126080
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1001 &838056839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4950,10 +5269,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &871395766 stripped
 RectTransform:
@@ -5178,10 +5494,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &904013093 stripped
 RectTransform:
@@ -5701,10 +6014,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &973423024 stripped
 RectTransform:
@@ -5826,10 +6136,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &989213818 stripped
 RectTransform:
@@ -6038,10 +6345,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1093460730 stripped
 RectTransform:
@@ -6819,10 +7123,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1348822769 stripped
 RectTransform:
@@ -6933,10 +7234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_text
-      value: "Je to <color=green><b><u>do\u010Dasn\xE1 pam\u011B\u0165</u></b></color>.
-        Jakmile po\u010D\xEDta\u010D vypne\u0161, obsah RAM se <color=green><b>sma\u017Ee</b></color>,
-        proto\u017Ee ke zapamatov\xE1n\xED dat pot\u0159ebuje <color=green><b>elektrickou
-        energii</b></color>."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7012,13 +7310,70 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1013035647}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1364547468}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &1364547465 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
   m_PrefabInstance: {fileID: 1364547464}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1364547466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 1364547464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1364547467 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 1364547464}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364547466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1364547468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364547466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768096
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768096
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1364547467}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768097
+        m_UpdateType: 0
+    - rid: 33873142105768097
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173923027009032192
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1001 &1374468055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7312,6 +7667,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 80
@@ -7363,13 +7722,70 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1425186584}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &1425186581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
   m_PrefabInstance: {fileID: 1425186580}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1425186582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 1425186580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1425186583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 1425186580}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425186582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1425186584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425186582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768086
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768086
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1425186583}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768087
+        m_UpdateType: 0
+    - rid: 33873142105768087
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173922953180893184
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1001 &1429520354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8023,10 +8439,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1516957128 stripped
 RectTransform:
@@ -8214,10 +8627,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1620126796 stripped
 RectTransform:
@@ -8401,10 +8811,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1650028315 stripped
 RectTransform:
@@ -9054,10 +9461,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1754756019 stripped
 RectTransform:
@@ -9075,6 +9479,7 @@ GameObject:
   - component: {fileID: 1755136973}
   - component: {fileID: 1755136975}
   - component: {fileID: 1755136974}
+  - component: {fileID: 1755136976}
   m_Layer: 0
   m_Name: CPU
   m_TagString: Untagged
@@ -9240,6 +9645,44 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1755136976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755136972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768082
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768082
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1755136974}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768083
+        m_UpdateType: 0
+    - rid: 33873142105768083
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173922145806733312
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1001 &1767061793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9355,10 +9798,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1767061794 stripped
 RectTransform:
@@ -9579,10 +10019,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1767683542 stripped
 RectTransform:
@@ -9833,6 +10270,7 @@ GameObject:
   - component: {fileID: 1807484782}
   - component: {fileID: 1807484784}
   - component: {fileID: 1807484783}
+  - component: {fileID: 1807484785}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9998,6 +10436,44 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1807484785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807484781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768108
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768108
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1807484783}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768109
+        m_UpdateType: 0
+    - rid: 33873142105768109
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173938918367055872
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1001 &1819271057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10117,10 +10593,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1819271058 stripped
 RectTransform:
@@ -10332,10 +10805,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1859834387 stripped
 RectTransform:
@@ -10849,10 +11319,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1955242718 stripped
 RectTransform:
@@ -10901,11 +11368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_text
-      value: "<b>Opera\u010Dn\xED syst\xE9m</b> je chytr\xFD. Kdy\u017E vid\xED,
-        \u017Ee se <b>RAM</b> zapl\u0148uje, zkus\xED ji <color=green><b>vyklidit</b></color>.\n\nPopros\xED
-        programy, jestli n\u011Bco u\u017E <b>nepou\u017E\xEDvaj\xED</b>, a tak se
-        <color=green><b>kousek m\xEDsta uvoln\xED</b></color>.\n\nKlikni na popel\xE1\u0159sk\xE9
-        auto a vyma\u017E nepot\u0159ebn\xE9 data z RAM!"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6803601083831967028, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10996,13 +11459,70 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       insertIndex: 2
       addedObject: {fileID: 1767335307}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1960477795}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &1960477792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
   m_PrefabInstance: {fileID: 1960477791}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1960477793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 1960477791}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1960477794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+  m_PrefabInstance: {fileID: 1960477791}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960477793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1960477795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960477793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 33873142105768088
+  references:
+    version: 2
+    RefIds:
+    - rid: 33873142105768088
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1960477794}
+        m_TrackedProperties:
+          items:
+          - rid: 33873142105768089
+        m_UpdateType: 0
+    - rid: 33873142105768089
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:7ee384e42b7e80f459a5b7389591d149
+          m_TableEntryReference:
+            m_KeyId: 173922963524046848
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1001 &1964837579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11122,10 +11642,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &1964837580 stripped
 RectTransform:
@@ -11437,10 +11954,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3681064476644963511, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9db228e708bc7a43ad4ce87920dc8d2, type: 3}
 --- !u!224 &2096624523 stripped
 RectTransform:
