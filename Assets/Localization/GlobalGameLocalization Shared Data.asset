@@ -899,6 +899,18 @@ MonoBehaviour:
     m_Key: HDD_SSD/HDD_SSDGameManager/Tutorial/END/Avatar (1)/textBubble/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 174056729340956672
+    m_Key: MainMenu/UI/Menu/Play/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174057116882063360
+    m_Key: MainMenu/UI/SkillTreeMenu/SkillTree/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174057156182691840
+    m_Key: MainMenu/UI/SkillTreeMenu/Buttons/BackButon/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

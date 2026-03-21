@@ -1019,6 +1019,18 @@ MonoBehaviour:
     m_Localized: "Poj\u010Fme si to vyzkou\u0161et \r\nve h\u0159e."
     m_Metadata:
       m_Items: []
+  - m_Id: 174056729340956672
+    m_Localized: "Hr\xE1t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174057116882063360
+    m_Localized: Progres
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174057156182691840
+    m_Localized: "Zp\u011Bt"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

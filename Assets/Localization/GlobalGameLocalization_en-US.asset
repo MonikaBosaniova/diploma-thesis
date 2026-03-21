@@ -207,16 +207,16 @@ MonoBehaviour:
     m_Localized: 'The <b>Operating system</b> is smart. When it sees that the <b>RAM</b>
       is filling up, it tries to <color=green><b>clear it out</b></color>.
 
-      
+
 
       It
       asks programs if they are no longer <b>using</b> something, and so a <color=green><b>piece
       of space is freed up</b></color>.
 
-      
 
-      Click on the garbage truck
-      and delete unnecessary data from RAM!'
+
+      Click on the garbage truck and delete
+      unnecessary data from RAM!'
     m_Metadata:
       m_Items: []
   - m_Id: 173922978652901376
@@ -238,12 +238,12 @@ MonoBehaviour:
     m_Localized: 'The difference between <b>RAM</b> and a <b>hard drive</b> is in
       their purpose:
 
-      
+
 
       <b>RAM</b> is <color=green><b>fast and temporary</b></color>
       (working) memory.
 
-      
+
 
       <b>A hard drive / SSD</b> is <color=green><b>long-term
       storage</b></color>: files and programs are stored there so they remain <color=green><b>even
@@ -261,7 +261,7 @@ MonoBehaviour:
     m_Localized: 'It is also called <color=green><b>operating memory</b></color>.
       It''s a fast memory that the computer uses like a "work desk".
 
-      
+
 
       When
       you are doing something (open a game, browser, document), the computer <color=green><b>temporarily
@@ -459,10 +459,10 @@ MonoBehaviour:
       into heat</b></color>. Cooling takes the heat away so the components <color=green><b>don''t
       overheat</b></color> and work correctly.
 
-      
 
-      Watch how a gradual
-      change in <color=green><b>fan speed</b></color> affects the <color=green><b>temperature</b></color>
+
+      Watch how a gradual change
+      in <color=green><b>fan speed</b></color> affects the <color=green><b>temperature</b></color>
       of individual components.'
     m_Metadata:
       m_Items: []
@@ -979,24 +979,24 @@ MonoBehaviour:
   - m_Id: 173944826501419008
     m_Localized: '<color=green><b>HDD</b></color> is an older type.
 
-      
+
 
       Inside
       it has <color=green><b>spinning platters</b></color> and a read head, so it''s
       a bit like a record player. Because of this, it''s usually slower, can be heard,
       and is <color=green><b>more sensitive to shocks</b></color>.
 
-      
 
-      Its
-      advantage is that it often offers <color=green><b>a lot of space</b></color>
-      for a lower price.'
+
+      Its advantage
+      is that it often offers <color=green><b>a lot of space</b></color> for a lower
+      price.'
     m_Metadata:
       m_Items: []
   - m_Id: 173944835410120704
     m_Localized: 'SSD is a <color=green><b>newer type of disk</b></color>.
 
-      
+
 
       It
       has no spinning parts, it works more like a <color=green><b>large flash drive</b></color>.
@@ -1010,6 +1010,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173944845057019904
     m_Localized: "Let's try it out \r\nin the game."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174056729340956672
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174057116882063360
+    m_Localized: Progress
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174057156182691840
+    m_Localized: Back
     m_Metadata:
       m_Items: []
   references:

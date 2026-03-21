@@ -1011,6 +1011,10 @@ MonoBehaviour:
     m_Localized: "Po\u010Fme si to vysk\xFA\u0161a\u0165 \r\nv hre."
     m_Metadata:
       m_Items: []
+  - m_Id: 174056729340956672
+    m_Localized: "Hra\u0165"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
