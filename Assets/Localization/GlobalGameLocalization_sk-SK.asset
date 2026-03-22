@@ -227,7 +227,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173922988907974656
     m_Localized: "Zvy\u010Dajne plat\xED, \u017Ee <b>\u010D\xEDm viac RAM</b> m\xE1
-      po\u010D\xEDta\u010D, t\xFDm viac vec\xED zvl\xE1dne <b>naraz</b>.\r\n\r\nNapr\xEDklad:\r\n\u25CF 
+      po\u010D\xEDta\u010D, t\xFDm viac vec\xED zvl\xE1dne <b>naraz</b>.\r\n\r\nNapr\xEDklad:<align=left>\r\n\u25CF 
       m\xF4\u017Ee\u0161 ma\u0165 otvoren\xE9 <color=#0b0><b>viac programov a z\xE1lo\u017Eiek</b></color>
       v prehliada\u010Di,\r\n\u25CF  po\u010D\xEDta\u010D sa <color=#0b0><b>menej
       zasek\xE1va</b></color> pri n\xE1ro\u010Dnej\u0161ej pr\xE1ci,\r\n\u25CF  pr\xE1ca
@@ -342,7 +342,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173939560032653312
     m_Localized: "Predstav si to ako \u0161peci\xE1lny jazyk, ktor\xFDm \u201Ehovoria\u201C
-      po\u010D\xEDta\u010De.  "
+      po\u010D\xEDta\u010De. "
     m_Metadata:
       m_Items: []
   - m_Id: 173939571713789952
@@ -926,7 +926,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173943660791091200
     m_Localized: "\u201CM\xF4\u017Ee\u0161 si vzia\u0165 \u010Dokol\xE1du <b><color=#0b0>alebo</b></color>
-      cukr\xEDk, ale <b><color=#0b0>nie oboje</b></color>.\u201D\r\n\r\n   "
+      cukr\xEDk, ale <b><color=#0b0>nie oboje</b></color>.\u201D"
     m_Metadata:
       m_Items: []
   - m_Id: 173943670123417600

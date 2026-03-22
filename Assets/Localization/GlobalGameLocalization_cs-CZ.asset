@@ -228,7 +228,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173922988907974656
     m_Localized: "Obvykle plat\xED, \u017Ee <b>\u010D\xEDm v\xEDce RAM</b> m\xE1
-      po\u010D\xEDta\u010D, t\xEDm v\xEDc v\u011Bc\xED zvl\xE1dne <b>najednou</b>.\r\n\r\nNap\u0159\xEDklad:\r\n\u25CF 
+      po\u010D\xEDta\u010D, t\xEDm v\xEDc v\u011Bc\xED zvl\xE1dne <b>najednou</b>.\r\n\r\nNap\u0159\xEDklad:<align=left>\r\n\u25CF 
       m\u016F\u017Ee\u0161 m\xEDt otev\u0159eno <color=#0b0><b>v\xEDc program\u016F
       a z\xE1lo\u017Eek</b></color> v prohl\xED\u017Ee\u010Di,\r\n\u25CF  po\u010D\xEDta\u010D
       se <color=#0b0><b>m\xE9n\u011B zasek\xE1v\xE1</b></color> p\u0159i n\xE1ro\u010Dn\u011Bj\u0161\xED
@@ -344,7 +344,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173939560032653312
     m_Localized: "P\u0159edstav si to jako speci\xE1ln\xED jazyk, kter\xFDm \u201Cmluv\xED\u201D
-      po\u010D\xEDta\u010De.  "
+      po\u010D\xEDta\u010De. "
     m_Metadata:
       m_Items: []
   - m_Id: 173939571713789952
@@ -933,7 +933,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173943660791091200
     m_Localized: "\u201CM\u016F\u017Ee\u0161 si vz\xEDt \u010Dokol\xE1du <b><color=#0b0>nebo</b></color>
-      bonbon, ale <b><color=#0b0>ne oboj\xED</b></color>.\u201D\r\n\r\n   "
+      bonbon, ale <b><color=#0b0>ne oboj\xED</b></color>.\u201D "
     m_Metadata:
       m_Items: []
   - m_Id: 173943670123417600
