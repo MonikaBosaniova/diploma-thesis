@@ -1031,6 +1031,18 @@ MonoBehaviour:
     m_Localized: "Zp\u011Bt"
     m_Metadata:
       m_Items: []
+  - m_Id: 174267764425510912
+    m_Localized: "Zp\u011Bt do hlavn\xEDho menu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174267804464336896
+    m_Localized: "D\xE1le"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174276488133234688
+    m_Localized: "Zp\u011Bt"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -1015,6 +1015,26 @@ MonoBehaviour:
     m_Localized: "Hra\u0165"
     m_Metadata:
       m_Items: []
+  - m_Id: 174057156182691840
+    m_Localized: "Sp\xE4\u0165"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174057116882063360
+    m_Localized: Pokrok
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174267764425510912
+    m_Localized: "Sp\xE4\u0165 do hlavn\xE9ho menu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174267804464336896
+    m_Localized: "\u010Ealej"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174276488133234688
+    m_Localized: "Sp\xE4\u0165"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
