@@ -1035,6 +1035,50 @@ MonoBehaviour:
     m_Localized: "Sp\xE4\u0165"
     m_Metadata:
       m_Items: []
+  - m_Id: 174295718186602496
+    m_Localized: "Bin\xE1rna s\xFAstava"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174295737711087616
+    m_Localized: "Logick\xE9 hradl\xE1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174295805323268096
+    m_Localized: "Z\xE1kladn\xE1 doska"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174295822788349952
+    m_Localized: CPU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174295834968608768
+    m_Localized: Chladenie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174295868405600256
+    m_Localized: RAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174295880023822336
+    m_Localized: HDD / SSD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174295906334691328
+    m_Localized: "Sie\u0165ov\xE1 karta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174295917470568448
+    m_Localized: GPU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174295926878392320
+    m_Localized: "Zvukov\xE1 karta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 174295960055336960
+    m_Localized: "Nap\xE1jac\xED zdroj"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

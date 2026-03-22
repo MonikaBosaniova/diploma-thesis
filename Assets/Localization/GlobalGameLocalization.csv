@@ -46,7 +46,11 @@ Poprosí programy, jestli něco už <b>nepoužívají</b>, a tak se <color=#0b0>
 Klikni na popelářské auto a vymaž nepotřebné data z RAM!","The <b>Operating system</b> is smart. When it sees that the <b>RAM</b> is filling up, it tries to <color=#0b0><b>clear it out</b></color>.
 
 
+
+
 It asks programs if they are no longer <b>using</b> something, and so a <color=#0b0><b>piece of space is freed up</b></color>.
+
+
 
 
 Click on the garbage truck and delete unnecessary data from RAM!","<b>Operačný systém</b> je šikovný. Keď vidí, že sa <b>RAM</b> zapĺňa, skúsi ju <color=#0b0><b>vyčistiť</b></color>.
@@ -78,7 +82,11 @@ Napríklad:
 <b>Pevný disk / SSD</b> je <color=#0b0><b>dlouhodobé úložiště</b></color>: tam se ukládají soubory a programy tak, aby tam byly <color=#0b0><b>i po vypnutí</b></color>.","The difference between <b>RAM</b> and a <b>hard drive</b> is in their purpose:
 
 
+
+
 <b>RAM</b> is <color=#0b0><b>fast and temporary</b></color> (working) memory.
+
+
 
 
 <b>A hard drive / SSD</b> is <color=#0b0><b>long-term storage</b></color>: files and programs are stored there so they remain <color=#0b0><b>even after turning off</b></color>.","Rozdiel medzi <b>RAM</b> a <b>pevným diskom</b> je v ich účele:
@@ -90,6 +98,8 @@ Napríklad:
 "Ram/RamGameManager/Tutorial/ONLY_AVATAR/Avatar (1)/textBubble/Text (TMP)",173923036588822528,"Říká se jí také <color=#0b0><b>operační paměť</b></color>. Je to rychlá paměť, kterou počítač používá jako „pracovní stůl“.
 
 Když něco děláš (otevřeš hru, prohlížeč, dokument), počítač si důležité věci <color=#0b0><b>dočasně ukládá do RAM</b></color>, aby k nim měl <color=#0b0><b>rychlý přístup</b></color> a mohl pracovat plynule.","It is also called <color=#0b0><b>operating memory</b></color>. It's a fast memory that the computer uses like a ""work desk"".
+
+
 
 
 When you are doing something (open a game, browser, document), the computer <color=#0b0><b>temporarily stores important things in RAM</b></color> so it has <color=#0b0><b>fast access</b></color> to them and can work smoothly.","Hovorí sa jej tiež <color=#0b0><b>operačná pamäť</b></color>. Je to rýchla pamäť, ktorú počítač používa ako „pracovný stôl“.
@@ -175,6 +185,8 @@ v hre."
 "Cooling/CoolingManager/Tutorial/Level (4)/Avatar/textBubble/Text (TMP)",173940247168700416,"... spotřebovávají elektrickou energii a část z ní se <color=#0b0><b>mění na teplo</b></color>. Chlazení odvádí teplo pryč, aby se součástky <color=#0b0><b>nepřehřály</b></color> a fungovaly správně.
 
 Sleduj, jak postupná změna <color=#0b0><b>rychlosti ventilátorů</b></color> ovlivňuje <color=#0b0><b>teplotu</b></color> jednotlivých součástek.","...they consume electrical energy and part of it <color=#0b0><b>turns into heat</b></color>. Cooling takes the heat away so the components <color=#0b0><b>don't overheat</b></color> and work correctly.
+
+
 
 
 Watch how a gradual change in <color=#0b0><b>fan speed</b></color> affects the <color=#0b0><b>temperature</b></color> of individual components.","...spotrebovávajú elektrickú energiu a časť z nej sa <color=#0b0><b>mení na teplo</b></color>. Chladenie odvádza teplo preč, aby sa súčiastky <color=#0b0><b>neprehriali</b></color> a fungovali správne.
@@ -355,7 +367,11 @@ Uvnitř má <color=#0b0><b>točící se kotouče</b></color> a čtecí hlavičku
 Jeho výhoda je, že často nabízí <color=#0b0><b>hodně místa</b></color> za nižší cenu.","<color=#0b0><b>HDD</b></color> is an older type.
 
 
+
+
 Inside it has <color=#0b0><b>spinning platters</b></color> and a read head, so it's a bit like a record player. Because of this, it's usually slower, can be heard, and is <color=#0b0><b>more sensitive to shocks</b></color>.
+
+
 
 
 Its advantage is that it often offers <color=#0b0><b>a lot of space</b></color> for a lower price.","<color=#0b0><b>HDD</b></color> je starší typ.
@@ -367,6 +383,8 @@ Jeho výhodou je, že často ponúka <color=#0b0><b>veľa miesta</b></color> za 
 
 Nemá žádné točící se části, funguje spíš jako <color=#0b0><b>velká flashka</b></color>.
 Proto je rychlejší, tichý a obvykle odolnější. Největší výhoda SSD oproti HDD je právě <color=#0b0><b>rychlost</b></color>: počítač se se SSD rychleji zapne, programy a hry se rychleji načítají a celý počítač působí plynuleji.","SSD is a <color=#0b0><b>newer type of disk</b></color>.
+
+
 
 
 It has no spinning parts, it works more like a <color=#0b0><b>large flash drive</b></color>.
@@ -384,3 +402,16 @@ v hre."
 "BackToMenuButton/Prefab Mode in Context/BackToMenuButton/Text (TMP)",174267764425510912,"Zpět do hlavního menu","Back to main menu","Späť do hlavného menu"
 "Next/Canvas (Environment)/Next/Text (TMP)",174267804464336896,"Dále","Next","Ďalej"
 "Back/Canvas (Environment)/Back/Text (TMP)",174276488133234688,"Zpět","Back","Späť"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/0/Binary/LevelName",174295718186602496,"Binární soustava ","Binary System","Binárna sústava"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/0/Gates/LevelName",174295737711087616,"Logická hradla","Logic Gates","Logické hradlá"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/MotherBoard/LevelName",174295805323268096,"Základní deska ","Motherboard","Základná doska"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/CPU/LevelName",174295822788349952,"CPU","CPU","CPU"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/Cooling/LevelName",174295834968608768,"Chlazení ","Cooling","Chladenie"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/Memory/Ram/LevelName",174295868405600256,"RAM","RAM","RAM"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/Memory/HDD_SSD/LevelName",174295880023822336,"HDD / SSD","HDD / SSD","HDD / SSD"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/Cards/Network/LevelName",174295906334691328,"Network interface 
+controller","Network interface 
+controller","Sieťová karta"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/Cards/GPU/LevelName",174295917470568448,"GPU","GPU","GPU"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/Cards/SoundCard/LevelName",174295926878392320,"Zvuková karta","Sound card","Zvuková karta"
+"MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/PSU/Power/LevelName",174295960055336960,"Napájecí zdroj","Power supply unit","Napájací zdroj"
