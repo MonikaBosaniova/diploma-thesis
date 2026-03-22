@@ -45,9 +45,7 @@ Poprosí programy, jestli něco už <b>nepoužívají</b>, a tak se <color=#0b0>
 
 Klikni na popelářské auto a vymaž nepotřebné data z RAM!","The <b>Operating system</b> is smart. When it sees that the <b>RAM</b> is filling up, it tries to <color=#0b0><b>clear it out</b></color>.
 
-
 It asks programs if they are no longer <b>using</b> something, and so a <color=#0b0><b>piece of space is freed up</b></color>.
-
 
 Click on the garbage truck and delete unnecessary data from RAM!","<b>Operačný systém</b> je šikovný. Keď vidí, že sa <b>RAM</b> zapĺňa, skúsi ju <color=#0b0><b>vyčistiť</b></color>.
 
@@ -77,9 +75,7 @@ Napríklad:<align=left>
 
 <b>Pevný disk / SSD</b> je <color=#0b0><b>dlouhodobé úložiště</b></color>: tam se ukládají soubory a programy tak, aby tam byly <color=#0b0><b>i po vypnutí</b></color>.","The difference between <b>RAM</b> and a <b>hard drive</b> is in their purpose:
 
-
 <b>RAM</b> is <color=#0b0><b>fast and temporary</b></color> (working) memory.
-
 
 <b>A hard drive / SSD</b> is <color=#0b0><b>long-term storage</b></color>: files and programs are stored there so they remain <color=#0b0><b>even after turning off</b></color>.","Rozdiel medzi <b>RAM</b> a <b>pevným diskom</b> je v ich účele:
 
@@ -90,7 +86,6 @@ Napríklad:<align=left>
 "Ram/RamGameManager/Tutorial/ONLY_AVATAR/Avatar (1)/textBubble/Text (TMP)",173923036588822528,"Říká se jí také <color=#0b0><b>operační paměť</b></color>. Je to rychlá paměť, kterou počítač používá jako „pracovní stůl“.
 
 Když něco děláš (otevřeš hru, prohlížeč, dokument), počítač si důležité věci <color=#0b0><b>dočasně ukládá do RAM</b></color>, aby k nim měl <color=#0b0><b>rychlý přístup</b></color> a mohl pracovat plynule.","It is also called <color=#0b0><b>operating memory</b></color>. It's a fast memory that the computer uses like a ""work desk"".
-
 
 When you are doing something (open a game, browser, document), the computer <color=#0b0><b>temporarily stores important things in RAM</b></color> so it has <color=#0b0><b>fast access</b></color> to them and can work smoothly.","Hovorí sa jej tiež <color=#0b0><b>operačná pamäť</b></color>. Je to rýchla pamäť, ktorú počítač používa ako „pracovný stôl“.
 
@@ -175,7 +170,6 @@ v hre."
 "Cooling/CoolingManager/Tutorial/Level (4)/Avatar/textBubble/Text (TMP)",173940247168700416,"... spotřebovávají elektrickou energii a část z ní se <color=#0b0><b>mění na teplo</b></color>. Chlazení odvádí teplo pryč, aby se součástky <color=#0b0><b>nepřehřály</b></color> a fungovaly správně.
 
 Sleduj, jak postupná změna <color=#0b0><b>rychlosti ventilátorů</b></color> ovlivňuje <color=#0b0><b>teplotu</b></color> jednotlivých součástek.","...they consume electrical energy and part of it <color=#0b0><b>turns into heat</b></color>. Cooling takes the heat away so the components <color=#0b0><b>don't overheat</b></color> and work correctly.
-
 
 Watch how a gradual change in <color=#0b0><b>fan speed</b></color> affects the <color=#0b0><b>temperature</b></color> of individual components.","...spotrebovávajú elektrickú energiu a časť z nej sa <color=#0b0><b>mení na teplo</b></color>. Chladenie odvádza teplo preč, aby sa súčiastky <color=#0b0><b>neprehriali</b></color> a fungovali správne.
 
