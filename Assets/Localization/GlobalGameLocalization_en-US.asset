@@ -87,7 +87,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 165350384738095104
     m_Localized: If they run too fast, the user will complain about the noise and
-      the components will be unnecessarily <color=blue>overcooled (blue).
+      the components will be unnecessarily <color=#66F>overcooled (blue).
     m_Metadata:
       m_Items: []
   - m_Id: 165350462869590016
@@ -153,7 +153,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 166460212755681280
     m_Localized: You can summon data from <color=#0b0><b>RAM</color></b> into the
-      processor via the <color=blue><b>blue panel</color></b>. Then you can drag
+      processor via the <color=#66F><b>blue panel</color></b>. Then you can drag
       them with your mouse into the correct <color=#0b0><b>register (R1-R4)</color></b>
       in the cache.
     m_Metadata:
@@ -680,7 +680,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173940815912128512
-    m_Localized: Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
+    m_Localized: Prepare the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
     m_Metadata:
       m_Items: []
   - m_Id: 173940829656862720
@@ -701,7 +701,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173940872786890752
-    m_Localized: Transfer everything to a baking sheet
+    m_Localized: Put all on tray
     m_Metadata:
       m_Items: []
   - m_Id: 173940879116095488
@@ -737,7 +737,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173940951853715456
-    m_Localized: Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
+    m_Localized: Prepare the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
     m_Metadata:
       m_Items: []
   - m_Id: 173940977506078720
@@ -781,7 +781,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173941066093973504
-    m_Localized: Transfer everything to a baking sheet
+    m_Localized: Put all on tray
     m_Metadata:
       m_Items: []
   - m_Id: 173941072842608640
@@ -810,7 +810,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173941129549598720
-    m_Localized: Add the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
+    m_Localized: Prepare the <color=red><b>dough</color></b> <color=red><b>mix</color></b>
     m_Metadata:
       m_Items: []
   - m_Id: 173941137506193408
@@ -842,7 +842,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173941201658073088
-    m_Localized: Transfer everything to a baking sheet
+    m_Localized: Put all on tray
     m_Metadata:
       m_Items: []
   - m_Id: 173941215784488960

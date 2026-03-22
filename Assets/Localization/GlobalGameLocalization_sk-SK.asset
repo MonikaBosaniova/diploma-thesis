@@ -88,7 +88,7 @@ MonoBehaviour:
   - m_Id: 165350384738095104
     m_Localized: "Ke\u010F pobe\u017Eia pr\xEDli\u0161 r\xFDchlo, u\u017E\xEDvate\u013E
       sa bude s\u0165a\u017Eova\u0165 na hluk a s\xFA\u010Diastky bud\xFA zbyto\u010Dne
-      <color=blue>podchladen\xE9 (modr\xE9)."
+      <color=#66F>podchladen\xE9 (modr\xE9)."
     m_Metadata:
       m_Items: []
   - m_Id: 165350462869590016
@@ -158,7 +158,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 166460212755681280
     m_Localized: "D\xE1ta z <color=#0b0><b>RAM</color></b> si do procesora privol\xE1\u0161
-      v <color=blue><b>modrom paneli</color></b>. Potom ich m\xF4\u017Ee\u0161 my\u0161ou
+      v <color=#66F><b>modrom paneli</color></b>. Potom ich m\xF4\u017Ee\u0161 my\u0161ou
       pretiahnu\u0165 do spr\xE1vneho <color=#0b0><b>registra (R1-R4)</color></b>
       v cache."
     m_Metadata:

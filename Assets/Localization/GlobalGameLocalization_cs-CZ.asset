@@ -88,7 +88,7 @@ MonoBehaviour:
   - m_Id: 165350384738095104
     m_Localized: "Kdy\u017E pob\u011B\u017E\xED p\u0159\xEDli\u0161 rychle, u\u017Eivatel
       si bude st\u011B\u017Eovat na hluk a sou\u010D\xE1stky budou zbyte\u010Dn\u011B
-      <color=blue>podchlazen\xE9 (modr\xE9)."
+      <color=#66F>podchlazen\xE9 (modr\xE9)."
     m_Metadata:
       m_Items: []
   - m_Id: 165350462869590016
@@ -159,7 +159,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 166460212755681280
     m_Localized: "Data z <color=#0b0><b>RAM</color></b> si do procesoru p\u0159ivol\xE1\u0161
-      v <color=blue><b>modr\xE9m panelu</color></b>. Pot\xE9 je m\u016F\u017Ee\u0161
+      v <color=#66F><b>modr\xE9m panelu</color></b>. Pot\xE9 je m\u016F\u017Ee\u0161
       my\u0161\xED p\u0159et\xE1hnout do spr\xE1vn\xE9ho <color=#0b0><b>registru
       (R1-R4)</color></b> v cache."
     m_Metadata:
