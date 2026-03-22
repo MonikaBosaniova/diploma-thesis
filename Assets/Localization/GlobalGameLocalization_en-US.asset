@@ -97,7 +97,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 165350482553458688
     m_Localized: Try to find the ideal setting where the temperature gradually stabilizes
-      at the correct value and <color=green>stays in the green zone</color>.
+      at the correct value and <color=#0b0>stays in the green zone</color>.
     m_Metadata:
       m_Items: []
   - m_Id: 165661820018348032
@@ -112,7 +112,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 165661996279779328
-    m_Localized: Your task is to control the drive's <color=green><b>read head</color></b>
+    m_Localized: Your task is to control the drive's <color=#0b0><b>read head</color></b>
       so that its tip exactly catches the squares representing data. Get ready, file
       loading is starting!
     m_Metadata:
@@ -123,10 +123,10 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 165671560337281024
-    m_Localized: There are differences even among HDDs! This model has a <color=green><b>higher
+    m_Localized: There are differences even among HDDs! This model has a <color=#0b0><b>higher
       RPM</color></b>, so the data flows much faster under the read head. Use this
-      performance and <color=green><b>catch them all</color></b>, so we have the
-      file loaded in record time!
+      performance and <color=#0b0><b>catch them all</color></b>, so we have the file
+      loaded in record time!
     m_Metadata:
       m_Items: []
   - m_Id: 165672401345564672
@@ -140,41 +140,41 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 165709426505404416
-    m_Localized: Your task is to activate the correct <color=green><b>row and column</color></b>
+    m_Localized: Your task is to activate the correct <color=#0b0><b>row and column</color></b>
       using the balls on the edge. Where your choices intersect, you will instantly
       read data from the green cell. No waiting, just pure speed!
     m_Metadata:
       m_Items: []
   - m_Id: 166456809505804288
-    m_Localized: Welcome to the <color=green><b>CPU</color></b> core! Your task is
-      to follow the <color=green><b>instructions</color></b> in the notebook on the
+    m_Localized: Welcome to the <color=#0b0><b>CPU</color></b> core! Your task is
+      to follow the <color=#0b0><b>instructions</color></b> in the notebook on the
       left and find out if the wizard can conjure his shield.
     m_Metadata:
       m_Items: []
   - m_Id: 166460212755681280
-    m_Localized: You can summon data from <color=green><b>RAM</color></b> into the
+    m_Localized: You can summon data from <color=#0b0><b>RAM</color></b> into the
       processor via the <color=blue><b>blue panel</color></b>. Then you can drag
-      them with your mouse into the correct <color=green><b>register (R1-R4)</color></b>
+      them with your mouse into the correct <color=#0b0><b>register (R1-R4)</color></b>
       in the cache.
     m_Metadata:
       m_Items: []
   - m_Id: 166460294875959296
-    m_Localized: The colored blocks at the top are used for <color=green><b>calculations</color></b>
-      and <color=green><b>comparisons</color></b>. Drag values into the input registers
+    m_Localized: The colored blocks at the top are used for <color=#0b0><b>calculations</color></b>
+      and <color=#0b0><b>comparisons</color></b>. Drag values into the input registers
       so the processor performs the operation you currently need.
     m_Metadata:
       m_Items: []
   - m_Id: 166462323631443968
     m_Localized: You can take the results of operations and move them further between
-      <color=green><b>registers</color></b> or send them back to <color=green><b>RAM</color></b>.
+      <color=#0b0><b>registers</color></b> or send them back to <color=#0b0><b>RAM</color></b>.
       Watch the notebook and follow the instructions exactly!
     m_Metadata:
       m_Items: []
   - m_Id: 166857543216910336
     m_Localized: Welcome to the role of <b>memory manager</b>, your task is to keep
       the system running and ensure the processor never has to wait. <b>Data blocks</b>
-      will come to you from the <color=green>HDD/SSD</color>, which you must cleverly
-      <color=green><b>store in RAM slots</b></color>.
+      will come to you from the <color=#0b0>HDD/SSD</color>, which you must cleverly
+      <color=#0b0><b>store in RAM slots</b></color>.
     m_Metadata:
       m_Items: []
   - m_Id: 166859659973087232
@@ -185,13 +185,13 @@ MonoBehaviour:
   - m_Id: 166859833378197504
     m_Localized: Pay close attention to the <b>CPU</b>, which will continuously request
       specific data using <b>addresses</b>. As soon as you see a request, you must
-      <color=green><b>drag the data from RAM</b></color> and deliver it directly
-      to the processor.
+      <color=#0b0><b>drag the data from RAM</b></color> and deliver it directly to
+      the processor.
     m_Metadata:
       m_Items: []
   - m_Id: 166859951946977280
     m_Localized: Some data in memory is no longer needed and just unnecessarily takes
-      up precious space. You can therefore <color=green><b>trigger a memory cleanup</b></color>,
+      up precious space. You can therefore <color=#0b0><b>trigger a memory cleanup</b></color>,
       which automatically deletes everything the processor is no longer using.
     m_Metadata:
       m_Items: []
@@ -205,67 +205,77 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173922963524046848
     m_Localized: 'The <b>Operating system</b> is smart. When it sees that the <b>RAM</b>
-      is filling up, it tries to <color=green><b>clear it out</b></color>.
+      is filling up, it tries to <color=#0b0><b>clear it out</b></color>.
 
+      
 
+      
 
       It
-      asks programs if they are no longer <b>using</b> something, and so a <color=green><b>piece
+      asks programs if they are no longer <b>using</b> something, and so a <color=#0b0><b>piece
       of space is freed up</b></color>.
 
+      
 
+      
 
-      Click on the garbage truck and delete
-      unnecessary data from RAM!'
+      Click on the garbage
+      truck and delete unnecessary data from RAM!'
     m_Metadata:
       m_Items: []
   - m_Id: 173922978652901376
-    m_Localized: 'But beware: <b>more RAM</b> does not automatically mean the <color=green><b>fastest
-      computer</b></color>, but it often helps a lot when you are doing <color=green><b>multiple
+    m_Localized: 'But beware: <b>more RAM</b> does not automatically mean the <color=#0b0><b>fastest
+      computer</b></color>, but it often helps a lot when you are doing <color=#0b0><b>multiple
       things at once</b></color>.'
     m_Metadata:
       m_Items: []
   - m_Id: 173922988907974656
     m_Localized: "Usually, the <b>more RAM</b> a computer has, the more things it
-      can handle <b>at once</b>.\r\n\r\nFor example:\r\n\u25CF  you can have <color=green><b>more
+      can handle <b>at once</b>.\r\n\r\nFor example:\r\n\u25CF  you can have <color=#0b0><b>more
       programs and tabs</b></color> open in the browser,\r\n\u25CF  the computer
-      <color=green><b>stutters less</b></color> during demanding work,\r\n\u25CF 
-      work is usually <color=green><b>smoother</b></color> (especially in games,
-      video editing, graphics)."
+      <color=#0b0><b>stutters less</b></color> during demanding work,\r\n\u25CF 
+      work is usually <color=#0b0><b>smoother</b></color> (especially in games, video
+      editing, graphics)."
     m_Metadata:
       m_Items: []
   - m_Id: 173923009661390848
     m_Localized: 'The difference between <b>RAM</b> and a <b>hard drive</b> is in
       their purpose:
 
+      
 
+      
 
-      <b>RAM</b> is <color=green><b>fast and temporary</b></color>
-      (working) memory.
+      <b>RAM</b> is <color=#0b0><b>fast
+      and temporary</b></color> (working) memory.
 
+      
 
+      
 
-      <b>A hard drive / SSD</b> is <color=green><b>long-term
-      storage</b></color>: files and programs are stored there so they remain <color=green><b>even
-      after turning off</b></color>.'
+      <b>A
+      hard drive / SSD</b> is <color=#0b0><b>long-term storage</b></color>: files
+      and programs are stored there so they remain <color=#0b0><b>even after turning
+      off</b></color>.'
     m_Metadata:
       m_Items: []
   - m_Id: 173923027009032192
-    m_Localized: It is a <color=green><b><u>temporary memory</u></b></color>. Once
-      you turn off the computer, the contents of the RAM are <color=green><b>deleted</b></color>,
-      because it needs <color=green><b>electrical energy</b></color> to remember
-      data.
+    m_Localized: It is a <color=#0b0><b><u>temporary memory</u></b></color>. Once
+      you turn off the computer, the contents of the RAM are <color=#0b0><b>deleted</b></color>,
+      because it needs <color=#0b0><b>electrical energy</b></color> to remember data.
     m_Metadata:
       m_Items: []
   - m_Id: 173923036588822528
-    m_Localized: 'It is also called <color=green><b>operating memory</b></color>.
+    m_Localized: 'It is also called <color=#0b0><b>operating memory</b></color>.
       It''s a fast memory that the computer uses like a "work desk".
 
+      
 
+      
 
       When
-      you are doing something (open a game, browser, document), the computer <color=green><b>temporarily
-      stores important things in RAM</b></color> so it has <color=green><b>fast access</b></color>
+      you are doing something (open a game, browser, document), the computer <color=#0b0><b>temporarily
+      stores important things in RAM</b></color> so it has <color=#0b0><b>fast access</b></color>
       to them and can work smoothly.'
     m_Metadata:
       m_Items: []
@@ -290,12 +300,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173939283107926016
-    m_Localized: 'Once you try this a bit, it will make sense why the <color=green><b>binary
-      system</color></b> is so important to a computer: its <color=green><b>logic
-      circuits</color></b> constantly work with <color=green><b>values 0 and 1</color></b>,
-      meaning whether something is <color=green><b>off or on</color></b>, whether
-      the <color=green><b>current is flowing or not</color></b>. From these simple
-      <color=green><b>"yes/no" decisions</color></b>, the computer then builds everything
+    m_Localized: 'Once you try this a bit, it will make sense why the <color=#0b0><b>binary
+      system</color></b> is so important to a computer: its <color=#0b0><b>logic
+      circuits</color></b> constantly work with <color=#0b0><b>values 0 and 1</color></b>,
+      meaning whether something is <color=#0b0><b>off or on</color></b>, whether
+      the <color=#0b0><b>current is flowing or not</color></b>. From these simple
+      <color=#0b0><b>"yes/no" decisions</color></b>, the computer then builds everything
       else - numbers, text, images, sound, and games.'
     m_Metadata:
       m_Items: []
@@ -320,7 +330,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173939453715435520
-    m_Localized: This is a number in <color=green><b>binary notation</color></b>.
+    m_Localized: This is a number in <color=#0b0><b>binary notation</color></b>.
     m_Metadata:
       m_Items: []
   - m_Id: 173939480282157056
@@ -328,8 +338,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173939508925059072
-    m_Localized: We also sometimes call it the <color=green><b>base-2 system</color></b>,
-      because it only uses <color=green><b>two numbers</color></b> - <color=green><b>one
+    m_Localized: We also sometimes call it the <color=#0b0><b>base-2 system</color></b>,
+      because it only uses <color=#0b0><b>two numbers</color></b> - <color=#0b0><b>one
       and zero</color></b>.
     m_Metadata:
       m_Items: []
@@ -338,12 +348,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173939531951788032
-    m_Localized: When the <color=green><b>electric current flows</color></b>, we
-      can count it as a <color=green><b>value of 1</color></b>. When the <color=green><b>current
-      does not flow</color></b>, we take it as <color=green><b>0</color></b>. And
+    m_Localized: When the <color=#0b0><b>electric current flows</color></b>, we can
+      count it as a <color=#0b0><b>value of 1</color></b>. When the <color=#0b0><b>current
+      does not flow</color></b>, we take it as <color=#0b0><b>0</color></b>. And
       because computers can reliably distinguish these two options, they work in
-      the so-called <color=green><b>binary system</color></b>, which only uses the
-      <color=green><b>digits 0 and 1</color></b>.
+      the so-called <color=#0b0><b>binary system</color></b>, which only uses the
+      <color=#0b0><b>digits 0 and 1</color></b>.
     m_Metadata:
       m_Items: []
   - m_Id: 173939560032653312
@@ -352,7 +362,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173939571713789952
     m_Localized: "A computer doesn't think like a human. \r\nActually, it only recognizes
-      two things: \r\n<color=green><b>on or off</b></color> "
+      two things: \r\n<color=#0b0><b>on or off</b></color> "
     m_Metadata:
       m_Items: []
   - m_Id: 173939583709499392
@@ -364,7 +374,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173939624138395648
-    m_Localized: This is a number in <color=green><b>decimal notation</color></b>
+    m_Localized: This is a number in <color=#0b0><b>decimal notation</color></b>
       (as we know it).
     m_Metadata:
       m_Items: []
@@ -377,11 +387,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173939743390846976
-    m_Localized: In a <color=green><b>binary number</b></color>, each <color=green><b>digit</b></color>
-      has its <color=green><b>position (index)</b></color> and its value is calculated
-      as <color=green><b>2 to the power of that index</b></color>; when we <color=green><b>sum</b></color>
-      these values based on where the <color=green><b>one</b></color> is, we get
-      the <color=green><b>final number</b></color>.
+    m_Localized: In a <color=#0b0><b>binary number</b></color>, each <color=#0b0><b>digit</b></color>
+      has its <color=#0b0><b>position (index)</b></color> and its value is calculated
+      as <color=#0b0><b>2 to the power of that index</b></color>; when we <color=#0b0><b>sum</b></color>
+      these values based on where the <color=#0b0><b>one</b></color> is, we get the
+      <color=#0b0><b>final number</b></color>.
     m_Metadata:
       m_Items: []
   - m_Id: 173939771526238208
@@ -389,7 +399,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173940123113771008
-    m_Localized: ... and often also the <color=green><b>graphics card</b></color>....
+    m_Localized: ... and often also the <color=#0b0><b>graphics card</b></color>....
     m_Metadata:
       m_Items: []
   - m_Id: 173940131619819520
@@ -406,33 +416,33 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173940157930688512
     m_Localized: "When the cooling doesn't work properly, many things can happen,
-      such as:\r\n\r\n\u25CF  components may automatically <color=green><b>slow down</b></color>
-      (to not heat up as much),\r\n\r\n\u25CF  the computer may <color=green><b>freeze</b></color>,\r\n\r\n\u25CF 
-      it may <color=green><b>restart or shut down</b></color>,\r\n\r\n\u25CF  during
-      long-term overheating, components can even get <color=green><b>damaged</b></color>"
+      such as:\r\n\r\n\u25CF  components may automatically <color=#0b0><b>slow down</b></color>
+      (to not heat up as much),\r\n\r\n\u25CF  the computer may <color=#0b0><b>freeze</b></color>,\r\n\r\n\u25CF 
+      it may <color=#0b0><b>restart or shut down</b></color>,\r\n\r\n\u25CF  during
+      long-term overheating, components can even get <color=#0b0><b>damaged</b></color>"
     m_Metadata:
       m_Items: []
   - m_Id: 173940165769842688
-    m_Localized: The problem can also be caused by <color=green><b>dust in the fans</b></color>.
+    m_Localized: The problem can also be caused by <color=#0b0><b>dust in the fans</b></color>.
       It blocks airflow, makes the fan turn slower, and heat is then dissipated poorly.
-      The computer therefore <color=green><b>overheats</b></color> faster. That is
-      why it is important to clean the fans regularly and <color=green><b>not block
+      The computer therefore <color=#0b0><b>overheats</b></color> faster. That is
+      why it is important to clean the fans regularly and <color=#0b0><b>not block
       the ventilation openings</b></color>, especially on laptops.
     m_Metadata:
       m_Items: []
   - m_Id: 173940172417814528
-    m_Localized: Sometimes a <color=green><b>temperature warning</b></color> appears,
-      or the computer behaves <color=green><b>weirdly</b></color>.
+    m_Localized: Sometimes a <color=#0b0><b>temperature warning</b></color> appears,
+      or the computer behaves <color=#0b0><b>weirdly</b></color>.
     m_Metadata:
       m_Items: []
   - m_Id: 173940177400647680
-    m_Localized: The computer is <color=green><b>hot to the touch</b></color> (especially
+    m_Localized: The computer is <color=#0b0><b>hot to the touch</b></color> (especially
       laptops)
     m_Metadata:
       m_Items: []
   - m_Id: 173940184925229056
-    m_Localized: The fan is <color=green><b>humming</b></color> or constantly running
-      at <color=green><b>full speed</b></color>.
+    m_Localized: The fan is <color=#0b0><b>humming</b></color> or constantly running
+      at <color=#0b0><b>full speed</b></color>.
     m_Metadata:
       m_Items: []
   - m_Id: 173940194018480128
@@ -445,33 +455,35 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173940229460348928
     m_Localized: ...and also rendering video, streaming and playing at the same time,
-      or running <color=green><b>demanding programs</b></color>. At that moment,
-      the components <color=green><b>heat up the most</b></color>.
+      or running <color=#0b0><b>demanding programs</b></color>. At that moment, the
+      components <color=#0b0><b>heat up the most</b></color>.
     m_Metadata:
       m_Items: []
   - m_Id: 173940238620708864
-    m_Localized: The biggest load is typically when <color=green><b>playing demanding
+    m_Localized: The biggest load is typically when <color=#0b0><b>playing demanding
       games</color></b>...
     m_Metadata:
       m_Items: []
   - m_Id: 173940247168700416
-    m_Localized: '...they consume electrical energy and part of it <color=green><b>turns
-      into heat</b></color>. Cooling takes the heat away so the components <color=green><b>don''t
+    m_Localized: '...they consume electrical energy and part of it <color=#0b0><b>turns
+      into heat</b></color>. Cooling takes the heat away so the components <color=#0b0><b>don''t
       overheat</b></color> and work correctly.
 
+      
 
+      
 
-      Watch how a gradual change
-      in <color=green><b>fan speed</b></color> affects the <color=green><b>temperature</b></color>
+      Watch how
+      a gradual change in <color=#0b0><b>fan speed</b></color> affects the <color=#0b0><b>temperature</b></color>
       of individual components.'
     m_Metadata:
       m_Items: []
   - m_Id: 173940255158849536
-    m_Localized: ... mainly the <color=green><b>CPU</b></color> ...
+    m_Localized: ... mainly the <color=#0b0><b>CPU</b></color> ...
     m_Metadata:
       m_Items: []
   - m_Id: 173940264600227840
-    m_Localized: The game or program starts to <color=green><b>stutter and slow down</b></color>.
+    m_Localized: The game or program starts to <color=#0b0><b>stutter and slow down</b></color>.
     m_Metadata:
       m_Items: []
   - m_Id: 173940279678750720
@@ -483,9 +495,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173940441125900288
-    m_Localized: 'When you start a game or open a website, the <color=green><b>CPU</color></b>
-      constantly processes commands like: <color=green><b>"load data"</color></b>,
-      <color=green><b>"calculate this"</color></b> or <color=green><b>"send the result
+    m_Localized: 'When you start a game or open a website, the <color=#0b0><b>CPU</color></b>
+      constantly processes commands like: <color=#0b0><b>"load data"</color></b>,
+      <color=#0b0><b>"calculate this"</color></b> or <color=#0b0><b>"send the result
       on"</color></b>. It''s millions of small steps that make up everything you
       see on the screen!'
     m_Metadata:
@@ -508,11 +520,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173940526001836032
-    m_Localized: It will try to save itself by <color=green><b>slowing down</color></b>
+    m_Localized: It will try to save itself by <color=#0b0><b>slowing down</color></b>
       so that it doesn't heat up as much. If that's not enough, the computer may
-      <color=green><b>freeze</color></b>, restart, or completely <color=green><b>shut
+      <color=#0b0><b>freeze</color></b>, restart, or completely <color=#0b0><b>shut
       down</color></b> so the processor doesn't get damaged. That is why computers
-      have <color=green><b>cooling</color></b>, such as a metal cooler and a <color=green><b>fan</color></b>.
+      have <color=#0b0><b>cooling</color></b>, such as a metal cooler and a <color=#0b0><b>fan</color></b>.
     m_Metadata:
       m_Items: []
   - m_Id: 173940536659562496
@@ -520,34 +532,33 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173940544498716672
-    m_Localized: "To keep up with all this, it works to the rhythm of so-called <color=green><b>clock
-      cycles</color></b> - it's like a metronome or a heartbeat. \r\n\r\n<color=green><b>Clock
-      rate</color></b> tells us how many steps the CPU can handle in <color=green><b>one
+    m_Localized: "To keep up with all this, it works to the rhythm of so-called <color=#0b0><b>clock
+      cycles</color></b> - it's like a metronome or a heartbeat. \r\n\r\n<color=#0b0><b>Clock
+      rate</color></b> tells us how many steps the CPU can handle in <color=#0b0><b>one
       second</color></b>. \r\n\r\nThe higher it is, the faster it ticks, but remember
-      - the overall <color=green><b>speed of a computer</color></b> also depends
-      on other things!"
+      - the overall <color=#0b0><b>speed of a computer</color></b> also depends on
+      other things!"
     m_Metadata:
       m_Items: []
   - m_Id: 173940551381569536
-    m_Localized: When the <color=green><b>CPU</color></b> works hard, it starts to
-      heat up. If the load is too high and it can't keep up without <color=green><b>cooling</color></b>,
+    m_Localized: When the <color=#0b0><b>CPU</color></b> works hard, it starts to
+      heat up. If the load is too high and it can't keep up without <color=#0b0><b>cooling</color></b>,
       the temperature can rise to a dangerous level. What happens then?
     m_Metadata:
       m_Items: []
   - m_Id: 173940566271348736
-    m_Localized: Clock rate is given in units of <color=green><b>hertz (Hz)</color></b>,
-      most commonly as <color=green><b>gigahertz (GHz)</color></b>. For example,
-      a processor with <color=green><b>4 GHz</color></b> can handle an incredible
-      <color=green><b>4 billion cycles</color></b> in a single second. That's pretty
-      fast, right?
+    m_Localized: Clock rate is given in units of <color=#0b0><b>hertz (Hz)</color></b>,
+      most commonly as <color=#0b0><b>gigahertz (GHz)</color></b>. For example, a
+      processor with <color=#0b0><b>4 GHz</color></b> can handle an incredible <color=#0b0><b>4
+      billion cycles</color></b> in a single second. That's pretty fast, right?
     m_Metadata:
       m_Items: []
   - m_Id: 173940576773885952
-    m_Localized: 'Inside the <color=green><b>CPU</color></b> there is one more important
-      thing: <color=green><b>cache memory</color></b>. It''s a small but <color=green><b>extremely
-      fast</color></b> memory right on the processor, which serves as a <color=green><b>stash</color></b>
+    m_Localized: 'Inside the <color=#0b0><b>CPU</color></b> there is one more important
+      thing: <color=#0b0><b>cache memory</color></b>. It''s a small but <color=#0b0><b>extremely
+      fast</color></b> memory right on the processor, which serves as a <color=#0b0><b>stash</color></b>
       for the data the CPU needs right now. It uses it so it doesn''t have to constantly
-      access the <color=green><b>RAM</color></b>, which takes much <color=green><b>longer</color></b>.'
+      access the <color=#0b0><b>RAM</color></b>, which takes much <color=#0b0><b>longer</color></b>.'
     m_Metadata:
       m_Items: []
   - m_Id: 173940583124062208
@@ -564,26 +575,26 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173940637251555328
     m_Localized: A processor doesn't know what it will be cooking in the end, it
-      just precisely follows commands <color=green><b>one by one</color></b> in the
+      just precisely follows commands <color=#0b0><b>one by one</color></b> in the
       exact order they are written. Just one bad step in the recipe and the whole
       program (or dinner) ends in an error!
     m_Metadata:
       m_Items: []
   - m_Id: 173940644218294272
-    m_Localized: "Each <color=green><b>instruction</color></b> is <color=green><b>one
+    m_Localized: "Each <color=#0b0><b>instruction</color></b> is <color=#0b0><b>one
       step</color></b> in a recipe - like \u201Aadd butter\u2018 or \u201Astir\u2018."
     m_Metadata:
       m_Items: []
   - m_Id: 173940664380313600
-    m_Localized: "It makes millions of tiny steps: it <color=green><b>calculates</color></b>,
-      <color=green><b>compares</color></b> and <color=green><b>controls</color></b>
+    m_Localized: "It makes millions of tiny steps: it <color=#0b0><b>calculates</color></b>,
+      <color=#0b0><b>compares</color></b> and <color=#0b0><b>controls</color></b>
       the rest of the computer.\r\n For instance, it tells the graphics what to draw,
       and the drive what to save...\r\nWithout it, not a single pixel moves!"
     m_Metadata:
       m_Items: []
   - m_Id: 173940673087688704
-    m_Localized: 'Imagine that the <color=green><b>CPU</color></b> (processor) is
-      like a chef and the program is its <color=green><b>recipe</color></b>. '
+    m_Localized: 'Imagine that the <color=#0b0><b>CPU</color></b> (processor) is
+      like a chef and the program is its <color=#0b0><b>recipe</color></b>. '
     m_Metadata:
       m_Items: []
   - m_Id: 173940685641240576
@@ -591,8 +602,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173940693119684608
-    m_Localized: The CPU or <color=green><b>processor</color></b> is very important
-      in a computer. Its main function is to <color=green><b>execute instructions</color></b>.
+    m_Localized: The CPU or <color=#0b0><b>processor</color></b> is very important
+      in a computer. Its main function is to <color=#0b0><b>execute instructions</color></b>.
       What does that mean?
     m_Metadata:
       m_Items: []
@@ -862,9 +873,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173943386714296320
-    m_Localized: 'They only work with two values: <color=green><b> 0 </color>and
-      <color=green>1 </b> </color> (off/on), which represents whether the electrical
-      current is flowing there or not. '
+    m_Localized: 'They only work with two values: <color=#0b0><b> 0 </color>and <color=#0b0>1
+      </b> </color> (off/on), which represents whether the electrical current is
+      flowing there or not. '
     m_Metadata:
       m_Items: []
   - m_Id: 173943413314572288
@@ -880,9 +891,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173943471430848512
-    m_Localized: We can imagine it as <color=green><b>two switches (inputs)</b></color>,
-      whose state is evaluated by a <color=green><b>logic gate</b></color>, and based
-      on that it turns the <color=green><b>lightbulb (output)</b></color> on or off.
+    m_Localized: We can imagine it as <color=#0b0><b>two switches (inputs)</b></color>,
+      whose state is evaluated by a <color=#0b0><b>logic gate</b></color>, and based
+      on that it turns the <color=#0b0><b>lightbulb (output)</b></color> on or off.
     m_Metadata:
       m_Items: []
   - m_Id: 173943535943438336
@@ -890,13 +901,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173943547133841408
-    m_Localized: "\"You get points  <b><color=green>IF </b> </color>you complete
-      task 1<b><color=green> OR </b></color>task 2, \r\nyou don't have to complete
-      both.\u201D "
+    m_Localized: "\"You get points  <b><color=#0b0>IF </b> </color>you complete task
+      1<b><color=#0b0> OR </b></color>task 2, \r\nyou don't have to complete both.\u201D "
     m_Metadata:
       m_Items: []
   - m_Id: 173943574937882624
-    m_Localized: 'The lightbulb will shine <b><color=green> if </b></color><b><color=green>
+    m_Localized: 'The lightbulb will shine <b><color=#0b0> if </b></color><b><color=#0b0>
       at least one </b></color>switch is on. '
     m_Metadata:
       m_Items: []
@@ -909,13 +919,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173943644550746112
-    m_Localized: 'The lightbulb will shine <b><color=green>if </b></color><b><color=green>
+    m_Localized: 'The lightbulb will shine <b><color=#0b0>if </b></color><b><color=#0b0>
       only one </b></color>switch is on. '
     m_Metadata:
       m_Items: []
   - m_Id: 173943660791091200
-    m_Localized: "\u201CYou can have chocolate <b><color=green>or</b></color> a piece
-      of candy, but <b><color=green>not both</b></color>.\u201D\r\n\r\n   "
+    m_Localized: "\u201CYou can have chocolate <b><color=#0b0>or</b></color> a piece
+      of candy, but <b><color=#0b0>not both</b></color>.\u201D\r\n\r\n   "
     m_Metadata:
       m_Items: []
   - m_Id: 173943670123417600
@@ -931,18 +941,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173943758308659200
-    m_Localized: "\u201CYou can go outside <b><color=green>ONLY IF </b> </color>you
-      have a hat <b><color=green> AND </b> </color>a jacket.\u201D "
+    m_Localized: "\u201CYou can go outside <b><color=#0b0>ONLY IF </b> </color>you
+      have a hat <b><color=#0b0> AND </b> </color>a jacket.\u201D "
     m_Metadata:
       m_Items: []
   - m_Id: 173943773496233984
-    m_Localized: 'The lightbulb will shine <b><color=green>only when </b> </color><b><color=green>
+    m_Localized: 'The lightbulb will shine <b><color=#0b0>only when </b> </color><b><color=#0b0>
       both </b> </color>switches are on. '
     m_Metadata:
       m_Items: []
   - m_Id: 173943788574756864
-    m_Localized: "Not has only <b><color=green>one input</b></color> (switch) and
-      simply \r\n<b><color=green>flips it to the other position</b></color>. "
+    m_Localized: "Not has only <b><color=#0b0>one input</b></color> (switch) and
+      simply \r\n<b><color=#0b0>flips it to the other position</b></color>. "
     m_Metadata:
       m_Items: []
   - m_Id: 173943813023354880
@@ -959,13 +969,13 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 173944791327985664
     m_Localized: "When you save a photo, game, or document to your computer, it gets
-      saved \r\non the <color=green><b>disk</color></b> - that's <color=green><b>long-term
-      storage</color></b>. Unlike <color=green><b>RAM</color></b>, the disk <color=green><b><u>isn't
+      saved \r\non the <color=#0b0><b>disk</color></b> - that's <color=#0b0><b>long-term
+      storage</color></b>. Unlike <color=#0b0><b>RAM</color></b>, the disk <color=#0b0><b><u>isn't
       erased</color></b></u> when you turn off the computer."
     m_Metadata:
       m_Items: []
   - m_Id: 173944803093008384
-    m_Localized: 'There are two <color=green><b>main types of disks</b></color>:'
+    m_Localized: 'There are two <color=#0b0><b>main types of disks</b></color>:'
     m_Metadata:
       m_Items: []
   - m_Id: 173944810521120768
@@ -977,33 +987,39 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173944826501419008
-    m_Localized: '<color=green><b>HDD</b></color> is an older type.
+    m_Localized: '<color=#0b0><b>HDD</b></color> is an older type.
 
+      
 
+      
 
       Inside
-      it has <color=green><b>spinning platters</b></color> and a read head, so it''s
+      it has <color=#0b0><b>spinning platters</b></color> and a read head, so it''s
       a bit like a record player. Because of this, it''s usually slower, can be heard,
-      and is <color=green><b>more sensitive to shocks</b></color>.
+      and is <color=#0b0><b>more sensitive to shocks</b></color>.
 
+      
 
+      
 
-      Its advantage
-      is that it often offers <color=green><b>a lot of space</b></color> for a lower
-      price.'
+      Its
+      advantage is that it often offers <color=#0b0><b>a lot of space</b></color>
+      for a lower price.'
     m_Metadata:
       m_Items: []
   - m_Id: 173944835410120704
-    m_Localized: 'SSD is a <color=green><b>newer type of disk</b></color>.
+    m_Localized: 'SSD is a <color=#0b0><b>newer type of disk</b></color>.
 
+      
 
+      
 
       It
-      has no spinning parts, it works more like a <color=green><b>large flash drive</b></color>.
+      has no spinning parts, it works more like a <color=#0b0><b>large flash drive</b></color>.
 
       Therefore
       it is faster, quiet and usually more durable. The biggest advantage of SSD
-      over HDD is exactly the <color=green><b>speed</b></color>: the computer turns
+      over HDD is exactly the <color=#0b0><b>speed</b></color>: the computer turns
       on faster with an SSD, programs and games load faster, and the whole computer
       feels smoother.'
     m_Metadata:
