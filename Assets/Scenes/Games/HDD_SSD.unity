@@ -317,6 +317,38 @@ PrefabInstance:
         Na rozd\xEDl od <color=green><b>RAM</color></b> se disk <color=green><b><u>nevyma\u017Ee</color></b></u>
         po vypnut\xED po\u010D\xEDta\u010De."
       objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_fontSize
+      value: 9.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_margin.w
+      value: 0.35847187
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_margin.x
+      value: -0.33046436
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_margin.y
+      value: 0.47693306
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_margin.z
+      value: 0.81284523
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9132594739293679387, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 30.596
@@ -337,6 +369,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 60568452}
+    - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
 --- !u!4 &60568449 stripped
 Transform:
@@ -1905,6 +1940,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7716283863162038046, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 864778938}
+    - targetCorrespondingSourceObject: {fileID: 7716283863162038046, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
 --- !u!4 &864778934 stripped
 Transform:
@@ -2542,6 +2580,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1079659916}
+    - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
 --- !u!4 &1079659913 stripped
 Transform:
@@ -4109,6 +4150,34 @@ PrefabInstance:
       propertyPath: m_text
       value: "Existuj\xED dva <color=green><b>hlavn\xED typy disk\u016F</b></color>:"
       objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_margin.w
+      value: 0.2985234
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_margin.x
+      value: 7.129698
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_margin.y
+      value: 0.2592752
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_margin.z
+      value: 8.170347
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8942268575807178720, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9132594739293679387, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       propertyPath: m_SizeDelta.x
       value: 30.596
@@ -4129,6 +4198,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1814855280}
+    - targetCorrespondingSourceObject: {fileID: 7485884456260190567, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 1305f9dfb7e5e2346940ff3731724a9f, type: 3}
 --- !u!4 &1814855277 stripped
 Transform:
@@ -4754,6 +4826,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7716283863162038046, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2042586487}
+    - targetCorrespondingSourceObject: {fileID: 7716283863162038046, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 6fa4624dca92f7d4295df3a4f114ad7a, type: 3}
 --- !u!4 &2042586484 stripped
 Transform:
@@ -5003,6 +5078,26 @@ PrefabInstance:
       propertyPath: m_text
       value: "Poj\u010Fme si to vyzkou\u0161et \nve h\u0159e."
       objectReference: {fileID: 0}
+    - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      propertyPath: m_margin.w
+      value: 0.5378432
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      propertyPath: m_margin.x
+      value: -0.984993
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      propertyPath: m_margin.y
+      value: 0.4580779
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427176538588272188, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      propertyPath: m_margin.z
+      value: -1.1794853
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6953490373416734253, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 103.4
@@ -5058,6 +5153,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2088462181}
+    - targetCorrespondingSourceObject: {fileID: 5812829812968034491, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8e18345512c32f9449221b68bdfd17dd, type: 3}
 --- !u!4 &2088462178 stripped
 Transform:

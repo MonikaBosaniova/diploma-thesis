@@ -207,16 +207,16 @@ MonoBehaviour:
     m_Localized: 'The <b>Operating system</b> is smart. When it sees that the <b>RAM</b>
       is filling up, it tries to <color=#0b0><b>clear it out</b></color>.
 
-      
+
 
       It
       asks programs if they are no longer <b>using</b> something, and so a <color=#0b0><b>piece
       of space is freed up</b></color>.
 
-      
 
-      Click on the garbage truck
-      and delete unnecessary data from RAM!'
+
+      Click on the garbage truck and delete
+      unnecessary data from RAM!'
     m_Metadata:
       m_Items: []
   - m_Id: 173922978652901376
@@ -238,12 +238,12 @@ MonoBehaviour:
     m_Localized: 'The difference between <b>RAM</b> and a <b>hard drive</b> is in
       their purpose:
 
-      
+
 
       <b>RAM</b> is <color=#0b0><b>fast and temporary</b></color>
       (working) memory.
 
-      
+
 
       <b>A hard drive / SSD</b> is <color=#0b0><b>long-term
       storage</b></color>: files and programs are stored there so they remain <color=#0b0><b>even
@@ -260,7 +260,7 @@ MonoBehaviour:
     m_Localized: 'It is also called <color=#0b0><b>operating memory</b></color>.
       It''s a fast memory that the computer uses like a "work desk".
 
-      
+
 
       When
       you are doing something (open a game, browser, document), the computer <color=#0b0><b>temporarily
@@ -458,10 +458,10 @@ MonoBehaviour:
       into heat</b></color>. Cooling takes the heat away so the components <color=#0b0><b>don''t
       overheat</b></color> and work correctly.
 
-      
 
-      Watch how a gradual
-      change in <color=#0b0><b>fan speed</b></color> affects the <color=#0b0><b>temperature</b></color>
+
+      Watch how a gradual change
+      in <color=#0b0><b>fan speed</b></color> affects the <color=#0b0><b>temperature</b></color>
       of individual components.'
     m_Metadata:
       m_Items: []
@@ -976,33 +976,26 @@ MonoBehaviour:
   - m_Id: 173944826501419008
     m_Localized: '<color=#0b0><b>HDD</b></color> is an older type.
 
-      
 
       Inside
       it has <color=#0b0><b>spinning platters</b></color> and a read head, so it''s
       a bit like a record player. Because of this, it''s usually slower, can be heard,
       and is <color=#0b0><b>more sensitive to shocks</b></color>.
 
-      
 
-      Its
-      advantage is that it often offers <color=#0b0><b>a lot of space</b></color>
-      for a lower price.'
+      Its advantage
+      is that it often offers <color=#0b0><b>a lot of space</b></color> for a lower
+      price.'
     m_Metadata:
       m_Items: []
   - m_Id: 173944835410120704
-    m_Localized: 'SSD is a <color=#0b0><b>newer type of disk</b></color>.
+    m_Localized: 'SSD is a <color=#0b0><b>newer disk type</b></color>.
 
-      
 
-      It
-      has no spinning parts, it works more like a <color=#0b0><b>large flash drive</b></color>.
-
-      Therefore
-      it is faster, quiet and usually more durable. The biggest advantage of SSD
-      over HDD is exactly the <color=#0b0><b>speed</b></color>: the computer turns
-      on faster with an SSD, programs and games load faster, and the whole computer
-      feels smoother.'
+      No
+      moving parts, it works like a <color=#0b0><b>big flash drive</b></color>.\nIt''s
+      faster, quiet and tougher. Main plus over HDD is <color=#0b0><b>speed</b></color>:
+      PC starts faster, apps and games load quickly and the system feels smoother.'
     m_Metadata:
       m_Items: []
   - m_Id: 173944845057019904
