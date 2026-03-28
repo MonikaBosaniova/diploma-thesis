@@ -1086,6 +1086,24 @@ MonoBehaviour:
     m_Localized: "Nap\xE1jec\xED zdroj"
     m_Metadata:
       m_Items: []
+  - m_Id: 176470732809850880
+    m_Localized: Ne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176470749750644736
+    m_Localized: Ano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176470766343311360
+    m_Localized: "<b>Opravdu?</b>\nSma\u017Ee to tv\u016Fj\npostup ve h\u0159e."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176470837935886336
+    m_Localized: 'Smazat
+
+      postup'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

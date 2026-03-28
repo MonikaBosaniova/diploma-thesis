@@ -1079,6 +1079,22 @@ MonoBehaviour:
     m_Localized: "Nap\xE1jac\xED zdroj"
     m_Metadata:
       m_Items: []
+  - m_Id: 176470732809850880
+    m_Localized: Nie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176470749750644736
+    m_Localized: "\xC1no"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176470766343311360
+    m_Localized: "<b>Naozaj?</b>\nZma\u017Ee to tvoj\npostup v hre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176470837935886336
+    m_Localized: "Zmaza\u0165\npostup"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

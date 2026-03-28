@@ -967,6 +967,22 @@ MonoBehaviour:
     m_Key: MainMenu/UI/SkillTreeMenu/SkillTree/Levels/Scroll View/Viewport/Content/PSU/Power/LevelName
     m_Metadata:
       m_Items: []
+  - m_Id: 176470732809850880
+    m_Key: MainMenu/Room/Furniture/Table/Monitor canvas/Image/No/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176470749750644736
+    m_Key: MainMenu/Room/Furniture/Table/Monitor canvas/Image/Yes/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176470766343311360
+    m_Key: MainMenu/Room/Furniture/Table/Monitor canvas/Image/Text (TMP)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 176470837935886336
+    m_Key: MainMenu/Room/Furniture/Table/Monitor canvas/Remove progress/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
