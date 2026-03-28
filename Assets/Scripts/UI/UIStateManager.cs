@@ -32,24 +32,17 @@ public class UIStateManager : MonoBehaviour
     public void UpdateState(UIStates state)
     {
         CurrentUIState = state;
-        switch (state)
-        {
-            case UIStates.None:
-                menuStateParent.SetActive(false);
-                break;
-            case UIStates.Menu:
-                menuStateParent.SetActive(true);
-                break;
-            case UIStates.SkillTree:
-                menuStateParent.SetActive(false);
-                break;
-        }
     }
 
     public void ChangeToMenu()
     {
         frontPCPanel.DOLocalMoveZ(frontPanelStartPositionZ, .8f);
         skillTreeBackButton.DOAnchorPosX(skillTreeBackButtonHiddenPositionX, .33f);
+        
+        var canvasGroup = menuStateParent.GetComponent<CanvasGroup>();
+        canvasGroup.DOFade(1f, .33f);
+        canvasGroup.interactable = true;
+        
         skillTree.DOAnchorPosX(skillTreeHiddenPositionX, .33f).OnComplete(() =>UpdateState(UIStates.Menu));
     }
     
@@ -59,6 +52,10 @@ public class UIStateManager : MonoBehaviour
         skillTreeBackButton.DOAnchorPosX(-skillTreeBackButtonHiddenPositionX, .33f);
         skillTree.DOAnchorPosX(0, tween ? .33f : 0.0f);
         frontPCPanel.DOLocalMoveZ(-1f, tween ? .8f : 0.0f);
+        
+        var canvasGroup = menuStateParent.GetComponent<CanvasGroup>();
+        canvasGroup.DOFade(0f, .33f);
+        canvasGroup.interactable = false;
     }
 
 }
