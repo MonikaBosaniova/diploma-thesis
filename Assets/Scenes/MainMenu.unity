@@ -2143,7 +2143,6 @@ GameObject:
   m_Component:
   - component: {fileID: 477120191}
   - component: {fileID: 477120192}
-  - component: {fileID: 477120193}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2182,18 +2181,6 @@ MonoBehaviour:
   ProgressChanged: 0
   OpenSkillTree: 0
   ChangedNodeId: 
---- !u!114 &477120193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477120190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f822c67c8f4a271418f8ac18baec096f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &485044800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 668086455877286115, guid: f149402989451fe4ab69bfd1ceb5124f, type: 3}
@@ -2996,6 +2983,55 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &634905105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634905107}
+  - component: {fileID: 634905106}
+  m_Layer: 0
+  m_Name: LocalizationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &634905106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634905105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f822c67c8f4a271418f8ac18baec096f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ActiveColor: {r: 1, g: 1, b: 1, a: 1}
+  InactiveColor: {r: 0.69803923, g: 0.8, b: 0.8862745, a: 1}
+  flagCZ: {fileID: 2042666136}
+  flagSK: {fileID: 2055992235}
+  flagEN: {fileID: 1156267191}
+--- !u!4 &634905107
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634905105}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &667736482
 GameObject:
   m_ObjectHideFlags: 0
@@ -5226,7 +5262,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 477120193}
+      - m_Target: {fileID: 634905106}
         m_TargetAssemblyTypeName: LocalizationManager, Assembly-CSharp
         m_MethodName: SetLanguageEN
         m_Mode: 1
@@ -7993,7 +8029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.53333336, g: 0.8313726, b: 1, a: 1}
+  m_Color: {r: 0.5754717, g: 0.13977346, b: 0.078720205, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8338,7 +8374,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 477120193}
+      - m_Target: {fileID: 634905106}
         m_TargetAssemblyTypeName: LocalizationManager, Assembly-CSharp
         m_MethodName: SetLanguageCZ
         m_Mode: 1
@@ -8475,7 +8511,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 477120193}
+      - m_Target: {fileID: 634905106}
         m_TargetAssemblyTypeName: LocalizationManager, Assembly-CSharp
         m_MethodName: SetLanguageSK
         m_Mode: 1
@@ -9003,6 +9039,7 @@ RectTransform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1903074172}
   - {fileID: 842013946}
   - {fileID: 634284860}
   - {fileID: 1133147171}
@@ -9010,4 +9047,4 @@ SceneRoots:
   - {fileID: 77586639}
   - {fileID: 777199197}
   - {fileID: 477120191}
-  - {fileID: 1903074172}
+  - {fileID: 634905107}

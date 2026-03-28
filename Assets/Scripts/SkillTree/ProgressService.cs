@@ -32,49 +32,42 @@ public class ProgressService : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         LoadOrCreate();
-        EnsureVersion();
     }
 
     public SkillProgress Get(string nodeId)
     {
         if (!_data.map.TryGetValue(nodeId, out var p))
         {
-            p = new SkillProgress { completed = false, bestStars = 0, bestTimeSec = float.PositiveInfinity, attempts = 0, lastPlayedUnix = 0 };
+            p = new SkillProgress { completed = false, bestStars = 0, bestTimeSec = 99999 };
             _data.map[nodeId] = p;
         }
+        
         return p;
     }
 
     public bool IsUnlocked(string nodeId)
     {
         var node = _skillTree.Nodes.FirstOrDefault(n => n.Id == nodeId);
-        if (node == null) 
-        {
-            Debug.Log( ": locked, null node");
+        if (!node) 
             return false; // unknown node -> locked
-        }
+
         if (node.PrerequisiteIds == null || node.PrerequisiteIds.Count == 0 || node._makeUnlockedAtStart)
-        {
-            Debug.Log(node.SceneName + ": unlocked");
             return true;
-        }
+
         foreach (var pre in node.PrerequisiteIds)
         {
             var p = Get(pre);
             if (!p.completed)
-            {
-                Debug.Log(node.SceneName + ": locked, pre");
                 return false;
-            }
         }
+
         return true;
     }
 
     public bool IsLockedOnlyVisually(string nodeId)
     {
         var node = _skillTree.Nodes.FirstOrDefault(n => n.Id == nodeId);
-        return node == null || // unknown node -> locked
-               node._forceLockedVisuals;
+        return !node || node._forceLockedVisuals;
     }
 
     public IEnumerable<SkillNodeDef> GetUnlockedNodes() =>
@@ -91,8 +84,7 @@ public class ProgressService : MonoBehaviour
     public void RecordLevelResult(string nodeId, int stars, float timeSec)
     {
         var p = Get(nodeId);
-        p.attempts++;
-        p.lastPlayedUnix = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+        DateTimeOffset.UtcNow.ToUnixTimeSeconds();
 
         if (stars > p.bestStars)
         {
@@ -126,47 +118,130 @@ public class ProgressService : MonoBehaviour
     public SkillTreeAsset Tree => _skillTree;
 
     // -------- persistence --------
+    private const string PLAYER_PREFS_KEY = "PLAYER_PROGRESS_JSON";
+
     private void LoadOrCreate()
     {
-        try
+        if (PlayerPrefs.HasKey(PLAYER_PREFS_KEY))
         {
-            if (File.Exists(SavePath))
+            string json = PlayerPrefs.GetString(PLAYER_PREFS_KEY);
+
+            try
             {
-                var json = File.ReadAllText(SavePath);
-                _data = JsonUtility.FromJson<PlayerProgressData>(json);
+                var file = JsonUtility.FromJson<ProgressFile>(json);
+
+                if (file != null)
+                {
+                    _data = new PlayerProgressData
+                    {
+                        treeVersion = file.version,
+                        map = new Dictionary<string, SkillProgress>()
+                    };
+
+                    foreach (var entry in file.data)
+                    {
+                        _data.map[entry.id] = entry.value;
+                    }
+
+                    LoggerService.Instance.Log("ProgressService: Save data successfully loaded");
+                    
+                    return;
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarning("ProgressService: Save data failed to load, creating new, error: " + e);
             }
         }
-        catch (Exception e) { Debug.LogWarning($"Load progress failed: {e}"); }
 
-        if (_data == null) _data = new PlayerProgressData { treeVersion = _skillTree.Version };
-        if (_data.map == null) _data.map = new Dictionary<string, SkillProgress>();
+        // fallback
+        _data = new PlayerProgressData
+        {
+            treeVersion = _skillTree != null ? _skillTree.Version : "1.0",
+            map = new Dictionary<string, SkillProgress>()
+        };
+
+        Save();
     }
 
     private void Save()
     {
-        try
+        if (_data == null) return;
+
+        var file = new ProgressFile
         {
-            _data.treeVersion = _skillTree.Version;
-            var json = JsonUtility.ToJson(_data, prettyPrint: true);
-            File.WriteAllText(SavePath, json);
+            version = _data.treeVersion,
+            data = new List<NodeEntry>()
+        };
+
+        foreach (var kv in _data.map)
+        {
+            file.data.Add(new NodeEntry
+            {
+                id = kv.Key,
+                value = kv.Value
+            });
         }
-        catch (Exception e) { Debug.LogWarning($"Save progress failed: {e}"); }
+
+        string json = JsonUtility.ToJson(file);
+        PlayerPrefs.SetString(PLAYER_PREFS_KEY, json);
+        PlayerPrefs.Save();
     }
 
-    private void EnsureVersion()
+    public void RemoveProgress()
     {
-        // If tree version changes (nodes added/removed), decide policy:
-        // Here: keep existing entries; missing nodes will be created lazily in Get().
-        // You could also implement migrations based on semantic versioning.
-        if (_data.treeVersion != _skillTree.Version)
-        {
-            // Example: if nodes were removed, optionally prune:
-            var validIds = new HashSet<string>(_skillTree.Nodes.Select(n => n.Id));
-            var keysToRemove = _data.map.Keys.Where(id => !validIds.Contains(id)).ToList();
-            foreach (var k in keysToRemove) _data.map.Remove(k);
+        // Reset runtime flags
+        ProgressChanged = false;
+        OpenSkillTree = false;
+        ChangedNodeId = "";
+        _currentNodeID = null;
 
-            _data.treeVersion = _skillTree.Version;
-            Save();
+        // Recreate fresh data
+        _data = new PlayerProgressData
+        {
+            treeVersion = _skillTree != null ? _skillTree.Version : "1.0",
+            map = new Dictionary<string, SkillProgress>()
+        };
+
+        // Pre-create entries for all nodes (clean state)
+        if (_skillTree != null)
+        {
+            foreach (var node in _skillTree.Nodes)
+            {
+                _data.map[node.Id] = new SkillProgress
+                {
+                    completed = false,
+                    bestStars = 0,
+                    newStars = 0,
+                    bestTimeSec = 99999,
+                };
+            }
         }
+
+        Save();
+
+        if (_skillTree != null)
+        {
+            foreach (var node in _skillTree.Nodes)
+            {
+                OnProgressChanged?.Invoke(node.Id, _data.map[node.Id]);
+            }
+        }
+        
+        LoggerService.Instance.Log("ProgressService: Progress reset and saved");
     }
+}
+
+[Serializable]
+public class ProgressFile
+{
+    public string version;
+    public List<NodeEntry> data = new();
+}
+
+[Serializable]
+public class NodeEntry
+{
+    public string id;
+    public SkillProgress value;
 }

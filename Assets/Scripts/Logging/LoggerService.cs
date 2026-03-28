@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 using System.Text.RegularExpressions;
 using System.Globalization;
 
+[DefaultExecutionOrder(-100)]
 public class LoggerService : MonoBehaviour
 {
     public static LoggerService Instance { get; private set; }

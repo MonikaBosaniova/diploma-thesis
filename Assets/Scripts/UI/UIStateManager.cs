@@ -9,7 +9,8 @@ public class UIStateManager : MonoBehaviour
 
     private GameObject menuStateParent;
     [SerializeField] private RectTransform skillTreeBackButton;
-    
+    private float playButtonPositionX;
+
     private float skillTreeHiddenPositionX;
     private float skillTreeBackButtonHiddenPositionX;
     private float frontPanelStartPositionZ;
@@ -19,6 +20,8 @@ public class UIStateManager : MonoBehaviour
         skillTreeHiddenPositionX = skillTree.anchoredPosition.x;
         skillTreeBackButtonHiddenPositionX = skillTreeBackButton.anchoredPosition.x;
         frontPanelStartPositionZ = frontPCPanel.localPosition.z;
+        playButtonPositionX = menuStateParent.GetComponent<RectTransform>().anchoredPosition.x;
+        
         if (ProgressService.I.OpenSkillTree)
         {
             ChangeToSkillTree(false);
@@ -43,6 +46,9 @@ public class UIStateManager : MonoBehaviour
         canvasGroup.DOFade(1f, .33f);
         canvasGroup.interactable = true;
         
+        var playButtonRect = menuStateParent.GetComponent<RectTransform>();
+        playButtonRect.DOAnchorPosX( playButtonPositionX , .33f);
+        
         skillTree.DOAnchorPosX(skillTreeHiddenPositionX, .33f).OnComplete(() =>UpdateState(UIStates.Menu));
     }
     
@@ -56,6 +62,9 @@ public class UIStateManager : MonoBehaviour
         var canvasGroup = menuStateParent.GetComponent<CanvasGroup>();
         canvasGroup.DOFade(0f, .33f);
         canvasGroup.interactable = false;
+        
+        var playButtonRect = menuStateParent.GetComponent<RectTransform>();
+        playButtonRect.DOAnchorPosX(playButtonPositionX - 2 * skillTreeBackButtonHiddenPositionX, .33f);
     }
 
 }
