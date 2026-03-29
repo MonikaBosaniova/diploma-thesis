@@ -25,7 +25,11 @@ public class LevelStarsController : MonoBehaviour
             {
                 _stars[i].ShowAlreadyCollectedStar();
             }
-                
+        }
+
+        for (int i = starsCount; i < 3; i++)
+        {
+            _stars[i].OnStarrRemoved();
         }
         
         //ProgressService.I.NewStars = 0;

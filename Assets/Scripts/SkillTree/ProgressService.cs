@@ -17,7 +17,7 @@ public class ProgressService : MonoBehaviour
     public bool OpenSkillTree = false;
     //public int NewStars = 0;
     public string ChangedNodeId = "";
-
+    
     private PlayerProgressData _data;
 
     private string SavePath =>

@@ -36,4 +36,12 @@ public class StarController : MonoBehaviour
         _collectedStar.DOScaleY(1,.5f);
     }
 
+    public void OnStarrRemoved()
+    {
+        Debug.Log("OnStarrRemoved TWEENING");
+        _collectedStar.DOScaleX(0, 0f); 
+        _collectedStar.DOScaleY(0, 0f);
+        _collectedStar.rotation = Quaternion.Euler(0,0,0);
+    }
+
 }
