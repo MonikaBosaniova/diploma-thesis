@@ -32,6 +32,8 @@ public class PCProgressVisualsController : MonoBehaviour
     private List<Animation> FrontVentilatorsVisuals;
     private List<PCComponentVisuals> GPUVisuals;
     private List<PCComponentVisuals> CablesVisuals;
+    
+    private bool ventilatorsAreOn = false;
 
     private void Awake()
     {
@@ -140,11 +142,14 @@ public class PCProgressVisualsController : MonoBehaviour
     public void ShowCoolingUnit(bool active, bool holographic, bool outlined)
     {
         SetGameObjectVisuals(CoolingUnitVisuals, active,  holographic, outlined);
+        SetGameObjectVisuals(ventilatorsAreOn ? VentilatorsOnVisuals : VentilatorsOffVisuals, 
+            active, holographic, outlined);
     }
     
     public void ShowVentilatorsOff(bool active, bool holographic, bool outlined)
     {
         SetGameObjectVisuals(VentilatorsOffVisuals, active,  holographic, outlined);
+        ventilatorsAreOn = false;
         if (active)
         {
             foreach (var frontVent in FrontVentilatorsVisuals)
@@ -157,6 +162,7 @@ public class PCProgressVisualsController : MonoBehaviour
     public void ShowVentilatorsOn(bool active, bool holographic, bool outlined)
     {
         SetGameObjectVisuals(VentilatorsOnVisuals, active,  holographic, outlined);
+        ventilatorsAreOn = true;
         if (active)
         {
             foreach (var frontVent in FrontVentilatorsVisuals)

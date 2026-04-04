@@ -81,8 +81,7 @@ public class SkillNodeBtn : MonoBehaviour
     public void SetOutLine(bool outlined)
     {
         //TODO BUG WITH OUTLINE, outlining other components and throwing errors to normals, all fbx were check to read/write true
-        // if (_node._component == PCComponent.None) return;
-        // Debug.Log("setting outline to: " + outlined + " --- " + _node._component);
-        // _progressVisualsController.ComponentVisibility(_node._component, visible, hologram, outlined);
+        if (_node._component == PCComponent.None) return;
+        _progressVisualsController.ComponentVisibility(_node._component, visible, hologram, outlined);
     }
 }
