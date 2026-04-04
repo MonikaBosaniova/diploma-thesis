@@ -7,7 +7,8 @@ using UnityEngine.UIElements;
 public class QuizData : ScriptableObject
 {
     public VisualTreeAsset  AnswerTemplate;
-    [Header("First answer is the correct one.")]
+    [Header("[WARNING] The first answer is the correct one.")]
+    [Space(5f)]
     public List<QuizQuestion> quizQuestions;
 }
 
