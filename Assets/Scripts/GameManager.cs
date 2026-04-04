@@ -15,7 +15,6 @@ namespace GameStateMachine
         [SerializeField] protected GameObject tutorialParent;
         [SerializeField] protected GameObject minigameParent;
         [SerializeField] protected GameObject quizParent;
-        [SerializeField] protected GameObject reviewParent;
         [SerializeField] protected GameObject nextButton;
         [SerializeField] protected GameObject backButton;
 
@@ -65,9 +64,6 @@ namespace GameStateMachine
             tutorialState.OnStateComplete += () => { ChangeState(minigameState); };
             minigameState.OnStateStart += () =>
             {
-                //TODO this hides before quiz, if the player run the game more times
-                tutorialState.transform.GetChild(0).gameObject.SetActive(false);
-                
                 if (nextButton != null)
                     nextButton.SetActive(false);
                 if (backButton != null)

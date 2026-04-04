@@ -1708,7 +1708,6 @@ MonoBehaviour:
   tutorialParent: {fileID: 1415162210}
   minigameParent: {fileID: 1313237317}
   quizParent: {fileID: 255719259}
-  reviewParent: {fileID: 0}
   nextButton: {fileID: 631463622}
   backButton: {fileID: 631463623}
   nodeID: 
@@ -3811,7 +3810,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 361455809865397090, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
       propertyPath: orthographic size
-      value: 5.4
+      value: 6.4575834
       objectReference: {fileID: 0}
     - target: {fileID: 1939169142589381404, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6888,7 +6887,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 574367155}
-  - {fileID: 1374468056}
   m_Father: {fileID: 262643145}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1323401380
@@ -7390,76 +7388,6 @@ MonoBehaviour:
           m_WaitForCompletion: 0
           m_LocalVariables: []
         m_PropertyPath: m_text
---- !u!1001 &1374468055
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1313237318}
-    m_Modifications:
-    - target: {fileID: 1877240883464493163, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_Name
-      value: Opinion
-      objectReference: {fileID: 0}
-    - target: {fileID: 1877240883464493163, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7626122130450094139, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
---- !u!4 &1374468056 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7939598414996697703, guid: e685300f3e1be134384c68c35ef6caaa, type: 3}
-  m_PrefabInstance: {fileID: 1374468055}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1375636946 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2566683911308541566, guid: 6c6aea88b16043843aead38754f01750, type: 3}
@@ -7646,7 +7574,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1497019971}
   - {fileID: 793182332}
   - {fileID: 262337379}
   - {fileID: 1364547465}
@@ -8252,90 +8179,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4448404001265157674, guid: 7d2e6f4783b96fe43a2e89fa16fbeeea, type: 3}
   m_PrefabInstance: {fileID: 1484667038}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1497019970
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1497019971}
-  - component: {fileID: 1497019974}
-  - component: {fileID: 1497019973}
-  - component: {fileID: 1497019972}
-  m_Layer: 0
-  m_Name: Quiz
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1497019971
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497019970}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1415162211}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1497019972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497019970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d93e6ebe8111c804087fbfd5ff2dba15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <IsPrepared>k__BackingField: 0
-  backButton: {fileID: 631463621}
-  showCorrectAnswer: 0
-  quizBefore: 1
-  showResults: 0
-  quizData: {fileID: 11400000, guid: 98ce38abcd196844c84eb9fc80c807cd, type: 2}
-  _successRate: 0
---- !u!114 &1497019973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497019970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PanelSettings: {fileID: 11400000, guid: e2f33b43266c3b844897dd75f36a0e6a, type: 2}
-  m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 7f62200ec51b39b4cbd8f02c5c4f4cdf, type: 3}
-  m_SortingOrder: 0
-  m_WorldSpaceSizeMode: 1
-  m_WorldSpaceWidth: 1920
-  m_WorldSpaceHeight: 1080
---- !u!114 &1497019974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497019970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9ff85f97a8d6574ca2339c0745aa8da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1516957127
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -111,8 +111,10 @@ public class PCComponentVisuals : MonoBehaviour
     {
         if (_outline == null)
         {
+            Debug.LogWarning("PCComponentVisuals: No outline set. " + name);
             return;
         }
+        
         _outline.enabled = isOutlined;
     }
 

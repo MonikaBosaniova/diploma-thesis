@@ -14,9 +14,10 @@ public class TutorialController : MonoBehaviour
 
     private void Start()
     {
+        nextTutorialButton.SetActive(true);
         CurrentLevelController = transform.GetChild(0).gameObject.GetComponent<LevelController>();
         CurrentLevelController.OnLevelEnded += HandleGoNext;
-        //CurrentLevelController.OnGoBackInTutorial += () => UpdateCurrentLevelController(-1);
+        CurrentLevelController.OnGoBackInTutorial += () => UpdateCurrentLevelController(0);
     }
 
     private void UpdateCurrentLevelController(int way)
@@ -24,17 +25,23 @@ public class TutorialController : MonoBehaviour
         CurrentLevelController.OnLevelEnded -= HandleGoNext;
         CurrentLevelController.OnGoBackInTutorial -= HandleGoBack;
         
-        if (CurrentLevelController.transform.GetSiblingIndex() + way >= transform.childCount ||
-            CurrentLevelController.transform.GetSiblingIndex() + way < 0) return;
+        Transform CurrentLevelControllerTransform = CurrentLevelController.transform;
+        int CurrentLevelControllerIndex = CurrentLevelControllerTransform.GetSiblingIndex();
         
-        CurrentLevelController =  transform.GetChild(CurrentLevelController.transform.GetSiblingIndex() + way).gameObject
+        if (CurrentLevelControllerIndex + way >= transform.childCount ||
+            CurrentLevelControllerIndex + way < 0) return;
+        
+        CurrentLevelController =  transform.GetChild(CurrentLevelControllerIndex + way).gameObject
             .GetComponent<LevelController>();
+        
+        CurrentLevelControllerTransform = CurrentLevelController.transform;
+        CurrentLevelControllerIndex = CurrentLevelControllerTransform.GetSiblingIndex();
+        
         CurrentLevelController.OnLevelEnded += HandleGoNext;
         CurrentLevelController.OnGoBackInTutorial += HandleGoBack;
         
-        Debug.Log("TUTORIAL: " + CurrentLevelController.transform.GetSiblingIndex());
-        nextTutorialButton.SetActive(CurrentLevelController.transform.GetSiblingIndex() != 0);
-        backTutorialButton.SetActive(CurrentLevelController.transform.GetSiblingIndex() > 1);
+        Debug.Log("TUTORIAL: " + CurrentLevelControllerIndex);
+        backTutorialButton.SetActive(CurrentLevelControllerIndex > 0);
     }
 
     public void InvokeOnLeveStarted()
@@ -53,18 +60,14 @@ public class TutorialController : MonoBehaviour
 
     public void ContinueToNextLevel()
     {
-        // nextTutorialButton.SetActive(CurrentLevelController.transform.GetSiblingIndex() != 0);
-        // backTutorialButton.SetActive(CurrentLevelController.transform.GetSiblingIndex() > 1);
-        
+        backTutorialButton.SetActive(CurrentLevelController.transform.GetSiblingIndex() != 0);
 
         CurrentLevelController.InvokeOnLevelEnded();
     }
 
     public void GoBackInLevels()
     {
-        //TODO 1- harcoded, because the start quiz is in 0 position
-        // backTutorialButton.SetActive(CurrentLevelController.transform.GetSiblingIndex() > 1);
-        // nextTutorialButton.SetActive(CurrentLevelController.transform.GetSiblingIndex() != 0);
+        backTutorialButton.SetActive(CurrentLevelController.transform.GetSiblingIndex() > 0);
 
         CurrentLevelController.InvokeGoBackInTutorial();
     }
