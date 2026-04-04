@@ -2,11 +2,11 @@
     <Style src="project://database/Assets/UI/Styles/Panels/Quiz/QuizStyle.uss?fileID=7433441132597879392&amp;guid=1b715b0e49026534eada70e755eefa7d&amp;type=3#QuizStyle" />
     <engine:VisualElement picking-mode="Ignore" class="background" style="flex-grow: 1; justify-content: center;">
         <engine:VisualElement picking-mode="Ignore" style="flex-grow: 1; flex-direction: row;">
-            <engine:VisualElement name="Avatar" picking-mode="Ignore" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Graphics/emotes/thinking_2.png?fileID=2800000&amp;guid=dc1059a7d77248d4cb29e03c32da4639&amp;type=3#thinking_2&quot;); flex-shrink: 0; -unity-background-scale-mode: scale-to-fit; width: 40%;" />
-            <engine:VisualElement name="QuizParent" style="flex-grow: 0; width: 60%; align-self: center; display: flex; flex-shrink: 0; margin-left: -40px; height: 100%; justify-content: center; align-items: stretch;">
+            <engine:VisualElement name="Avatar" picking-mode="Ignore" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Graphics/emotes/thinking_2.png?fileID=2800000&amp;guid=dc1059a7d77248d4cb29e03c32da4639&amp;type=3#thinking_2&quot;); flex-shrink: 0; -unity-background-scale-mode: scale-to-fit; max-width: 40%; min-width: 0%; width: 40%;" />
+            <engine:VisualElement name="QuizParent" style="flex-grow: 1; width: 60%; align-self: center; display: flex; flex-shrink: 0; margin-left: -40px; height: 100%; justify-content: center; align-items: stretch; max-width: 100%; min-width: 60%;">
                 <engine:VisualElement style="flex-shrink: 0; align-content: stretch; height: 25%;">
                     <engine:VisualElement class="questionBox" style="flex-grow: 1; padding-top: 20px; padding-bottom: 20px;">
-                        <engine:Label name="Question" class="quizLabels" style="-unity-font-style: bold; font-size: 50px; color: rgb(255, 255, 255); -unity-text-outline-width: 1px; text-shadow: 2px 2px 0 rgb(65, 65, 65); -unity-text-outline-color: rgb(106, 106, 106);" />
+                        <engine:Label name="Question" class="quizLabels" style="-unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-outline-width: 1px; text-shadow: 2px 2px 0 rgb(65, 65, 65); -unity-text-outline-color: rgb(106, 106, 106);" />
                     </engine:VisualElement>
                 </engine:VisualElement>
                 <engine:VisualElement name="Answers" style="border-top-width: 30px; height: 50%;" />

@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1355688670}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.855814
+  m_Size: 0.85581404
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3589,7 +3589,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 0
-  orthographic size: 5.4
+  orthographic size: 6.072522
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7967,7 +7967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isVisible: 0
   _isHologram: 0
-  _isOutlined: 1
+  _isOutlined: 0
   _defaultMaterial: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
   _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
   _useSharedMaterials: 0
