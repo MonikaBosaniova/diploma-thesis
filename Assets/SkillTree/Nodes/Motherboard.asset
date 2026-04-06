@@ -17,7 +17,7 @@ MonoBehaviour:
   _sceneName: None
   _component: 2
   _makeUnlockedAtStart: 0
-  _forceLockedVisuals: 1
+  _forceLockedWithFullyTexturedVisuals: 1
   _prerequisiteIds:
   - d762278a-9a71-4055-8b43-3d825a0961f7
   - 246e950c-2c4c-45f9-8cee-d7bd705c0c46

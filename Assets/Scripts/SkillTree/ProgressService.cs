@@ -67,7 +67,7 @@ public class ProgressService : MonoBehaviour
     public bool IsLockedOnlyVisually(string nodeId)
     {
         var node = _skillTree.Nodes.FirstOrDefault(n => n.Id == nodeId);
-        return !node || node._forceLockedVisuals;
+        return !node || node._forceLockedWithFullyTexturedVisuals;
     }
 
     public IEnumerable<SkillNodeDef> GetUnlockedNodes() =>

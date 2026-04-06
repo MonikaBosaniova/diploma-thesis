@@ -17,7 +17,7 @@ public class SkillNodeDef : ScriptableObject
     [SerializeField] private string _sceneName; // name from Build Settings
     [SerializeField] internal PCComponent _component;
     [SerializeField] internal bool _makeUnlockedAtStart = false;
-    [SerializeField] internal bool _forceLockedVisuals = false;
+    [SerializeField] internal bool _forceLockedWithFullyTexturedVisuals = false;
     [SerializeField] private List<string> _prerequisiteIds = new();
 
     public string Id => _id;
