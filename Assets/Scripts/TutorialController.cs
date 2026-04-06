@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TutorialController : MonoBehaviour
@@ -8,40 +7,45 @@ public class TutorialController : MonoBehaviour
     public GameObject nextTutorialButton;
     protected internal bool IsCompleted = false;
     
-    protected LevelController CurrentLevelController;
+    private LevelController _currentLevelController;
     protected event Action OnTutorialStarted;
     protected internal event Action OnTutorialEnded;
 
     private void Start()
     {
         nextTutorialButton.SetActive(true);
-        CurrentLevelController = transform.GetChild(0).gameObject.GetComponent<LevelController>();
-        CurrentLevelController.OnLevelEnded += HandleGoNext;
-        CurrentLevelController.OnGoBackInTutorial += () => UpdateCurrentLevelController(0);
+        _currentLevelController = transform.GetChild(0).gameObject.GetComponent<LevelController>();
+        _currentLevelController.OnLevelEnded += HandleGoNext;
+        _currentLevelController.OnGoBackInTutorial += () => UpdateCurrentLevelController(0);
     }
-
+    
+    /// <summary>
+    /// Updates actions to new LevelController, to check next and back actions
+    /// </summary>
+    /// <param name="way">1 = go next, -1 = go back</param>
     private void UpdateCurrentLevelController(int way)
     {
-        CurrentLevelController.OnLevelEnded -= HandleGoNext;
-        CurrentLevelController.OnGoBackInTutorial -= HandleGoBack;
+        _currentLevelController.OnLevelEnded -= HandleGoNext;
+        _currentLevelController.OnGoBackInTutorial -= HandleGoBack;
         
-        Transform CurrentLevelControllerTransform = CurrentLevelController.transform;
-        int CurrentLevelControllerIndex = CurrentLevelControllerTransform.GetSiblingIndex();
+        Transform currentLevelControllerTransform = _currentLevelController.transform;
+        int currentLevelControllerIndex = currentLevelControllerTransform.GetSiblingIndex();
         
-        if (CurrentLevelControllerIndex + way >= transform.childCount ||
-            CurrentLevelControllerIndex + way < 0) return;
+        if (currentLevelControllerIndex + way >= transform.childCount ||
+            currentLevelControllerIndex + way < 0) return;
         
-        CurrentLevelController =  transform.GetChild(CurrentLevelControllerIndex + way).gameObject
+        _currentLevelController =  transform.GetChild(currentLevelControllerIndex + way).gameObject
             .GetComponent<LevelController>();
         
-        CurrentLevelControllerTransform = CurrentLevelController.transform;
-        CurrentLevelControllerIndex = CurrentLevelControllerTransform.GetSiblingIndex();
+        currentLevelControllerTransform = _currentLevelController.transform;
+        currentLevelControllerIndex = currentLevelControllerTransform.GetSiblingIndex();
         
-        CurrentLevelController.OnLevelEnded += HandleGoNext;
-        CurrentLevelController.OnGoBackInTutorial += HandleGoBack;
+        _currentLevelController.OnLevelEnded += HandleGoNext;
+        _currentLevelController.OnGoBackInTutorial += HandleGoBack;
         
-        Debug.Log("TUTORIAL: " + CurrentLevelControllerIndex);
-        backTutorialButton.SetActive(CurrentLevelControllerIndex > 0);
+        backTutorialButton.SetActive(currentLevelControllerIndex > 0);
+        
+        Debug.Log("TUTORIAL: " + currentLevelControllerIndex);
     }
 
     public void InvokeOnLeveStarted()
@@ -57,19 +61,25 @@ public class TutorialController : MonoBehaviour
         Debug.Log("OnTutorialEnded");
         OnTutorialEnded?.Invoke();
     }
-
+    
+    /// <summary>
+    /// Called by next button, to move forward in presentation
+    /// </summary>
     public void ContinueToNextLevel()
     {
-        backTutorialButton.SetActive(CurrentLevelController.transform.GetSiblingIndex() != 0);
+        backTutorialButton.SetActive(_currentLevelController.transform.GetSiblingIndex() != 0);
 
-        CurrentLevelController.InvokeOnLevelEnded();
+        _currentLevelController.InvokeOnLevelEnded();
     }
-
+    
+    /// <summary>
+    /// Called by back button, to move backwards in presentation
+    /// </summary>
     public void GoBackInLevels()
     {
-        backTutorialButton.SetActive(CurrentLevelController.transform.GetSiblingIndex() > 0);
+        backTutorialButton.SetActive(_currentLevelController.transform.GetSiblingIndex() > 0);
 
-        CurrentLevelController.InvokeGoBackInTutorial();
+        _currentLevelController.InvokeGoBackInTutorial();
     }
     
     private void HandleGoNext() => UpdateCurrentLevelController(1);

@@ -1,21 +1,19 @@
-using GameStateMachine;
 using UI;
 using UnityEngine;
 
+/// <summary>
+/// LevelController used to measure the pre-test in schools
+/// Not used in the game now.
+/// </summary>
 public class StartQuizLevelController : LevelController
 {
-    internal float startQuizTime;
-    internal float durationQuizTime;
+    private float _startQuizTime;
+    private float _durationQuizTime;
     
     public override void Init()
     {
-        startQuizTime = Time.time;
+        _startQuizTime = Time.time;
         gameObject.SetActive(true);
-        
-        // for (int i = 0; i < transform.childCount; i++)
-        // {
-        //     transform.GetChild(i).gameObject.SetActive(true);
-        // }
         
         base.Init();
         
@@ -25,23 +23,15 @@ public class StartQuizLevelController : LevelController
     
     public override void Close()
     {
-        // for (int i = 0; i < transform.childCount; i++)
-        // {
-        //     transform.GetChild(i).gameObject.SetActive(false);
-        // }
-        
         //LOGGING BEFORE QUIZ TIME
-        durationQuizTime = Time.time - startQuizTime;
-        transform.parent.gameObject.GetComponent<TutorialState>().quizBeforeTime = durationQuizTime;
+        _durationQuizTime = Time.time - _startQuizTime;
         LogProgress("QUIZBefore");
         gameObject.SetActive(false);
     }
     
-    protected void LogProgress(string state)
+    private void LogProgress(string state)
     {
         if(LoggerService.Instance != null)
-            LoggerService.Instance.LogProgressInLevel(state, durationQuizTime);
+            LoggerService.Instance.LogProgressInLevel(state, _durationQuizTime);
     }
-    
-    
 }

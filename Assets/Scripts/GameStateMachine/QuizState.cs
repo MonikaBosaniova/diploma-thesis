@@ -14,7 +14,7 @@ namespace GameStateMachine
         {
             base.Init(o);
             QuizParent = o;
-            stateObject = o;
+            StateObject = o;
             _quizUIController = QuizParent.GetComponent<QuizUIController>();
             QuizData = _quizUIController.quizData;
         }
@@ -29,7 +29,7 @@ namespace GameStateMachine
         {
             if (_quizUIController._successRate >= SuccessRateForStar)
             {
-                manager.AddStar();
+                Manager.AddStar();
             }
             base.Exit();
         }

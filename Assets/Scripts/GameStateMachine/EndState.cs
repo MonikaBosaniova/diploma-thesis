@@ -9,7 +9,7 @@ namespace GameStateMachine
         public override void Init(GameObject o)
         {
             base.Init(o);
-            stateObject = o;
+            StateObject = o;
         }
 
         public override void Enter()

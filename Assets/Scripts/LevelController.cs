@@ -52,7 +52,7 @@ public class LevelController : MonoBehaviour
         OnGoBackInTutorial?.Invoke();
     }  
     
-    protected void ShowEndDialogueSequence()
+    private void ShowEndDialogueSequence()
     {
         IsCompleted = true;
         EndDialogueSequenceController es = transform.GetComponent<EndDialogueSequenceController>();
@@ -62,7 +62,7 @@ public class LevelController : MonoBehaviour
         }
     }
 
-    protected void HideEndDialogueSequence()
+    private void HideEndDialogueSequence()
     {
         IsCompleted = true;
         EndDialogueSequenceController es = transform.GetComponent<EndDialogueSequenceController>();

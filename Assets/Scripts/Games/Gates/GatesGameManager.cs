@@ -1,9 +1,6 @@
-using System.Collections.Generic;
-using System.Linq;
 using GameStateMachine;
-using UnityEngine;
 
-namespace Gates
+namespace Games.Gates
 {
     public class GatesGameManager : GameManager
     {

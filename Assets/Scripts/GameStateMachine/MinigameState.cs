@@ -14,7 +14,7 @@ namespace GameStateMachine
         {
             base.Init(o);
             LevelsParent = o;
-            stateObject = o;
+            StateObject = o;
             Levels = LevelsParent.GetComponentsInChildren<LevelController>().ToList();
         }
         
@@ -30,7 +30,7 @@ namespace GameStateMachine
         
         public override void Exit()
         {
-            manager.AddStar();
+            Manager.AddStar();
             base.Exit();
         }
 
@@ -41,7 +41,7 @@ namespace GameStateMachine
         protected void ContinueToNextLevel()
         {
             //ONLY FOR OPINION MENU
-            if (manager.gamePlayed && _currentLevelIndex == Levels.Count - 2)
+            if (Manager.gamePlayed && _currentLevelIndex == Levels.Count - 2)
             {
                 Levels.ElementAt(_currentLevelIndex).Close();
                 _currentLevelIndex = 0;

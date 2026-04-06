@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Games.HddSsd
+namespace Games.Hdd_Ssd
 {
     public class SsdLevelController : LevelController
     {

@@ -4,7 +4,7 @@ using DG.Tweening;
 using DialogueSystem;
 using UnityEngine;
 
-namespace Games.HddSsd
+namespace Games.Hdd_Ssd
 {
     public class HddLevelController : LevelController
     {
@@ -12,7 +12,6 @@ namespace Games.HddSsd
         public GameObject bigDisk;
         public GameObject topCover;
         
-        HddSsdGameManager hddGameManager;
         private List<DiskController> diskControllers;
 
         private DialogueSequenceController _dialogueSequenceController;
@@ -27,7 +26,6 @@ namespace Games.HddSsd
         {
             base.Init();
             
-            hddGameManager = FindFirstObjectByType<HddSsdGameManager>();
             _dialogueSequenceController = transform.GetComponent<DialogueSequenceController>();
             
             for (int i = 0; i < transform.childCount; i++)
