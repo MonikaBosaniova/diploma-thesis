@@ -13,7 +13,6 @@ public class TutorialController : MonoBehaviour
 
     private void Start()
     {
-        nextTutorialButton.SetActive(true);
         _currentLevelController = transform.GetChild(0).gameObject.GetComponent<LevelController>();
         _currentLevelController.OnLevelEnded += HandleGoNext;
         _currentLevelController.OnGoBackInTutorial += () => UpdateCurrentLevelController(0);
@@ -44,6 +43,7 @@ public class TutorialController : MonoBehaviour
         _currentLevelController.OnGoBackInTutorial += HandleGoBack;
         
         backTutorialButton.SetActive(currentLevelControllerIndex > 0);
+        nextTutorialButton.SetActive(true);
         
         Debug.Log("TUTORIAL: " + currentLevelControllerIndex);
     }

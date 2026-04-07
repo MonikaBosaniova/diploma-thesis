@@ -71,6 +71,11 @@ namespace GameStateMachine
             endState.Init(gameObject);
             
             //Creating the state machine Tutorial -> MiniGame -> Quiz -> End 
+            tutorialState.OnStateStart += () =>
+            {
+                if(nextButton != null)
+                    nextButton.SetActive(true);
+            };
             tutorialState.OnStateComplete += () => { ChangeState(miniGameState); };
             miniGameState.OnStateStart += () =>
             {
@@ -126,25 +131,25 @@ namespace GameStateMachine
         /// Helping method to show all children of all LevelControllers in the scene
         /// Called in Context menu in Editor
         /// </summary>
-        // [ContextMenu("Show All Levels")]
-        // public void ShowAllLevels()
-        // {
-        //     List<LevelController> levels = new  List<LevelController>();
-        //     var tutorialLevels = tutorialParent.GetComponentsInChildren<LevelController>().ToList();
-        //     var  minigameLevels = minigameParent.GetComponentsInChildren<LevelController>().ToList();
-        //     
-        //     levels.AddRange(tutorialLevels);
-        //     levels.AddRange(minigameLevels);
-        //
-        //     foreach (var level in levels)
-        //     {
-        //         for (int i = 0; i < level.transform.childCount; i++)
-        //         {
-        //             var child = level.transform.GetChild(i);
-        //             child.gameObject.SetActive(true);
-        //         }
-        //     }
-        // }
+        [ContextMenu("Show All Levels")]
+        public void ShowAllLevels()
+        {
+            List<LevelController> levels = new  List<LevelController>();
+            var tutorialLevels = tutorialParent.GetComponentsInChildren<LevelController>().ToList();
+            var  minigameLevels = minigameParent.GetComponentsInChildren<LevelController>().ToList();
+            
+            levels.AddRange(tutorialLevels);
+            levels.AddRange(minigameLevels);
+        
+            foreach (var level in levels)
+            {
+                for (int i = 0; i < level.transform.childCount; i++)
+                {
+                    var child = level.transform.GetChild(i);
+                    child.gameObject.SetActive(true);
+                }
+            }
+        }
     }
 }
 
