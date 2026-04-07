@@ -9,10 +9,18 @@ public class LocalizationManager : MonoBehaviour
     public Image flagCZ;
     public Image flagSK;
     public Image flagEN;
+
+    private bool _languageSet = false;
     
     private const string PLAYER_PREFS_KEY = "Language";
     void Start()
     {
+    }
+
+    void LateUpdate()
+    {
+        if (_languageSet) return;
+        
         string language = PlayerPrefs.GetString(PLAYER_PREFS_KEY, "cs-CZ");
         switch (language)
         {
@@ -20,6 +28,7 @@ public class LocalizationManager : MonoBehaviour
             case "en-US": SetLanguageEN(); break;
             case "cs-CZ":  default: SetLanguageCZ(); break;
         }
+        _languageSet = true;
     }
     
     public void SetLanguageCZ()
