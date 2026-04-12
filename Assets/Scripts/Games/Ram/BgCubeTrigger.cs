@@ -1,48 +1,49 @@
-using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class BgCubeTrigger : MonoBehaviour
 {
     [Header("Materials")] 
     [SerializeField] internal bool highlightingEnabled = true;
-    [SerializeField] Material OnMaterial;
-    [SerializeField] Material OffMaterial;
-    [SerializeField] Material AlreadySnappedMaterial;
+    [FormerlySerializedAs("OnMaterial")] [SerializeField] private Material onMaterial;
+    [FormerlySerializedAs("OffMaterial")] [SerializeField] private Material offMaterial;
+    [FormerlySerializedAs("AlreadySnappedMaterial")] [SerializeField] private Material alreadySnappedMaterial;
 
+    [FormerlySerializedAs("Snapped")]
     [Header ("---DEBUG---")]
-    [SerializeField] bool Snapped;
-    MeshRenderer meshRenderer;
-    DraggableObject draggableObject;
+    [SerializeField] private bool snapped;
+    private MeshRenderer _meshRenderer;
+    private DraggableObject _draggableObject;
 
     private void Start()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
+        _meshRenderer = GetComponent<MeshRenderer>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         other.transform.parent.TryGetComponent<ShapeController>(out var shapeController);
-        other.transform.parent.TryGetComponent(out draggableObject);
-        if (shapeController == null || draggableObject == null) return;
+        other.transform.parent.TryGetComponent(out _draggableObject);
+        if (shapeController == null || _draggableObject == null) return;
         
-        if (draggableObject.dragging)
+        if (_draggableObject.dragging)
         {
-            if (!Snapped)
+            if (!snapped)
             {
                 other.transform.parent.gameObject.GetComponent<ShapeController>().AddBgTrigger(this);
                 if(highlightingEnabled)
-                    meshRenderer.material = OnMaterial;
+                    _meshRenderer.material = onMaterial;
             }
             else
             {
                 if(highlightingEnabled)
-                    meshRenderer.material = AlreadySnappedMaterial;
+                    _meshRenderer.material = alreadySnappedMaterial;
             }
         }
         else
         {
             if(highlightingEnabled)
-                meshRenderer.material = OffMaterial;
+                _meshRenderer.material = offMaterial;
         }
     }
 
@@ -53,25 +54,36 @@ public class BgCubeTrigger : MonoBehaviour
         {
             other.transform.parent.gameObject.GetComponent<ShapeController>().RemoveBgTrigger(this);
             if(highlightingEnabled)
-                meshRenderer.material = OffMaterial;
+                _meshRenderer.material = offMaterial;
         }
     }
-
+    
+    /// <summary>
+    /// Sets if the trigger has the snapped cube "inside"
+    /// </summary>
+    /// <param name="value"></param>
     public void SetSnapped(bool value)
     {
-        Snapped = value;
+        snapped = value;
     }
-
+    
+    /// <summary>
+    /// Sets offMaterial
+    /// </summary>
     public void ClearColoring()
     {
         if(highlightingEnabled)
-            meshRenderer.material = OffMaterial;
+            _meshRenderer.material = offMaterial;
     }
-
+    
+    /// <summary>
+    /// Sets highlighting material depended on input value
+    /// </summary>
+    /// <param name="value">TRUE -> onMaterial, FALSE -> offMaterial</param>
     public void SetHighlight(bool value)
     {
         if (highlightingEnabled)
-            meshRenderer.material = value ? OnMaterial : OffMaterial;
+            _meshRenderer.material = value ? onMaterial : offMaterial;
     }
     
 }

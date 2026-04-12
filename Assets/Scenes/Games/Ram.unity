@@ -1702,7 +1702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4113c8143cfb8843aa7153182709ffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentState: {fileID: 0}
+  currentState: {fileID: 0}
   skipTutorial: 0
   gamePlayed: 0
   tutorialParent: {fileID: 1415162210}
@@ -3675,6 +3675,7 @@ GameObject:
   - component: {fileID: 574367155}
   - component: {fileID: 574367156}
   - component: {fileID: 574367157}
+  - component: {fileID: 574367158}
   m_Layer: 0
   m_Name: 01
   m_TagString: Untagged
@@ -3737,6 +3738,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueSequence: {fileID: 11400000, guid: 923924535bbfc144ea100862ef28fd48, type: 2}
+  afterMoreDialogueSequences: []
+--- !u!114 &574367158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574367154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc6d1e30aa2d2fe40976b33e62048043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueSequence: {fileID: 11400000, guid: 9a3eb50050d2ad144b3bdcb111036c63, type: 2}
   afterMoreDialogueSequences: []
 --- !u!1001 &577827603
 PrefabInstance:
@@ -3808,10 +3823,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 361455809865397090, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
-      propertyPath: orthographic size
-      value: 6.4575834
-      objectReference: {fileID: 0}
     - target: {fileID: 1939169142589381404, guid: ca0e7bc37667ffd41972373a3295647b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

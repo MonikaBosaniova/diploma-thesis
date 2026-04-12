@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using Games.Cooling;
 using UnityEngine;
 using UnityEngine.UI;
@@ -202,10 +199,5 @@ namespace Games.Ram
         {
             StartCoroutine(WaitToShowCompleteLevel());
         }
-
-        // private float MakeSlidersToMoveRandomly(float sliderCounter, Slider slider)
-        // {
-        //     
-        // }
     }
 }

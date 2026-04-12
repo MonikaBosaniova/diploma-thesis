@@ -24,7 +24,7 @@ namespace Games.Ram
         [SerializeField] private GameObject disabledGC;
         
         private int numberToGenerateAddress = 3;
-        private int numberOfWantedAddresses = 5;
+        private int numberOfWantedAddresses = 3;
         RamGameManager ramGameManager;
         private List<SnappedAddressCubieController> _allSnappedCubies = new List<SnappedAddressCubieController>();
         private bool generateNewAddress = false;

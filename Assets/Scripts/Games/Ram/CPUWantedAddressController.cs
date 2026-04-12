@@ -28,7 +28,7 @@ namespace Games.Ram
         private RamLevelController _ramLevelController;
         private BgCubeTrigger _bgCubeTrigger;
         private SnappedAddressCubieController _snappedAddressCubieController;
-        internal int numberOfWantedAddresses = 5;        
+        internal int numberOfWantedAddresses = 3;        
 
         private void Start()
         {
@@ -40,7 +40,6 @@ namespace Games.Ram
         {
             //List<Tuple<int,int>> allPossibleAddresses = GetAllAddresses();
             if (allPossibleAddresses.Count == 0) return;
-            if(numberOfWantedAddresses == 0) _ramLevelController.CallFinishState();
             
             _bgCubeTrigger.highlightingEnabled = true;
             generateNewAddress = false;
@@ -121,6 +120,7 @@ namespace Games.Ram
                 _snappedAddressCubieController.RemoveCPUPoint();
                 _snappedAddressCubieController.Snap();
                 correctAnswer.SetActive(false);
+                if(numberOfWantedAddresses == 0) _ramLevelController.CallFinishState();
             }
             else
             {

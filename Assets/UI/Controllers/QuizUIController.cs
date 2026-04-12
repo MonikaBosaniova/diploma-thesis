@@ -5,7 +5,6 @@ using System.Linq;
 using GameStateMachine;
 using UnityEngine;
 using UnityEngine.Localization;
-using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 namespace UI
@@ -30,27 +29,16 @@ namespace UI
             base.Initialize();
         }
 
-        // public void HideDialogue()
-        // {
-        //     dialogueSequence = null;
-        //     DialogueLabel.text = "";
-        //     _currentIndex = 0;
-        //     gameObject.SetActive(false);
-        // }
-
         protected override void Bind()
         {
-            //Debug.Log("Quiz bind");
             _indexOfQuizQuestion = 0;
             ShowAndBindCurrentQuizQuestion();
             Close.clicked += ReturnToMenu;
-            //DialogueContainer.RegisterCallback<ClickEvent>(NextLine);
         }
 
 
         private void ShowResultOfQuestion(bool isCorrect, int hierarchyIndexOfButton, int answerIndex, int correctAnswerIndex)
         {
-            //Debug.Log(AnswersParent.childCount + " children...");
             var answerButton = AnswersParent.ElementAt(hierarchyIndexOfButton).Q<Button>();
             var  correctButton = AnswersParent.ElementAt(correctAnswerIndex).Q<Button>();
             
@@ -88,8 +76,6 @@ namespace UI
 
         private void IncorrectAnswerWasClicked(int answerIndex)
         {
-            //TODO
-            //show wrong answer prettier
             LogQuizAnswer(false, answerIndex);
         }
 
@@ -115,7 +101,7 @@ namespace UI
             //Map current question
             _currentQuizQuestion = quizData.quizQuestions.ElementAt(_indexOfQuizQuestion);
             var localizedStringQuestion = _currentQuizQuestion.question;
-            localizedStringQuestion.StringChanged += UpdateText;//(te(value) => Question.text = value);
+            localizedStringQuestion.StringChanged += UpdateText;
             localizedStringQuestion.RefreshString();
             
             List<LocalizedString> randomizedAnswers = _currentQuizQuestion.answers.OrderBy(x => Guid.NewGuid()).ToList();

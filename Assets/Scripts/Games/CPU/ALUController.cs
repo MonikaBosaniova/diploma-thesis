@@ -12,7 +12,7 @@ namespace Games.CPU
         [SerializeField] private RegTrigger reg2_in;
         [SerializeField] private RegTrigger reg3_out;
         
-        [Header("Dispalys")]
+        [Header("Displays")]
         [SerializeField] private GameObject display1_10;
         [SerializeField] private GameObject display1_1;
         [SerializeField] private GameObject display2_10;
@@ -36,7 +36,11 @@ namespace Games.CPU
                 CleanDisplay(1);
             }
         }
-
+        
+        /// <summary>
+        /// ALU plus method
+        /// values from R1 + R2 => result instantiated to R3
+        /// </summary>
         public void Plus()
         {
             var value = 0f;
@@ -46,9 +50,12 @@ namespace Games.CPU
                 value += reg2_in.transform.GetChild(0).GetComponent<RegData>().value;
             
             InstantiateNewOutData(value, RegDataType.PlusRes);
-            Debug.Log("PLUS: " + value);
         }
-
+        
+        /// <summary>
+        /// ALU minus method
+        /// values from R1 - R2 => result instantiated to R3
+        /// </summary>
         public void Minus()
         {
             var value = 0f;
@@ -58,9 +65,12 @@ namespace Games.CPU
                 value -= reg2_in.transform.GetChild(0).GetComponent<RegData>().value;
             
             InstantiateNewOutData(value, RegDataType.MinusRes);
-            Debug.Log("Minus: " + value);
         }
 
+        /// <summary>
+        /// ALU multiply method
+        /// values from R1 * R2 => result instantiated to R3
+        /// </summary>
         public void Multiply()
         {
             var value = 1f;
@@ -72,9 +82,12 @@ namespace Games.CPU
             else value = 0f;
             
             InstantiateNewOutData(value, RegDataType.MultiplyRes);
-            Debug.Log("Multiply: " + value);
         }
-
+        
+        /// <summary>
+        /// Comparator method to check if the input value in R2 is less than 0
+        /// result instantiated to R3
+        /// </summary>
         public void LessThanZero()
         {
             var value = 0f;
@@ -89,6 +102,10 @@ namespace Games.CPU
             InstantiateNewOutData(value, RegDataType.LesserThanZeroRes);
         }
         
+        /// <summary>
+        /// Comparator method to check if the input value in R2 is bigger than 0
+        /// result instantiated to R3
+        /// </summary>
         public void BiggerThanZero()
         {
             var value = 0f;
@@ -107,7 +124,13 @@ namespace Games.CPU
             
             InstantiateNewOutData(value, RegDataType.BiggerThanZeroRes, eqValue);
         }
-
+        
+        /// <summary>
+        /// Instantiate new data as result to R3
+        /// </summary>
+        /// <param name="value"> value of new created data </param>
+        /// <param name="type"></param>
+        /// <param name="eqValue"></param>
         private void InstantiateNewOutData(float value, RegDataType type, float eqValue = 0f)
         {
             var newDataObject = Instantiate(aluResultPrefab, outputSpawn);
@@ -157,6 +180,10 @@ namespace Games.CPU
             digit01.GetChild(0).gameObject.SetActive(true);
         }
         
+        /// <summary>
+        /// Show input value in cashe on display in ALU
+        /// </summary>
+        /// <param name="display">0 -> R1, 1 -> R2</param>
         public void VisualizeDecValue(int display = 0)
         {
             Transform digit01;
@@ -203,5 +230,4 @@ namespace Games.CPU
             digit01.GetChild((int)indexOfDecDigit_1).gameObject.SetActive(true);
         }
     }
-    
 }

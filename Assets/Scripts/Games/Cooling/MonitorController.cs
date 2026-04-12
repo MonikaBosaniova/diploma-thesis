@@ -44,7 +44,5 @@ namespace Games.Cooling
             indexOfActualScenario = index;
             scenariosParent.GetChild(index).gameObject.SetActive(true);
         }
-            
     }
-    
 }
