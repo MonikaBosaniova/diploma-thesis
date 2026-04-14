@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Games.CPU
 {
+    /// <summary>
+    /// Controls the line of instruction in CPU minigame
+    /// </summary>
     public class LineController : MonoBehaviour
     {
         public InstructionData instructionData;
@@ -11,7 +14,7 @@ namespace Games.CPU
         [SerializeField] private GameObject checkMark;
         [SerializeField] private GameObject highlightObject;
         
-        private Tween scalingTween;
+        private Tween _scalingTween;
         
         private void Start()
         {
@@ -20,32 +23,38 @@ namespace Games.CPU
             SetHighlight(false);
         }
 
+        /// <summary>
+        /// Tween the scale of line
+        /// </summary>
+        /// <param name="undo">undone the instruction, if true</param>
         [ContextMenu("RemoveToDo")]
         public void ToDoRemove(bool undo = false)
         {
             if (undo)
             {
-                if(scalingTween != null && scalingTween.active) scalingTween.Kill();
+                if(_scalingTween != null && _scalingTween.active) _scalingTween.Kill();
                 
                 scalingObject.localScale = new Vector3(0f, scalingObject.localScale.y, scalingObject.localScale.z);
                 checkMark.SetActive(false);
             }
             else
             {
-                if(scalingTween != null && scalingTween.active) return;
+                if(_scalingTween != null && _scalingTween.active) return;
                 
-                scalingTween = scalingObject.DOScaleX(maxScaleX, 1.5f).OnComplete(() =>
+                _scalingTween = scalingObject.DOScaleX(maxScaleX, 1.5f).OnComplete(() =>
                 {
                     checkMark.SetActive(true);
                 });
             }
         }
-
+        
+        /// <summary>
+        /// show the background color, to visualize highlighting
+        /// </summary>
+        /// <param name="highlight"></param>
         public void SetHighlight(bool highlight)
         {
             highlightObject.SetActive(highlight);
         }
-        
-
     }
 }

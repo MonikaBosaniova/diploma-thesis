@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
@@ -11,10 +10,8 @@ namespace Games.CPU
         [SerializeField] private Transform ramPoint;
         [SerializeField] private Transform reg4;
         
-        
         public GameObject getManaLeft;
         public GameObject getManaCost;
-
 
         public void SpawnGetManaLeftData()
         {
@@ -43,7 +40,7 @@ namespace Games.CPU
                     if(reg4.childCount > 0) Destroy(reg4.GetChild(0).gameObject);
                     data.parent = reg4;
                     
-                    reg._regParent = reg4;
+                    reg.regParent = reg4;
                     draggable.draggingEnabled = true;
                 });
             });
@@ -65,5 +62,4 @@ namespace Games.CPU
             });
         }
     }
-    
 }

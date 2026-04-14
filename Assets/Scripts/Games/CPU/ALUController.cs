@@ -139,7 +139,7 @@ namespace Games.CPU
             data.value = value;
             data.eqValue = eqValue;
             data.type = type;
-            data._regParent = reg3_out.transform;
+            data.regParent = reg3_out.transform;
             
             Transform outputReg = reg3_out.transform;
             if (outputReg.childCount > 0)

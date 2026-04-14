@@ -1,6 +1,9 @@
 using DG.Tweening;
 using UnityEngine;
 
+/// <summary>
+/// Method to move the forklift cart in interactive presentation
+/// </summary>
 public class ForkLiftController : MonoBehaviour
 {
     public Transform fork;

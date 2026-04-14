@@ -62,7 +62,7 @@ namespace Games.CPU
                     meshRenderer.material = OffMaterial;
             }
 
-            collidingData._regParent = transform;
+            collidingData.regParent = transform;
         }
 
         private void OnTriggerExit(Collider other)
@@ -96,11 +96,11 @@ namespace Games.CPU
         
         internal void SnapDataToReg(RegData data)
         {
-            data.transform.position = new Vector3(data._regParent.position.x, data.transform.position.y, data._regParent.position.z);
+            data.transform.position = new Vector3(data.regParent.position.x, data.transform.position.y, data.regParent.position.z);
             
-            if(data._regParent.childCount > 0 && data._regParent.GetChild(0) != data.transform) Destroy(data._regParent.GetChild(0).gameObject);
-            data.transform.parent = data._regParent;
-            RegTrigger regTrigger = data._regParent.GetComponent<RegTrigger>();
+            if(data.regParent.childCount > 0 && data.regParent.GetChild(0) != data.transform) Destroy(data.regParent.GetChild(0).gameObject);
+            data.transform.parent = data.regParent;
+            RegTrigger regTrigger = data.regParent.GetComponent<RegTrigger>();
             regTrigger.snappedData = data;
             regTrigger.snap?.Invoke();
             regTrigger.SetHighlight(false);

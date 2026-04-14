@@ -1,53 +1,57 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace Games.CPU
 {
+    /// <summary>
+    /// Information to set about instruction behaviour
+    /// </summary>
     public class InstructionData : MonoBehaviour
     {
         public bool done;
         public bool instructionWithoutRegisters;
         public RegTrigger regTrigger;
 
-        public RegDataType NeededType;
-        public float NeededValue;
-        public float NeededValueForEq;
+        [FormerlySerializedAs("NeededType")] public RegDataType neededType;
+        [FormerlySerializedAs("NeededValue")] public float neededValue;
+        [FormerlySerializedAs("NeededValueForEq")] public float neededValueForEq;
 
-        public bool IfIamDoneAllBeforeAreDoneToo;
-        public bool IamIndependedDone;
-        public bool NeededToBeDone;
+        [FormerlySerializedAs("IfIamDoneAllBeforeAreDoneToo")] public bool ifIamDoneAllBeforeAreDoneToo;
+        [FormerlySerializedAs("IamIndependedDone")] public bool iamIndependedDone;
+        [FormerlySerializedAs("NeededToBeDone")] public bool neededToBeDone;
         
-        public UnityEvent OnDone;
-        public UnityEvent OnNotDone;
+        [FormerlySerializedAs("OnDone")] public UnityEvent onDone;
+        [FormerlySerializedAs("OnNotDone")] public UnityEvent onNotDone;
         public bool callOnDone = true;
         public bool callOnce;
-        private bool calledOnce = false;
+        private bool _calledOnce = false;
         
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            //TODO HARDCODED
-            if (NeededType == RegDataType.ManaLeft)
-                NeededValue = 12;
-            if (NeededType == RegDataType.Cost)
-                NeededValue = 10;
-            if (NeededType == RegDataType.PlusRes)
-                NeededValue = 22;
-            if (NeededType == RegDataType.MinusRes)
-                NeededValue = 2f;
-            if (NeededType == RegDataType.MultiplyRes)
-                NeededValue = 120f;
-            if (NeededType == RegDataType.BiggerThanZeroRes)
+            //HARDCODED VALUES FOR SCENARIO OF CPU GAMES
+            if (neededType == RegDataType.ManaLeft)
+                neededValue = 12;
+            if (neededType == RegDataType.Cost)
+                neededValue = 10;
+            if (neededType == RegDataType.PlusRes)
+                neededValue = 22;
+            if (neededType == RegDataType.MinusRes)
+                neededValue = 2f;
+            if (neededType == RegDataType.MultiplyRes)
+                neededValue = 120f;
+            if (neededType == RegDataType.BiggerThanZeroRes)
             {
-                NeededValue = 1f;
-                NeededValueForEq = 2f;
+                neededValue = 1f;
+                neededValueForEq = 2f;
             }
         }
 
         // Update is called once per frame
         void Update()
         {
-            if ((regTrigger == null || regTrigger.snappedData == null) && !NeededToBeDone)
+            if ((regTrigger == null || regTrigger.snappedData == null) && !neededToBeDone)
             {
                 done = false;
                 callOnDone = true;
@@ -57,12 +61,12 @@ namespace Games.CPU
             if (!instructionWithoutRegisters)
             {
                 if(regTrigger.snappedData.type != RegDataType.BiggerThanZeroRes)
-                    done = (regTrigger.snappedData.type == NeededType) && (Mathf.Approximately(regTrigger.snappedData.value, NeededValue));
+                    done = (regTrigger.snappedData.type == neededType) && (Mathf.Approximately(regTrigger.snappedData.value, neededValue));
                 else
                 {
                     
-                    done = (regTrigger.snappedData.type == NeededType) && (Mathf.Approximately(regTrigger.snappedData.value, NeededValue))
-                        && (Mathf.Approximately(regTrigger.snappedData.eqValue, NeededValueForEq));;
+                    done = (regTrigger.snappedData.type == neededType) && (Mathf.Approximately(regTrigger.snappedData.value, neededValue))
+                        && (Mathf.Approximately(regTrigger.snappedData.eqValue, neededValueForEq));;
                 }
             }
             
@@ -74,26 +78,25 @@ namespace Games.CPU
                 case true when callOnDone:
                     if (callOnce)
                     {
-                        if (!calledOnce)
+                        if (!_calledOnce)
                         {
-                            OnDone.Invoke();
+                            onDone.Invoke();
                             callOnDone = false;
-                            calledOnce = true;
+                            _calledOnce = true;
                         }
                     }
                     else
                     {
-                        OnDone.Invoke();
+                        onDone.Invoke();
                         callOnDone = false;
                     }
                     break;
             }
         }
         
-        public void SetDone(bool done)
+        public void SetDone(bool value)
         {
-            Debug.Log("SetDone" + gameObject.name);
-            this.done = done;
+            this.done = value;
         }
     }
 }
