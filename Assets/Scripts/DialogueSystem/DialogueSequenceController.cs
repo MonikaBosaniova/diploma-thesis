@@ -4,6 +4,9 @@ using DialogueSystem;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+/// <summary>
+/// Holds dialogue sequence data for a level, including optional follow-up dialogues
+/// </summary>
 public class DialogueSequenceController : MonoBehaviour
 {
     public DialogueSequence dialogueSequence;

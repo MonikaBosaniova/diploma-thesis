@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// UI button representing a skill node in the skill tree, handles visual refresh, interaction and scene loading
+/// </summary>
 public class SkillNodeBtn : MonoBehaviour
 {
     [SerializeField] private SkillNodeDef _node;
@@ -36,11 +39,18 @@ public class SkillNodeBtn : MonoBehaviour
 
     void OnDestroy() => ProgressService.I.OnProgressChanged -= HandleChange;
 
+    /// <summary>
+    /// Handles progress change event, refreshes this node if it or its prerequisite changed
+    /// </summary>
     private void HandleChange(string nodeId, SkillProgress p)
     {
         if (nodeId == _node.Id || _node.PrerequisiteIds.Contains(nodeId)) Refresh(ProgressService.I.ProgressChanged);
     }
 
+    /// <summary>
+    /// Refreshes button visual state based on current unlock status, completion and stars
+    /// </summary>
+    /// <param name="useTweening">Whether to animate star changes</param>
     private void Refresh(bool useTweening)
     {
         bool unlocked = ProgressService.I.IsUnlocked(_node.Id);
@@ -78,6 +88,10 @@ public class SkillNodeBtn : MonoBehaviour
         ProgressService.I.Get(_node.Id).newStars = 0;
     }
 
+    /// <summary>
+    /// Sets outline visual on the associated PC component model
+    /// </summary>
+    /// <param name="outlined">Whether to show outline</param>
     public void SetOutLine(bool outlined)
     {
         //TODO BUG WITH OUTLINE, outlining other components and throwing errors to normals, all fbx were check to read/write true

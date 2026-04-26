@@ -4,6 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Controls the cooler rotation speed and temperature simulation for the cooling minigame
+/// </summary>
 public class CoolerController : MonoBehaviour
 {
     [Header("ROTATION")]
@@ -75,11 +78,19 @@ public class CoolerController : MonoBehaviour
         UpdateTemperatureText(actualTemperature);
     }
 
+    /// <summary>
+    /// Computes the final equilibrium temperature based on slider value and scenario offset
+    /// </summary>
+    /// <returns>Clamped temperature value between 20 and 100</returns>
     private float ComputeFinishTempOfCooler()
     {
         return Mathf.Min(100f, Mathf.Max(20f, 100f - speedSlider.value*100 + offseteForScenario));
     }
 
+    /// <summary>
+    /// Updates the rotation tween speed based on the slider value
+    /// </summary>
+    /// <param name="value">Slider value (0-1)</param>
     void UpdateRotationSpeed(float value)
     {
         rotationTween.timeScale = Mathf.Max(minRotationSpeed, value * maxRotationSpeed);
@@ -87,6 +98,9 @@ public class CoolerController : MonoBehaviour
         //CheckState();
     }
 
+    /// <summary>
+    /// Updates the temperature text color based on current temperature zone
+    /// </summary>
     private void VisualizeState()
     {
         //TODO FIND  better COLORS
@@ -119,18 +133,31 @@ public class CoolerController : MonoBehaviour
         rotationTween.Kill();
     }
 
+    /// <summary>
+    /// Sets the current temperature directly
+    /// </summary>
+    /// <param name="temperature">New temperature value</param>
     internal void SetTemperature(int temperature)
     {
         actualTemperature = temperature;
         UpdateTemperatureText(actualTemperature);
     }
 
+    /// <summary>
+    /// Sets the target temperature and offset for the current scenario
+    /// </summary>
+    /// <param name="finishTemperature">Target temperature for this scenario</param>
+    /// <param name="offset">Temperature offset applied to calculation</param>
     internal void SetScenarioData(float finishTemperature, float offset)
     {
         finishTemperatureForScenario = finishTemperature;
         offseteForScenario = offset;
     }
 
+    /// <summary>
+    /// Updates the temperature UI text and clamps to valid range
+    /// </summary>
+    /// <param name="value">Temperature value to display</param>
     private void UpdateTemperatureText(float value)
     {
         var newValue = Mathf.RoundToInt(value);

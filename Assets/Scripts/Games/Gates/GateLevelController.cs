@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace Gates
 {
+    /// <summary>
+    /// Level controller for the logic gates minigame, checks completion when all light bulbs are on
+    /// </summary>
     public class GateLevelController : LevelController
     {
         public bool freeMode = false;
@@ -47,6 +50,10 @@ namespace Gates
             }
         }
 
+        /// <summary>
+        /// Checks if all light bulbs have true value and triggers level completion
+        /// </summary>
+        /// <param name="b">New value of the changed light bulb (unused)</param>
         private void CheckFinishState(bool b)
         {
             if (_allLightBulbs.Count <= 0) return;

@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace Games.Hdd_Ssd
 {
+    /// <summary>
+    /// Represents a single SSD memory segment with on/off visual states
+    /// </summary>
     public class SsdSegment : MonoBehaviour
     {
         [SerializeField] private GameObject onModel;

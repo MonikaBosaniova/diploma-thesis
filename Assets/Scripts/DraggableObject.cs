@@ -1,6 +1,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// Allows a GameObject to be dragged by mouse input in world space
+/// </summary>
 public class DraggableObject : MonoBehaviour
 {
     public Action DragEnd;
@@ -18,6 +21,9 @@ public class DraggableObject : MonoBehaviour
         cam = Camera.main;
     }
 
+    /// <summary>
+    /// Handles mouse button press, calculates the offset between mouse and object position
+    /// </summary>
     void OnMouseDown()
     {
         if (!draggingEnabled || !enabled) return;
@@ -29,6 +35,9 @@ public class DraggableObject : MonoBehaviour
         DragStart?.Invoke();
     }
 
+    /// <summary>
+    /// Handles mouse drag, updates object position based on mouse world position and the initial offset
+    /// </summary>
     void OnMouseDrag()
     {
         if (!dragging) return;
@@ -37,6 +46,9 @@ public class DraggableObject : MonoBehaviour
         transform.position = mouseWorld + offset;
     }
 
+    /// <summary>
+    /// Handles mouse button release, invokes DragEnd callback and stops dragging
+    /// </summary>
     void OnMouseUp()
     {
         if(dragging) DragEnd?.Invoke();

@@ -2,6 +2,9 @@ using System;
 using Gates;
 using UnityEngine;
 
+/// <summary>
+/// Calculates decimal values from binary inputs for the RAM addressing system
+/// </summary>
 public class RamCalculator : MonoBehaviour
 {
     [SerializeField] private double _decValue = 0;

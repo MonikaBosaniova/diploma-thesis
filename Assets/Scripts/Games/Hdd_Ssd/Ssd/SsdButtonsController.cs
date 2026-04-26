@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Manages a group of SSD selection buttons, handles selection state and broadcasts selection changes
+/// </summary>
 public class SsdButtonsController : MonoBehaviour
 {
     public int indexOfSelection;
@@ -17,6 +20,10 @@ public class SsdButtonsController : MonoBehaviour
         _ssdButtons = GetComponentsInChildren<SsdButton>().ToList();
     }
 
+    /// <summary>
+    /// Sets all SSD buttons to the specified visual state
+    /// </summary>
+    /// <param name="value">True to turn on, false to turn off</param>
     public void SetAllSSdButtonsToValue(bool value)
     {
         if (_ssdButtons == null) return;
@@ -27,6 +34,10 @@ public class SsdButtonsController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Updates the selected index and invokes the selection change event
+    /// </summary>
+    /// <param name="index">Index of the selected button</param>
     public void SetIndexOfSelection(int index)
     {
         indexOfSelection = index;

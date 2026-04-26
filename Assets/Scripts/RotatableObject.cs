@@ -1,6 +1,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// Allows a GameObject to be rotated around Z axis by mouse drag within defined angle limits
+/// </summary>
 public class RotatableObject : MonoBehaviour
 {
     public Action DragEnd;
@@ -55,6 +58,9 @@ public class RotatableObject : MonoBehaviour
         dragging = false;
     }
 
+    /// <summary>
+    /// Captures the base rotation by factoring out the current Z rotation
+    /// </summary>
     void CaptureBase()
     {
         // factor out current Z safely
@@ -63,11 +69,19 @@ public class RotatableObject : MonoBehaviour
         baseRotation = current * Quaternion.Inverse(zRot);
     }
 
+    /// <summary>
+    /// Applies the current Z rotation on top of the base rotation
+    /// </summary>
     void Apply()
     {
         transform.localRotation = baseRotation * Quaternion.AngleAxis(z, Vector3.forward);
     }
 
+    /// <summary>
+    /// Normalizes an angle to the 0-360 degree range
+    /// </summary>
+    /// <param name="a">Angle to normalize</param>
+    /// <returns>Angle normalized to 0-360</returns>
     static float Normalize360(float a)
     {
         a %= 360f;

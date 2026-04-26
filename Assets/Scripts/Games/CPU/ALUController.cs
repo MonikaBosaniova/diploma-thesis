@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace Games.CPU
 {
+    /// <summary>
+    /// Controls the ALU (Arithmetic Logic Unit) operations in the CPU minigame
+    /// Performs arithmetic and comparison operations on register values
+    /// </summary>
     public class ALUController : MonoBehaviour
     {
         public GameObject aluResultPrefab;
@@ -155,6 +159,10 @@ namespace Games.CPU
             draggable.DragEnd += () => reg3_out.SnapDataToReg(data);
         }
 
+        /// <summary>
+        /// Resets a display to show zero value
+        /// </summary>
+        /// <param name="display">Display index: 0 for R1, 1 for R2</param>
         private void CleanDisplay(int display)
         {
             Transform digit01;

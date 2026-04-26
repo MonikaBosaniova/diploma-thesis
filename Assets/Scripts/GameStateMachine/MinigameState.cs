@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace GameStateMachine
 {
+    /// <summary>
+    /// Game state for handling the minigame phase, iterates through all minigame levels sequentially
+    /// </summary>
     public class MinigameState : GameState
     {
         protected List<LevelController> Levels;
@@ -38,6 +41,10 @@ namespace GameStateMachine
         {
         }
 
+        /// <summary>
+        /// Advances to the next level or completes the minigame state
+        /// Skips opinion menu level if game was already played
+        /// </summary>
         protected void ContinueToNextLevel()
         {
             //ONLY FOR OPINION MENU

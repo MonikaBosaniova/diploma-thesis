@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// ScriptableObject representing the entire skill tree structure with versioning and all node definitions
+/// </summary>
 [CreateAssetMenu(fileName = "SkillTree", menuName = "Game/SkillTree/Skill Tree", order = 1)]
 public class SkillTreeAsset : ScriptableObject
 {

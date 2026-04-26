@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Games.Ram
 {
+    /// <summary>
+    /// Game manager for the RAM memory management minigame
+    /// </summary>
     public class RamGameManager : GameManager
     {
         /// <summary>

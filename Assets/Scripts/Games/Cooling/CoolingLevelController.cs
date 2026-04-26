@@ -5,6 +5,9 @@ using Random = UnityEngine.Random;
 
 namespace Games.Ram
 {
+    /// <summary>
+    /// Level controller for the cooling minigame, manages CPU/GPU cooler sliders, scenarios and completion
+    /// </summary>
     public class CoolingLevelController : LevelController
     {
         [Header("Tutorial simulation")]
@@ -181,6 +184,9 @@ namespace Games.Ram
             base.Close();
         }
 
+        /// <summary>
+        /// Updates cooler controllers with new scenario temperature and offset data
+        /// </summary>
         private void UpdateDataWhenScenarioChange()
         {
             if (numOfRepetitions == 0 && !tutorialState)
@@ -195,6 +201,9 @@ namespace Games.Ram
             numOfRepetitions--;
         }
         
+        /// <summary>
+        /// Triggers level completion coroutine
+        /// </summary>
         private void CallFinishState()
         {
             StartCoroutine(WaitToShowCompleteLevel());

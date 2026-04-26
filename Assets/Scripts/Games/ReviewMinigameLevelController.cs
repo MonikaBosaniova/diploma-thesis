@@ -3,6 +3,9 @@ using GameStateMachine;
 using UI;
 using UnityEngine;
 
+/// <summary>
+/// Level controller for review-type minigame levels that auto-complete when level-specific conditions are met
+/// </summary>
 public class ReviewMinigameLevelController : LevelController
 {
     public override void Init()

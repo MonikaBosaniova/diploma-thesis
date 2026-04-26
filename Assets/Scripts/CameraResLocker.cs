@@ -15,11 +15,18 @@ public class CameraResLocker : MonoBehaviour
 
     void Awake() => _camera = GetComponent<Camera>();
 
+    /// <summary>
+    /// Called every frame after all Update calls, recalculates camera size
+    /// </summary>
     void LateUpdate()
     {
         Adjust();
     }
 
+    /// <summary>
+    /// Adjusts camera orthographic size based on current screen aspect ratio
+    /// to maintain consistent view regardless of resolution
+    /// </summary>
     void Adjust()
     {
         float targetAspect = targetWidth / targetHeight;

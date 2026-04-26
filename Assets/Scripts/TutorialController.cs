@@ -1,6 +1,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// Controls navigation through tutorial levels with next/back functionality
+/// </summary>
 public class TutorialController : MonoBehaviour
 {
     public GameObject backTutorialButton;
@@ -48,6 +51,9 @@ public class TutorialController : MonoBehaviour
         Debug.Log("TUTORIAL: " + currentLevelControllerIndex);
     }
 
+    /// <summary>
+    /// Starts the tutorial, resets completion flag and invokes OnTutorialStarted
+    /// </summary>
     public void InvokeOnLeveStarted()
     {
         IsCompleted = false;
@@ -55,6 +61,9 @@ public class TutorialController : MonoBehaviour
         OnTutorialStarted?.Invoke();
     }  
     
+    /// <summary>
+    /// Ends the tutorial, sets completion flag and invokes OnTutorialEnded
+    /// </summary>
     public void InvokeOnLevelEnded()
     {
         IsCompleted = true;
@@ -82,6 +91,12 @@ public class TutorialController : MonoBehaviour
         _currentLevelController.InvokeGoBackInTutorial();
     }
     
+    /// <summary>
+    /// Moves forward by updating the current level controller index by +1
+    /// </summary>
     private void HandleGoNext() => UpdateCurrentLevelController(1);
+    /// <summary>
+    /// Moves backward by updating the current level controller index by -1
+    /// </summary>
     private void HandleGoBack() => UpdateCurrentLevelController(-1);
 }

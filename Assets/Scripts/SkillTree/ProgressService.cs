@@ -5,6 +5,9 @@ using System.IO;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Singleton service managing player progress, persistence and skill tree unlocking logic
+/// </summary>
 public class ProgressService : MonoBehaviour
 {
     public static ProgressService I { get; private set; }
@@ -34,6 +37,11 @@ public class ProgressService : MonoBehaviour
         LoadOrCreate();
     }
 
+    /// <summary>
+    /// Returns the progress for a given node, creates a default entry if not found
+    /// </summary>
+    /// <param name="nodeId">Unique identifier of the skill node</param>
+    /// <returns>SkillProgress for the node</returns>
     public SkillProgress Get(string nodeId)
     {
         if (!_data.map.TryGetValue(nodeId, out var p))
@@ -45,6 +53,11 @@ public class ProgressService : MonoBehaviour
         return p;
     }
 
+    /// <summary>
+    /// Checks if a node is unlocked based on prerequisite completion
+    /// </summary>
+    /// <param name="nodeId">Unique identifier of the skill node</param>
+    /// <returns>True if all prerequisites are completed or node has no prerequisites</returns>
     public bool IsUnlocked(string nodeId)
     {
         var node = _skillTree.Nodes.FirstOrDefault(n => n.Id == nodeId);
@@ -64,15 +77,27 @@ public class ProgressService : MonoBehaviour
         return true;
     }
 
+    /// <summary>
+    /// Checks if a node should appear locked visually despite being unlocked
+    /// </summary>
+    /// <param name="nodeId">Unique identifier of the skill node</param>
+    /// <returns>True if the node is forced to display locked visuals</returns>
     public bool IsLockedOnlyVisually(string nodeId)
     {
         var node = _skillTree.Nodes.FirstOrDefault(n => n.Id == nodeId);
         return !node || node._forceLockedWithFullyTexturedVisuals;
     }
 
+    /// <summary>
+    /// Returns all skill nodes that are currently unlocked
+    /// </summary>
     public IEnumerable<SkillNodeDef> GetUnlockedNodes() =>
         _skillTree.Nodes.Where(n => IsUnlocked(n.Id));
 
+    /// <summary>
+    /// Calculates the percentage of completed nodes in the skill tree
+    /// </summary>
+    /// <returns>Completion percentage (0-100)</returns>
     public float PercentComplete()
     {
         int total = _skillTree.Nodes.Count;
@@ -81,6 +106,12 @@ public class ProgressService : MonoBehaviour
         return 100f * done / total;
     }
 
+    /// <summary>
+    /// Records level result and updates best stars and time if improved
+    /// </summary>
+    /// <param name="nodeId">Unique identifier of the skill node</param>
+    /// <param name="stars">Number of stars earned (0-3)</param>
+    /// <param name="timeSec">Time taken to complete in seconds</param>
     public void RecordLevelResult(string nodeId, int stars, float timeSec)
     {
         var p = Get(nodeId);
@@ -105,11 +136,19 @@ public class ProgressService : MonoBehaviour
         OnProgressChanged?.Invoke(nodeId, p);
     }
 
+    /// <summary>
+    /// Sets the currently selected node ID for scene transition
+    /// </summary>
+    /// <param name="nodeId">Node ID to set as current</param>
     public void SetCurrentNodeID(string nodeId)
     {
         _currentNodeID = nodeId;
     }
 
+    /// <summary>
+    /// Gets the currently selected node ID
+    /// </summary>
+    /// <returns>Current node ID</returns>
     public string GetCurrentNodeID()
     {
         return _currentNodeID;
@@ -188,6 +227,9 @@ public class ProgressService : MonoBehaviour
         PlayerPrefs.Save();
     }
 
+    /// <summary>
+    /// Resets all player progress, re-creates empty data and saves it
+    /// </summary>
     public void RemoveProgress()
     {
         // Reset runtime flags

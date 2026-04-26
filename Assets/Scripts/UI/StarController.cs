@@ -2,6 +2,9 @@ using System;
 using DG.Tweening;
 using UnityEngine;
 
+/// <summary>
+/// Controls the visual animation of a single star indicator using DOTween
+/// </summary>
 public class StarController : MonoBehaviour
 {
     [SerializeField] private bool _collected;
@@ -23,11 +26,17 @@ public class StarController : MonoBehaviour
     }
     #endif
 
+    /// <summary>
+    /// Shows the star with existing collected state, no animation
+    /// </summary>
     public void ShowAlreadyCollectedStar()
     {
         _collectedStar.transform.localScale = new Vector3(1, 1, 1);
     }
     
+    /// <summary>
+    /// Animates the star with rotation and scale tween when newly collected
+    /// </summary>
     public void OnStarCollected()
     {
         Debug.Log("OnStarCollected TWEENING");
@@ -36,6 +45,9 @@ public class StarController : MonoBehaviour
         _collectedStar.DOScaleY(1,.5f);
     }
 
+    /// <summary>
+    /// Instantly hides the star by resetting scale and rotation
+    /// </summary>
     public void OnStarrRemoved()
     {
         Debug.Log("OnStarrRemoved TWEENING");

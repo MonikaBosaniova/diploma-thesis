@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
+/// <summary>
+/// Trigger zone for the RAM grid, detects when draggable shapes overlap grid cells
+/// and provides visual highlighting feedback
+/// </summary>
 public class BgCubeTrigger : MonoBehaviour
 {
     [Header("Materials")] 

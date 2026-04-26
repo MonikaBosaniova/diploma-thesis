@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace Games.Hdd_Ssd
 {
+    /// <summary>
+    /// Level controller for the SSD minigame, handles grid-based data selection, collision checking and progression
+    /// </summary>
     public class SsdLevelController : LevelController
     {
         public SsdButtonsController VerticalButtonsController;

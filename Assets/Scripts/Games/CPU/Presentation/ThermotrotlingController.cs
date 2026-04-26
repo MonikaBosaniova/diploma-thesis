@@ -28,6 +28,9 @@ namespace Games.CPU
             CreateSequence();
         }
 
+        /// <summary>
+        /// Creates the overheating animation sequence using DOTween
+        /// </summary>
         void CreateSequence()
         {
             // Create a new sequence
@@ -48,6 +51,9 @@ namespace Games.CPU
             });
         }
 
+        /// <summary>
+        /// Resets all animated objects to their start position and re-enables them
+        /// </summary>
         void ResetObjects()
         {
             boltsIn.transform.DOLocalMoveX(_startPosBoltsIn, 0f);

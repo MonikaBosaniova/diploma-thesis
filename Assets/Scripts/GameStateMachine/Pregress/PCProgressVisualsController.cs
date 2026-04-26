@@ -5,6 +5,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
+/// <summary>
+/// Manages visual state of all PC hardware components in the 3D PC model
+/// Used to show/hide components based on player progress in the skill tree
+/// </summary>
 public class PCProgressVisualsController : MonoBehaviour
 {
     [SerializeField] private GameObject Case;
@@ -51,6 +55,13 @@ public class PCProgressVisualsController : MonoBehaviour
         CablesVisuals = Cables.GetComponentsInChildren<PCComponentVisuals>().ToList();
     }
 
+    /// <summary>
+    /// Sets visibility, holographic and outline state for a specific PC component
+    /// </summary>
+    /// <param name="component">The PC component to modify</param>
+    /// <param name="visible">Whether the component is visible</param>
+    /// <param name="holographic">Whether to use holographic material</param>
+    /// <param name="outlined">Whether to show outline</param>
     public void ComponentVisibility(PCComponent component, bool visible, bool holographic, bool outlined)
     {
         switch (component)
@@ -94,6 +105,9 @@ public class PCProgressVisualsController : MonoBehaviour
     }
 
 
+    /// <summary>
+    /// Applies visual state to a list of PCComponentVisuals
+    /// </summary>
     public void SetGameObjectVisuals(List<PCComponentVisuals> visuals, bool active, bool holographic, bool outlined)
     {
         foreach (PCComponentVisuals visual in visuals)
@@ -102,6 +116,9 @@ public class PCProgressVisualsController : MonoBehaviour
         }
     }
     
+    /// <summary>
+    /// Applies visual state to a single PCComponentVisuals
+    /// </summary>
     public void SetGameObjectVisual(PCComponentVisuals visual, bool active, bool holographic, bool outlined)
     {
         visual.SetState(active,holographic, outlined);

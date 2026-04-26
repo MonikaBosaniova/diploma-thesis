@@ -6,6 +6,9 @@ using UnityEngine;
 
 namespace Games.Hdd_Ssd
 {
+    /// <summary>
+    /// Level controller for the HDD minigame, manages data collection, disk progression and speed changes
+    /// </summary>
     public class HddLevelController : LevelController
     {
         public GameObject smallDisk;
@@ -41,6 +44,9 @@ namespace Games.Hdd_Ssd
 
         }
 
+        /// <summary>
+        /// Called when data is collected by the needle, tracks progress and generates new data
+        /// </summary>
         public void DataCollected()
         {
             _dataCollected++;
@@ -55,6 +61,9 @@ namespace Games.Hdd_Ssd
             }
         }
 
+        /// <summary>
+        /// Progresses the level through stages: small disk -> big disk -> fast speed -> finish
+        /// </summary>
         private void ContinueInLevel()
         {
             if (smallDisk.activeSelf)
@@ -79,6 +88,9 @@ namespace Games.Hdd_Ssd
             CheckFinishState(0);
         }
 
+        /// <summary>
+        /// Spawns a data cube on a random disk platter
+        /// </summary>
         private void GenerateRandomDataPoint()
         {
             var randomNum = Random.Range(0, diskControllers.Count);

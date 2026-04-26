@@ -2,6 +2,9 @@ using System;
 using System.Linq;
 using UnityEngine;
 
+/// <summary>
+/// Controls the visual state of a PC component (visibility, holographic mode, outline)
+/// </summary>
 [DisallowMultipleComponent]
 public class PCComponentVisuals : MonoBehaviour
 {
@@ -59,6 +62,10 @@ public class PCComponentVisuals : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Sets visibility of all MeshRenderers in this component and its children
+    /// </summary>
+    /// <param name="isVisible">Whether the component should be visible</param>
     public void SetComponentVisibility(bool isVisible)
     {
         var allRenderers = GetComponentsInChildren<MeshRenderer>();
@@ -69,6 +76,10 @@ public class PCComponentVisuals : MonoBehaviour
         _renderer.enabled = isVisible;
     }
 
+    /// <summary>
+    /// Switches all renderers between default and holographic material, toggles shadow casting
+    /// </summary>
+    /// <param name="isHologram">Whether to use holographic material</param>
     public void SetComponentHolographic(bool isHologram)
     {
         if (_renderer == null) return;
@@ -107,6 +118,10 @@ public class PCComponentVisuals : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Enables or disables the outline effect on this component
+    /// </summary>
+    /// <param name="isOutlined">Whether the outline should be active</param>
     public void SetComponentOutline(bool isOutlined)
     {
         if (_outline == null)
@@ -118,6 +133,12 @@ public class PCComponentVisuals : MonoBehaviour
         _outline.enabled = isOutlined;
     }
 
+    /// <summary>
+    /// Sets all visual states at once (visibility, hologram, outline)
+    /// </summary>
+    /// <param name="visible">Whether the component is visible</param>
+    /// <param name="hologram">Whether to use holographic material</param>
+    /// <param name="outlined">Whether to show outline</param>
     public void SetState(bool visible, bool hologram, bool outlined)
     {
         SetComponentVisibility(visible);

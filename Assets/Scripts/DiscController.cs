@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Simulates the HDD disc mechanism with rotating platters, data flags and read head alignment
+/// </summary>
 public class DiscController : MonoBehaviour
 {
     public GameObject Cylinder;
@@ -32,6 +35,9 @@ public class DiscController : MonoBehaviour
         if (IsNearZeroAngle(5f) && IsReadAligned()) ReadingSuccessful();
     }
 
+    /// <summary>
+    /// Generates disc platters as children of the rotating part with alternating materials
+    /// </summary>
     void GenerateDiscs()
     {
         var parent = RotatingPart.transform;
@@ -55,6 +61,9 @@ public class DiscController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Randomly selects rotation speed, sector count, ring and sector index for the current configuration
+    /// </summary>
     void PickConfig()
     {
         var i = Random.Range(0, speeds.Length);
@@ -64,6 +73,9 @@ public class DiscController : MonoBehaviour
         sectorIndex = Random.Range(0, sectorCount);
     }
 
+    /// <summary>
+    /// Spawns the data flag on the selected ring and sector position
+    /// </summary>
     void SpawnReadFlag()
     {
         var parent = RotatingPart.transform;
@@ -79,23 +91,39 @@ public class DiscController : MonoBehaviour
 
     void StartRotation() { }
 
+    /// <summary>
+    /// Rotates the disc platters around the Y axis at the configured speed
+    /// </summary>
     void Rotate()
     {
         RotatingPart.transform.Rotate(0f, speed * 360f * Time.deltaTime, 0f, Space.Self);
     }
 
+    /// <summary>
+    /// Checks if the disc rotation is near the zero angle within the specified tolerance
+    /// </summary>
+    /// <param name="degrees">Tolerance in degrees</param>
+    /// <returns>True if the rotation angle is within tolerance of zero</returns>
     bool IsNearZeroAngle(float degrees)
     {
         var y = RotatingPart.transform.eulerAngles.y;
         return Mathf.Abs(Mathf.DeltaAngle(y, 0f)) <= degrees;
     }
 
+    /// <summary>
+    /// Checks if the read head is aligned with the data flag in both sector and ring
+    /// </summary>
+    /// <returns>True if the head is aligned for reading</returns>
     bool IsReadAligned()
     {
         if (!Head || !flag) return false;
         return IsSectorAligned() && IsRingAligned();
     }
 
+    /// <summary>
+    /// Checks if the head and flag are in the same angular sector
+    /// </summary>
+    /// <returns>True if sector-aligned</returns>
     bool IsSectorAligned()
     {
         var headAng = WorldAngleXZ(Head.transform.position);
@@ -103,6 +131,10 @@ public class DiscController : MonoBehaviour
         return Mathf.Abs(Mathf.DeltaAngle(headAng, flagAng)) <= (180f / sectorCount);
     }
 
+    /// <summary>
+    /// Checks if the head and flag are on the same ring (track)
+    /// </summary>
+    /// <returns>True if ring-aligned</returns>
     bool IsRingAligned()
     {
         var headR = RadiusXZ(Head.transform.position);
@@ -123,6 +155,9 @@ public class DiscController : MonoBehaviour
 
     float RadiusXZ(Vector3 p) => new Vector2(p.x, p.z).magnitude;
 
+    /// <summary>
+    /// Called when the read head successfully aligns with the data flag
+    /// </summary>
     void ReadingSuccessful()
     {
     }

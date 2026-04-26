@@ -26,11 +26,17 @@ public class DiskController : MonoBehaviour
        Instantiate(cubeToSpawn, Spawner.transform);
     }
     
+    /// <summary>
+    /// Stops the disc rotation tween
+    /// </summary>
     public void StopRotate()
     {
         rotatingTween.Kill();
     }
 
+    /// <summary>
+    /// Starts continuous Y-axis rotation of the disc
+    /// </summary>
     private void StartRotating()
     {
         rotatingTween = transform.DORotate(
@@ -41,12 +47,19 @@ public class DiskController : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Rotates the disc to a random initial angle
+    /// </summary>
     private void RandomRotate()
     {
         var randomAngle = Random.Range(0, 360);
         transform.eulerAngles = new Vector3(0, randomAngle, 0);
     }
 
+    /// <summary>
+    /// Changes the disc rotation speed by restarting the tween
+    /// </summary>
+    /// <param name="newSpeed">New rotation speed in degrees per second</param>
     public void SetSpeedRotation(float newSpeed)
     {
         rotatingTween.Kill();

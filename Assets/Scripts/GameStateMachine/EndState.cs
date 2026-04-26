@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 
 namespace GameStateMachine
 {
+    /// <summary>
+    /// Final state of the game state machine, transitions the player back to the skill tree
+    /// </summary>
     public class EndState : GameState
     {
         public override void Init(GameObject o)

@@ -9,6 +9,9 @@ using System.IO;
 using UnityEditor;
 #endif
 
+/// <summary>
+/// ScriptableObject defining a single skill tree node with its ID, name, scene, prerequisites and visual settings
+/// </summary>
 [CreateAssetMenu(fileName = "SkillNode", menuName = "Game/SkillTree/Skill Node", order = 0)]
 public class SkillNodeDef : ScriptableObject
 {

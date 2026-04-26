@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Games.Ram
 {
+    /// <summary>
+    /// Editor utility for generating a 3D grid of cubes to represent RAM cells
+    /// </summary>
     public class RamGridGenerator : MonoBehaviour
     {
             public GameObject cubePrefab;

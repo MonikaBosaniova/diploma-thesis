@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Games.CPU
 {
+    /// <summary>
+    /// Trigger zone for CPU register slots, handles data snapping, highlighting and collision detection
+    /// </summary>
     public class RegTrigger : MonoBehaviour
     {
         public RegData snappedData;
@@ -77,23 +80,38 @@ namespace Games.CPU
                 //}
         }
 
+        /// <summary>
+        /// Sets the snapped state of the register trigger
+        /// </summary>
+        /// <param name="value">Whether a data object is snapped</param>
         public void SetSnapped(bool value)
         {
             Snapped = value;
         }
 
+        /// <summary>
+        /// Resets the highlighting material to the off state
+        /// </summary>
         public void ClearColoring()
         {
             if(highlightingEnabled)
                 meshRenderer.material = OffMaterial;
         }
 
+        /// <summary>
+        /// Sets the highlight material based on the input value
+        /// </summary>
+        /// <param name="value">True for highlighted, false for default</param>
         public void SetHighlight(bool value)
         {
             if (highlightingEnabled)
                 meshRenderer.material = value ? OnMaterial : OffMaterial;
         }
         
+        /// <summary>
+        /// Snaps a RegData object to its assigned register position
+        /// </summary>
+        /// <param name="data">The data to snap to the register</param>
         internal void SnapDataToReg(RegData data)
         {
             data.transform.position = new Vector3(data.regParent.position.x, data.transform.position.y, data.regParent.position.z);

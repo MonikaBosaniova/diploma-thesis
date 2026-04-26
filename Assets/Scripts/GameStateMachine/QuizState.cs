@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace GameStateMachine
 {
+    /// <summary>
+    /// Game state for handling the quiz phase, displays quiz UI and evaluates success rate for stars
+    /// </summary>
     public class QuizState : GameState
     {
         protected QuizData QuizData;
@@ -38,6 +41,9 @@ namespace GameStateMachine
         {
         }
 
+        /// <summary>
+        /// Placeholder for advancing to the next quiz (currently unused)
+        /// </summary>
         protected void ContinueToNextQuiz()
         {
             // if (_currentTutorialIndex == Tutorials.Count - 1)

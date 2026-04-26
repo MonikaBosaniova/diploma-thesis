@@ -2,6 +2,9 @@ using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
+/// <summary>
+/// Manages language localization and flag UI visuals for Czech, Slovak and English languages
+/// </summary>
 public class LocalizationManager : MonoBehaviour
 {
     public Color ActiveColor;
@@ -24,6 +27,9 @@ public class LocalizationManager : MonoBehaviour
         };
     }
     
+    /// <summary>
+    /// Sets the language to Czech and updates flag colors
+    /// </summary>
     public void SetLanguageCZ()
     {
         SetLanguage("cs-CZ");
@@ -31,12 +37,18 @@ public class LocalizationManager : MonoBehaviour
         flagSK.color = InactiveColor;
         flagEN.color = InactiveColor;
     }
+    /// <summary>
+    /// Sets the language to Slovak and updates flag colors
+    /// </summary>
     public void SetLanguageSK(){
         SetLanguage("sk-SK");
         flagCZ.color = InactiveColor;
         flagSK.color = ActiveColor;
         flagEN.color = InactiveColor;
     }
+    /// <summary>
+    /// Sets the language to English and updates flag colors
+    /// </summary>
     public void SetLanguageEN(){
         SetLanguage("en-US");
         flagCZ.color = InactiveColor;
@@ -44,6 +56,10 @@ public class LocalizationManager : MonoBehaviour
         flagEN.color = ActiveColor;
     }
 
+    /// <summary>
+    /// Sets the locale by identifier, saves to PlayerPrefs and logs the change
+    /// </summary>
+    /// <param name="languageIdentifier">Locale identifier (e.g. "cs-CZ", "sk-SK", "en-US")</param>
     void SetLanguage(string languageIdentifier)
     {
         PlayerPrefs.SetString(PLAYER_PREFS_KEY, languageIdentifier);

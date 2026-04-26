@@ -4,6 +4,9 @@ using Games.Ram;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+/// <summary>
+/// Controls a draggable shape in the RAM minigame, handles snapping to grid cells
+/// </summary>
 public class ShapeController : MonoBehaviour
 {
     [Header("Debug Values - READ ONLY")] 
@@ -26,11 +29,19 @@ public class ShapeController : MonoBehaviour
         draggableObject.DragEnd += SnapObject;
     }
 
+    /// <summary>
+    /// Adds a background trigger to the overlap tracking list
+    /// </summary>
+    /// <param name="bgTrigger">Trigger zone that the shape overlaps</param>
     public void AddBgTrigger(BgCubeTrigger bgTrigger)
     {
         bgTriggers.Add(bgTrigger);
     }
     
+    /// <summary>
+    /// Removes a background trigger from the overlap tracking list
+    /// </summary>
+    /// <param name="bgTrigger">Trigger zone to remove</param>
     public void RemoveBgTrigger(BgCubeTrigger bgTrigger)
     {
         if(bgTriggers.Contains(bgTrigger))
@@ -74,6 +85,9 @@ public class ShapeController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Snaps all shape children to their corresponding grid trigger positions
+    /// </summary>
     public void SnapObjectToPosition()
     {
         bgTriggers[0].transform.parent.gameObject.TryGetComponent<RamGridGenerator>(out var cubeGridEditor);
@@ -102,6 +116,10 @@ public class ShapeController : MonoBehaviour
         //GetComponent<DraggableObject>().enabled = false;
     }
 
+    /// <summary>
+    /// Sets the reference to the parent level controller
+    /// </summary>
+    /// <param name="ramLc">Ram level controller instance</param>
     public void SetLevelController(RamLevelController ramLc)
     {
         ramLevelController = ramLc;

@@ -7,6 +7,10 @@ using Random = UnityEngine.Random;
 
 namespace Games.Ram
 {
+    /// <summary>
+    /// Controls the CPU address request logic in the RAM minigame,
+    /// generates wanted addresses and validates player selections
+    /// </summary>
     public class CPUWantedAddressController : MonoBehaviour
     {
         public bool generateNewAddress = true;

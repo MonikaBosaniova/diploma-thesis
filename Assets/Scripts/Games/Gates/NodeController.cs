@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace Gates
 {
+    /// <summary>
+    /// Abstract base class for all circuit nodes (switches, gates, light bulbs)
+    /// Manages boolean value, visual models and wire material updates
+    /// </summary>
     public abstract class NodeController : MonoBehaviour
     {
         public event Action<bool> OnValueChanged;
@@ -25,6 +29,9 @@ namespace Gates
         }
         private bool _value;
         
+        /// <summary>
+        /// Toggles the node value between true and false
+        /// </summary>
         public void SwitchValue()
         {
             Value = !Value;
@@ -52,6 +59,11 @@ namespace Gates
         {
         }
 
+        /// <summary>
+        /// Updates wire material based on the current value
+        /// </summary>
+        /// <param name="value">True for active material, false for inactive</param>
+        /// <param name="line">The wire GameObject to update</param>
         protected void SetLineValue(bool value, GameObject line)
         {
             var allWireComponents = line.GetComponentsInChildren<MeshRenderer>();

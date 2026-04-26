@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Games.CPU
 {
+    /// <summary>
+    /// Controls RAM data operations in the CPU minigame, spawns and despawns data objects with animations
+    /// </summary>
     public class RamController : MonoBehaviour
     {
         [SerializeField] private CPULevelController cpuLevelController;
@@ -13,18 +16,29 @@ namespace Games.CPU
         public GameObject getManaLeft;
         public GameObject getManaCost;
 
+        /// <summary>
+        /// Spawns the ManaLeft data object and moves it to the register
+        /// </summary>
         public void SpawnGetManaLeftData()
         {
             var manaLeft = Instantiate(getManaLeft, spawnPoint);
             MoveDataToReg(manaLeft.transform, RegDataType.ManaLeft);
         }
 
+        /// <summary>
+        /// Spawns the ManaCost data object and moves it to the register
+        /// </summary>
         public void SpawnGetManaCostData()
         {
             var manaCost = Instantiate(getManaCost, spawnPoint);
             MoveDataToReg(manaCost.transform, RegDataType.Cost);
         }
 
+        /// <summary>
+        /// Animates a data object from spawn point through RAM to the target register
+        /// </summary>
+        /// <param name="data">The data transform to move</param>
+        /// <param name="type">The data type to assign</param>
         private void MoveDataToReg(Transform data, RegDataType type)
         {
             RegData reg = data.gameObject.GetComponent<RegData>();
@@ -49,6 +63,9 @@ namespace Games.CPU
             draggable.DragEnd += () => rt.SnapDataToReg(reg);
         }
 
+        /// <summary>
+        /// Animates the wizard shield data back to RAM and triggers finish state check
+        /// </summary>
         public void DespawnWizardShield()
         {
             var data = reg4.transform.GetChild(0).transform;

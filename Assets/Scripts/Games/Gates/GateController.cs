@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Gates
 {
+    /// <summary>
+    /// Controls a logic gate node, evaluates input values through the selected gate type
+    /// </summary>
     public class GateController : NodeController
     {
         public GateTypes gateType;
@@ -37,6 +40,9 @@ namespace Gates
 
         }
 
+        /// <summary>
+        /// Instantiates the correct gate implementation and sets up initial visual state
+        /// </summary>
         private void Initialize()
         {
             switch (gateType)

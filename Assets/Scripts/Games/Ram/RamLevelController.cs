@@ -6,6 +6,9 @@ using Random = UnityEngine.Random;
 
 namespace Games.Ram
 {
+    /// <summary>
+    /// Level controller for the RAM minigame, manages shape generation, snapping, garbage collection and address queries
+    /// </summary>
     public class RamLevelController : LevelController
     {
         [Header("Ram Level")] 
@@ -70,6 +73,9 @@ namespace Games.Ram
             }
         }
 
+        /// <summary>
+        /// Generates a new random shape for the player to place, or triggers address query mode
+        /// </summary>
         public void GenerateShape()
         {
             if (Shape != null)
@@ -96,6 +102,10 @@ namespace Games.Ram
             numberToGenerateAddress--;
         }
         
+        /// <summary>
+        /// Registers a snapped cubie in the tracking list and disables garbage collection temporarily
+        /// </summary>
+        /// <param name="snappedCubie">The cubie controller that was snapped into the grid</param>
         public void AddSnappedCubieToList(SnappedAddressCubieController snappedCubie)
         {
             _allSnappedCubies.Add(snappedCubie);
@@ -111,6 +121,9 @@ namespace Games.Ram
             base.Close();
         }
 
+        /// <summary>
+        /// Runs the garbage collector, randomly removing a percentage of destroyable cubies
+        /// </summary>
         public void CallGarbageCollector()
         {
             gcEnabled = false;
@@ -183,6 +196,9 @@ namespace Games.Ram
             return allPossibleACubies;
         }
         
+        /// <summary>
+        /// Triggers level completion coroutine
+        /// </summary>
         public void CallFinishState()
         {
             StartCoroutine(WaitToShowCompleteLevel());

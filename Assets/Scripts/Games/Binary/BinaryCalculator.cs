@@ -4,6 +4,9 @@ using System.Linq;
 using Gates;
 using UnityEngine;
 
+/// <summary>
+/// Handles binary-to-decimal and decimal-to-binary calculations with visual UI updates
+/// </summary>
 public class BinaryCalculator : MonoBehaviour
 {
     [SerializeField] public double _finalValue = 0;
@@ -61,6 +64,11 @@ public class BinaryCalculator : MonoBehaviour
         };
     }
     
+    /// <summary>
+    /// Visualizes a decimal value on the digit display GameObjects
+    /// </summary>
+    /// <param name="value">Decimal value to visualize</param>
+    /// <param name="settingResult">True for result display, false for remainder display</param>
     public void VisualizeDecValue(double value, bool settingResult)
     {
         Transform digit01;
@@ -102,6 +110,9 @@ public class BinaryCalculator : MonoBehaviour
         digit01.GetChild((int)indexOfDecDigit_1).gameObject.SetActive(true);
     }
 
+    /// <summary>
+    /// Generates a random 4-bit binary number and sets it as the target value
+    /// </summary>
     public void GenerateRandomBinNumber()
     {
         HideWires();
@@ -121,6 +132,10 @@ public class BinaryCalculator : MonoBehaviour
         VisualizeDecValue(0, true);
     }
 
+    /// <summary>
+    /// Adds to the current decimal value (clamped to 0-15) and updates the display
+    /// </summary>
+    /// <param name="value">Value to add to the current decimal value</param>
     public void AddToDecValue(int value)
     {
         _wrongAnswer.SetActive(false);
@@ -130,6 +145,9 @@ public class BinaryCalculator : MonoBehaviour
         VisualizeDecValue(_decValue, true);
     }
 
+    /// <summary>
+    /// Submits the current answer, triggers OnDecValueChanged if correct or shows wrong answer
+    /// </summary>
     public void SubmitAnswer()
     {
         if (Math.Abs(_finalValue - _decValue) < 0.1)
@@ -144,12 +162,22 @@ public class BinaryCalculator : MonoBehaviour
         }
     }
     
+    /// <summary>
+    /// Toggles the helper number display for a binary digit position
+    /// </summary>
+    /// <param name="binHelperNumberParent">Parent containing 0 and 1 child GameObjects</param>
+    /// <param name="value">Current switch value</param>
     private void ShowHelperNumber(GameObject binHelperNumberParent, bool value)
     {
         binHelperNumberParent.transform.GetChild(0).gameObject.SetActive(!value);
         binHelperNumberParent.transform.GetChild(1).gameObject.SetActive(value);
     }
 
+    /// <summary>
+    /// Computes the decimal value contribution of a single bit and updates the total
+    /// </summary>
+    /// <param name="index">Bit position (0-3)</param>
+    /// <param name="value">Whether the bit is on or off</param>
     private void ComputeDecValue(float index, bool value)
     {
         var newValue = Math.Pow(2f,index);
@@ -173,6 +201,9 @@ public class BinaryCalculator : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Hides all wire visualization components by calling HideWire on each LightBulbController
+    /// </summary>
     private void HideWires()
     {
         foreach (var wire in _wires.GetComponentsInChildren<LightBulbController>())

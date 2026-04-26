@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 
+/// <summary>
+/// Serializable data class tracking player's progress for a single skill node
+/// </summary>
 [Serializable]
 public class SkillProgress
 {

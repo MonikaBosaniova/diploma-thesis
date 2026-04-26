@@ -5,6 +5,10 @@ using UnityEngine.Serialization;
 
 namespace GameStateMachine
 {
+    /// <summary>
+    /// Base game manager controlling the state machine flow: Tutorial -> Minigame -> Quiz -> End
+    /// Manages progress loading, star counting, and level visibility
+    /// </summary>
     public class GameManager : MonoBehaviour
     {
         [FormerlySerializedAs("CurrentState")] 

@@ -24,6 +24,9 @@ public class HDDTutorialAnimation : MonoBehaviour
         });
     }
 
+    /// <summary>
+    /// Resets all animation elements to their initial state
+    /// </summary>
     void Reset()
     {
         showTween.Kill();
@@ -32,6 +35,9 @@ public class HDDTutorialAnimation : MonoBehaviour
         TextBox.SetActive(false);
     }
 
+    /// <summary>
+    /// Recursively moves the HDD handle to random angles for the tutorial animation
+    /// </summary>
     private void MoveHandle()
     {
         var randomAngle = Random.Range(0f, 75f);

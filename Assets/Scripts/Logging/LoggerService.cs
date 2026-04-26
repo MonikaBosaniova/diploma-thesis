@@ -9,6 +9,9 @@ using UnityEngine.SceneManagement;
 using System.Text.RegularExpressions;
 using System.Globalization;
 
+/// <summary>
+/// Singleton service for remote logging to New Relic, captures Unity log events and sends them as structured JSON
+/// </summary>
 [DefaultExecutionOrder(-100)]
 public class LoggerService : MonoBehaviour
 {

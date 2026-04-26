@@ -1,6 +1,9 @@
 using UnityEngine;
 using DG.Tweening;
 
+/// <summary>
+/// Manages UI state transitions (Menu, SkillTree, Game) and controls visibility of UI panels
+/// </summary>
 public class UIStateManager : MonoBehaviour
 {
     [SerializeField] private UIStates CurrentUIState;
@@ -32,11 +35,18 @@ public class UIStateManager : MonoBehaviour
         }
     }
     
+    /// <summary>
+    /// Updates the current UI state enum value
+    /// </summary>
+    /// <param name="state">New UI state</param>
     public void UpdateState(UIStates state)
     {
         CurrentUIState = state;
     }
 
+    /// <summary>
+    /// Transitions UI to the main menu state with tween animations
+    /// </summary>
     public void ChangeToMenu()
     {
         frontPCPanel.DOLocalMoveZ(frontPanelStartPositionZ, .8f);
@@ -52,6 +62,10 @@ public class UIStateManager : MonoBehaviour
         skillTree.DOAnchorPosX(skillTreeHiddenPositionX, .33f).OnComplete(() =>UpdateState(UIStates.Menu));
     }
     
+    /// <summary>
+    /// Transitions UI to the skill tree state with optional tween animations
+    /// </summary>
+    /// <param name="tween">Whether to animate the transition (false for instant switch)</param>
     public void ChangeToSkillTree(bool tween = true)
     {
         UpdateState(UIStates.SkillTree);

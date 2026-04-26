@@ -1,6 +1,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// Controller that hides marks (checkmarks) on Start and OnEnable
+/// </summary>
 public class MarksController : MonoBehaviour
 {
     void Start()

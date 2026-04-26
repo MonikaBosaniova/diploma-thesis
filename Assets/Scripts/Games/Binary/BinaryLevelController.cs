@@ -5,6 +5,9 @@ using Random = UnityEngine.Random;
 
 namespace Games.Binary
 {
+    /// <summary>
+    /// Controls a single binary conversion level, handling initialization, calculator setup and finish detection
+    /// </summary>
     public class BinaryLevelController : LevelController
     {
         [Header("Level values")]
@@ -56,6 +59,10 @@ namespace Games.Binary
             base.Init();
         }
 
+        /// <summary>
+        /// Handles level completion when the correct binary value is entered
+        /// </summary>
+        /// <param name="newValue">The decimal value that was correctly entered</param>
         private void StartFinishState(double newValue)
         {
             Debug.Log("Finish state: "  + newValue);
