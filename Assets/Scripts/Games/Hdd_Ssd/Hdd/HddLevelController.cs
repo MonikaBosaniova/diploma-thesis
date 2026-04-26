@@ -77,7 +77,6 @@ namespace Games.Hdd_Ssd
             }
             
             CheckFinishState(0);
-
         }
 
         private void GenerateRandomDataPoint()
@@ -90,7 +89,6 @@ namespace Games.Hdd_Ssd
             lastGeneratedRandom = randomNum;
             diskControllers[randomNum].CreateCube();
         }
-
 
         private void CheckFinishState(double newValue)
         {
@@ -121,6 +119,5 @@ namespace Games.Hdd_Ssd
                 UIManager.Instance.ShowDialogWindowUI(sequence);
             }
         }
-        
     }
 }

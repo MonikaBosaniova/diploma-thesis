@@ -1,8 +1,9 @@
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 
+/// <summary>
+/// Animates the HDD handle random movement in the presentation
+/// </summary>
 public class HDDTutorialAnimation : MonoBehaviour
 {
 
@@ -36,5 +37,4 @@ public class HDDTutorialAnimation : MonoBehaviour
         var randomAngle = Random.Range(0f, 75f);
         handle.DOLocalRotate(new Vector3(0, 0, randomAngle), 1f).OnComplete(MoveHandle);
     }
-
 }

@@ -1,6 +1,9 @@
 using DG.Tweening;
 using UnityEngine;
 
+/// <summary>
+/// Implements the HDD disk rotation and data spawning
+/// </summary>
 public class DiskController : MonoBehaviour
 {
     public GameObject cubeToSpawn;
@@ -14,7 +17,10 @@ public class DiskController : MonoBehaviour
         RandomRotate();
         StartRotating();
     }
-
+    
+    /// <summary>
+    /// Instantiate data cube
+    /// </summary>
     public void CreateCube()
     {
        Instantiate(cubeToSpawn, Spawner.transform);
@@ -47,5 +53,4 @@ public class DiskController : MonoBehaviour
         speed = newSpeed;
         StartRotating();
     }
-    
 }
