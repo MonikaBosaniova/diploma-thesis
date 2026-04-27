@@ -12,13 +12,13 @@ public class DraggableObject : MonoBehaviour
 
     [SerializeField] internal bool draggingEnabled = true;
     
-    Camera cam;
-    float dist;
-    Vector3 offset;
+    Camera _camera;
+    float _dist;
+    Vector3 _offset;
 
     void Awake()
     {
-        cam = Camera.main;
+        _camera = Camera.main;
     }
 
     /// <summary>
@@ -28,9 +28,9 @@ public class DraggableObject : MonoBehaviour
     {
         if (!draggingEnabled || !enabled) return;
         
-        dist = Vector3.Distance(cam.transform.position, transform.position);
-        Vector3 mouseWorld = cam.ScreenToWorldPoint(Input.mousePosition + Vector3.forward * dist);
-        offset = transform.position - mouseWorld;
+        _dist = Vector3.Distance(_camera.transform.position, transform.position);
+        Vector3 mouseWorld = _camera.ScreenToWorldPoint(Input.mousePosition + Vector3.forward * _dist);
+        _offset = transform.position - mouseWorld;
         dragging = true;
         DragStart?.Invoke();
     }
@@ -42,8 +42,8 @@ public class DraggableObject : MonoBehaviour
     {
         if (!dragging) return;
 
-        Vector3 mouseWorld = cam.ScreenToWorldPoint(Input.mousePosition + Vector3.forward * dist);
-        transform.position = mouseWorld + offset;
+        Vector3 mouseWorld = _camera.ScreenToWorldPoint(Input.mousePosition + Vector3.forward * _dist);
+        transform.position = mouseWorld + _offset;
     }
 
     /// <summary>
@@ -60,4 +60,3 @@ public class DraggableObject : MonoBehaviour
         draggingEnabled = false;
     }
 }
-

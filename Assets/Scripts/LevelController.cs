@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using DG.Tweening;
-using DialogueSystem;
 using UnityEngine;
 
 /// <summary>
@@ -10,8 +9,8 @@ using UnityEngine;
 /// </summary>
 public class LevelController : MonoBehaviour
 {
-    private float cameraXPos = 0;
-    private float cameraZPos = 0;
+    private float _cameraXPos = 0;
+    private float _cameraZPos = 0;
     protected internal bool IsCompleted = false;
     protected event Action OnLevelStarted;
     protected internal event Action OnLevelEnded;
@@ -22,13 +21,13 @@ public class LevelController : MonoBehaviour
     /// </summary>
     public virtual void Init()
     {
-        cameraXPos = transform.position.x;
-        cameraZPos = transform.position.z;
+        _cameraXPos = transform.position.x;
+        _cameraZPos = transform.position.z;
         Transform camera = Camera.main.transform;
         
         if (camera != null)
         {
-                camera.DOMove(new Vector3(cameraXPos,camera.position.y, cameraZPos), 0.8f).OnComplete(SetupDialogueSequence);
+                camera.DOMove(new Vector3(_cameraXPos,camera.position.y, _cameraZPos), 0.8f).OnComplete(SetupDialogueSequence);
         }
         else
         {
@@ -119,5 +118,4 @@ public class LevelController : MonoBehaviour
             UIManager.Instance.ShowDialogWindowUI(ds.dialogueSequence);
         }
     }
-    
 }

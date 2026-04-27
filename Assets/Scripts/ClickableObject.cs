@@ -13,10 +13,8 @@ public class ClickableObject : MonoBehaviour, IPointerClickHandler
     /// <param name="eventData">Pointer event data from the input system</param>
     public void OnPointerClick(PointerEventData eventData)
     {
-        //Debug.Log("OnPointerClick " + gameObject.name);
         OnClick.Invoke();
     }
     
     public UnityEvent OnClick;
-    
 }

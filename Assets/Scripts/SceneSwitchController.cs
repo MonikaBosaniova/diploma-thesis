@@ -6,18 +6,6 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class SceneSwitchController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     /// <summary>
     /// Loads the main menu scene (build index 0)
     /// </summary>

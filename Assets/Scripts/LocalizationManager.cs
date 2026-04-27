@@ -16,15 +16,28 @@ public class LocalizationManager : MonoBehaviour
     private const string PLAYER_PREFS_KEY = "Language";
     void Start()
     {
-        LocalizationSettings.InitializationOperation.Completed += (op) => {
-            string language = PlayerPrefs.GetString(PLAYER_PREFS_KEY, "cs-CZ");
-            switch (language)
-            {
-                case "sk-SK": SetLanguageSK(); break;
-                case "en-US": SetLanguageEN(); break;
-                case "cs-CZ":  default: SetLanguageCZ(); break;
-            }
-        };
+        // The locale is already set by PlayerPrefsLocaleSelector during initialization.
+        // Here we only update the flag UI colors to match the saved preference.
+        string language = PlayerPrefs.GetString(PLAYER_PREFS_KEY, "cs-CZ");
+        switch (language)
+        {
+            case "sk-SK":
+                flagCZ.color = InactiveColor;
+                flagSK.color = ActiveColor;
+                flagEN.color = InactiveColor;
+                break;
+            case "en-US":
+                flagCZ.color = InactiveColor;
+                flagSK.color = InactiveColor;
+                flagEN.color = ActiveColor;
+                break;
+            case "cs-CZ":
+            default:
+                flagCZ.color = ActiveColor;
+                flagSK.color = InactiveColor;
+                flagEN.color = InactiveColor;
+                break;
+        }
     }
     
     /// <summary>

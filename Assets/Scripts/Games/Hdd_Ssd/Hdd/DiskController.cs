@@ -10,7 +10,7 @@ public class DiskController : MonoBehaviour
     public GameObject Spawner;
     public float speed = 20f;
 
-    private Tween rotatingTween;
+    private Tween _rotatingTween;
     
     private void Start()
     {
@@ -31,7 +31,7 @@ public class DiskController : MonoBehaviour
     /// </summary>
     public void StopRotate()
     {
-        rotatingTween.Kill();
+        _rotatingTween.Kill();
     }
 
     /// <summary>
@@ -39,12 +39,11 @@ public class DiskController : MonoBehaviour
     /// </summary>
     private void StartRotating()
     {
-        rotatingTween = transform.DORotate(
+        _rotatingTween = transform.DORotate(
             new Vector3(0, 360 + transform.eulerAngles.y, 0),
             360f / speed,
             RotateMode.FastBeyond360
         ).SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
-
     }
 
     /// <summary>
@@ -62,7 +61,7 @@ public class DiskController : MonoBehaviour
     /// <param name="newSpeed">New rotation speed in degrees per second</param>
     public void SetSpeedRotation(float newSpeed)
     {
-        rotatingTween.Kill();
+        _rotatingTween.Kill();
         speed = newSpeed;
         StartRotating();
     }

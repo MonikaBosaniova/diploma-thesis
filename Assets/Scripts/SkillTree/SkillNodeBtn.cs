@@ -1,4 +1,3 @@
-// Example: binding a button to play an unlocked level
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -18,9 +17,9 @@ public class SkillNodeBtn : MonoBehaviour
 
     private PCProgressVisualsController _progressVisualsController;
 
-    private bool visible = false;
-    private bool hologram = false;
-    private bool outlined = false;
+    private bool _visible = false;
+    private bool _hologram = false;
+    private bool _outlined = false;
 
     void Start()
     {
@@ -37,7 +36,11 @@ public class SkillNodeBtn : MonoBehaviour
         });
     }
 
-    void OnDestroy() => ProgressService.I.OnProgressChanged -= HandleChange;
+    void OnDestroy()
+    {
+        if(ProgressService.I != null)
+            ProgressService.I.OnProgressChanged -= HandleChange;
+    }
 
     /// <summary>
     /// Handles progress change event, refreshes this node if it or its prerequisite changed
@@ -58,32 +61,23 @@ public class SkillNodeBtn : MonoBehaviour
         bool done = ProgressService.I.Get(_node.Id).completed;
         int collectedStars = ProgressService.I.Get(_node.Id).bestStars;
         int newCollectedStars = ProgressService.I.Get(_node.Id).newStars;
-        // if (ProgressService.I.ChangedNodeId == _node.Id)
-        // {
-        //     newCollectedStars = ProgressService.I.NewStars;
-        //     Debug.Log("Changed NodeId: " + _node.Id + "stars: " + newCollectedStars);
-        //     ProgressService.I.NewStars = 0;
-        //     ProgressService.I.CurrentNodeProgressChanged = false;
-        //     ProgressService.I.ChangedNodeId = "";
-        // }
         _lockedOverlay.SetActive(!unlocked);
         _lockedOverlay.SetActive(forceLock);
         _playButton.interactable = (unlocked && !forceLock);
         _text.text = _node.DisplayName;
         
-        visible = (forceLock || done || unlocked);
-        hologram = (unlocked && !done);
-        outlined = false;
-        _progressVisualsController.ComponentVisibility(_node._component, visible, hologram, outlined);
+        _visible = (forceLock || done || unlocked);
+        _hologram = (unlocked && !done);
+        _outlined = false;
+        _progressVisualsController.ComponentVisibility(_node._component, _visible, _hologram, _outlined);
         if (_node._component == PCComponent.CoolingUnit)
         {
             _progressVisualsController.ComponentVisibility(done ? PCComponent.VentilatorON : PCComponent.VentilatorOFF,
-                visible, hologram, outlined);
+                _visible, _hologram, _outlined);
             _progressVisualsController.ComponentVisibility(!done ? PCComponent.VentilatorON : PCComponent.VentilatorOFF,
-                !visible, !hologram, !outlined);
+                !_visible, !_hologram, !_outlined);
         }
             
-        Debug.Log("showing: " + gameObject.name + " " + useTweening + " - " + newCollectedStars);
         _levelStarsController.ShowProgressStars(collectedStars, newCollectedStars, useTweening);
         ProgressService.I.Get(_node.Id).newStars = 0;
     }
@@ -96,6 +90,6 @@ public class SkillNodeBtn : MonoBehaviour
     {
         //TODO BUG WITH OUTLINE, outlining other components and throwing errors to normals, all fbx were check to read/write true
         if (_node._component == PCComponent.None) return;
-        _progressVisualsController.ComponentVisibility(_node._component, visible, hologram, outlined);
+        _progressVisualsController.ComponentVisibility(_node._component, _visible, _hologram, outlined);
     }
 }

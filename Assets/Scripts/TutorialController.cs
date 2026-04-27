@@ -47,8 +47,6 @@ public class TutorialController : MonoBehaviour
         
         backTutorialButton.SetActive(currentLevelControllerIndex > 0);
         nextTutorialButton.SetActive(true);
-        
-        Debug.Log("TUTORIAL: " + currentLevelControllerIndex);
     }
 
     /// <summary>
@@ -77,7 +75,6 @@ public class TutorialController : MonoBehaviour
     public void ContinueToNextLevel()
     {
         backTutorialButton.SetActive(_currentLevelController.transform.GetSiblingIndex() != 0);
-
         _currentLevelController.InvokeOnLevelEnded();
     }
     
@@ -87,7 +84,6 @@ public class TutorialController : MonoBehaviour
     public void GoBackInLevels()
     {
         backTutorialButton.SetActive(_currentLevelController.transform.GetSiblingIndex() > 0);
-
         _currentLevelController.InvokeGoBackInTutorial();
     }
     
@@ -95,6 +91,7 @@ public class TutorialController : MonoBehaviour
     /// Moves forward by updating the current level controller index by +1
     /// </summary>
     private void HandleGoNext() => UpdateCurrentLevelController(1);
+    
     /// <summary>
     /// Moves backward by updating the current level controller index by -1
     /// </summary>

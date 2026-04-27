@@ -17,14 +17,14 @@ public class RotatableObject : MonoBehaviour
     public float degreesPerPixel = 0.3f;
     public bool invert;
 
-    float lastMouseX;
-    float z;                        // ALWAYS 0–360
-    Quaternion baseRotation;
+    float _lastMouseX;
+    float _z;                        // ALWAYS 0–360
+    Quaternion _baseRotation;
 
     void Awake()
     {
-        z = Normalize360(transform.localEulerAngles.z);
-        z = Mathf.Clamp(z, minZ, maxZ);
+        _z = Normalize360(transform.localEulerAngles.z);
+        _z = Mathf.Clamp(_z, minZ, maxZ);
 
         CaptureBase();
         Apply();
@@ -32,7 +32,7 @@ public class RotatableObject : MonoBehaviour
 
     void OnMouseDown()
     {
-        lastMouseX = Input.mousePosition.x;
+        _lastMouseX = Input.mousePosition.x;
         dragging = true;
 
         CaptureBase();
@@ -43,12 +43,12 @@ public class RotatableObject : MonoBehaviour
         if (!dragging) return;
 
         float mouseX = Input.mousePosition.x;
-        float delta = mouseX - lastMouseX;
-        lastMouseX = mouseX;
+        float delta = mouseX - _lastMouseX;
+        _lastMouseX = mouseX;
 
         if (invert) delta = -delta;
 
-        z = Mathf.Clamp(z + delta * degreesPerPixel, minZ, maxZ);
+        _z = Mathf.Clamp(_z + delta * degreesPerPixel, minZ, maxZ);
         Apply();
     }
 
@@ -63,10 +63,9 @@ public class RotatableObject : MonoBehaviour
     /// </summary>
     void CaptureBase()
     {
-        // factor out current Z safely
         Quaternion current = transform.localRotation;
-        Quaternion zRot = Quaternion.AngleAxis(z, Vector3.forward);
-        baseRotation = current * Quaternion.Inverse(zRot);
+        Quaternion zRot = Quaternion.AngleAxis(_z, Vector3.forward);
+        _baseRotation = current * Quaternion.Inverse(zRot);
     }
 
     /// <summary>
@@ -74,7 +73,7 @@ public class RotatableObject : MonoBehaviour
     /// </summary>
     void Apply()
     {
-        transform.localRotation = baseRotation * Quaternion.AngleAxis(z, Vector3.forward);
+        transform.localRotation = _baseRotation * Quaternion.AngleAxis(_z, Vector3.forward);
     }
 
     /// <summary>

@@ -3,7 +3,7 @@ using UnityEngine;
 /// <summary>
 /// Setting camera orthographic size to match the target resolution
 /// </summary>
-[ExecuteInEditMode] // Changes in Editor
+[ExecuteInEditMode]
 [RequireComponent(typeof(Camera))]
 public class CameraResLocker : MonoBehaviour
 {
@@ -32,7 +32,7 @@ public class CameraResLocker : MonoBehaviour
         float targetAspect = targetWidth / targetHeight;
         float currentAspect = (float)Screen.width / Screen.height;
 
-        // Case A: Screen has bigger height (MacBook, Portrét)
+        // Case A: Screen has bigger height (MacBook, Portrait)
         if (currentAspect < targetAspect)
         {
             _camera.orthographicSize = (targetWidth / currentAspect) * 0.5f;

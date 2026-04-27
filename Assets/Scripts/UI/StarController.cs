@@ -1,4 +1,3 @@
-using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -7,7 +6,7 @@ using UnityEngine;
 /// </summary>
 public class StarController : MonoBehaviour
 {
-    [SerializeField] private bool _collected;
+    [SerializeField] private bool collected;
     private Transform _collectedStar;
 
     private void Awake()
@@ -18,10 +17,10 @@ public class StarController : MonoBehaviour
 #if UNITY_EDITOR
     private void Update()
     {
-        if (_collected)
+        if (collected)
         {
             OnStarCollected();
-            _collected = false;
+            collected = false;
         }
     }
     #endif
@@ -39,7 +38,6 @@ public class StarController : MonoBehaviour
     /// </summary>
     public void OnStarCollected()
     {
-        Debug.Log("OnStarCollected TWEENING");
         _collectedStar.DORotate(new Vector3(0,0,360), .5f, RotateMode.FastBeyond360);
         _collectedStar.DOScaleX(1,.5f);
         _collectedStar.DOScaleY(1,.5f);
@@ -50,10 +48,8 @@ public class StarController : MonoBehaviour
     /// </summary>
     public void OnStarrRemoved()
     {
-        Debug.Log("OnStarrRemoved TWEENING");
         _collectedStar.DOScaleX(0, 0f); 
         _collectedStar.DOScaleY(0, 0f);
         _collectedStar.rotation = Quaternion.Euler(0,0,0);
     }
-
 }

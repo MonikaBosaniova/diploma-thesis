@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 using DG.Tweening;
 
 /// <summary>
@@ -51,7 +49,7 @@ public class CameraTweening : MonoBehaviour
     }
 
     /// <summary>
-    /// Animates camera movement and rotation back to the default position
+    /// Animates camera movement and rotation back to the default (start) position
     /// </summary>
     public void MoveCameraToDefaultPosition()
     {

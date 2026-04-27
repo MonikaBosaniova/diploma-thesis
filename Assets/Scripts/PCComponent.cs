@@ -1,5 +1,3 @@
-using UnityEngine;
-
 /// <summary>
 /// Enumeration of all PC hardware components used in the skill tree progress visualization
 /// </summary>

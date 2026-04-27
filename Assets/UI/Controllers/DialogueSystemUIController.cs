@@ -1,7 +1,5 @@
-using System;
 using System.Linq;
 using DialogueSystem;
-using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace UI
@@ -11,11 +9,6 @@ namespace UI
         private int _currentIndex = 0;
         public DialogueSequence dialogueSequence;
         public AvatarVisualization avatarVisualizationConfig;
-
-        // private void OnEnable()
-        // {
-        //     
-        // }
 
         public void ShowDialogue(DialogueSequence ds)
         {
@@ -34,7 +27,6 @@ namespace UI
 
         protected override void Bind()
         {
-            //Debug.Log("DialogueUI bind");
             _currentIndex = 0;
             ShowCurrentLine();
             DialogueContainer.RegisterCallback<ClickEvent>(NextLine);
@@ -44,7 +36,6 @@ namespace UI
         {
             if (_currentIndex >= dialogueSequence.dialogueLines.Count)
             {
-                //DialogueLabel.text = "End of dialogue.";
                 HideDialogue();
                 return;
             }
@@ -59,7 +50,8 @@ namespace UI
 
         private void UpdateText(string value)
         {
-            DialogueLabel.text = value;
+            if(DialogueLabel != null)
+                DialogueLabel.text = value;
         }
 
         private void NextLine(ClickEvent evt)
