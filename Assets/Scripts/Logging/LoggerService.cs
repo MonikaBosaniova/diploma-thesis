@@ -17,15 +17,15 @@ public class LoggerService : MonoBehaviour
 {
     public static LoggerService Instance { get; private set; }
 
-    private static string _sessionId;
-    private static string _environment;
-    private static string _version;
+    private static string sessionId;
+    private static string environment;
+    private static string version;
 
     private static readonly string ObfuscatedAPIKey = "ZXUwMXh4NDk4MTY2ZGUyZDY4M2VlNGVlOWNlNzg1NjZGRkZGTlJBTA==";
     private static readonly string APIKey = Encoding.UTF8.GetString(Convert.FromBase64String(ObfuscatedAPIKey));
     private static readonly string NewRelicApiUrl = "https://log-api.eu.newrelic.com/log/v1?Api-Key=" + APIKey;
 
-    private int rateLimitingCountdown = 1000;
+    private int _rateLimitingCountdown = 1000;
 
     private static readonly Regex[] IgnoreFilters = new Regex[]
     {
@@ -42,11 +42,11 @@ public class LoggerService : MonoBehaviour
 
         Instance = this;
 
-        _sessionId = System.Guid.NewGuid().ToString();
-        _version = Application.version;
+        sessionId = System.Guid.NewGuid().ToString();
+        version = Application.version;
 
 #if UNITY_EDITOR
-        _environment = "Development";
+        environment = "Development";
 #else
         _environment = "Production";
 #endif
@@ -69,9 +69,9 @@ public class LoggerService : MonoBehaviour
     {
         return new Dictionary<string, object>
         {
-            { "sessionId", _sessionId },
-            { "environment", _environment },
-            { "version", _version },
+            { "sessionId", sessionId },
+            { "environment", environment },
+            { "version", version },
             { "sceneName", SceneManager.GetActiveScene().name },
             { "severity", severity },
             { "message", message }
@@ -132,7 +132,7 @@ public class LoggerService : MonoBehaviour
 
     public void LogWarning(string message, string stackTrace)
     {
-        if(rateLimitingCountdown-- < 0) return;
+        if(_rateLimitingCountdown-- < 0) return;
         
         var data = CreateLogBase("warning", message);
         
@@ -143,7 +143,7 @@ public class LoggerService : MonoBehaviour
 
     public void LogError(string message, string stackTrace)
     {
-        if(rateLimitingCountdown-- < 0) return;
+        if(_rateLimitingCountdown-- < 0) return;
         
         var data = CreateLogBase("error", message);
         
@@ -227,5 +227,4 @@ public class LoggerService : MonoBehaviour
         request.SetRequestHeader("Content-Type", "application/json");
         yield return request.SendWebRequest();
     }
-    
 }
