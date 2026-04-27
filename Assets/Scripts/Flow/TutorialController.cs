@@ -55,7 +55,6 @@ public class TutorialController : MonoBehaviour
     public void InvokeOnLeveStarted()
     {
         IsCompleted = false;
-        Debug.Log("OnTutorialStarted");
         OnTutorialStarted?.Invoke();
     }  
     
@@ -65,7 +64,6 @@ public class TutorialController : MonoBehaviour
     public void InvokeOnLevelEnded()
     {
         IsCompleted = true;
-        Debug.Log("OnTutorialEnded");
         OnTutorialEnded?.Invoke();
     }
     

@@ -152,7 +152,6 @@ public class BinaryCalculator : MonoBehaviour
     {
         if (Math.Abs(_finalValue - _decValue) < 0.1)
         {
-            Debug.Log("Submit answer: " + _finalValue + " - " + _decValue);
             OnDecValueChanged?.Invoke(_decValue);
             _finalValue = -1;
         }
