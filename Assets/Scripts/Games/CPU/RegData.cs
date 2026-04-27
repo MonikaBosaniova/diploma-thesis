@@ -39,7 +39,7 @@ namespace Games.CPU
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            //HARDCODED FOR SVENARIO
+            //HARDCODED FOR SCENARIO
             if (type == RegDataType.ManaLeft)
             {
                 value = 12f;

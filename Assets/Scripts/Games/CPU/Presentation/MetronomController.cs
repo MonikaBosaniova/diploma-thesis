@@ -2,7 +2,7 @@ using DG.Tweening;
 using UnityEngine;
 
 /// <summary>
-/// Creates the metronome thinking in the presentation
+/// Creates the metronome ticking in the presentation
 /// </summary>
 public class MetronomController : MonoBehaviour
 {

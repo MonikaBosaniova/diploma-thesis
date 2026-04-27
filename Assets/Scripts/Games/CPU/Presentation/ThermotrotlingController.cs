@@ -39,11 +39,13 @@ namespace Games.CPU
             mySequence.Append(boltsIn.transform.DOLocalMoveX(_endPosBoltsIn, duration + 1f))
                 .AppendCallback(() => boltsIn.SetActive(false));
 
-            mySequence.Append(heat.transform.DOLocalMoveZ(_endPosHeat, duration))
-                .AppendCallback(() => heat.SetActive(false));
+            float parallelStartTime = duration + 1f;
 
-            mySequence.Append(boltsOut.transform.DOLocalMoveX(_endPosBoltsOut, duration + 1f))
-                .AppendCallback(() => boltsOut.SetActive(false));
+            mySequence.Insert(parallelStartTime, heat.transform.DOLocalMoveZ(_endPosHeat, duration))
+                .InsertCallback(parallelStartTime + duration, () => heat.SetActive(false));
+
+            mySequence.Insert(parallelStartTime, boltsOut.transform.DOLocalMoveX(_endPosBoltsOut, duration + 1f))
+                .InsertCallback(parallelStartTime + duration + 1f, () => boltsOut.SetActive(false));
 
             mySequence.OnComplete(() => {
                 ResetObjects();
