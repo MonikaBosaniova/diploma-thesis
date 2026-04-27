@@ -36,7 +36,6 @@ namespace Gates
         {
             Value = !Value;
             UpdateVisuals();
-            //Debug.Log("Switched to: " + Value);
         }
 
         private void UpdateVisuals()
@@ -71,8 +70,6 @@ namespace Gates
             {
                 wire.sharedMaterial  = value ? TrueMaterial : FalseMaterial; 
             }
-            //line.transform.GetChild(Convert.ToInt32(value)).gameObject.SetActive(true);
-            //line.transform.GetChild(Convert.ToInt32(!value)).gameObject.SetActive(false);
         }
     }
 }

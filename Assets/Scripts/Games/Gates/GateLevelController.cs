@@ -17,7 +17,6 @@ namespace Gates
             {
                 transform.GetChild(i).gameObject.SetActive(true);
             }
-            //transform.GetChild(0).gameObject.SetActive(true);
             _allLightBulbs = gameObject.GetComponentsInChildren<LightBulbController>().ToList();
             
             if(!freeMode)
@@ -35,7 +34,6 @@ namespace Gates
             {
                 transform.GetChild(i).gameObject.SetActive(false);
             }
-            //transform.GetChild(0).gameObject.SetActive(false);
             base.Close();
         }
 
@@ -65,7 +63,5 @@ namespace Gates
             
             StartCoroutine(WaitToShowCompleteLevel());
         }
-        
-
     }
 }
