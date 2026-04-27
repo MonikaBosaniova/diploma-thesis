@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using DialogueSystem;
 using UnityEngine;
@@ -14,5 +13,4 @@ public class DialogueSequenceController : MonoBehaviour
     public List<DialogueSequence>  afterMoreDialogueSequences = new List<DialogueSequence>();
 
     private Label dialogueText;
-    
 }
