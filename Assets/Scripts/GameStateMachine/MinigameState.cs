@@ -48,13 +48,13 @@ namespace GameStateMachine
         protected void ContinueToNextLevel()
         {
             //ONLY FOR OPINION MENU
-            if (Manager.gamePlayed && _currentLevelIndex == Levels.Count - 2)
-            {
-                Levels.ElementAt(_currentLevelIndex).Close();
-                _currentLevelIndex = 0;
-                OnStateComplete?.Invoke();
-                return;
-            }
+            // if (Manager.gamePlayed && _currentLevelIndex == Levels.Count - 2)
+            // {
+            //     Levels.ElementAt(_currentLevelIndex).Close();
+            //     _currentLevelIndex = 0;
+            //     OnStateComplete?.Invoke();
+            //     return;
+            // }
             
             if (_currentLevelIndex == Levels.Count - 1)
             {

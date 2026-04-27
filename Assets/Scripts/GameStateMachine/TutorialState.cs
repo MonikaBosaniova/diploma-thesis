@@ -72,8 +72,6 @@ namespace GameStateMachine
                 _currentTutorialIndex++;
             }
             
-            Debug.Log("TUTORIAL NEXT: " + _currentTutorialIndex);
-            
         }
         
         /// <summary>
@@ -87,7 +85,6 @@ namespace GameStateMachine
             _tutorials.ElementAt(_currentTutorialIndex - 1).Init();
             _currentTutorialIndex--;
             
-            Debug.Log("TUTORIAL BACK: " + _currentTutorialIndex);
         }
     }
 }

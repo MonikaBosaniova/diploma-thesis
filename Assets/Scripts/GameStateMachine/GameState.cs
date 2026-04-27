@@ -49,10 +49,8 @@ namespace GameStateMachine
         /// </summary>
         protected void SaveProgress()
         {
-            Debug.Log("SAVING: " + Manager.stars);
             if(ProgressService.I != null)
                 ProgressService.I.RecordLevelResult(Manager.nodeID, Manager.stars, Manager.time);
-            
         }
         
         /// <summary>

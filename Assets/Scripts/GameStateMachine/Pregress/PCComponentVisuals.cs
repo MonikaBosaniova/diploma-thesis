@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using UnityEngine;
 
@@ -55,11 +54,6 @@ public class PCComponentVisuals : MonoBehaviour
         _outline.OutlineMode = Outline.Mode.OutlineAll;
         _outline.OutlineWidth = 7f;
         _outline.OutlineColor = new Color(1,(float)0.5592139,0,1);
-    }
-
-    private void Start()
-    {
-
     }
 
     /// <summary>
@@ -126,7 +120,6 @@ public class PCComponentVisuals : MonoBehaviour
     {
         if (_outline == null)
         {
-            Debug.LogWarning("PCComponentVisuals: No outline set. " + name);
             return;
         }
         
