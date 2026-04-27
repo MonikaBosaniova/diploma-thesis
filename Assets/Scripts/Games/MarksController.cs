@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Controller that hides marks (checkmarks) on Start and OnEnable
+/// Controller that hides presentation marks on Start and OnEnable
 /// </summary>
 public class MarksController : MonoBehaviour
 {

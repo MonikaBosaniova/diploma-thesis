@@ -1,5 +1,3 @@
-using UnityEngine;
-
 /// <summary>
 /// General purpose level controller that activates/deactivates child objects on Init/Close
 /// </summary>

@@ -1,10 +1,7 @@
-using System;
-using GameStateMachine;
 using UI;
-using UnityEngine;
 
 /// <summary>
-/// Level controller for review-type minigame levels that auto-complete when level-specific conditions are met
+/// Level controller for reviews of minigame, used in testing in school
 /// </summary>
 public class ReviewMinigameLevelController : LevelController
 {
