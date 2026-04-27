@@ -1,4 +1,3 @@
-// Assets/Game/SkillTree/ProgressService.cs
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -122,7 +121,6 @@ public class ProgressService : MonoBehaviour
             p.newStars++;
             p.bestStars = Mathf.Clamp(stars, 0, 3);
             ProgressChanged = true;
-            //ChangedNodeId =  nodeId;
         }
         else
         {
