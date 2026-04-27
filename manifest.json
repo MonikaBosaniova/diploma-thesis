@@ -1,0 +1,12 @@
+{
+  "name": "DiplomaThesis",
+  "start_url": "https://monikabosaniova.github.io/diploma-thesis/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "TemplateData/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
