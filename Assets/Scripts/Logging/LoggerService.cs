@@ -48,7 +48,7 @@ public class LoggerService : MonoBehaviour
 #if UNITY_EDITOR
         environment = "Development";
 #else
-        _environment = "Production";
+        environment = "Production";
 #endif
 
         Application.logMessageReceived += (message, stackTrace, type) =>
