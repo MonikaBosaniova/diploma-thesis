@@ -26,16 +26,16 @@ namespace Games.Ram
         [SerializeField] private float stepGC = 0.05f;
         [SerializeField] private GameObject disabledGC;
         
-        private int numberToGenerateAddress = 3;
-        private int numberOfWantedAddresses = 3;
-        RamGameManager ramGameManager;
+        private int _numberToGenerateAddress = 3;
+        private int _numberOfWantedAddresses = 3;
+        private RamGameManager _ramGameManager;
         private List<SnappedAddressCubieController> _allSnappedCubies = new List<SnappedAddressCubieController>();
-        private bool generateNewAddress = false;
-        private int numOfGCCalled = 0;
+        private bool _generateNewAddress = false;
+        private int _numOfGCCalled = 0;
         
         public override void Init()
         {
-            ramGameManager = FindFirstObjectByType<RamGameManager>();
+            _ramGameManager = FindFirstObjectByType<RamGameManager>();
             
             for (int i = 0; i < transform.childCount; i++)
             {
@@ -50,15 +50,14 @@ namespace Games.Ram
 
         private void Update()
         {
-            if (generateNewAddress)
+            if (_generateNewAddress)
             {
                 var allAddresses = GetAllAddresses();
                 cpuWantedAddressController.GenerateWantedAddress(allAddresses);
-                numOfGCCalled = 0;
-                generateNewAddress = false;
+                _numOfGCCalled = 0;
+                _generateNewAddress = false;
                 disabledGC.SetActive(true);
                 gcBlocked = true;
-                //actualTimeGC = startTimeGC;
             }
             
             if (gcBlocked || gcEnabled) return;
@@ -69,7 +68,6 @@ namespace Games.Ram
                 if(disabledGC != null)
                     disabledGC.SetActive(false);
                 gcEnabled = true;
-                //actualTimeGC = startTimeGC;
             }
         }
 
@@ -84,22 +82,22 @@ namespace Games.Ram
                 Shape = null;
             }
             
-            if (numberToGenerateAddress == 0 && cpuWantedAddressController.generateNewAddress)
+            if (_numberToGenerateAddress == 0 && cpuWantedAddressController.generateNewAddress)
             {
-                numberToGenerateAddress = 4;
-                generateNewAddress = true;
+                _numberToGenerateAddress = 4;
+                _generateNewAddress = true;
                 EnableHighlightingAndDraggingForSnappedCubies(true);
             }
             else
             {
-                var random = Random.Range(0, ramGameManager.allPossibleGeneratedShapes.Count);
-                Shape = Instantiate(ramGameManager.allPossibleGeneratedShapes[random], SpawnShapesParent.transform);
+                var random = Random.Range(0, _ramGameManager.allPossibleGeneratedShapes.Count);
+                Shape = Instantiate(_ramGameManager.allPossibleGeneratedShapes[random], SpawnShapesParent.transform);
                 Shape.GetComponent<ShapeController>().SetLevelController(this);
                 EnableHighlightingAndDraggingForSnappedCubies(false);
                 gcBlocked = false;
                 
             }
-            numberToGenerateAddress--;
+            _numberToGenerateAddress--;
         }
         
         /// <summary>
@@ -132,9 +130,8 @@ namespace Games.Ram
             //LOGIC FOR DESTROYING
             //removing 10% randomly
             float probbilityToRemoved = 0.2f;
-            if(numOfGCCalled > 1)  probbilityToRemoved = 0.4f;
+            if(_numOfGCCalled > 1)  probbilityToRemoved = 0.4f;
             int numOfToBeDestroyedAddresses = Mathf.RoundToInt(allDestroyableCubies.Count * probbilityToRemoved);
-            Debug.Log("REMOVING: " + numOfToBeDestroyedAddresses);
 
             if (allDestroyableCubies.Count < numOfToBeDestroyedAddresses)
             {
@@ -161,12 +158,11 @@ namespace Games.Ram
             }
             
             actualTimeGC = startTimeGC;
-            numOfGCCalled++;
+            _numOfGCCalled++;
         }
 
         private void EnableHighlightingAndDraggingForSnappedCubies(bool enabled)
         {
-            Debug.Log(_allSnappedCubies.Count + "   " + enabled);
             foreach (var snappedCubie in _allSnappedCubies)
             {
                 snappedCubie.enableHighlighting =  enabled;
@@ -203,6 +199,5 @@ namespace Games.Ram
         {
             StartCoroutine(WaitToShowCompleteLevel());
         }
-        
     }
 }

@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using Games.Ram;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 /// <summary>
 /// Controls a draggable shape in the RAM minigame, handles snapping to grid cells
@@ -11,22 +9,23 @@ public class ShapeController : MonoBehaviour
 {
     [Header("Debug Values - READ ONLY")] 
     [SerializeField] private Material snappedCubieMaterial;
-    List<Vector3> ChildSpawnPointPositions = new List<Vector3>();
-    Vector3 SpawnPoint;
-    DraggableObject draggableObject;
-    List<BgCubeTrigger> bgTriggers = new List<BgCubeTrigger>();
-    RamLevelController ramLevelController;
+
+    private readonly List<Vector3> _childSpawnPointPositions = new List<Vector3>();
+    private Vector3 _spawnPoint;
+    private DraggableObject _draggableObject;
+    private readonly List<BgCubeTrigger> _bgTriggers = new List<BgCubeTrigger>();
+    private RamLevelController _ramLevelController;
 
     private void Start()
     {
-        draggableObject = GetComponent<DraggableObject>();
+        _draggableObject = GetComponent<DraggableObject>();
         
         foreach (Transform child in transform)
         {
-            ChildSpawnPointPositions.Add(child.localPosition);
+            _childSpawnPointPositions.Add(child.localPosition);
         }
-        SpawnPoint = transform.position;
-        draggableObject.DragEnd += SnapObject;
+        _spawnPoint = transform.position;
+        _draggableObject.DragEnd += SnapObject;
     }
 
     /// <summary>
@@ -35,7 +34,7 @@ public class ShapeController : MonoBehaviour
     /// <param name="bgTrigger">Trigger zone that the shape overlaps</param>
     public void AddBgTrigger(BgCubeTrigger bgTrigger)
     {
-        bgTriggers.Add(bgTrigger);
+        _bgTriggers.Add(bgTrigger);
     }
     
     /// <summary>
@@ -44,22 +43,22 @@ public class ShapeController : MonoBehaviour
     /// <param name="bgTrigger">Trigger zone to remove</param>
     public void RemoveBgTrigger(BgCubeTrigger bgTrigger)
     {
-        if(bgTriggers.Contains(bgTrigger))
-            bgTriggers.Remove(bgTrigger);
+        if(_bgTriggers.Contains(bgTrigger))
+            _bgTriggers.Remove(bgTrigger);
     }
     
     private void SnapObject()
     {
-        if (bgTriggers.Count == transform.childCount && bgTriggers.Count != 0)
+        if (_bgTriggers.Count == transform.childCount && _bgTriggers.Count != 0)
         {
             //Checking that the trigger is not CPU point
-            if (bgTriggers[0].GetComponent<CPUWantedAddressController>() == null)
+            if (_bgTriggers[0].GetComponent<CPUWantedAddressController>() == null)
             {
                 SnapObjectToPosition();
-                draggableObject.enabled = false;
+                _draggableObject.enabled = false;
                 
-                if(ramLevelController != null)
-                    ramLevelController.GenerateShape();
+                if(_ramLevelController != null)
+                    _ramLevelController.GenerateShape();
             }
             else
             {
@@ -71,17 +70,17 @@ public class ShapeController : MonoBehaviour
             SnapToSpawnPoint();
         }
         
-        foreach (BgCubeTrigger bgTrigger in bgTriggers)
+        foreach (BgCubeTrigger bgTrigger in _bgTriggers)
             bgTrigger.ClearColoring();
-        bgTriggers.Clear();
+        _bgTriggers.Clear();
     }
 
     private void SnapToSpawnPoint()
     {
-        transform.position = SpawnPoint;
+        transform.position = _spawnPoint;
         for (var i = 0; i < transform.childCount; i++)
         {
-            transform.GetChild(i).localPosition = ChildSpawnPointPositions[i];
+            transform.GetChild(i).localPosition = _childSpawnPointPositions[i];
         }
     }
 
@@ -90,13 +89,13 @@ public class ShapeController : MonoBehaviour
     /// </summary>
     public void SnapObjectToPosition()
     {
-        bgTriggers[0].transform.parent.gameObject.TryGetComponent<RamGridGenerator>(out var cubeGridEditor);
+        _bgTriggers[0].transform.parent.gameObject.TryGetComponent<RamGridGenerator>(out var cubeGridEditor);
         if (cubeGridEditor == null) return;
         
         float spacing = cubeGridEditor.spacing;
-        for(var i = 0; i < bgTriggers.Count; i++)
+        for(var i = 0; i < _bgTriggers.Count; i++)
         {
-            var trigger = bgTriggers[i];
+            var trigger = _bgTriggers[i];
             var snapChild = transform.GetChild(i);
             
             trigger.SetSnapped(true);
@@ -108,12 +107,11 @@ public class ShapeController : MonoBehaviour
             var snappedCubie = snapChild.gameObject.GetComponent<SnappedAddressCubieController>();
             snappedCubie.snapped = true;
             snappedCubie.SetPositionAndTrigger(snappingRow, snappingColumn, trigger);
-            ramLevelController.AddSnappedCubieToList(snappedCubie);
+            _ramLevelController.AddSnappedCubieToList(snappedCubie);
         }
         Destroy(GetComponent<BoxCollider>());
         Destroy(GetComponent<Rigidbody>());
         Destroy(GetComponent<DraggableObject>());
-        //GetComponent<DraggableObject>().enabled = false;
     }
 
     /// <summary>
@@ -122,6 +120,6 @@ public class ShapeController : MonoBehaviour
     /// <param name="ramLc">Ram level controller instance</param>
     public void SetLevelController(RamLevelController ramLc)
     {
-        ramLevelController = ramLc;
+        _ramLevelController = ramLc;
     }
 }

@@ -1,5 +1,4 @@
 using System;
-using Gates;
 using UnityEngine;
 
 /// <summary>
@@ -10,12 +9,6 @@ public class RamCalculator : MonoBehaviour
     [SerializeField] private double _decValue = 0;
     
     public Action<double> OnDecValueChanged;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
     
     private void ShowHelperNumber(GameObject binHelperNumberParent, bool value)
     {
@@ -37,5 +30,4 @@ public class RamCalculator : MonoBehaviour
     private void VisualizeDecValue()
     {
     }
-
 }

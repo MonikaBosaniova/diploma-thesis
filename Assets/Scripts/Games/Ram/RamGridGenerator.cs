@@ -1,3 +1,5 @@
+//UNCOMMENT WHEN GENERATING, COMMENT WHEN BUILDING!
+
 using UnityEngine;
 // using UnityEditor;
 // using UnityEditor.SceneManagement;
@@ -5,7 +7,7 @@ using UnityEngine;
 namespace Games.Ram
 {
     /// <summary>
-    /// Editor utility for generating a 3D grid of cubes to represent RAM cells
+    /// Editor utility for generating a 3D grid of cubes to represent RAM cells or any other grid of prefabs
     /// </summary>
     public class RamGridGenerator : MonoBehaviour
     {
@@ -13,7 +15,6 @@ namespace Games.Ram
             public int x = 3, y = 3, z = 3;
             public float spacing = 1f;
 
-        //UNCOMMENT WHEN GENERATING, COMMENT WHEN BUILDING
         // #if UNITY_EDITOR
         //     [ContextMenu("Generate Grid")]
         //     public void Generate()

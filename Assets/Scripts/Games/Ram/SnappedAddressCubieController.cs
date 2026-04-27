@@ -26,36 +26,35 @@ namespace Games.Ram
         [SerializeField] private Material defaultMaterial;
         [SerializeField] private Material highlightMaterial;
 
-        internal BgCubeTrigger triggerWhereCubieIsSnapped;
+        private BgCubeTrigger _triggerWhereCubieIsSnapped;
 
-        private Transform CPUPoint;
-        
-        MeshRenderer meshRenderer;
-        DraggableObject draggableObject;
-        Vector3 cubieSnappedPosition = Vector3.zero;
-        private GameObject cubeHologram;
+        private Transform _cpuPoint;
+
+        private MeshRenderer _meshRenderer;
+        private DraggableObject _draggableObject;
+        private Vector3 _cubieSnappedPosition = Vector3.zero;
+        private GameObject _cubeHologram;
 
         private void Start()
         {
-            meshRenderer = transform.GetChild(0).GetComponent<MeshRenderer>();
+            _meshRenderer = transform.GetChild(0).GetComponent<MeshRenderer>();
             timeToLive = Random.Range(5, 20);
             StartCoroutine(SetDestroyStateAfterTime());
-            draggableObject = gameObject.GetComponent<DraggableObject>();
-            draggableObject.DragStart += SpawnHologram;
-            draggableObject.DragEnd += Snap; 
+            _draggableObject = gameObject.GetComponent<DraggableObject>();
+            _draggableObject.DragStart += SpawnHologram;
+            _draggableObject.DragEnd += Snap; 
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            Debug.Log("OnPointerEnter: R-" + rowPosition + ", C-" + columnPosition);
             if (!enableHighlighting) return;
-            meshRenderer.material = highlightMaterial;
+            _meshRenderer.material = highlightMaterial;
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
             if(!enableHighlighting) return;
-            meshRenderer.material = defaultMaterial;
+            _meshRenderer.material = defaultMaterial;
         }
 
         public bool EnableHighlighting
@@ -72,10 +71,10 @@ namespace Games.Ram
         /// <param name="trigger">Associated BgCubeTrigger</param>
         public void SetPositionAndTrigger(float row, float column, BgCubeTrigger trigger)
         {
-            cubieSnappedPosition = transform.position;
+            _cubieSnappedPosition = transform.position;
             rowPosition = Mathf.RoundToInt(row);
             columnPosition = Mathf.RoundToInt(column);
-            triggerWhereCubieIsSnapped = trigger;
+            _triggerWhereCubieIsSnapped = trigger;
         }
 
         /// <summary>
@@ -103,12 +102,12 @@ namespace Games.Ram
 
         internal void SetCPUPoint(Transform cpuPoint)
         {
-            CPUPoint = cpuPoint;
+            _cpuPoint = cpuPoint;
         }
 
         internal void RemoveCPUPoint()
         {
-            CPUPoint = null;
+            _cpuPoint = null;
         }
         
         /// <summary>
@@ -116,10 +115,10 @@ namespace Games.Ram
         /// </summary>
         internal void Snap()
         {
-            if (CPUPoint != null)
-                CPUPoint.GetComponent<CPUWantedAddressController>().CheckAddress(this);
-            SetPositionOfTransform(CPUPoint != null ? CPUPoint.transform.position : cubieSnappedPosition);
-            if(CPUPoint == null) Destroy(cubeHologram);
+            if (_cpuPoint != null)
+                _cpuPoint.GetComponent<CPUWantedAddressController>().CheckAddress(this);
+            SetPositionOfTransform(_cpuPoint != null ? _cpuPoint.transform.position : _cubieSnappedPosition);
+            if(_cpuPoint == null) Destroy(_cubeHologram);
         }
         
         /// <summary>
@@ -127,7 +126,7 @@ namespace Games.Ram
         /// </summary>
         private void SpawnHologram()
         {
-            cubeHologram = Instantiate(hologramCube, cubieSnappedPosition, Quaternion.identity);
+            _cubeHologram = Instantiate(hologramCube, _cubieSnappedPosition, Quaternion.identity);
         }
         
         private IEnumerator SetDestroyStateAfterTime() {
@@ -137,8 +136,8 @@ namespace Games.Ram
 
         private void OnDestroy()
         {
-            if(triggerWhereCubieIsSnapped != null)
-                triggerWhereCubieIsSnapped.SetSnapped(false);
+            if(_triggerWhereCubieIsSnapped != null)
+                _triggerWhereCubieIsSnapped.SetSnapped(false);
         }
     }
 }

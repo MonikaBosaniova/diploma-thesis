@@ -32,7 +32,7 @@ namespace Games.Ram
         private RamLevelController _ramLevelController;
         private BgCubeTrigger _bgCubeTrigger;
         private SnappedAddressCubieController _snappedAddressCubieController;
-        internal int numberOfWantedAddresses = 3;        
+        private int _numberOfWantedAddresses = 3;        
 
         private void Start()
         {
@@ -42,7 +42,6 @@ namespace Games.Ram
 
         public void GenerateWantedAddress(List<Tuple<int,int>> allPossibleAddresses)
         {
-            //List<Tuple<int,int>> allPossibleAddresses = GetAllAddresses();
             if (allPossibleAddresses.Count == 0) return;
             
             _bgCubeTrigger.highlightingEnabled = true;
@@ -57,7 +56,7 @@ namespace Games.Ram
             string col = addressesColumnParent.GetChild(columnAddress).GetComponent<TMP_Text>().text;
             addressRowTextBox.text = row;
             addressColumnTextBox.text = col;
-            numberOfWantedAddresses--;
+            _numberOfWantedAddresses--;
         }
 
         internal void SetRamLevelController(RamLevelController ramLevelController)
@@ -72,7 +71,6 @@ namespace Games.Ram
                                     cubieAddress.Item1 == rowAddress &&
                                     cubieAddress.Item2 == columnAddress;
             
-            // //TODO NICER VISUALS
             if (answerIsCorrect)
             {
                 addressColumnTextBox.transform.parent.gameObject.SetActive(false);
@@ -81,7 +79,6 @@ namespace Games.Ram
                 _bgCubeTrigger.SetHighlight(false);
                 _bgCubeTrigger.highlightingEnabled = false;
                 correctAnswer.SetActive(true);
-                Debug.Log("CORRECT");
                 StartCoroutine(ShowAnswer(true));
             }
             else
@@ -89,14 +86,12 @@ namespace Games.Ram
                 _snappedAddressCubieController.RemoveCPUPoint();
                 _snappedAddressCubieController.Snap();
                 wrongAnswer.SetActive(true);
-                Debug.Log("WRONG");
                 StartCoroutine(ShowAnswer(false));
             }
         }
         
         private void OnTriggerEnter(Collider other)
         {
-
             if (generateNewAddress) return;
 
             _snappedAddressCubieController = other.gameObject.GetComponent<SnappedAddressCubieController>();
@@ -124,7 +119,7 @@ namespace Games.Ram
                 _snappedAddressCubieController.RemoveCPUPoint();
                 _snappedAddressCubieController.Snap();
                 correctAnswer.SetActive(false);
-                if(numberOfWantedAddresses == 0) _ramLevelController.CallFinishState();
+                if(_numberOfWantedAddresses == 0) _ramLevelController.CallFinishState();
             }
             else
             {

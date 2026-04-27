@@ -18,15 +18,16 @@ namespace Games.CPU
 
         [Header ("---DEBUG---")]
         [SerializeField] bool Snapped;
-        MeshRenderer meshRenderer;
-        DraggableObject draggableObject;
+
+        private MeshRenderer _meshRenderer;
+        private DraggableObject _draggableObject;
 
         internal Action snap;
-        private RegData collidingData;
+        private RegData _collidingData;
 
         private void Start()
         {
-            meshRenderer = GetComponent<MeshRenderer>();
+            _meshRenderer = GetComponent<MeshRenderer>();
         }
 
         private void Update()
@@ -39,45 +40,28 @@ namespace Games.CPU
 
         private void OnTriggerEnter(Collider other)
         {
-            //other.transform.parent.TryGetComponent<ShapeController>(out var shapeController);
-            other.transform.TryGetComponent(out draggableObject);
-            other.transform.TryGetComponent(out collidingData);
-            if (draggableObject == null || collidingData == null) return;
-            //if (shapeController == null || draggableObject == null) return;
+            other.transform.TryGetComponent(out _draggableObject);
+            other.transform.TryGetComponent(out _collidingData);
+            if (_draggableObject == null || _collidingData == null) return;
             
-            if (draggableObject.dragging)
+            if (_draggableObject.dragging)
             {
-                //if (!Snapped)
-                //{
-                    //other.transform.parent.gameObject.GetComponent<ShapeController>().AddBgTrigger(this);
-                    if(highlightingEnabled)
-                        meshRenderer.material = OnMaterial;
-                // }
-                // else
-                // {
-                //     if(highlightingEnabled)
-                //         meshRenderer.material = AlreadySnappedMaterial;
-                // }
+                if(highlightingEnabled)
+                        _meshRenderer.material = OnMaterial;
             }
             else
             {
                 if(highlightingEnabled)
-                    meshRenderer.material = OffMaterial;
+                    _meshRenderer.material = OffMaterial;
             }
 
-            collidingData.regParent = transform;
+            _collidingData.regParent = transform;
         }
 
         private void OnTriggerExit(Collider other)
         {
-            //other.transform.parent.TryGetComponent<ShapeController>(out var shapeController);
-            //if (shapeController != null)
-            //{
-                //other.transform.parent.gameObject.GetComponent<ShapeController>().RemoveBgTrigger(this);
-                if(highlightingEnabled)
-                    meshRenderer.material = OffMaterial;
-                
-                //}
+            if(highlightingEnabled)
+                _meshRenderer.material = OffMaterial;
         }
 
         /// <summary>
@@ -95,7 +79,7 @@ namespace Games.CPU
         public void ClearColoring()
         {
             if(highlightingEnabled)
-                meshRenderer.material = OffMaterial;
+                _meshRenderer.material = OffMaterial;
         }
 
         /// <summary>
@@ -105,7 +89,7 @@ namespace Games.CPU
         public void SetHighlight(bool value)
         {
             if (highlightingEnabled)
-                meshRenderer.material = value ? OnMaterial : OffMaterial;
+                _meshRenderer.material = value ? OnMaterial : OffMaterial;
         }
         
         /// <summary>
@@ -123,6 +107,5 @@ namespace Games.CPU
             regTrigger.snap?.Invoke();
             regTrigger.SetHighlight(false);
         }
-        
     }
 }
