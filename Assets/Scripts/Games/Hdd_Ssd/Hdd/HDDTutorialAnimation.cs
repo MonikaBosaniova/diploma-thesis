@@ -6,18 +6,17 @@ using UnityEngine;
 /// </summary>
 public class HDDTutorialAnimation : MonoBehaviour
 {
-
     public Transform topDiskPanel;
     public Transform handle;
     public GameObject TextBox;
 
-    private bool handleMoving;
-    private Tween showTween;
+    private bool _handleMoving;
+    private Tween _showTween;
     
     void OnEnable()
     {
         Reset();
-        showTween = topDiskPanel.DOLocalMoveZ(12f, 3f).OnComplete(() =>
+        _showTween = topDiskPanel.DOLocalMoveZ(12f, 3f).OnComplete(() =>
         {
             TextBox.SetActive(true);
             MoveHandle();
@@ -29,7 +28,7 @@ public class HDDTutorialAnimation : MonoBehaviour
     /// </summary>
     void Reset()
     {
-        showTween.Kill();
+        _showTween.Kill();
         handle.localRotation = Quaternion.identity;
         topDiskPanel.localPosition = Vector3.zero;
         TextBox.SetActive(false);

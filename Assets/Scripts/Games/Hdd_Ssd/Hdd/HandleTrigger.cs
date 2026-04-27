@@ -2,7 +2,7 @@ using Games.Hdd_Ssd;
 using UnityEngine;
 
 /// <summary>
-/// Figures the triggering thi tip of the needle
+/// Figures the triggering the tip of the needle
 /// </summary>
 public class HandleTrigger : MonoBehaviour
 {

@@ -23,16 +23,16 @@ namespace Games.Hdd_Ssd
         [SerializeField] private SsdSegment generatedData;
         private Tuple<int,int> lastGeneratedRandom = new Tuple<int,int>(-1,-1);
         private Tuple<int, int> chosenPosition = new Tuple<int, int>(-1,-1);
-        bool finishLevel = false;
+        private bool _finishLevel = false;
         
         [Header("Dimensions")]
         [SerializeField] private int sectionXCount;
         [SerializeField] private int sectionYCount;
-        
-        List<SsdButton> horizontalButtons = new List<SsdButton>();
-        List<SsdButton> verticalButtons = new List<SsdButton>();
-        
-        List<float> lineScalingSettings = new List<float>()
+
+        private List<SsdButton> _horizontalButtons = new List<SsdButton>();
+        private List<SsdButton> _verticalButtons = new List<SsdButton>();
+
+        private readonly List<float> _lineScalingSettings = new List<float>()
         {
             4.85f, 9.7f, 14.35f
         };
@@ -49,8 +49,8 @@ namespace Games.Hdd_Ssd
             sectionXCount = rows.ElementAt(0).transform.childCount / numOfRepetitions;
             sectionYCount = rows.Count;
             
-            horizontalButtons = HorizontalButtonsController.transform.GetComponentsInChildren<SsdButton>().ToList();
-            verticalButtons = VerticalButtonsController.transform.GetComponentsInChildren<SsdButton>().ToList();
+            _horizontalButtons = HorizontalButtonsController.transform.GetComponentsInChildren<SsdButton>().ToList();
+            _verticalButtons = VerticalButtonsController.transform.GetComponentsInChildren<SsdButton>().ToList();
             
             VerticalButtonsController.OnSelectionChange += CheckVerticalCollision;
             HorizontalButtonsController.OnSelectionChange += CheckHorizontalCollision;
@@ -91,19 +91,19 @@ namespace Games.Hdd_Ssd
                     if (k >= sectionXCount * (i - 1))
                     {
                         rows.ElementAt(j).transform.GetChild(k).gameObject.SetActive(true);
-                        horizontalButtons.ElementAt(k).gameObject.SetActive(true);
+                        _horizontalButtons.ElementAt(k).gameObject.SetActive(true);
                     }
                     else
                     {
                         rows.ElementAt(j).transform.GetChild(k).gameObject.SetActive(false);
-                        horizontalButtons.ElementAt(k).gameObject.SetActive(false);
+                        _horizontalButtons.ElementAt(k).gameObject.SetActive(false);
                     }
                 }
 
-                var scalingIndex = lineScalingSettings.Count - i;
-                var scaleZ = lineScalingSettings[scalingIndex];
+                var scalingIndex = _lineScalingSettings.Count - i;
+                var scaleZ = _lineScalingSettings[scalingIndex];
                 var posZ = scaleZ / 2f;
-                verticalButtons.ElementAt(j).gameObject.GetComponent<SsdButton>().SetLineScaling(scaleZ, posZ);
+                _verticalButtons.ElementAt(j).gameObject.GetComponent<SsdButton>().SetLineScaling(scaleZ, posZ);
             }
         }
 
@@ -137,12 +137,12 @@ namespace Games.Hdd_Ssd
 
         private void GenerateRandomDataPoint()
         {
-            var randomNumX = UnityEngine.Random.Range(sectionXCount * (numOfRepetitions - 1), horizontalButtons.Count);
+            var randomNumX = UnityEngine.Random.Range(sectionXCount * (numOfRepetitions - 1), _horizontalButtons.Count);
             var randomNumY = UnityEngine.Random.Range(0, sectionYCount);
             Tuple<int, int> randomPosition = new Tuple<int, int>(randomNumX, randomNumY);
             while (Equals(randomPosition, lastGeneratedRandom))
             {
-                randomNumX = UnityEngine.Random.Range(sectionXCount * (numOfRepetitions - 1), horizontalButtons.Count);
+                randomNumX = UnityEngine.Random.Range(sectionXCount * (numOfRepetitions - 1), _horizontalButtons.Count);
                 randomNumY = UnityEngine.Random.Range(0, sectionYCount);
                 randomPosition = new Tuple<int, int>(randomNumX, randomNumY);
             }

@@ -15,15 +15,15 @@ namespace Games.Hdd_Ssd
         public GameObject bigDisk;
         public GameObject topCover;
         
-        private List<DiskController> diskControllers;
+        private List<DiskController> _diskControllers;
 
         private DialogueSequenceController _dialogueSequenceController;
         
         [Header("DEBUG")]
         [SerializeField] private int _maxDataCollected = 5;
         [SerializeField] private int _dataCollected = 0;
-        private int lastGeneratedRandom;
-        bool finishLevel = false;
+        private int _lastGeneratedRandom;
+        private bool _finishLevel = false;
         
         public override void Init()
         {
@@ -37,7 +37,7 @@ namespace Games.Hdd_Ssd
             }
             
             smallDisk.gameObject.SetActive(true);
-            diskControllers = smallDisk.transform.GetComponentsInChildren<DiskController>().ToList();
+            _diskControllers = smallDisk.transform.GetComponentsInChildren<DiskController>().ToList();
             GenerateRandomDataPoint();
             
             topCover.transform.DOLocalMoveZ(10.5f, 0.8f);
@@ -71,17 +71,17 @@ namespace Games.Hdd_Ssd
                 SetDialogueText(_dialogueSequenceController.afterMoreDialogueSequences.ElementAt(0));
                 smallDisk.SetActive(false);
                 bigDisk.SetActive(true);
-                diskControllers = bigDisk.transform.GetComponentsInChildren<DiskController>().ToList();
+                _diskControllers = bigDisk.transform.GetComponentsInChildren<DiskController>().ToList();
                 GenerateRandomDataPoint();
                 return;
             }
 
-            if (bigDisk.activeSelf && !finishLevel)
+            if (bigDisk.activeSelf && !_finishLevel)
             {
                 SetDialogueText(_dialogueSequenceController.afterMoreDialogueSequences.ElementAt(1));
                 SetSpeedRotation(50f);
                 GenerateRandomDataPoint();
-                finishLevel = true;
+                _finishLevel = true;
                 return;
             }
             
@@ -93,13 +93,13 @@ namespace Games.Hdd_Ssd
         /// </summary>
         private void GenerateRandomDataPoint()
         {
-            var randomNum = Random.Range(0, diskControllers.Count);
-            while (randomNum == lastGeneratedRandom)
+            var randomNum = Random.Range(0, _diskControllers.Count);
+            while (randomNum == _lastGeneratedRandom)
             {
-                randomNum = Random.Range(0, diskControllers.Count);
+                randomNum = Random.Range(0, _diskControllers.Count);
             }
-            lastGeneratedRandom = randomNum;
-            diskControllers[randomNum].CreateCube();
+            _lastGeneratedRandom = randomNum;
+            _diskControllers[randomNum].CreateCube();
         }
 
         private void CheckFinishState(double newValue)
@@ -118,7 +118,7 @@ namespace Games.Hdd_Ssd
 
         private void SetSpeedRotation(float newSpeed)
         {
-            foreach (var diskController in diskControllers)
+            foreach (var diskController in _diskControllers)
             {
                 diskController.SetSpeedRotation(newSpeed);
             }
