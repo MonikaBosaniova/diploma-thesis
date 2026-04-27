@@ -7,6 +7,5 @@ namespace Games.Ram
     /// </summary>
     public class CoolingGameManager : GameManager
     {
-
     }
 }

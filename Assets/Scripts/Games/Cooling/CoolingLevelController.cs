@@ -26,23 +26,23 @@ namespace Games.Ram
         [SerializeField] private GameObject slowBubble;
         
         [SerializeField] private int numOfRepetitions;
-       
-        CoolingGameManager coolingGameManager;
-        private ScenarioData actualScenario;
+
+        private CoolingGameManager _coolingGameManager;
+        private ScenarioData _actualScenario;
         
-        private bool cpuIsOptimal = false;
-        private bool gpuIsOptimal = false;
+        private bool _cpuIsOptimal = false;
+        private bool _gpuIsOptimal = false;
         
-        private Slider cpuSlider;
-        private Slider gpuSlider;
-        private float cpuSliderToValueChangeCounter;
-        private float gpuSliderToValueChangeCounter;
-        private float cpuSliderNewValue;
-        private float gpuSliderNewValue;
-        private bool cpuSliderMoving;
-        private bool gpuSliderMoving;
-        private const float maxSliderToValueChangeCounter = 2.5f;
-        private const float sliderUpdateStep = 0.001f;
+        private Slider _cpuSlider;
+        private Slider _gpuSlider;
+        private float _cpuSliderToValueChangeCounter;
+        private float _gpuSliderToValueChangeCounter;
+        private float _cpuSliderNewValue;
+        private float _gpuSliderNewValue;
+        private bool _cpuSliderMoving;
+        private bool _gpuSliderMoving;
+        private const float MaxSliderToValueChangeCounter = 2.5f;
+        private const float SliderUpdateStep = 0.001f;
 
         public override void Init()
         {
@@ -51,18 +51,18 @@ namespace Games.Ram
                 transform.GetChild(i).gameObject.SetActive(true);
             }
             
-            coolingGameManager = FindFirstObjectByType<CoolingGameManager>();
+            _coolingGameManager = FindFirstObjectByType<CoolingGameManager>();
             
             monitorController.SetScenario(startScenarioIndex);
             UpdateDataWhenScenarioChange();
             
             //GET SLIDERS
-            cpuSlider = sliders.transform.GetChild(0).gameObject.GetComponent<Slider>();
-            gpuSlider = sliders.transform.GetChild(1).gameObject.GetComponent<Slider>();
-            cpuSlider.enabled = !tutorialState;
-            gpuSlider.enabled = !tutorialState;
-            cpuSliderToValueChangeCounter = Random.Range(1, maxSliderToValueChangeCounter);
-            gpuSliderToValueChangeCounter = Random.Range(1, maxSliderToValueChangeCounter);
+            _cpuSlider = sliders.transform.GetChild(0).gameObject.GetComponent<Slider>();
+            _gpuSlider = sliders.transform.GetChild(1).gameObject.GetComponent<Slider>();
+            _cpuSlider.enabled = !tutorialState;
+            _gpuSlider.enabled = !tutorialState;
+            _cpuSliderToValueChangeCounter = Random.Range(1, MaxSliderToValueChangeCounter);
+            _gpuSliderToValueChangeCounter = Random.Range(1, MaxSliderToValueChangeCounter);
             
             sliders.gameObject.SetActive(showSliders);
             
@@ -72,7 +72,7 @@ namespace Games.Ram
         private void Update()
         {
             if(cpuController == null || gpuController == null ||
-               cpuSlider == null || gpuSlider == null) return;
+               _cpuSlider == null || _gpuSlider == null) return;
 
             if (numOfRepetitions == 0 && !tutorialState)
             {
@@ -84,65 +84,65 @@ namespace Games.Ram
             //RANDOM MOVING OF SLIDERS
             if (slidersMoving)
             {
-                if (cpuSliderMoving)
+                if (_cpuSliderMoving)
                 {
-                    if (Mathf.Abs(cpuSlider.value - cpuSliderNewValue) >= 0.01)
+                    if (Mathf.Abs(_cpuSlider.value - _cpuSliderNewValue) >= 0.01)
                     {
-                        if(cpuSlider.value < cpuSliderNewValue)
-                            cpuSlider.value += sliderUpdateStep;
+                        if(_cpuSlider.value < _cpuSliderNewValue)
+                            _cpuSlider.value += SliderUpdateStep;
                         else
                         {
-                            cpuSlider.value -= sliderUpdateStep;
+                            _cpuSlider.value -= SliderUpdateStep;
                         }
                     }
                     else
                     {
-                        cpuSliderMoving = false;
-                        cpuSlider.value = cpuSliderNewValue;
+                        _cpuSliderMoving = false;
+                        _cpuSlider.value = _cpuSliderNewValue;
                     }
                 }
                 else
                 {
-                    if (cpuSliderToValueChangeCounter > 0)
+                    if (_cpuSliderToValueChangeCounter > 0)
                     {
-                        cpuSliderToValueChangeCounter -= sliderUpdateStep;
+                        _cpuSliderToValueChangeCounter -= SliderUpdateStep;
                     }
                     else
                     {
-                        cpuSliderMoving = true;
-                        cpuSliderToValueChangeCounter = Random.Range(1f, maxSliderToValueChangeCounter);
-                        cpuSliderNewValue = Random.Range(0f, 1f);
+                        _cpuSliderMoving = true;
+                        _cpuSliderToValueChangeCounter = Random.Range(1f, MaxSliderToValueChangeCounter);
+                        _cpuSliderNewValue = Random.Range(0f, 1f);
                     }
                 }
                 
-                if (gpuSliderMoving)
+                if (_gpuSliderMoving)
                 {
-                    if (Mathf.Abs(gpuSlider.value - gpuSliderNewValue) >= 0.01)
+                    if (Mathf.Abs(_gpuSlider.value - _gpuSliderNewValue) >= 0.01)
                     {
-                        if(gpuSlider.value < gpuSliderNewValue)
-                            gpuSlider.value += sliderUpdateStep;
+                        if(_gpuSlider.value < _gpuSliderNewValue)
+                            _gpuSlider.value += SliderUpdateStep;
                         else
                         {
-                            gpuSlider.value -= sliderUpdateStep;
+                            _gpuSlider.value -= SliderUpdateStep;
                         }
                     }
                     else
                     {
-                        gpuSliderMoving = false;
-                        gpuSlider.value = gpuSliderNewValue;
+                        _gpuSliderMoving = false;
+                        _gpuSlider.value = _gpuSliderNewValue;
                     }
                 }
                 else
                 {
-                    if (gpuSliderToValueChangeCounter > 0)
+                    if (_gpuSliderToValueChangeCounter > 0)
                     {
-                        gpuSliderToValueChangeCounter -= sliderUpdateStep;
+                        _gpuSliderToValueChangeCounter -= SliderUpdateStep;
                     }
                     else
                     {
-                        gpuSliderMoving = true;
-                        gpuSliderToValueChangeCounter = Random.Range(1f, maxSliderToValueChangeCounter);
-                        gpuSliderNewValue = Random.Range(0f, 1f);
+                        _gpuSliderMoving = true;
+                        _gpuSliderToValueChangeCounter = Random.Range(1f, MaxSliderToValueChangeCounter);
+                        _gpuSliderNewValue = Random.Range(0f, 1f);
                     }
                 }
             }

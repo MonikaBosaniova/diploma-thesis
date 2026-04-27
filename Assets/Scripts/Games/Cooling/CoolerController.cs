@@ -1,4 +1,3 @@
-using System;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -34,14 +33,14 @@ public class CoolerController : MonoBehaviour
     public bool noisy;
     public bool slow;
 
-    private Tween rotationTween;
-    private float finishTemperatureForScenario;
-    private float offseteForScenario;
-    private float tolerance =  10f;
+    private Tween _rotationTween;
+    private float _finishTemperatureForScenario;
+    private float _offseteForScenario;
+    private readonly float _tolerance =  10f;
 
     void Start()
     {
-        rotationTween = rotatingPart.DOLocalRotate(new Vector3(rotateX ? 360 : 0, rotateY ? 360 : 0, rotateZ ? 360 : 0), 1f, RotateMode.FastBeyond360)
+        _rotationTween = rotatingPart.DOLocalRotate(new Vector3(rotateX ? 360 : 0, rotateY ? 360 : 0, rotateZ ? 360 : 0), 1f, RotateMode.FastBeyond360)
             .SetLoops(-1, LoopType.Incremental)
             .SetEase(Ease.Linear);
 
@@ -55,12 +54,11 @@ public class CoolerController : MonoBehaviour
     void Update()
     {
         optimal = false;
-        //Debug.Log(gameObject.name + " : " + finishTemperatureForScenario + " " + actualTemperature);
 
         if (Mathf.Abs(ComputeFinishTempOfCooler() - actualTemperature) <= .1f)
         {
             // check win
-            if (Mathf.Abs(actualTemperature - finishTemperatureForScenario) <= tolerance)
+            if (Mathf.Abs(actualTemperature - _finishTemperatureForScenario) <= _tolerance)
             {
                 optimal = true;
                 return;
@@ -84,7 +82,7 @@ public class CoolerController : MonoBehaviour
     /// <returns>Clamped temperature value between 20 and 100</returns>
     private float ComputeFinishTempOfCooler()
     {
-        return Mathf.Min(100f, Mathf.Max(20f, 100f - speedSlider.value*100 + offseteForScenario));
+        return Mathf.Min(100f, Mathf.Max(20f, 100f - speedSlider.value*100 + _offseteForScenario));
     }
 
     /// <summary>
@@ -93,9 +91,7 @@ public class CoolerController : MonoBehaviour
     /// <param name="value">Slider value (0-1)</param>
     void UpdateRotationSpeed(float value)
     {
-        rotationTween.timeScale = Mathf.Max(minRotationSpeed, value * maxRotationSpeed);
-        
-        //CheckState();
+        _rotationTween.timeScale = Mathf.Max(minRotationSpeed, value * maxRotationSpeed);
     }
 
     /// <summary>
@@ -103,7 +99,6 @@ public class CoolerController : MonoBehaviour
     /// </summary>
     private void VisualizeState()
     {
-        //TODO FIND  better COLORS
         if (actualTemperature > highValuePoint)
         {
             temperatureText.color = Color.red;
@@ -130,7 +125,7 @@ public class CoolerController : MonoBehaviour
 
     void OnDestroy()
     {
-        rotationTween.Kill();
+        _rotationTween.Kill();
     }
 
     /// <summary>
@@ -150,8 +145,8 @@ public class CoolerController : MonoBehaviour
     /// <param name="offset">Temperature offset applied to calculation</param>
     internal void SetScenarioData(float finishTemperature, float offset)
     {
-        finishTemperatureForScenario = finishTemperature;
-        offseteForScenario = offset;
+        _finishTemperatureForScenario = finishTemperature;
+        _offseteForScenario = offset;
     }
 
     /// <summary>
