@@ -27,11 +27,7 @@ namespace Games.Ram
         
         [SerializeField] private int numOfRepetitions;
 
-        private CoolingGameManager _coolingGameManager;
         private ScenarioData _actualScenario;
-        
-        private bool _cpuIsOptimal = false;
-        private bool _gpuIsOptimal = false;
         
         private Slider _cpuSlider;
         private Slider _gpuSlider;
@@ -50,8 +46,6 @@ namespace Games.Ram
             {
                 transform.GetChild(i).gameObject.SetActive(true);
             }
-            
-            _coolingGameManager = FindFirstObjectByType<CoolingGameManager>();
             
             monitorController.SetScenario(startScenarioIndex);
             UpdateDataWhenScenarioChange();

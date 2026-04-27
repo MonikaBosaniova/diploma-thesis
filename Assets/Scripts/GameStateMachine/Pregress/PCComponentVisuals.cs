@@ -7,11 +7,6 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class PCComponentVisuals : MonoBehaviour
 {
-    [Header("Initial State")]
-    [SerializeField] private bool _isVisible = false;
-    [SerializeField] private bool _isHologram = false;
-    [SerializeField] private bool _isOutlined = false;
-
     [Header("Materials")]
     [Tooltip("Material used in normal mode (slot 0). If empty, the current slot 0 at startup is used.")]
     [SerializeField] private Material _defaultMaterial;
