@@ -22,7 +22,7 @@ namespace Games.Binary
         private List<GameObject> allDisplayNumbers;
         private BinaryCalculator _binaryCalculator;
 
-        private const int numOfBits = 4;
+        private const int NumOfBits = 4;
 
         public override void Init()
         {
@@ -32,7 +32,7 @@ namespace Games.Binary
             }
             
             if(decFinalNumber == 0)
-                decFinalNumber =  Random.Range(1, (int)Math.Pow(2, numOfBits));
+                decFinalNumber =  Random.Range(1, (int)Math.Pow(2, NumOfBits));
             
             _binaryCalculator = gameObject.GetComponent<BinaryCalculator>();
             if (_binaryCalculator != null)
@@ -65,7 +65,6 @@ namespace Games.Binary
         /// <param name="newValue">The decimal value that was correctly entered</param>
         private void StartFinishState(double newValue)
         {
-            Debug.Log("Finish state: "  + newValue);
             _binaryCalculator.OnDecValueChanged -= StartFinishState;
             StartCoroutine(WaitToShowCompleteLevel());
         }

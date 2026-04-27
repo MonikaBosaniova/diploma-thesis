@@ -194,7 +194,6 @@ public class BinaryCalculator : MonoBehaviour
             VisualizeDecValue(_finalValue - _decValue, false);
             if (Math.Abs(_finalValue - _decValue) < 0.1)
             {
-                Debug.Log("COMPUTE VALUE: " + _finalValue + " - " + _decValue);
                 OnDecValueChanged?.Invoke(_decValue);
                 _finalValue = -1;
             }
