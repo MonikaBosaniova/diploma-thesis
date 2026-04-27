@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -6,6 +6,9 @@ using UnityEngine.UIElements;
 
 namespace UI
 {
+    /// <summary>
+    /// Abstract base class for UI controllers that use UI Toolkit documents with stylesheet management
+    /// </summary>
     public abstract class UIControllerBaseContext : UIControllerBase
     {
         #region Runtime
@@ -36,6 +39,10 @@ namespace UI
         
         private List<StyleSheet> _StyleSheets = new();
         
+        /// <summary>
+        /// Activates the GameObject and waits until the controller is prepared
+        /// </summary>
+        /// <returns>Coroutine that waits for IsPrepared to become true</returns>
         public override IEnumerator Setup()
         {
             gameObject.SetActive(true);
@@ -84,6 +91,9 @@ namespace UI
             
         }
         
+        /// <summary>
+        /// Initializes the controller by getting the UIDocument and setting up the root visual element
+        /// </summary>
         public override void Initialize()
         {
             IsPrepared = false;
@@ -91,6 +101,10 @@ namespace UI
             Initialize(_UIDocument.rootVisualElement);
         }
 
+        /// <summary>
+        /// Internal initialization that sets the root element, applies stylesheets and binds UI elements
+        /// </summary>
+        /// <param name="root">Root visual element of the UI document</param>
         private void Initialize(VisualElement root)
         {
             IsPrepared = true;
@@ -102,6 +116,9 @@ namespace UI
             Bind();
         }
 
+        /// <summary>
+        /// Applies all registered stylesheets to the root visual element
+        /// </summary>
         private void SetupStyleSheets()
         {
             foreach (var sheet in _StyleSheets)

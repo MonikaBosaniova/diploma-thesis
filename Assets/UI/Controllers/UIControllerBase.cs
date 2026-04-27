@@ -1,6 +1,4 @@
-﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -47,6 +45,9 @@ namespace UI
             gameObject.SetActive(true);
         }
 
+        /// <summary>
+        /// Initializes the controller, must be implemented by derived classes
+        /// </summary>
         public abstract void Initialize();
     }
 }

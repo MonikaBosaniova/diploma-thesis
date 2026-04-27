@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1355688671}
   m_HandleRect: {fileID: 1355688670}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0.9999992
   m_Size: 0.855814
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3297,71 +3297,6 @@ MonoBehaviour:
   _defaultMaterial: {fileID: 2100000, guid: 9b40d439ec43e5648bf6655c99bea077, type: 2}
   _hologramMaterial: {fileID: 2100000, guid: eb50bf813f6f65d4c9ac837a8ad55357, type: 2}
   _useSharedMaterials: 0
---- !u!1 &777199195
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 777199197}
-  - component: {fileID: 777199196}
-  - component: {fileID: 777199198}
-  m_Layer: 5
-  m_Name: Menu
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &777199196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777199195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PanelSettings: {fileID: 11400000, guid: e2f33b43266c3b844897dd75f36a0e6a, type: 2}
-  m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: ee4efdcbe942c8c489fb7740ee39d549, type: 3}
-  m_SortingOrder: 0
-  m_WorldSpaceSizeMode: 1
-  m_WorldSpaceWidth: 1920
-  m_WorldSpaceHeight: 1080
---- !u!4 &777199197
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777199195}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &777199198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777199195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49feee35097399c439963f72858b0b97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <IsPrepared>k__BackingField: 0
 --- !u!1001 &785260706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3592,7 +3527,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 0
-  orthographic size: 5.4
+  orthographic size: 7.222622
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -9115,6 +9050,5 @@ SceneRoots:
   - {fileID: 1133147171}
   - {fileID: 1288408744}
   - {fileID: 77586639}
-  - {fileID: 777199197}
   - {fileID: 477120191}
   - {fileID: 634905107}
